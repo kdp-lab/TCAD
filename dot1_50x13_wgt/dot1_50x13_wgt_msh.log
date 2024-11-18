@@ -1,0 +1,108 @@
+> # ISE TCAD Software Release 9.0
+> # Version Mdraw 9.0.12
+> # Version Mesh 9.0.12
+> # Compiled Thu Jun 12 12:50:49 CEST 2003 on redhat103
+> # Copyright (c) 1994-2003 ISE Integrated Systems Engineering AG
+> Mesh version 9.0.12
+> (Compiled Thu Jun 12 12:50:49 CEST 2003)
+> (Compiled on redhat103)
+> Copyright (c) 1994-2003 ISE Integrated Systems Engineering AG, Zurich, Switzerland
+> Running on: Linux castor.pha.jhu.edu 2.4.21-52.ELsmp #1 SMP Fri Sep 28 13:31:57 CDT 2007 i686
+
+> Process ID: 1405
+> 
+> Flags used:
+> 
+> Reading Boundary... dot1_50x13_wgt.bnd
+> Loaded 47 point(s), 1 region(s), 10 contact(s). done. Time: 0.01 secs.
+> Statistics from input geometry:
+> 45 vertices, 51 edges, 16 faces, 11 elements (10 rectangles) (1 bricks)
+> 	10 2D elements
+> 	1 3D elements
+> Average edge length (std): 43.848 (341.068)
+> Min edge length (13): 4
+> 
+> Average volume (std): 35511.4 (372446)
+> Min. element volume (0): 390625
+> 
+> Average connectivity: 2.26667
+> Max. connectivity (1): 5
+> 
+> Step sequence to perform: 
+> 	MLRefineGeometry-MLRefineOnSize-MLRefineOnProfiles
+> 
+> Fitting geometry ... Number of elements to check: 1
+> done. Time: 0 secs.
+> Refining on MaxElementSize ... Number of elements to check: 1
+> Number of elements to check: 9645
+> done. Time: 2.15 secs.
+> Refining on Profiles ... Number of elements to check: 9644
+> done. Time: 0.02 secs.
+> Handling green elements ... Number of elements to check: 9644
+> Number of elements to check: 298
+> Number of elements to check: 93
+> Number of elements to check: 71
+> Number of elements to check: 63
+> Number of elements to check: 45
+> Number of elements to check: 49
+> Number of elements to check: 82
+> Number of elements to check: 98
+> Number of elements to check: 95
+> Number of elements to check: 77
+> Number of elements to check: 76
+> Number of elements to check: 76
+> Number of elements to check: 76
+> Number of elements to check: 39
+> Number of elements to check: 2
+> Number of elements to check: 2
+> done. Time: 0.04 secs.
+> Building final elements ... Number of elements to check: 9644
+> Number of elements to check: 8163
+> done. Time: 0.22 secs.
+> Testing elements ... Number of elements to check: 16065
+> done. Time: 0.06 secs.
+> Preparing data for output... Number of final elements 16065
+> Statistics from Qtree/Oc-tree:
+> 11845 vertices, 40204 edges, 44425 faces, 17405 elements (536 triangles) (804 rectangles) (3590 tetrahedra) (4573 pyramids) (7902 bricks)
+> 	1340 2D elements
+> 	16065 3D elements
+> Average edge length (std): 3.41819 (398.369)
+> Min edge length (20185): 0.0625
+> 
+> Average volume (std): 22.4433 (3171.82)
+> Min. element volume (9859): 0.00152588
+> 
+> Average aspect ratio tetrahedra (std): 0.489627 (9.90635)
+> Min. aspect tetrahedra (12043): 0.00500679
+> Average connectivity: 6.78835
+> Max. connectivity (4253): 31
+> 
+> Pattern Statistics for IISbrick:
+> 	Pattern 1 GT: 1-irregular face = 32
+> 	Pattern 2 GT: 1-irregular edge = 376
+> 	Pattern 3 GT: 1-irregular vertex = 1334
+> 	Pattern 6 OGP: brick = 7902
+> done. Time: 0.49 secs.
+> 
+> Total time : 2.99 secs.
+> Delaunizing the elements... 
+> After Delaunization:
+> Statistics after Delaunization:
+> 12390 vertices, 46222 edges, 55831 faces, 23389 elements (621 triangles) (772 rectangles) (10347 tetrahedra) (4299 pyramids) (7350 bricks)
+> 	1393 2D elements
+> 	21996 3D elements
+> Average edge length (std): 3.49474 (419.308)
+> Min edge length (20185): 0.0625
+> 
+> Average volume (std): 16.7012 (3259.49)
+> Min. element volume (9859): 0.00152588
+> 
+> Average aspect ratio tetrahedra (std): 0.542143 (11.4297)
+> Min. aspect tetrahedra (16854): 0.0208403
+> Average connectivity: 7.46102
+> Max. connectivity (12293): 30
+> 
+> Saving mesh `dot1_50x13_wgt' in DFISE format...
+>   Saving geometry `dot1_50x13_wgt_msh.grd'...done. Time: 0.91 secs.
+> Interpolating data ... done
+>   Saving data `dot1_50x13_wgt_msh.dat' ...done. Time: 0.02 secs.
