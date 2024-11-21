@@ -1,6 +1,7 @@
 # TCAD
 Repo for TCAD information and models in KDP Lab
 
+https://docs.google.com/document/d/16AwqczZQM3HYf02Yj4suEKtHeAJKe5Tt9aD8G05jMOE/edit?usp=sharing
 
 Purpose:
 
