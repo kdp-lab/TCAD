@@ -83,9 +83,9 @@ Z          Y
 5. Do the same for the sdevice node in the workbench, adjust parameters accordingly for the desired voltages
 6. Now that everything is set up, you should be able to just run the simulation and once all of the boxes are yellow, it's completed.
 7. The PixelAV conversion files don't take .tdr files which Sentaurus spits out, so you'll have to convert them to .grd and .dat files using the following commands:
-   '''
+   ```
    $ tdx -dd -M 0 -S 0 <filename> <output filename>
-   '''
+   ```
 8. Locate those files and compile gen_wpot.c and gen_efield.c
 9. Run these programs with the appropriate files located in the correct directory. This part sometimes takes some trial and error to get the program to recognize the files.
 10. As a rule of thumb, set the mesh density to be about 1 um in X, 2 um in Y and Z
