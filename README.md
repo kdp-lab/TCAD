@@ -72,5 +72,27 @@ Visual
 Used to look at plots and information such as meshes, time slices, etc. Can be used to explore outputs from each step, such as .sat, .tdr, and .plt files generated as output files
 
 Procedure
-
-Current Working Model
+1. Given a desired geometry of pixel, say X x Y x Z um^3, we can bisect the geometry along the symmetry planes to get quarter dimensions, i.e. X/2 x Y/2 x Z. Note, this is in PixelAV coordinates which is the final configuration. To convert back and forth mentally:
+Senaturus  PixelAV
+X          Z
+Y          X
+Z          Y
+2. Take those lengths and edit an existing Sentaurus sde file to match those parameters, including adjusting the contact regions for anode and cathode as well as the analytical profiles of the dopants.
+*3. Note that while doing this, it's best to do so in the command file (.cmd) from Sentaurus Workbench. Take care with the contact regions as the way that Sentaurus defines 2D surfaces such as contacts is by first generating a 3D object that has one face in common with another and then deleting the body of the object and keeping the face. I don't know why but it's how it works.
+4. Once all of the geometry is set up as you'd like, make sure that the snmesh command file reflects these changes and that it's looking for the correct file to develop its mesh from.
+5. Do the same for the sdevice node in the workbench, adjust parameters accordingly for the desired voltages
+6. Now that everything is set up, you should be able to just run the simulation and once all of the boxes are yellow, it's completed.
+7. The PixelAV conversion files don't take .tdr files which Sentaurus spits out, so you'll have to convert them to .grd and .dat files using the following commands:
+   '''
+   $ tdx -dd -M 0 -S 0 <filename> <output filename>
+   '''
+8. Locate those files and compile gen_wpot.c and gen_efield.c
+*9. Run these programs with the appropriate files located in the correct directory. This part sometimes takes some trial and error to get the program to recognize the files.
+10. As a rule of thumb, set the mesh density to be about 1 um in X, 2 um in Y and Z
+11. Now run both files with their appropriate parameters.
+12. This will generate files called wplot.out, weighting.out, eplot.out, and efield.out. The plot files can be a quick sanity check and are generated at the start of the interpolation to check that the values make sense with what's expected. This is a good opportunity to verify that the dimensions work out and that you see the number of nodes you expect along the X-Y symmetry axis
+*13. Now you can validate these files against your TCAD output and hopefully use them as inputs to PixelAV
+*Current working areas:
+3. This process in extremely unwieldly and could be optimized by using Sentaurus Workbench to define variables that can be edited on the fly instead of via laborious command line editing that's prone to breaking. It DOES work, but it's finnicky
+9. It's possible that gen_efield or gen_wpot don't recognize either the file or the number of vertices, in this case either edit the c file to read it correctly or edit the files themselves to work with the syntax. If in doubt, compare with Morris' old files to validate syntax
+13. This hasn't been done from cradle to grave yet at UChicago, this should be our first priority to check that these files actually work. At the moment wpot.out doesn't make a ton of sense since it gives values outside of [0,1] by a lot.
