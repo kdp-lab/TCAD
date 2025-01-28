@@ -82,7 +82,7 @@ Z          Y
 4. Once all of the geometry is set up as you'd like, make sure that the snmesh command file reflects these changes and that it's looking for the correct file to develop its mesh from.
 5. Do the same for the sdevice node in the workbench, adjust parameters accordingly for the desired voltages
 6. Now that everything is set up, you should be able to just run the simulation and once all of the boxes are yellow, it's completed.
-7. The PixelAV conversion files don't take .tdr files which Sentaurus spits out, so you'll have to convert them to .grd and .dat files using the following commands:
+7. The PixelAV conversion files don't take .tdr files which Sentaurus spits out, so you'll have to convert them to .grd and .dat files using the following command:
    ```
    $ tdx -dd -M 0 -S 0 <filename> <output filename>
    ```
