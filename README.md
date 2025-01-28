@@ -92,7 +92,9 @@ Z          Y
 11. Now run both files with their appropriate parameters.
 12. This will generate files called wplot.out, weighting.out, eplot.out, and efield.out. The plot files can be a quick sanity check and are generated at the start of the interpolation to check that the values make sense with what's expected. This is a good opportunity to verify that the dimensions work out and that you see the number of nodes you expect along the X-Y symmetry axis.
 13. Now you can validate these files against your TCAD output and hopefully use them as inputs to PixelAV.
+
 Current working areas:
-3. This process in extremely unwieldly and could be optimized by using Sentaurus Workbench to define variables that can be edited on the fly instead of via laborious command line editing that's prone to breaking. It DOES work, but it's finnicky
-9. It's possible that gen_efield or gen_wpot don't recognize either the file or the number of vertices, in this case either edit the c file to read it correctly or edit the files themselves to work with the syntax. If in doubt, compare with Morris' old files to validate syntax
-13. This hasn't been done from cradle to grave yet at UChicago, this should be our first priority to check that these files actually work. At the moment wpot.out doesn't make a ton of sense since it gives values outside of [0,1] by a lot.
+
+3 - This process in extremely unwieldly and could be optimized by using Sentaurus Workbench to define variables that can be edited on the fly instead of via laborious command line editing that's prone to breaking. It DOES work, but it's finnicky
+9 - It's possible that gen_efield or gen_wpot don't recognize either the file or the number of vertices, in this case either edit the c file to read it correctly or edit the files themselves to work with the syntax. If in doubt, compare with Morris' old files to validate syntax
+13 -This hasn't been done from cradle to grave yet at UChicago, this should be our first priority to check that these files actually work. At the moment wpot.out doesn't make a ton of sense since it gives values outside of [0,1] by a lot.
