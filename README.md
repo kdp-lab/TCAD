@@ -1,8 +1,6 @@
 # TCAD
 Repo for TCAD information and models in KDP Lab
 
-https://docs.google.com/document/d/16AwqczZQM3HYf02Yj4suEKtHeAJKe5Tt9aD8G05jMOE/edit?usp=sharing
-
 Purpose:
 
 The purpose of this document is to outline the work done using Synopsys TCAD suite and associated tools in the work of the SmartPixels collaboration and to provide a first time user a field guide to the software with an eye to future modifications of the simulation parameters/optimization
