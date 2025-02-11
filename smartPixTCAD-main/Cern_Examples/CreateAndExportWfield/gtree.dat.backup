@@ -1,0 +1,32 @@
+# Copyright (C) 1994-2011 Synopsys Inc.
+# swbtree vK-2015.06-SP2, Wed Jun 29 12:47:54 2016
+
+# --- simulation flow
+sdevice sdevice "" {}
+sdevice mesh "2D_P1" {2D_P5}
+sdevice fluence "0" {4e15 1e14}
+sdevice voltage "100" {-100 -1000 -250}
+mytool mytool "" {}
+svisual svisual "" {}
+# --- variables
+# --- scenarios and parameter specs
+scenario default mesh ""
+scenario default fluence ""
+scenario default voltage ""
+# --- simulation tree
+0 2 0 {} {default} 0
+1 37 2 {2D_P5} {default} 0
+2 18 37 {4e15} {default} 0
+3 19 18 {-1000} {default} 0
+4 26 19 {} {default} 0
+5 30 26 {} {default} 0
+2 21 37 {1e14} {default} 0
+3 22 21 {-1000} {default} 0
+4 27 22 {} {default} 0
+5 31 27 {} {default} 0
+3 52 21 {-250} {default} 0
+4 53 52 {} {default} 0
+5 54 53 {} {default} 0
+3 55 21 {-100} {default} 0
+4 56 55 {} {default} 0
+5 57 56 {} {default} 0

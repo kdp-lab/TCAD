@@ -1,0 +1,101 @@
+
+****************************************************************************
+***                       Sentaurus Workbench gsub                       ***
+***                          Version V-2024.03                           ***
+***                      (3.8727837, x86_64, Linux)                      ***
+***                                                                      ***
+***                Copyright (c) 1994-2024 Synopsys, Inc.                ***
+***                                                                      ***
+***  This software and the associated documentation are confidential     ***
+***  and proprietary to Synopsys, Inc.  Your use or disclosure of this   ***
+***  software is subject to the terms and conditions of a written        ***
+***  license agreement between you, or your company, and Synopsys, Inc.  ***
+****************************************************************************
+
+gsub is running on host 'kdplab01' by user 'aknicholas'
+Binary '/code/Synopsys/tcad_sentaurus_vV-2024.03/sentaurus/current/bin/../tcad/current/linux64/bin/../lib/gsub0'
+Command line options '-verbose -swb_pid 3837877 -q local:default -e 3 /home/aknicholas/DB/smartPixTCAD-main/dot1_50x13_phase3_updated/smartpix'
+Current directory '/home/aknicholas'
+Project organization 'Traditional'
+Some relevant environment variables:
+	STROOT=/code/Synopsys/tcad_sentaurus_vV-2024.03/sentaurus/current/bin/..
+	STRELEASE=current
+	STROOT_LIB=/code/Synopsys/tcad_sentaurus_vV-2024.03/sentaurus/current/bin/../tcad/current/lib
+	STDB=/home/aknicholas/DB
+	DATEX=/code/Synopsys/tcad_sentaurus_vV-2024.03/sentaurus/current/bin/../tcad/current/lib/datexcodes.txt
+	DISPLAY=localhost:10.0
+
+Starting swblm daemon...OK
+Project '/home/aknicholas/DB/smartPixTCAD-main/dot1_50x13_phase3_updated/smartpix'
+Application mode : traditional
+15:30:42 Jan 20 2025 <smartpix> submitted to the batch system
+Loading global queue configuration file '/code/Synopsys/tcad_sentaurus_vV-2024.03/sentaurus/current/queues/gqueues.dat'...ok
+Loading project tree '/home/aknicholas/DB/smartPixTCAD-main/dot1_50x13_phase3_updated/smartpix/gtree.dat'
+>>>>> Preprocessing the project to run in normal mode
+Loading jobs and dependence graph '"/home/aknicholas/DB/smartPixTCAD-main/dot1_50x13_phase3_updated/smartpix/gexec.cmd"'
+INITIALIZING PREPROCESSOR:
+Loading project tree '/home/aknicholas/DB/smartPixTCAD-main/dot1_50x13_phase3_updated/smartpix/gtree.dat'
+Loading project variables '/home/aknicholas/DB/smartPixTCAD-main/dot1_50x13_phase3_updated/smartpix/gvars.dat'
+--Get files to preprocess...
+--Create file handlers...
+--Read the toolflow...
+--Analyze tool-file dependencies...
+--Read all nodes to preprocess...
+--Group nodes into experiments...
+--Get all variables...
+--Get all parameters...
+PREPROCESSOR SUCCESSFULLY INITIALIZED.
+PREPROCESSING STEP 1:
+Reading file /home/aknicholas/DB/smartPixTCAD-main/dot1_50x13_phase3_updated/smartpix/sde_dvs.cmd
+Reading file /home/aknicholas/DB/smartPixTCAD-main/dot1_50x13_phase3_updated/smartpix/sde_epi.csv
+Reading file /home/aknicholas/DB/smartPixTCAD-main/dot1_50x13_phase3_updated/smartpix/sdevice_des.cmd
+PREPROCESSING STEP 2:
+---------------------------------------
+Preprocessing file /home/aknicholas/DB/smartPixTCAD-main/dot1_50x13_phase3_updated/smartpix/sdevice_des.cmd for node 3
++++Node successfully preprocessed+++
+Writing 'gexec.cmd'
+Loading jobs and dependence graph '"/home/aknicholas/DB/smartPixTCAD-main/dot1_50x13_phase3_updated/smartpix/gexec.cmd"'
+>>>>>>>>>> job '3' status changed from 'failed' to 'queued'
+-----------------------------------------------------------------
+queue "local:default" - 3
+-----------------------------------------------------------------
+>>>>>>>>>> Initializing back-end schedulers...
+>>>>>>>> Loaded Schedulers are ... local
+local% initialize 'local' scheduler data
+>>>>> List of Active Schedulers : local
+<<<<<<<<<<
+>>>>>>>>>> job '3' status changed from 'queued' to 'ready'
+INITIALIZING PREPROCESSOR:
+Loading project tree '/home/aknicholas/DB/smartPixTCAD-main/dot1_50x13_phase3_updated/smartpix/gtree.dat'
+Loading jobs and dependence graph '"/home/aknicholas/DB/smartPixTCAD-main/dot1_50x13_phase3_updated/smartpix/gexec.cmd"'
+Loading project variables '/home/aknicholas/DB/smartPixTCAD-main/dot1_50x13_phase3_updated/smartpix/gvars.dat'
+--Get files to preprocess...
+--Create file handlers...
+--Read the toolflow...
+--Analyze tool-file dependencies...
+--Read all nodes to preprocess...
+--Group nodes into experiments...
+--Get all variables...
+--Get all parameters...
+PREPROCESSOR SUCCESSFULLY INITIALIZED.
+PREPROCESSING STEP 1:
+Reading file /home/aknicholas/DB/smartPixTCAD-main/dot1_50x13_phase3_updated/smartpix/sdevice_des.cmd
+PREPROCESSING STEP 2:
+---------------------------------------
+Preprocessing file /home/aknicholas/DB/smartPixTCAD-main/dot1_50x13_phase3_updated/smartpix/sdevice_des.cmd for node 3
++++Preprocessing results written to /home/aknicholas/DB/smartPixTCAD-main/dot1_50x13_phase3_updated/smartpix/pp3_des.cmd
+>>>>>>>>>> os_rm /home/aknicholas/DB/smartPixTCAD-main/dot1_50x13_phase3_updated/smartpix/n3_des.job
+local% submit job 3 for local execution
+>>>>>>>>>> job '3' status changed from 'ready' to 'pending'
+local% exec /code/Synopsys/tcad_sentaurus_vV-2024.03/sentaurus/current/bin/gjob -verbose -nice 19 --max_threads 1  -job 3 -swb_pid 3837877 -gsub_pid 3841652 -gsub_host kdplab01 -gsub_port 45705  "/home/aknicholas/DB/smartPixTCAD-main/dot1_50x13_phase3_updated/smartpix"
+>>>>>>>>>> job '3' status changed from 'pending' to 'running'
+15:30:43 Jan 20 2025     job 3 <sdevice> started on host 'kdplab01': "sdevice --max_threads 1  pp3_des.cmd"
+>>>>>>>>>> job '3' status changed from 'running' to 'done'
+15:52:07 Jan 20 2025 +++ job 3 <sdevice> done: exit(0)
+
+SCHEDULING REPORT
++++ done     : 3
+
+15:52:09 Jan 20 2025 <smartpix> done (1287 sec)
+>>>>>> Writing to status file 1287
+gsub exits with status 0

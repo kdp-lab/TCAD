@@ -1,0 +1,138 @@
+###########################################
+# Sentaurus Visual K-2015.06-SP2.
+# Tcl log file.
+#------------------------------------------
+# Date: Jun 27, 2016. 08:15:28.
+# Version: 24.0.12 (1.12)
+# Mode: Interactive (GUI).
+# Hostname: pclhcb134.
+# Machine: Linux, x86_64, x86_64.
+# Kernel: 2.6.32-573.26.1.el6.x86_64.
+###########################################
+
+load_file /afs/cern.ch/work/a/afolkest/STDB/DEMOS/Demo4_wField/results/pixel_0V_0000_des.tdr
+create_plot -dataset pixel_0V_0000_des
+select_plots Plot_pixel_0V_0000_des
+#-> Plot_pixel_0V_0000_des
+#-> Plot_pixel_0V_0000_des
+#-> pixel_0V_0000_des
+load_file /afs/cern.ch/work/a/afolkest/STDB/DEMOS/Demo4_wField/results/pixel_1V_0000_des.tdr
+create_plot -dataset pixel_1V_0000_des
+select_plots Plot_pixel_1V_0000_des
+#-> Plot_pixel_1V_0000_des
+#-> Plot_pixel_1V_0000_des
+#-> pixel_1V_0000_des
+select_plots Plot_pixel_0V_0000_des
+#-> Plot_pixel_0V_0000_des
+set_field_prop -plot Plot_pixel_0V_0000_des -geom pixel_0V_0000_des Abs(ElectricField-V) -show_bands
+#-> 0
+select_plots Plot_pixel_1V_0000_des
+#-> Plot_pixel_1V_0000_des
+set_field_prop -plot Plot_pixel_1V_0000_des -geom pixel_1V_0000_des Abs(ElectricField-V) -show_bands
+#-> 0
+select_plots {Plot_pixel_1V_0000_des Plot_pixel_0V_0000_des}
+#-> Plot_pixel_0V_0000_des Plot_pixel_1V_0000_des
+select_plots {Plot_pixel_1V_0000_des Plot_pixel_0V_0000_des}
+#-> Plot_pixel_0V_0000_des Plot_pixel_1V_0000_des
+select_plots Plot_pixel_1V_0000_des
+#-> Plot_pixel_1V_0000_des
+select_plots {Plot_pixel_1V_0000_des Plot_pixel_0V_0000_des}
+#-> Plot_pixel_0V_0000_des Plot_pixel_1V_0000_des
+select_plots {Plot_pixel_1V_0000_des Plot_pixel_0V_0000_des}
+#-> Plot_pixel_0V_0000_des Plot_pixel_1V_0000_des
+diff_plots {Plot_pixel_0V_0000_des Plot_pixel_1V_0000_des} -display
+create_plot -dataset Plot_pixel_0V_0000_des-Plot_pixel_1V_0000_des
+select_plots Plot_Plot_pixel_0V_0000_des-Plot_pixel_1V_0000_des
+#-> Plot_Plot_pixel_0V_0000_des-Plot_pixel_1V_0000_des
+#-> Plot_Plot_pixel_0V_0000_des-Plot_pixel_1V_0000_des
+#-> Plot_pixel_0V_0000_des-Plot_pixel_1V_0000_des
+set_field_prop -plot Plot_Plot_pixel_0V_0000_des-Plot_pixel_1V_0000_des -geom Plot_pixel_0V_0000_des-Plot_pixel_1V_0000_des ElectrostaticPotential -show_bands
+#-> 0
+select_plots Plot_pixel_0V_0000_des
+#-> Plot_pixel_0V_0000_des
+remove_plots Plot_pixel_0V_0000_des
+select_plots Plot_pixel_1V_0000_des
+#-> Plot_pixel_1V_0000_des
+#-> Plot_pixel_0V_0000_des
+remove_plots Plot_pixel_1V_0000_des
+select_plots Plot_Plot_pixel_0V_0000_des-Plot_pixel_1V_0000_des
+#-> Plot_Plot_pixel_0V_0000_des-Plot_pixel_1V_0000_des
+#-> Plot_pixel_1V_0000_des
+zoom_plot -plot Plot_Plot_pixel_0V_0000_des-Plot_pixel_1V_0000_des -factor 0.909091
+zoom_plot -plot Plot_Plot_pixel_0V_0000_des-Plot_pixel_1V_0000_des -factor 0.909091
+zoom_plot -plot Plot_Plot_pixel_0V_0000_des-Plot_pixel_1V_0000_des -factor 0.909091
+zoom_plot -plot Plot_Plot_pixel_0V_0000_des-Plot_pixel_1V_0000_des -factor 1.331
+zoom_plot -plot Plot_Plot_pixel_0V_0000_des-Plot_pixel_1V_0000_des -factor 1.1
+zoom_plot -plot Plot_Plot_pixel_0V_0000_des-Plot_pixel_1V_0000_des -factor 1.1
+zoom_plot -plot Plot_Plot_pixel_0V_0000_des-Plot_pixel_1V_0000_des -factor 1.21
+move_plot -plot Plot_Plot_pixel_0V_0000_des-Plot_pixel_1V_0000_des -position {21.2124 -69.2741}
+#-> 0
+zoom_plot -plot Plot_Plot_pixel_0V_0000_des-Plot_pixel_1V_0000_des -factor 0.909091
+zoom_plot -plot Plot_Plot_pixel_0V_0000_des-Plot_pixel_1V_0000_des -factor 0.909091
+move_plot -plot Plot_Plot_pixel_0V_0000_des-Plot_pixel_1V_0000_des -position {-0.35898 66.7702}
+#-> 0
+zoom_plot -plot Plot_Plot_pixel_0V_0000_des-Plot_pixel_1V_0000_des -factor 0.909091
+zoom_plot -plot Plot_Plot_pixel_0V_0000_des-Plot_pixel_1V_0000_des -factor 0.751315
+move_plot -plot Plot_Plot_pixel_0V_0000_des-Plot_pixel_1V_0000_des -position {14.7163 -42.8349}
+#-> 0
+zoom_plot -plot Plot_Plot_pixel_0V_0000_des-Plot_pixel_1V_0000_des -factor 1.1
+zoom_plot -plot Plot_Plot_pixel_0V_0000_des-Plot_pixel_1V_0000_des -factor 1.1
+move_plot -plot Plot_Plot_pixel_0V_0000_des-Plot_pixel_1V_0000_des -position {1.08591 21.5011}
+#-> 0
+move_plot -plot Plot_Plot_pixel_0V_0000_des-Plot_pixel_1V_0000_des -position {-3.90929 42.5678}
+#-> 0
+move_plot -plot Plot_Plot_pixel_0V_0000_des-Plot_pixel_1V_0000_des -position {21.0667 -61.4627}
+#-> 0
+zoom_plot -plot Plot_Plot_pixel_0V_0000_des-Plot_pixel_1V_0000_des -factor 1.1
+zoom_plot -plot Plot_Plot_pixel_0V_0000_des-Plot_pixel_1V_0000_des -factor 1.1
+zoom_plot -plot Plot_Plot_pixel_0V_0000_des-Plot_pixel_1V_0000_des -factor 0.909091
+zoom_plot -plot Plot_Plot_pixel_0V_0000_des-Plot_pixel_1V_0000_des -factor 0.826446
+zoom_plot -plot Plot_Plot_pixel_0V_0000_des-Plot_pixel_1V_0000_des -factor 0.909091
+zoom_plot -plot Plot_Plot_pixel_0V_0000_des-Plot_pixel_1V_0000_des -factor 0.909091
+move_plot -plot Plot_Plot_pixel_0V_0000_des-Plot_pixel_1V_0000_des -position {-2.31256 61.5719}
+#-> 0
+move_plot -plot Plot_Plot_pixel_0V_0000_des-Plot_pixel_1V_0000_des -position {6.64861 -22.5475}
+#-> 0
+probe_field -coord {88.2793 19.3367} -field ElectrostaticPotential -plot Plot_Plot_pixel_0V_0000_des-Plot_pixel_1V_0000_des -region bulk -geom Plot_pixel_0V_0000_des-Plot_pixel_1V_0000_des
+#-> -0.624858292629
+probe_field -coord {64.8647 17.0241} -field ElectrostaticPotential -plot Plot_Plot_pixel_0V_0000_des-Plot_pixel_1V_0000_des -region bulk -geom Plot_pixel_0V_0000_des-Plot_pixel_1V_0000_des
+#-> -0.570822438275
+probe_field -coord {95.5061 15.8678} -field ElectrostaticPotential -plot Plot_Plot_pixel_0V_0000_des-Plot_pixel_1V_0000_des -region bulk -geom Plot_pixel_0V_0000_des-Plot_pixel_1V_0000_des
+#-> -0.639064386201
+probe_field -coord {83.9433 7.77387} -field ElectrostaticPotential -plot Plot_Plot_pixel_0V_0000_des-Plot_pixel_1V_0000_des -region bulk -geom Plot_pixel_0V_0000_des-Plot_pixel_1V_0000_des
+#-> -0.854332895993
+probe_field -coord {62.5521 9.79736} -field ElectrostaticPotential -plot Plot_Plot_pixel_0V_0000_des-Plot_pixel_1V_0000_des -region bulk -geom Plot_pixel_0V_0000_des-Plot_pixel_1V_0000_des
+#-> -0.655278878485
+probe_field -coord {50.7002 28.876} -field ElectrostaticPotential -plot Plot_Plot_pixel_0V_0000_des-Plot_pixel_1V_0000_des -region bulk -geom Plot_pixel_0V_0000_des-Plot_pixel_1V_0000_des
+#-> -0.326525772976
+probe_field -coord {65.1537 70.213} -field ElectrostaticPotential -plot Plot_Plot_pixel_0V_0000_des-Plot_pixel_1V_0000_des -region bulk -geom Plot_pixel_0V_0000_des-Plot_pixel_1V_0000_des
+#-> -0.247755469137
+probe_field -coord {145.515 28.0088} -field ElectrostaticPotential -plot Plot_Plot_pixel_0V_0000_des-Plot_pixel_1V_0000_des -region bulk -geom Plot_pixel_0V_0000_des-Plot_pixel_1V_0000_des
+#-> -0.147292537868
+probe_field -coord {100.709 11.2427} -field ElectrostaticPotential -plot Plot_Plot_pixel_0V_0000_des-Plot_pixel_1V_0000_des -region bulk -geom Plot_pixel_0V_0000_des-Plot_pixel_1V_0000_des
+#-> -0.65927791863
+probe_field -coord {45.2079 20.493} -field ElectrostaticPotential -plot Plot_Plot_pixel_0V_0000_des-Plot_pixel_1V_0000_des -region bulk -geom Plot_pixel_0V_0000_des-Plot_pixel_1V_0000_des
+#-> -0.2719719108
+probe_field -coord {2.71461 4.5941} -field ElectrostaticPotential -plot Plot_Plot_pixel_0V_0000_des-Plot_pixel_1V_0000_des -region bulk -geom Plot_pixel_0V_0000_des-Plot_pixel_1V_0000_des
+#-> -0.0277727637023
+probe_field -coord {8.78508 4.5941} -field ElectrostaticPotential -plot Plot_Plot_pixel_0V_0000_des-Plot_pixel_1V_0000_des -region bulk -geom Plot_pixel_0V_0000_des-Plot_pixel_1V_0000_des
+#-> -0.0211726551034
+probe_field -coord {16.0118 4.5941} -field ElectrostaticPotential -plot Plot_Plot_pixel_0V_0000_des-Plot_pixel_1V_0000_des -region bulk -geom Plot_pixel_0V_0000_des-Plot_pixel_1V_0000_des
+#-> -0.0206221927869
+probe_field -coord {45.2079 6.03945} -field ElectrostaticPotential -plot Plot_Plot_pixel_0V_0000_des-Plot_pixel_1V_0000_des -region bulk -geom Plot_pixel_0V_0000_des-Plot_pixel_1V_0000_des
+#-> -0.139963495509
+probe_field -coord {67.4663 9.21922} -field ElectrostaticPotential -plot Plot_Plot_pixel_0V_0000_des-Plot_pixel_1V_0000_des -region bulk -geom Plot_pixel_0V_0000_des-Plot_pixel_1V_0000_des
+#-> -0.752153732309
+probe_field -coord {99.8421 12.399} -field ElectrostaticPotential -plot Plot_Plot_pixel_0V_0000_des-Plot_pixel_1V_0000_des -region bulk -geom Plot_pixel_0V_0000_des-Plot_pixel_1V_0000_des
+#-> -0.650139828962
+probe_field -coord {124.124 15.2897} -field ElectrostaticPotential -plot Plot_Plot_pixel_0V_0000_des-Plot_pixel_1V_0000_des -region bulk -geom Plot_pixel_0V_0000_des-Plot_pixel_1V_0000_des
+#-> -0.199711342783
+zoom_plot -plot Plot_Plot_pixel_0V_0000_des-Plot_pixel_1V_0000_des -factor 0.909091
+zoom_plot -plot Plot_Plot_pixel_0V_0000_des-Plot_pixel_1V_0000_des -factor 0.909091
+zoom_plot -plot Plot_Plot_pixel_0V_0000_des-Plot_pixel_1V_0000_des -factor 0.909091
+zoom_plot -plot Plot_Plot_pixel_0V_0000_des-Plot_pixel_1V_0000_des -factor 0.909091
+zoom_plot -plot Plot_Plot_pixel_0V_0000_des-Plot_pixel_1V_0000_des -factor 1.1
+zoom_plot -plot Plot_Plot_pixel_0V_0000_des-Plot_pixel_1V_0000_des -factor 1.331
+zoom_plot -plot Plot_Plot_pixel_0V_0000_des-Plot_pixel_1V_0000_des -factor 0.909091
+zoom_plot -plot Plot_Plot_pixel_0V_0000_des-Plot_pixel_1V_0000_des -factor 0.909091
+exit 0

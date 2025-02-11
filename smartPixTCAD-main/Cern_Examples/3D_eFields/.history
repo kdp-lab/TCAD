@@ -1,0 +1,6 @@
+10:33:16 Jul 05 2024 <3D_eFields> submitted to the batch system
+10:33:17 Jul 05 2024     job 51 <sde> started on host 'kdplab01': "sde -e -l n51_dvs.cmd"
+10:34:52 Jul 05 2024 +++ job 51 <sde> done: exit(0)
+10:34:53 Jul 05 2024     job 56 <sdevice> started on host 'kdplab01': "sdevice --max_threads 1  pp56_des.cmd"
+14:40:35 Jul 05 2024 +++ job 56 <sdevice> done: exit(0)
+14:40:37 Jul 05 2024 <3D_eFields> done (14841 sec)

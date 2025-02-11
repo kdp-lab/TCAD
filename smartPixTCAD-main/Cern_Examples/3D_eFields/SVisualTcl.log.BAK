@@ -1,0 +1,27 @@
+###########################################
+# Sentaurus Visual V-2024.03.
+# Tcl log file.
+#------------------------------------------
+# Date: Aug 05, 2024. 14:47:26.
+# Version: 35.3.8727837 (3.8727837)
+# Mode: Interactive (GUI).
+# Mesa: enabled.
+# Hostname: kdplab01.
+# Machine: Linux, x86_64, x86_64.
+# Kernel: 5.14.0-427.24.1.el9_4.x86_64.
+###########################################
+
+load_file /home/aknicholas/DB/smartPixTCAD-main/Cern_Examples/3D_eFields/n56_des.tdr -fod
+create_plot -dataset n56_des
+select_plots {Plot_n56_des}
+#-> Plot_n56_des
+#-> Plot_n56_des
+#-> n56_des
+rotate_plot -plot Plot_n56_des -x 136.183 -y 100.886 -z -64.2983 -absolute
+#-> 0
+rotate_plot -plot Plot_n56_des -x 136.119 -y 90.3197 -z -60.7743 -absolute
+#-> 0
+rotate_plot -plot Plot_n56_des -x 136.878 -y 76.8302 -z -59.1927 -absolute
+#-> 0
+exit 0
+ 

@@ -1,0 +1,26 @@
+# Copyright (C) 1994-2011 Synopsys Inc.
+# swbtree vK-2015.06-SP2, Wed Jun 29 12:45:47 2016
+
+# --- simulation flow
+sdevice sdevice "" {}
+sdevice voltage "-300" {-300}
+sdevice fluence "0" {0}
+sdevice freq "1000" {1000 10000}
+sdevice temp "253.15" {293.15}
+svisual svisual "" {}
+# --- variables
+# --- scenarios and parameter specs
+scenario default voltage ""
+scenario default fluence ""
+scenario default freq ""
+scenario default temp ""
+# --- simulation tree
+0 4 0 {} {default} 0
+1 13 4 {-300} {default} 0
+2 2 13 {0} {default} 0
+3 7 2 {1000} {default} 0
+4 8 7 {293.15} {default} 0
+5 9 8 {} {default} 0
+3 10 2 {10000} {default} 0
+4 11 10 {293.15} {default} 0
+5 12 11 {} {default} 0

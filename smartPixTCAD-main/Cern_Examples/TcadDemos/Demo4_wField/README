@@ -1,0 +1,14 @@
+##### Purpose ##########################################################################################
+# This is a miminal example to illustrate how to simulate a weighting field of a strip/pixel 
+# It contains a 2d pixel/strip mesh and a simulation command file to simulate the weighting field.
+# It also contains scripts to calculate and save the weighting field as a .tdr file and to
+# export the electric field to a .txt file.
+#########################################################################################################
+
+1. Start simulation by typing "sdevice wField.cmd" in the terminal. 
+2. Run script to take the difference between the two created fieldmaps: "tdx -tcl createWfield.tcl"  	
+3. Run "svisual results/weightingField.tdr" to visualized the weighting field 
+4. Run "tdx -tcl exportEfield.tcl" to export the electric field. The field is located in the file "ElectricField.txt" in results.
+
+
+

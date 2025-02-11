@@ -1,0 +1,170 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Script for creating 200um thick pixel sensor matching the ;
+;; Timepix3 geometry in 2D
+;;
+;; Note: The aluminum on top of the pixels are added and removed.
+;; To include them, just remove the lines at 102, 114, 126
+;;
+;; Made by Aasmund S. Folkestad: asmundsf@gmail.com
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;; Known VELO sensor parameters
+(define gap 200)
+(define pitch 55)
+(define al_thickness 1.1)
+(define al_overhang 4.5)
+(define pStop_hw 3.0)
+(define imp_w 39)
+
+;; Guessed geometrical parameters 
+(define sio_t -0.5)
+(define sio_overhang 2.0)
+(define imp_touch 2.0)
+
+;; Derived quantities
+(define pitch_hw (/ pitch 2.0))
+(define imp_hw (/ imp_w 2.0))
+(define neg_imp_hw (- 0 imp_hw))
+(define mid_ox_hw (- (- imp_hw sio_overhang) imp_touch))
+(define neg_mid_ox_hw (- 0 mid_ox_hw))
+(define side_ox_hw (+ (- pitch_hw imp_hw) sio_overhang))
+(define neg_side_ox_hw (- 0 side_ox_hw))
+
+;; Define helpful coordinate systems on and in between pixels
+(sdegeo:define-work-plane "XY_IMP1" (position pitch_hw 0 0) (position (+ 1 pitch_hw) 0.0000 0.0000 ) (position pitch_hw 1.0000 0 )) 
+(sdegeo:define-work-plane "XY_IMP2" (position (* 1.5 pitch) 0 0) (position (+ (* 1.5 pitch) 1) 0.0000 0.0000 ) (position (* 1.5 pitch) 1.0000 0 )) 
+(sdegeo:define-work-plane "XY_IMP3" (position (* 2.5 pitch) 0 0) (position (+ (* 2.5 pitch) 1) 0.0000 0.0000 ) (position (* 2.5 pitch) 1.0000 0 )) 
+(sdegeo:define-work-plane "XY_MID1" (position 0.000000 0 0) (position 1.000000 0.0000 0.0000 ) (position 0.000000 1.0000 0 )) 
+(sdegeo:define-work-plane "XY_MID2" (position pitch 0 0) (position (+ pitch 1) 0.0000 0.0000 ) (position pitch 1.0000 0 )) 
+(sdegeo:define-work-plane "XY_MID3" (position (* 2 pitch) 0 0) (position (+ (* 2 pitch) 1) 0.0000 0.0000 ) (position (* 2 pitch) 1.0000 0 )) 
+(sdegeo:define-work-plane "XY_MID4" (position (* 3 pitch) 0 0) (position (+ (* 3 pitch) 1) 0.0000 0.0000 ) (position (* 3 pitch) 1.0000 0 )) 
+
+;; Define electrodes
+(sdegeo:define-contact-set "BOT_electrode" 4  (color:rgb 1 0 0 ) "##")
+(sdegeo:define-contact-set "IMP1_electrode" 4  (color:rgb 1 0 0 ) "##")
+(sdegeo:define-contact-set "IMP2_electrode" 4  (color:rgb 1 0 0 ) "##")
+(sdegeo:define-contact-set "IMP3_electrode" 4  (color:rgb 1 0 0 ) "##")
+
+;; Construct the geometry 
+(sdegeo:create-rectangle (position 0 0 0.0)  (position (* 3 pitch) gap 0.0) "Silicon" "bulk")
+
+(sdegeo:set-active-work-plane "XY_IMP1")
+			(sdegeo:create-rectangle (position (- neg_imp_hw al_overhang) 0 0.0)  (position (+ imp_hw al_overhang) -1.500000 0.0) "Aluminum" "IMP1_AL") 
+			(sdedr:define-refeval-window "IMP1_line" "Line" (position neg_imp_hw 0 0) (position imp_hw 0 0))
+			(sdegeo:create-rectangle (position neg_mid_ox_hw 0 0.0)  (position mid_ox_hw sio_t 0.0) "SiO2" "MID_OX1")
+(sdegeo:set-active-work-plane "XY_IMP2")
+			(sdegeo:create-rectangle (position (- neg_imp_hw al_overhang) 0 0.0)  (position (+ imp_hw al_overhang) -1.500000 0.0) "Aluminum" "IMP2_AL") 
+			(sdedr:define-refeval-window "IMP2_line" "Line" (position neg_imp_hw 0 0) (position imp_hw 0 0))
+			(sdegeo:create-rectangle (position neg_mid_ox_hw 0 0.0)  (position mid_ox_hw sio_t 0.0) "SiO2" "MID_OX2")
+(sdegeo:set-active-work-plane "XY_IMP3")
+			(sdegeo:create-rectangle (position (- neg_imp_hw al_overhang) 0 0.0)  (position (+ imp_hw al_overhang) -1.500000 0.0) "Aluminum" "IMP3_AL") 
+			(sdedr:define-refeval-window "IMP3_line" "Line" (position neg_imp_hw 0 0) (position imp_hw 0 0))
+			(sdegeo:create-rectangle (position neg_mid_ox_hw 0 0.0)  (position mid_ox_hw sio_t 0.0) "SiO2" "MID_OX3")
+
+(sdegeo:set-active-work-plane "base")
+(sdedr:define-refeval-window "BOT_IMP_line" "Line" (position 0 gap 0) (position (* 3 pitch) gap 0))
+(sdegeo:set-current-contact-set "BOT_electrode")
+(sdegeo:set-contact-edges (list (car (find-edge-id (position 1 gap 0)))) "BOT_electrode")
+
+(sdegeo:set-active-work-plane "XY_MID1")
+		(sdegeo:create-rectangle (position 0.000000 0 0.0)  (position side_ox_hw -0.500000 0.0) "SiO2" "OX1")
+		(sdedr:define-refeval-window "PSTOP1_line" "Line" (position 0.000000 0 0) (position pStop_hw 0 0))
+(sdegeo:set-active-work-plane "XY_MID2")
+		(sdegeo:create-rectangle (position neg_side_ox_hw 0 0.0)  (position side_ox_hw -0.500000 0.0) "SiO2" "OX2")
+		(sdedr:define-refeval-window "PSTOP2_line" "Line" (position (- pStop_hw) 0 0) (position pStop_hw 0 0))
+(sdegeo:set-active-work-plane "XY_MID3")
+		(sdegeo:create-rectangle (position neg_side_ox_hw 0 0.0)  (position side_ox_hw -0.500000 0.0) "SiO2" "OX3")
+		(sdedr:define-refeval-window "PSTOP3_line" "Line" (position (- pStop_hw) 0 0) (position pStop_hw 0 0))
+(sdegeo:set-active-work-plane "XY_MID4")
+		(sdegeo:create-rectangle (position neg_side_ox_hw 0 0.0)  (position 0.000000 -0.500000 0.0) "SiO2" "OX4")
+		(sdedr:define-refeval-window "PSTOP4_line" "Line" (position (- pStop_hw) 0 0) (position 0.000000 0 0))
+
+;; Define doping profiles
+(sdedr:define-constant-profile "BULK_profile" "BoronActiveConcentration" 4.7e12)
+(sdedr:define-gaussian-profile "IMP_profile" "PhosphorusActiveConcentration" "PeakPos" 0  "PeakVal" 1e19 "ValueAtDepth" 1000000000000.000000 "Depth" 2.4 "Gauss"  "Factor" 0.800000)
+(sdedr:define-gaussian-profile "BOT_IMP_profile" "BoronActiveConcentration" "PeakPos" 0  "PeakVal" 1e19 "ValueAtDepth"  1000000000000.000000 "Depth" 2 "Gauss"  "Factor" 0.800000 )
+(sdedr:define-gaussian-profile "PSTOP_profile" "BoronActiveConcentration" "PeakPos" 0  "PeakVal" 1e15 "ValueAtDepth" 100000000000.000000 "Depth" 1.5 "Gauss"  "Factor" 0.800000)
+
+;; Place doping profiles 
+(sdedr:define-constant-profile-material "BULK_placement" "BULK_profile" "Silicon")
+(sdedr:define-analytical-profile-placement "BOT_IMP_placement" "BOT_IMP_profile" "BOT_IMP_line" "Both" "NoReplace" "Eval")
+(sdedr:define-analytical-profile-placement "IMP1_placement" "IMP_profile" "IMP1_line" "Both" "NoReplace" "Eval")
+(sdedr:define-analytical-profile-placement "IMP2_placement" "IMP_profile" "IMP2_line" "Both" "NoReplace" "Eval")
+(sdedr:define-analytical-profile-placement "IMP3_placement" "IMP_profile" "IMP3_line" "Both" "NoReplace" "Eval")
+(sdedr:define-analytical-profile-placement "PSTOP1_placement" "PSTOP_profile" "PSTOP1_line" "Both" "NoReplace" "Eval")
+(sdedr:define-analytical-profile-placement "PSTOP2_placement" "PSTOP_profile" "PSTOP2_line" "Both" "NoReplace" "Eval")
+(sdedr:define-analytical-profile-placement "PSTOP3_placement" "PSTOP_profile" "PSTOP3_line" "Both" "NoReplace" "Eval")
+(sdedr:define-analytical-profile-placement "PSTOP4_placement" "PSTOP_profile" "PSTOP4_line" "Both" "NoReplace" "Eval")
+
+;; Place electrodes 
+(sdegeo:set-active-work-plane "XY_IMP1")
+					(sdegeo:set-current-contact-set "IMP1_electrode")
+					(sdegeo:delete-region (list (car (find-body-id (position 0.000000 -1.400000  0)))))		
+					(sdegeo:set-contact-edges (list (car (find-edge-id (position 0 sio_t 0)))) "IMP1_electrode")
+					(sdegeo:set-contact-edges (list (car (find-edge-id (position (- neg_imp_hw (/ al_overhang 2.0)) sio_t 0)))) "IMP1_electrode")
+					(sdegeo:set-contact-edges (list (car (find-edge-id (position (+ imp_hw (/ al_overhang 2.0)) sio_t 0)))) "IMP1_electrode")
+					(sdegeo:set-contact-edges (list (car (find-edge-id (position (- neg_mid_ox_hw (/ imp_touch 2.0)) 0 0)))) "IMP1_electrode")
+					(sdegeo:set-contact-edges (list (car (find-edge-id (position (+ mid_ox_hw (/ imp_touch 2.0)) 0 0)))) "IMP1_electrode")
+					(sdegeo:set-contact-edges (list (car (find-edge-id (position neg_mid_ox_hw (/ sio_t 2.0) 0)))) "IMP1_electrode")
+					(sdegeo:set-contact-edges (list (car (find-edge-id (position (- neg_mid_ox_hw imp_touch) (/ sio_t 2.0) 0)))) "IMP1_electrode")
+					(sdegeo:set-contact-edges (list (car (find-edge-id (position mid_ox_hw (/ sio_t 2.0) 0)))) "IMP1_electrode")
+					(sdegeo:set-contact-edges (list (car (find-edge-id (position (+ mid_ox_hw imp_touch) (/ sio_t 2.0) 0)))) "IMP1_electrode")
+(sdegeo:set-active-work-plane "XY_IMP2")
+					(sdegeo:set-current-contact-set "IMP2_electrode")
+					(sdegeo:delete-region (list (car (find-body-id (position 0.000000 -1.400000  0)))))		
+					(sdegeo:set-contact-edges (list (car (find-edge-id (position 0 sio_t 0)))) "IMP2_electrode")
+					(sdegeo:set-contact-edges (list (car (find-edge-id (position (- neg_imp_hw (/ al_overhang 2.0)) sio_t 0)))) "IMP2_electrode")
+					(sdegeo:set-contact-edges (list (car (find-edge-id (position (+ imp_hw (/ al_overhang 2.0)) sio_t 0)))) "IMP2_electrode")
+					(sdegeo:set-contact-edges (list (car (find-edge-id (position (- neg_mid_ox_hw (/ imp_touch 2.0)) 0 0)))) "IMP2_electrode")
+					(sdegeo:set-contact-edges (list (car (find-edge-id (position (+ mid_ox_hw (/ imp_touch 2.0)) 0 0)))) "IMP2_electrode")
+					(sdegeo:set-contact-edges (list (car (find-edge-id (position neg_mid_ox_hw (/ sio_t 2.0) 0)))) "IMP2_electrode")
+					(sdegeo:set-contact-edges (list (car (find-edge-id (position (- neg_mid_ox_hw imp_touch) (/ sio_t 2.0) 0)))) "IMP2_electrode")
+					(sdegeo:set-contact-edges (list (car (find-edge-id (position mid_ox_hw (/ sio_t 2.0) 0)))) "IMP2_electrode")
+					(sdegeo:set-contact-edges (list (car (find-edge-id (position (+ mid_ox_hw imp_touch) (/ sio_t 2.0) 0)))) "IMP2_electrode")
+(sdegeo:set-active-work-plane "XY_IMP3")
+					(sdegeo:set-current-contact-set "IMP3_electrode")
+					(sdegeo:delete-region (list (car (find-body-id (position 0.000000 -1.400000  0)))))		
+					(sdegeo:set-contact-edges (list (car (find-edge-id (position 0 sio_t 0)))) "IMP3_electrode")
+					(sdegeo:set-contact-edges (list (car (find-edge-id (position (- neg_imp_hw (/ al_overhang 2.0)) sio_t 0)))) "IMP3_electrode")
+					(sdegeo:set-contact-edges (list (car (find-edge-id (position (+ imp_hw (/ al_overhang 2.0)) sio_t 0)))) "IMP3_electrode")
+					(sdegeo:set-contact-edges (list (car (find-edge-id (position (- neg_mid_ox_hw (/ imp_touch 2.0)) 0 0)))) "IMP3_electrode")
+					(sdegeo:set-contact-edges (list (car (find-edge-id (position (+ mid_ox_hw (/ imp_touch 2.0)) 0 0)))) "IMP3_electrode")
+					(sdegeo:set-contact-edges (list (car (find-edge-id (position neg_mid_ox_hw (/ sio_t 2.0) 0)))) "IMP3_electrode")
+					(sdegeo:set-contact-edges (list (car (find-edge-id (position (- neg_mid_ox_hw imp_touch) (/ sio_t 2.0) 0)))) "IMP3_electrode")
+					(sdegeo:set-contact-edges (list (car (find-edge-id (position mid_ox_hw (/ sio_t 2.0) 0)))) "IMP3_electrode")
+					(sdegeo:set-contact-edges (list (car (find-edge-id (position (+ mid_ox_hw imp_touch) (/ sio_t 2.0) 0)))) "IMP3_electrode")
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; MESHING ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;; Define refinement profiles 
+(sdedr:define-refinement-size "REFI_ALL_def" 4 4 4 0.1 0.1 0.1 )
+(sdedr:define-refinement-size "REFI1_def" 0.6 0.6 0.6 0.2 0.2 0.2 )
+(sdedr:define-refinement-size "REFI2_def" 0.8 0.8 0.8 0.3 0.3 0.3 )
+(sdedr:define-refinement-size "REFI3_def" 2 2 2 1 1 1)
+(sdedr:define-refinement-size "REFI4_def" 3 3 3 1.5 1.5 1.5)
+(sdedr:define-refinement-size "REFI_IMP_def" 1 1 1 0.2 0.2 0.2 )
+(sdedr:define-refinement-function "REFI_IMP_def" "DopingConcentration" "MaxTransDiff" 2)
+
+;; Place reference areas 
+(sdegeo:set-active-work-plane "base")
+(sdedr:define-refeval-window "REF_ALL" "Rectangle" (position -10 (+ gap 10) 0) (position (+ (* 3 pitch) 10) -10 0))
+(sdedr:define-refeval-window "REF_IMP" "Rectangle" (position 0.000000 -1.500000 0) (position (* 3 pitch) 2.5 0))
+(sdedr:define-refeval-window "REF1_TOP" "Rectangle" (position 0.000000 -1.5 0) (position (* 3 pitch) 2.5 0))
+(sdedr:define-refeval-window "REF2_TOP" "Rectangle" (position 0.000000 0 0) (position (* 3 pitch) 5 0))
+(sdedr:define-refeval-window "REF3_TOP" "Rectangle" (position 0.000000 0 0) (position (* 3 pitch) 10 0))
+(sdedr:define-refeval-window "REF_BOT_IMP" "Rectangle" (position 0 gap 0) (position (* 3 pitch) (- gap 1.5) 0))
+(sdedr:define-refeval-window "REF1_BOT" "Rectangle" (position 0 gap 0) (position (* 3 pitch) (- gap 2.5) 0))
+(sdedr:define-refeval-window "REF2_BOT" "Rectangle" (position 0 (+ gap 1.1) 0) (position (* 3 pitch) (- gap 5) 0))
+(sdedr:define-refeval-window "REF3_BOT" "Rectangle" (position 0 (+ gap 1.1) 0) (position (* 3 pitch) (- gap 10) 0))
+
+;; Place refinement profiles
+(sdedr:define-refinement-function "REFI_IMP_def" "DopingConcentration" "MaxTransDiff" 2)
+(sdedr:define-refinement-placement "ALL_REFI_placement" "REFI_ALL_def" (list "window" "REF_ALL" ) )
+(sdedr:define-refinement-placement "IMP_REFI_placement" "REFI_IMP_def" (list "window" "REF_IMP" ) )
+(sdedr:define-refinement-placement "BOT_IMP_REFI_placement" "REFI_IMP_def" (list "window" "REF_BOT_IMP" ) )
+(sdedr:define-refinement-placement "REFI1_TOP_placement" "REFI1_def" (list "window" "REF1_TOP" ) )
+(sdedr:define-refinement-placement "REFI2_TOP_placement" "REFI2_def" (list "window" "REF2_TOP" ) )
+(sdedr:define-refinement-placement "REFI3_TOP_placement" "REFI3_def" (list "window" "REF3_TOP" ) )
+(sdedr:define-refinement-placement "REFI1_BOT_placement" "REFI1_def" (list "window" "REF1_BOT" ) )
+(sdedr:define-refinement-placement "REFI2_BOT_placement" "REFI2_def" (list "window" "REF2_BOT" ) )
+(sdedr:define-refinement-placement "REFI3_BOT_placement" "REFI3_def" (list "window" "REF3_BOT" ) )

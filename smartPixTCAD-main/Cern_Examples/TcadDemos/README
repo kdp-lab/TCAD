@@ -1,0 +1,19 @@
+###############################################################################
+# This is a collection of demos for Sentaurus TCAD.
+# The demos are aimed to be an introduction to use of TCAD
+# for simulation of silicon detectors.  
+#
+# The demos contains projects for:
+# 	- Simulating a basic diode before and after irradiation
+# 	- Simulating a MIP
+# 	- Simulation and export of weighting fields
+# 	- Usage of the workbench for easy variation of MIP location and 
+# 	  automatic extraction of CCE 
+#
+# The files "customSRH.par" is a file that can be included in simulation
+# by including parameter="customSRH.par" in your File{} section in your
+# simul
+#
+# All examples by Aasmund Schiager Folkestad.
+# Contact: asmund.sf@gmail.com
+###############################################################################

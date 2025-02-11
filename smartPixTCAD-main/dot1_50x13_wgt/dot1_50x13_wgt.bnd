@@ -1,0 +1,15 @@
+# Solid region
+Oxide "substrate" { cuboid [ (0,0,0) (100,125,31.25) ] }
+# Contact area
+Contact "anode" { rectangle [ (100,0,0) (100,22,4) ] }
+Contact "cathode" { rectangle [ (0,0,0) (0,200,31.25) ] }
+Contact "pixel01" { rectangle [ (100,28,0) (100,72,4) ] }
+Contact "pixel02" { rectangle [ (100,78,0) (100,122,4) ] }
+Contact "pixel10" { rectangle [ (100,0,8.5) (100,22,16.5) ] }
+Contact "pixel11" { rectangle [ (100,28,8.5) (100,72,16.5) ] }
+Contact "pixel12" { rectangle [ (100,78,8.5) (100,122,16.5) ] }
+Contact "pixel20" { rectangle [ (100,0,21) (100,22,29) ] }
+Contact "pixel21" { rectangle [ (100,28,21) (100,72,29) ] }
+Contact "pixel22" { rectangle [ (100,78,21) (100,122,29) ] }
+
+

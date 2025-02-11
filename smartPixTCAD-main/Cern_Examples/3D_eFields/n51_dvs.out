@@ -1,0 +1,402 @@
+****************************************************************************
+***                      Sentaurus Structure Editor                      ***
+***                          Version V-2024.03                           ***
+***                      (3.8727837, x86_64, Linux)                      ***
+***                                                                      ***
+***               Copyright (C) 1994-2024 Synopsys, Inc.                 ***
+***        Portions of this software are owned by Spatial Corp.          ***
+***            Copyright (C) 1986-2024. All Rights Reserved.             ***
+***                                                                      ***
+***  This software and the associated documentation are confidential     ***
+***  and proprietary to Synopsys, Inc.  Your use or disclosure of this   ***
+***  software is subject to the terms and conditions of a written        ***
+***  license agreement between you, or your company, and Synopsys, Inc.  ***
+****************************************************************************
+
+Compiled Tue Feb 13 13:20:28 PST 2024 on: sce-tcad-build01
+Running on: kdplab01
+Hardware type: x86_64
+OS name: Linux
+OS release: 5.14.0-427.20.1.el9_4.x86_64
+OS version: #1 SMP PREEMPT_DYNAMIC Mon Jun 10 08:04:28 EDT 2024
+Process ID: 85793
+
+version #3 done.
+Evaluating file n51_dvs.cmd
+
+---> (define pstop_hw 3.0)
+
+---> (define thickness 200)
+
+---> (define pitch 55.0)
+
+---> (define hPitch (/ pitch 2.0))
+
+---> (define neg_hPitch (- 0 hPitch))
+
+---> (define implant_w 39)
+
+---> (define imp_hw (/ implant_w 2.0))
+
+---> (define neg_imp_hw (- 0 (/ implant_w 2.0)))
+
+---> (define sio_overhang 2.0)
+
+---> (define sio_w (+ (- pitch implant_w) (* 2 sio_overhang)))
+
+---> (define sio_hw (/ sio_w 2.0))
+
+---> (define neg_sio_hw (- 0 sio_hw))
+
+---> (define al_overhang 4.5)
+
+---> (define al_imp_touch 2.0)
+
+---> (define sio_t -0.5)
+
+---> (define al_t -1.5)
+
+---> (define electrode_hw (- imp_hw sio_overhang))
+
+---> (define neg_electrode_hw (- 0 electrode_hw))
+
+---> (define sio_implant_w (- (- implant_w (* 2 sio_overhang)) (* 2 al_imp_touch)))
+
+---> (define sio_implant_hw (/ sio_implant_w 2.0))
+
+---> (define neg_sio_implant_hw (- 0.0 sio_implant_hw))
+
+---> (define al_implant_w (+ implant_w (* 2.0 al_overhang)))
+
+---> (define al_implant_hw (/ al_implant_w 2.0))
+
+---> (define neg_al_implant_hw (- 0.0 al_implant_hw))
+
+---> (sdegeo:set-default-boolean AB)
+
+---> (sdegeo:create-cuboid (position 0 neg_imp_hw neg_imp_hw) (position sio_t imp_hw imp_hw) SiO2 temp)
+
+---> (sdegeo:fillet (list (car (find-edge-id (position -0.25 19.5 19.5)))) 3)
+
+---> (sdegeo:fillet (list (car (find-edge-id (position -0.25 -19.5 19.5)))) 3)
+
+---> (sdegeo:fillet (list (car (find-edge-id (position -0.25 -19.5 -19.5)))) 3)
+
+---> (sdegeo:fillet (list (car (find-edge-id (position -0.25 19.5 -19.5)))) 3)
+
+---> (extract-refwindow (list (car (find-face-id (position 0 0 0)))) implant_area)
+
+---> (sdegeo:delete-region (list (car (find-body-id (position -0.25 0 0)))))
+
+---> (sdegeo:create-cuboid (position 0 neg_hPitch neg_hPitch) (position sio_t (+ neg_hPitch pstop_hw) hPitch) SiO2 SiO1temp)
+
+---> (sdegeo:create-cuboid (position 0 neg_hPitch neg_hPitch) (position sio_t hPitch (+ neg_hPitch pstop_hw)) SiO2 SiO2temp)
+
+---> (sdegeo:create-cuboid (position 0 hPitch neg_hPitch) (position sio_t (- hPitch pstop_hw) hPitch) SiO2 SiO3temp)
+
+---> (sdegeo:create-cuboid (position 0 hPitch hPitch) (position sio_t neg_hPitch (- hPitch pstop_hw)) SiO2 SiO4temp)
+
+---> (extract-refwindow (list (car (find-face-id (position 0 -26 0)))) pstop_area)
+
+---> (sdegeo:create-cuboid (position 0 neg_hPitch neg_hPitch) (position sio_t (- sio_hw hPitch) hPitch) SiO2 SiO1)
+
+---> (sdegeo:create-cuboid (position 0 neg_hPitch neg_hPitch) (position sio_t hPitch (- sio_hw hPitch)) SiO2 SiO2)
+
+---> (sdegeo:create-cuboid (position 0 hPitch neg_hPitch) (position sio_t (- hPitch sio_hw) hPitch) SiO2 SiO3)
+
+---> (sdegeo:create-cuboid (position 0 hPitch hPitch) (position sio_t neg_hPitch (- hPitch sio_hw)) SiO2 SiO4)
+
+---> (sdegeo:fillet (list (car (find-edge-id (position -0.25 -17.5 -17.5)))) 6)
+
+---> (sdegeo:fillet (list (car (find-edge-id (position -0.25 17.5 -17.5)))) 6)
+
+---> (sdegeo:fillet (list (car (find-edge-id (position -0.25 -17.5 17.5)))) 6)
+
+---> (sdegeo:fillet (list (car (find-edge-id (position -0.25 17.5 17.5)))) 6)
+
+---> (sdegeo:set-default-boolean ABA)
+
+---> (sdegeo:create-cuboid (position 0 neg_hPitch neg_hPitch) (position thickness hPitch hPitch) Silicon bulk)
+
+---> (sdedr:define-refeval-window backside_implant_area Rectangle (position thickness hPitch hPitch) (position thickness neg_hPitch neg_hPitch))
+
+---> (sdedr:define-refeval-window top_electrode_area Rectangle (position 0 (- sio_hw hPitch) (- sio_hw hPitch)) (position 0 (- hPitch sio_hw) (- hPitch sio_hw)))
+
+---> (sdegeo:define-contact-set backside_electrode 4 (color:rgb 1 0 0) ##)
+
+---> (sdegeo:define-contact-set implant_electrode 4 (color:rgb 1 0 0) ##)
+
+---> (sdegeo:define-3d-contact (list (car (find-face-id (position thickness 0 0)))) backside_electrode)
+
+Obsolete Scheme command: sdegeo:define-3d-contact. Please update your input script and replace it with sdegeo:set-contact.
+---> (sdegeo:set-default-boolean BAB)
+
+---> (sdegeo:create-cuboid (position 0 neg_sio_implant_hw neg_sio_implant_hw) (position sio_t sio_implant_hw sio_implant_hw) SiO2 MID_OX)
+
+---> (sdegeo:fillet (list (car (find-edge-id (position -0.25 15.5 15.5)))) 4.5)
+
+---> (sdegeo:fillet (list (car (find-edge-id (position -0.25 -15.5 15.5)))) 4.5)
+
+---> (sdegeo:fillet (list (car (find-edge-id (position -0.25 -15.5 -15.5)))) 4.5)
+
+---> (sdegeo:fillet (list (car (find-edge-id (position -0.25 15.5 -15.5)))) 4.5)
+
+---> (sdegeo:create-cuboid (position 0 neg_al_implant_hw neg_al_implant_hw) (position al_t al_implant_hw al_implant_hw) Aluminum AL)
+
+---> (sdegeo:fillet (list (car (find-edge-id (position -1.0 24.0 24.0)))) 9)
+
+---> (sdegeo:fillet (list (car (find-edge-id (position -1.0 -24.0 24.0)))) 9)
+
+---> (sdegeo:fillet (list (car (find-edge-id (position -1.0 -24.0 -24.0)))) 9)
+
+---> (sdegeo:fillet (list (car (find-edge-id (position -1.0 24.0 -24.0)))) 9)
+
+---> (sdegeo:set-current-contact-set implant_electrode)
+
+---> (sdegeo:set-contact-boundary-faces (list (car (find-body-id (position -0.93899522 0 0)))) implant_electrode)
+
+(sdegeo:set-contact (list (car (find-face-id (position -1 21.36396103 -21.36396103))) (car (find-face-id (position -1 0 -24))) (car (find-face-id (position -0.5 18.55330086 -18.55330086))) (car (find-face-id (position -0.5 -18.55330086 18.55330086))) (car (find-face-id (position -1 -21.36396103 -21.36396103))) (car (find-face-id (position -1 -24 0))) (car (find-face-id (position -1 -21.36396103 21.36396103))) (car (find-face-id (position -1 0 24))) (car (find-face-id (position -1 21.36396103 21.36396103))) (car (find-face-id (position -1 24 0))) (car (find-face-id (position -0.25 14.18198052 -14.18198052))) (car (find-face-id (position -0.25 14.18198052 -14.18198052))) (car (find-face-id (position -0.25 0 -15.5))) (car (find-face-id (position -0.25 0 -15.5))) (car (find-face-id (position -0.25 -14.18198052 -14.18198052))) (car (find-face-id (position -0.25 -14.18198052 -14.18198052))) (car (find-face-id (position -0.25 -15.5 0))) (car (find-face-id (position -0.25 -15.5 0))) (car (find-face-id (position -0.25 -14.18198052 14.18198052))) (car (find-face-id (position -0.25 -14.18198052 14.18198052))) (car (find-face-id (position -0.25 0 15.5))) (car (find-face-id (position -0.25 0 15.5))) (car (find-face-id (position -0.25 14.18198052 14.18198052))) (car (find-face-id (position -0.25 14.18198052 14.18198052))) (car (find-face-id (position -0.5 0.0 0.0))) (car (find-face-id (position -0.5 0.0 0.0))) (car (find-face-id (position -0.25 15.5 0))) (car (find-face-id (position -0.25 15.5 0))) (car (find-face-id (position -0.25 15.74264069 15.74264069))) (car (find-face-id (position -0.25 15.74264069 15.74264069))) (car (find-face-id (position -0.25 17.5 0))) (car (find-face-id (position -0.25 17.5 0))) (car (find-face-id (position -0.25 -15.74264069 15.74264069))) (car (find-face-id (position -0.25 -15.74264069 15.74264069))) (car (find-face-id (position -0.25 -17.5 0))) (car (find-face-id (position -0.25 -17.5 0))) (car (find-face-id (position -0.25 15.74264069 -15.74264069))) (car (find-face-id (position -0.25 15.74264069 -15.74264069))) (car (find-face-id (position -0.25 0 -17.5))) (car (find-face-id (position -0.25 0 -17.5))) (car (find-face-id (position -0.25 -15.74264069 -15.74264069))) (car (find-face-id (position -0.25 -15.74264069 -15.74264069))) (car (find-face-id (position -0.25 0 17.5))) (car (find-face-id (position -0.25 0 17.5))) (car (find-face-id (position -1.5 0.0 0.0))) (car (find-face-id (position 0 14.9623106 -14.9623106))) (car (find-face-id (position 0 14.9623106 -14.9623106)))) "implant_electrode")
+
+(sdegeo:set-contact (list (car (find-face-id (position -1 21.36396103 -21.36396103))) (car (find-face-id (position -1 0 -24))) (car (find-face-id (position -0.5 18.55330086 -18.55330086))) (car (find-face-id (position -0.5 -18.55330086 18.55330086))) (car (find-face-id (position -1 -21.36396103 -21.36396103))) (car (find-face-id (position -1 -24 0))) (car (find-face-id (position -1 -21.36396103 21.36396103))) (car (find-face-id (position -1 0 24))) (car (find-face-id (position -1 21.36396103 21.36396103))) (car (find-face-id (position -1 24 0))) (car (find-face-id (position -0.25 14.18198052 -14.18198052))) (car (find-face-id (position -0.25 14.18198052 -14.18198052))) (car (find-face-id (position -0.25 0 -15.5))) (car (find-face-id (position -0.25 0 -15.5))) (car (find-face-id (position -0.25 -14.18198052 -14.18198052))) (car (find-face-id (position -0.25 -14.18198052 -14.18198052))) (car (find-face-id (position -0.25 -15.5 0))) (car (find-face-id (position -0.25 -15.5 0))) (car (find-face-id (position -0.25 -14.18198052 14.18198052))) (car (find-face-id (position -0.25 -14.18198052 14.18198052))) (car (find-face-id (position -0.25 0 15.5))) (car (find-face-id (position -0.25 0 15.5))) (car (find-face-id (position -0.25 14.18198052 14.18198052))) (car (find-face-id (position -0.25 14.18198052 14.18198052))) (car (find-face-id (position -0.5 0.0 0.0))) (car (find-face-id (position -0.5 0.0 0.0))) (car (find-face-id (position -0.25 15.5 0))) (car (find-face-id (position -0.25 15.5 0))) (car (find-face-id (position -0.25 15.74264069 15.74264069))) (car (find-face-id (position -0.25 15.74264069 15.74264069))) (car (find-face-id (position -0.25 17.5 0))) (car (find-face-id (position -0.25 17.5 0))) (car (find-face-id (position -0.25 -15.74264069 15.74264069))) (car (find-face-id (position -0.25 -15.74264069 15.74264069))) (car (find-face-id (position -0.25 -17.5 0))) (car (find-face-id (position -0.25 -17.5 0))) (car (find-face-id (position -0.25 15.74264069 -15.74264069))) (car (find-face-id (position -0.25 15.74264069 -15.74264069))) (car (find-face-id (position -0.25 0 -17.5))) (car (find-face-id (position -0.25 0 -17.5))) (car (find-face-id (position -0.25 -15.74264069 -15.74264069))) (car (find-face-id (position -0.25 -15.74264069 -15.74264069))) (car (find-face-id (position -0.25 0 17.5))) (car (find-face-id (position -0.25 0 17.5))) (car (find-face-id (position -1.5 0.0 0.0))) (car (find-face-id (position 0 14.9623106 -14.9623106))) (car (find-face-id (position 0 14.9623106 -14.9623106)))) "implant_electrode")
+
+---> (sdegeo:delete-region (list (car (find-body-id (position -0.93899522 0 0)))))
+
+---> (sdedr:define-constant-profile bulk_profile BoronActiveConcentration 4700000000000.0)
+
+---> (sdedr:define-gaussian-profile nplus_implant_profile PhosphorusActiveConcentration PeakPos 0 PeakVal 1e+19 ValueAtDepth 1000000000000.0 Depth 2.4 Gauss Factor 0.8)
+
+---> (sdedr:define-gaussian-profile pplus_implant_profile BoronActiveConcentration PeakPos 0 PeakVal 1e+19 ValueAtDepth 1000000000000.0 Depth 2.4 Gauss Factor 0.8)
+
+---> (sdedr:define-gaussian-profile pstop_profile BoronActiveConcentration PeakPos 0 PeakVal 1e+15 ValueAtDepth 1000000000000.0 Depth 2 Gauss Factor 0.8)
+
+---> (sdedr:define-constant-profile-region bulk_placement bulk_profile bulk)
+
+---> (sdedr:define-analytical-profile-placement implant_placement nplus_implant_profile implant_area Both NoReplace Eval)
+
+---> (sdedr:define-analytical-profile-placement backside_implant_placement pplus_implant_profile backside_implant_area Both NoReplace Eval)
+
+---> (sdedr:define-analytical-profile-placement pstop_placement pstop_profile pstop_area Both NoReplace Eval)
+
+---> (sdedr:define-refeval-window RefWin_all Cuboid (position -10 30 30) (position 210 -30 -30))
+
+---> (sdedr:define-refeval-window implant_refinement_area Cuboid (position 0 hPitch hPitch) (position 2.5 neg_hPitch neg_hPitch))
+
+---> (sdedr:define-refeval-window backside_implant_refinement_area Cuboid (position thickness hPitch hPitch) (position 197.5 neg_hPitch neg_hPitch))
+
+---> (sdedr:define-refeval-window ref1top Cuboid (position 0 hPitch hPitch) (position 2.5 neg_hPitch neg_hPitch))
+
+---> (sdedr:define-refeval-window ref2top Cuboid (position -0.5 hPitch hPitch) (position 4 neg_hPitch neg_hPitch))
+
+---> (sdedr:define-refeval-window ref3top Cuboid (position 0 hPitch hPitch) (position 6 neg_hPitch neg_hPitch))
+
+---> (sdedr:define-refeval-window ref4top Cuboid (position 0 hPitch hPitch) (position 20 neg_hPitch neg_hPitch))
+
+---> (sdedr:define-refeval-window ref1bot Cuboid (position 201.1 hPitch hPitch) (position 198 neg_hPitch neg_hPitch))
+
+---> (sdedr:define-refeval-window ref2bot Cuboid (position 201.1 hPitch hPitch) (position 196 neg_hPitch neg_hPitch))
+
+---> (sdedr:define-refeval-window ref3bot Cuboid (position 201.1 hPitch hPitch) (position 194 neg_hPitch neg_hPitch))
+
+---> (sdedr:define-refinement-size Ref_all_def 5 5 5 5 5 5)
+
+---> (sdedr:define-refinement-size ref1 0.8 0.8 0.8 0.05 0.1 0.1)
+
+---> (sdedr:define-refinement-size ref2 1 1 1 0.2 0.3 0.3)
+
+---> (sdedr:define-refinement-size ref3 2 2 2 0.3 0.5 0.5)
+
+---> (sdedr:define-refinement-size ref4 2 2 2 0.75 0.75 0.75)
+
+---> (sdedr:define-refinement-size implant_refinement_def 1 2.5 2.5 0.1 0.15 0.15)
+
+---> (sdedr:define-refinement-function implant_refinement_def DopingConcentration MaxTransDiff 1)
+
+---> (sdedr:define-refinement-placement implant_refinement implant_refinement_def (list window implant_area))
+
+---> (sdedr:define-refinement-placement backside_implant_refinement implant_refinement_def (list window backside_implant_area))
+
+---> (sdedr:define-refinement-placement Everything_refinement Ref_all_def (list window RefWin_all))
+
+---> (sdedr:define-refinement-placement ref1_top_refinement ref1 (list window ref1top))
+
+---> (sdedr:define-refinement-placement ref2_top_refinement ref2 (list window ref2top))
+
+---> (sdedr:define-refinement-placement ref3_top_refinement ref3 (list window ref3top))
+
+---> (sdedr:define-refinement-placement ref4_top_refinement ref4 (list window ref4top))
+
+---> (sdedr:define-refinement-placement ref1_bot_refinement ref1 (list window ref1bot))
+
+---> (sdedr:define-refinement-placement ref2_bot_refinement ref2 (list window ref2bot))
+
+---> (sdedr:define-refinement-placement ref3_bot_refinement ref3 (list window ref3bot))
+
+---> (sde:build-mesh snmesh  n51_msh)
+
+****************************************************************************
+***                            Sentaurus Mesh                            ***
+***                          Version V-2024.03                           ***
+***                      (3.8727837, x86_64, Linux)                      ***
+***                                                                      ***
+***                       Copyright (C) 2005-2024                        ***
+***                            Synopsys, Inc.                            ***
+***                                                                      ***
+***  This software and the associated documentation are confidential     ***
+***  and proprietary to Synopsys, Inc.  Your use or disclosure of this   ***
+***  software is subject to the terms and conditions of a written        ***
+***  license agreement between you, or your company, and Synopsys, Inc.  ***
+****************************************************************************
+
+Compiled Tue Feb 13 13:25:22 PST 2024 on: sce-tcad-build01
+Running on: kdplab01
+Hardware type: x86_64
+OS name: Linux
+OS release: 5.14.0-427.20.1.el9_4.x86_64
+OS version: #1 SMP PREEMPT_DYNAMIC Mon Jun 10 08:04:28 EDT 2024
+Process ID: 85827
+
+Flags used:
+
+
+===============================  brep quality  ===================================
+minAngle: 0.520856  [near (-0 -27.5 27.5)]
+maxAngle: 165  [near (-0 15.5 -11)]
+minDihedralAngle: 90  [near (-0 -11 -15.5),(-0 -12.1647 -15.3467)] at region=MID_OX
+nVerts = 152  nTris = 358  nRegs = 5
+bmin: -0.5 -27.5 -27.5
+bmax: 200 27.5 27.5
+min edgeLength: 0.5  [near (-0.25 14.8971 -13.25)]
+min area: 0.178586  max area: 5500  total area: 53058 interface area: 2775.08
+volume: 606388
+Conformal? true
+Are all boundaries on bbox? false
+==================================================================================
+** Generating 3d grid **
+
+
+===============================  brep quality  ===================================
+minAngle: 0.520856  [near (-0.5 27.5 27.5)]
+maxAngle: 165  [near (-0 15.5 -11)]
+minDihedralAngle: 90  [near (-0 -11 -15.5),(-0 -12.1647 -15.3467)] at region=MID_OX
+nVerts = 152  nTris = 358  nRegs = 5
+bmin: -0.5 -27.5 -27.5
+bmax: 200 27.5 27.5
+min edgeLength: 0.5  [near (-0.25 14.8971 -13.25)]
+min area: 0.178586  max area: 5500  total area: 53058 interface area: 2775.08
+volume: 606388
+Conformal? true
+Are all boundaries on bbox? false
+==================================================================================
+Creating binary tree...done.
+Smoothing out binary tree...done.
+Imprinting binary tree on the boundary...done.
+Optimizing boundary nodes...done.
+
+===============================  brep quality  ===================================
+minAngle: 0.30746  [near (0 14.1797 -14.1837)]
+maxAngle: 165  [near (-0 14.182 -14.182)]
+minDihedralAngle: 90  [near (200 27.5 27.5),(200 27.5 27.0703)] at region=bulk
+nVerts = 60859  nTris = 122892  nRegs = 5
+bmin: -0.5 -27.5 -27.5
+bmax: 200 27.5 27.5
+min edgeLength: 0.00289089  [near (0 14.1808 -14.1829)]
+min area: 1.08151e-06  max area: 5.38452  total area: 53058 interface area: 2775.08
+volume: 606388
+Conformal? true
+Are all boundaries on bbox? false
+==================================================================================
+Number of vertices after binary tree generation : 
+  216209 (tree) + 60859 (boundary)
+
+** Delaunizing the mesh **
+
+Creating delaunizer input...
+===============================  brep quality  ===================================
+minAngle: 0.30746  [near (0 14.1797 -14.1837)]
+maxAngle: 165  [near (-0 14.182 -14.182)]
+minDihedralAngle: 90  [near (200 27.5 27.5),(200 27.5 27.0703)] at region=bulk
+nVerts = 60859  nTris = 122892  nRegs = 5
+bmin: -0.5 -27.5 -27.5
+bmax: 200 27.5 27.5
+min edgeLength: 0.00289089  [near (0 14.1808 -14.1829)]
+min area: 1.08151e-06  max area: 5.38452  total area: 53058 interface area: 2775.08
+volume: 606388
+Conformal? true
+Are all boundaries on bbox? false
+==================================================================================
+done.
+Building a generic Delaunay triangulation of the 233418 input vertices .....done.
+Setting up planar patches...done.
+Initializing protection spheres...done.
+Flipping edges...done. (233426 vertices, 1345177 elements)
+Solving ridges...done. (233490 vertices, 1345602 elements)
+Solving faces...done. (233490 vertices, 1345602 elements)
+Optimizing elements...done. (233490 vertices)
+Max. connectivity = 46 located at (0.283203;-14.1797;-14.1797)
+Eliminating slivers...done.(179.34deg 7.5e-05um^2)
+113 slivers removed 
+Slivers remaining = 18
+Max. connectivity = 50 located at (0;-21.4844;20.625)
+
+============================Report Non-Delaunay elements ============================
+Found 0 non-Delaunay elements
+Found 0 non-Delaunay boundary faces
+Found 0 non-Delaunay ridges
+==================================================================================
+
+Assign regions...done.
+Store Delaunay weight.
+
+The final mesh has: 
+  233482 points.
+ 1250382 elements.
+       5 regions.
+Max. connectivity = 50 located at (0;-21.4844;20.625)
+
+Smallest region: backside_electrode  Total volume: 0
+        MeshGen3DNew::getDelaunizerInput:      29.9s
+                 MeshGen3DNew::delaunize:        19s
+
+==============================  tet-grid quality  ================================
+    0  10  20  30  40  50  60  70  80  90 100 110 120 130 140 150 160 170 180
+ %   .   .   .   10  11  14  15   3   3  33   3   2   3   2  .   .   .   . 
+---------------------------------------------------------------------------------
+minAngle: 0.0857399  maxAngle: 179.345
+nVerts = 233482  nTets = 1250382  nMats = 3
+max connectivity (tets per node): 50 [near (0 -21.4844 20.625)]
+bmin: -0.5 -27.5 -27.5
+bmax: 200 27.5 27.5
+min edgeLength: 0.00289089  [near (-0.25 14.1818 -14.1818)]
+min volume: 1.02096e-07  max volume: 6.16976  Total volume: 606388
+bbox  volume: 606512
+Are all boundaries on bbox? false
+=================================================================================
+
+Smallest region: MID_OX  Total volume: 471.447
+Interpolating data...done.
+Adding region interfaces...done
+Saving file n51_msh.tdr...done.
+
+===============================  Timer Report===================================
+              Total Mesh Generation Time:        75s       100%
+                       Rate of #Vertices:  3.12e+03
+                          Rate of #Edges:         0
+                          Rate of #Faces:  1.63e+03
+                       Rate of #Elements:  1.67e+04
+
+                              BinaryTree:      9.68s      12.9%
+                                 Imprint:      9.23s      12.3%
+                           DelaunayInput:        25s      33.4%
+                          InsertVertices:      4.88s      6.51%
+                              Delaunizer:      3.58s      4.77%
+                        SphereProtection:      1.39s      1.85%
+                        SolveConstraints:      6.64s      8.86%
+                        OptimizeElements:    0.0405s    0.0541%
+                          Sliver Remover:      3.26s      4.35%
+                          Assign Regions:      4.05s      5.41%
+                            Time Covered:      67.8s      90.4%
+
+
+"Meshing successful"
+---> (exit)
+

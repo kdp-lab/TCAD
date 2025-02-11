@@ -1,0 +1,71 @@
+Evaluating file n1_dvs.cmd
+---> (sde:clear)
+()
+---> (sde:set-process-up-direction +z)
+#t
+---> (sdegeo:set-default-boolean ABA)
+"ABA"
+---> (sdegeo:create-cuboid (position 0 0 0) (position 100 25 6.25) Silicon substrate)
+#[body 9 1]
+---> (define ANODE (sdegeo:create-cuboid (position 101 0 0) (position 100 22 4) Metal Anode))
+ANODE
+---> (sdegeo:set-contact ANODE anode remove)
+#t
+---> (define CATHODE (sdegeo:create-cuboid (position -1 0 0) (position 0 25 6.25) Metal Cathode))
+CATHODE
+---> (sdegeo:set-contact CATHODE cathode remove)
+#t
+---> (sdedr:define-constant-profile p-_region BoronActiveConcentration 1000000000000.0)
+#t
+---> (sdedr:define-erf-profile n-type_well PhosphorusActiveConcentration SymPos 1.0 Dose 100000000000000.0 Length 0.6 Erf Factor 1.0)
+#t
+---> (sdedr:define-erf-profile p-type_well BoronActiveConcentration SymPos 1.0 Dose 100000000000000.0 Length 0.6 Erf Factor 1.0)
+#t
+---> (sdedr:define-erf-profile p-spray PhosphorusActiveConcentration SymPos 0.25 Dose 2000000000000.0 Length 0.6 Erf Factor 0.01)
+#t
+---> (sdedr:define-refeval-window bulk_region instance Cuboid (position 0 0 0) (position 100 25 6.25))
+#[body 55 1]
+---> (sdedr:define-refinement-size bulk_region 15 7.5 3 15 7.5 3)
+#t
+---> (sdedr:define-refinement-placement bulk_region instance bulk_region bulk_region instance)
+#t
+---> (sdedr:define-refeval-window p+_side instance Cuboid (position 0 0 0) (position 15 25 6.25))
+#[body 56 1]
+---> (sdedr:define-refinement-size p+_side 0.9 7.5 3 15 7.5 3)
+#t
+---> (sdedr:define-refinement-placement p+_side instance p+_side p+_side instance)
+#t
+---> (sdedr:define-refeval-window n+_side instance Cuboid (position 95 0 0) (position 100 25 6.25))
+#[body 57 1]
+---> (sdedr:define-refinement-size n+_side 0.9 0.6 0.6 6 3 3)
+#t
+---> (sdedr:define-refinement-placement n+_side instance n+_side n+_side instance)
+#t
+---> (sdedr:define-refeval-window n+_half instance Cuboid (position 85 0 0) (position 95 25 6.25))
+#[body 58 1]
+---> (sdedr:define-refinement-size n+_half 6 3 3 15 7.5 3)
+#t
+---> (sdedr:define-refinement-placement n+_half instance n+_half n+_half instance)
+#t
+---> (sdedr:define-refeval-window n-type_well region Rectangle (position 100 0 0) (position 100 24 4))
+#[body 59 1]
+---> (sdedr:define-analytical-profile-placement n-type_well instance n-type_well n-type_well region Both NoReplace Eval)
+#t
+---> (sdedr:define-refeval-window p-type_well region Rectangle (position 0 0 0) (position 0 25 6.25))
+#[body 60 1]
+---> (sdedr:define-analytical-profile-placement p-type_well instance p-type_well p-type_well region Both NoReplace Eval)
+#t
+---> (sdedr:define-refeval-window p-spray region Rectangle (position 100 0 0) (position 100 25 6.25))
+#[body 61 1]
+---> (sdedr:define-analytical-profile-placement p-spray instance p-spray p-spray region Both NoReplace Eval)
+#t
+---> (sde:save-model n1)
+#t
+---> #[end-of-file]
+"************************************************************************"
+"Sentaurus Structure Editor "
+"Start Time:    Mon Jan 20 15:24:59 2025"
+"End   Time:    Mon Jan 20 15:25:00 2025"
+"Total Execution Time (sec):    1"
+"Total System calls Time (sec): 0"
+"************************************************************************"

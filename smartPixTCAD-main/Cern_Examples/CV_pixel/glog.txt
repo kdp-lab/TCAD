@@ -1,0 +1,176 @@
+
+****************************************************************************
+***                       Sentaurus Workbench gsub                       ***
+***                          Version V-2024.03                           ***
+***                      (3.8727837, x86_64, Linux)                      ***
+***                                                                      ***
+***                Copyright (c) 1994-2024 Synopsys, Inc.                ***
+***                                                                      ***
+***  This software and the associated documentation are confidential     ***
+***  and proprietary to Synopsys, Inc.  Your use or disclosure of this   ***
+***  software is subject to the terms and conditions of a written        ***
+***  license agreement between you, or your company, and Synopsys, Inc.  ***
+****************************************************************************
+
+gsub is running on host 'kdplab01.uchicago.edu' by user 'aknicholas'
+Binary '/code/Synopsys/tcad_sentaurus_vV-2024.03/sentaurus/current/bin/../tcad/current/linux64/bin/../lib/gsub0'
+Command line options '-verbose -swb_pid 344027 -q local:default -e remaining /home/aknicholas/DB/smartPixTCAD-main/Cern_Examples/CV_pixel'
+Current directory '/home/aknicholas'
+Project organization 'Traditional'
+Some relevant environment variables:
+	STROOT=/code/Synopsys/tcad_sentaurus_vV-2024.03/sentaurus/current/bin/..
+	STRELEASE=current
+	STROOT_LIB=/code/Synopsys/tcad_sentaurus_vV-2024.03/sentaurus/current/bin/../tcad/current/lib
+	STDB=/home/aknicholas/DB
+	DATEX=/code/Synopsys/tcad_sentaurus_vV-2024.03/sentaurus/current/bin/../tcad/current/lib/datexcodes.txt
+	DISPLAY=localhost:11.0
+
+Starting swblm daemon...OK
+Project '/home/aknicholas/DB/smartPixTCAD-main/Cern_Examples/CV_pixel'
+Application mode : traditional
+12:19:00 Jul 09 2024 <CV_pixel> submitted to the batch system
+Loading global queue configuration file '/code/Synopsys/tcad_sentaurus_vV-2024.03/sentaurus/current/queues/gqueues.dat'...ok
+Loading project tree '/home/aknicholas/DB/smartPixTCAD-main/Cern_Examples/CV_pixel/gtree.dat'
+>>>>> Preprocessing the project to run in normal mode
+Loading jobs and dependence graph '"/home/aknicholas/DB/smartPixTCAD-main/Cern_Examples/CV_pixel/gexec.cmd"'
+INITIALIZING PREPROCESSOR:
+Loading project tree '/home/aknicholas/DB/smartPixTCAD-main/Cern_Examples/CV_pixel/gtree.dat'
+Loading project variables '/home/aknicholas/DB/smartPixTCAD-main/Cern_Examples/CV_pixel/gvars.dat'
+--Get files to preprocess...
+--Create file handlers...
+--Read the toolflow...
+--Analyze tool-file dependencies...
+--Read all nodes to preprocess...
+--Group nodes into experiments...
+--Get all variables...
+--Get all parameters...
+PREPROCESSOR SUCCESSFULLY INITIALIZED.
+PREPROCESSING STEP 1:
+Reading file /home/aknicholas/DB/smartPixTCAD-main/Cern_Examples/CV_pixel/sdevice_des.cmd
+Reading file /home/aknicholas/DB/smartPixTCAD-main/Cern_Examples/CV_pixel/sdevice.par
+Reading file /home/aknicholas/DB/smartPixTCAD-main/Cern_Examples/CV_pixel/svisual_vis.tcl
+PREPROCESSING STEP 2:
+---------------------------------------
+Preprocessing file /home/aknicholas/DB/smartPixTCAD-main/Cern_Examples/CV_pixel/sdevice_des.cmd for node 8
+---------------------------------------
+Preprocessing file /home/aknicholas/DB/smartPixTCAD-main/Cern_Examples/CV_pixel/sdevice.par for node 8
++++Node successfully preprocessed+++
+---------------------------------------
+Preprocessing file /home/aknicholas/DB/smartPixTCAD-main/Cern_Examples/CV_pixel/svisual_vis.tcl for node 9
++++Node successfully preprocessed+++
+---------------------------------------
+Preprocessing file /home/aknicholas/DB/smartPixTCAD-main/Cern_Examples/CV_pixel/sdevice_des.cmd for node 11
+---------------------------------------
+Preprocessing file /home/aknicholas/DB/smartPixTCAD-main/Cern_Examples/CV_pixel/sdevice.par for node 11
++++Node successfully preprocessed+++
+---------------------------------------
+Preprocessing file /home/aknicholas/DB/smartPixTCAD-main/Cern_Examples/CV_pixel/svisual_vis.tcl for node 12
++++Node successfully preprocessed+++
+Writing 'gexec.cmd'
+Loading jobs and dependence graph '"/home/aknicholas/DB/smartPixTCAD-main/Cern_Examples/CV_pixel/gexec.cmd"'
+Warning: node '4' not queued: node is virtual
+Warning: node '13' not queued: node is virtual
+Warning: node '2' not queued: node is virtual
+Warning: node '7' not queued: node is virtual
+Warning: node '10' not queued: node is virtual
+>>>>>>>>>> job '8' status changed from 'none' to 'queued'
+>>>>>>>>>> job '11' status changed from 'none' to 'queued'
+>>>>>>>>>> job '9' status changed from 'none' to 'queued'
+>>>>>>>>>> job '12' status changed from 'none' to 'queued'
+-----------------------------------------------------------------
+queue "local:default" - 8 11 9 12
+-----------------------------------------------------------------
+>>>>>>>>>> Initializing back-end schedulers...
+>>>>>>>> Loaded Schedulers are ... local
+local% initialize 'local' scheduler data
+>>>>> List of Active Schedulers : local
+<<<<<<<<<<
+>>>>>>>>>> job '8' status changed from 'queued' to 'ready'
+INITIALIZING PREPROCESSOR:
+Loading project tree '/home/aknicholas/DB/smartPixTCAD-main/Cern_Examples/CV_pixel/gtree.dat'
+Loading jobs and dependence graph '"/home/aknicholas/DB/smartPixTCAD-main/Cern_Examples/CV_pixel/gexec.cmd"'
+Loading project variables '/home/aknicholas/DB/smartPixTCAD-main/Cern_Examples/CV_pixel/gvars.dat'
+--Get files to preprocess...
+--Create file handlers...
+--Read the toolflow...
+--Analyze tool-file dependencies...
+--Read all nodes to preprocess...
+--Group nodes into experiments...
+--Get all variables...
+--Get all parameters...
+PREPROCESSOR SUCCESSFULLY INITIALIZED.
+PREPROCESSING STEP 1:
+Reading file /home/aknicholas/DB/smartPixTCAD-main/Cern_Examples/CV_pixel/sdevice_des.cmd
+Reading file /home/aknicholas/DB/smartPixTCAD-main/Cern_Examples/CV_pixel/sdevice.par
+PREPROCESSING STEP 2:
+---------------------------------------
+Preprocessing file /home/aknicholas/DB/smartPixTCAD-main/Cern_Examples/CV_pixel/sdevice_des.cmd for node 8
++++Preprocessing results written to /home/aknicholas/DB/smartPixTCAD-main/Cern_Examples/CV_pixel/pp8_des.cmd
+---------------------------------------
+Preprocessing file /home/aknicholas/DB/smartPixTCAD-main/Cern_Examples/CV_pixel/sdevice.par for node 8
++++Preprocessing results written to /home/aknicholas/DB/smartPixTCAD-main/Cern_Examples/CV_pixel/pp8_des.par
+>>>>>>>>>> os_rm /home/aknicholas/DB/smartPixTCAD-main/Cern_Examples/CV_pixel/n8_des.job
+local% submit job 8 for local execution
+>>>>>>>>>> job '8' status changed from 'ready' to 'pending'
+>>>>>>>>>> job '11' status changed from 'queued' to 'ready'
+INITIALIZING PREPROCESSOR:
+Loading project tree '/home/aknicholas/DB/smartPixTCAD-main/Cern_Examples/CV_pixel/gtree.dat'
+Loading jobs and dependence graph '"/home/aknicholas/DB/smartPixTCAD-main/Cern_Examples/CV_pixel/gexec.cmd"'
+Loading project variables '/home/aknicholas/DB/smartPixTCAD-main/Cern_Examples/CV_pixel/gvars.dat'
+--Get files to preprocess...
+--Create file handlers...
+--Read the toolflow...
+--Analyze tool-file dependencies...
+--Read all nodes to preprocess...
+--Group nodes into experiments...
+--Get all variables...
+--Get all parameters...
+PREPROCESSOR SUCCESSFULLY INITIALIZED.
+PREPROCESSING STEP 1:
+Reading file /home/aknicholas/DB/smartPixTCAD-main/Cern_Examples/CV_pixel/sdevice_des.cmd
+Reading file /home/aknicholas/DB/smartPixTCAD-main/Cern_Examples/CV_pixel/sdevice.par
+PREPROCESSING STEP 2:
+---------------------------------------
+Preprocessing file /home/aknicholas/DB/smartPixTCAD-main/Cern_Examples/CV_pixel/sdevice_des.cmd for node 11
++++Preprocessing results written to /home/aknicholas/DB/smartPixTCAD-main/Cern_Examples/CV_pixel/pp11_des.cmd
+---------------------------------------
+Preprocessing file /home/aknicholas/DB/smartPixTCAD-main/Cern_Examples/CV_pixel/sdevice.par for node 11
++++Preprocessing results written to /home/aknicholas/DB/smartPixTCAD-main/Cern_Examples/CV_pixel/pp11_des.par
+>>>>>>>>>> os_rm /home/aknicholas/DB/smartPixTCAD-main/Cern_Examples/CV_pixel/n11_des.job
+local% submit job 11 for local execution
+>>>>>>>>>> job '11' status changed from 'ready' to 'pending'
+>>>>>>>>>> job '9' status changed from 'queued' to 'ready'
+>>>>>>>>>> os_rm /home/aknicholas/DB/smartPixTCAD-main/Cern_Examples/CV_pixel/n9_vis.job
+local% submit job 9 for local execution
+>>>>>>>>>> job '9' status changed from 'ready' to 'pending'
+>>>>>>>>>> job '12' status changed from 'queued' to 'ready'
+>>>>>>>>>> os_rm /home/aknicholas/DB/smartPixTCAD-main/Cern_Examples/CV_pixel/n12_vis.job
+local% submit job 12 for local execution
+>>>>>>>>>> job '12' status changed from 'ready' to 'pending'
+local% exec /code/Synopsys/tcad_sentaurus_vV-2024.03/sentaurus/current/bin/gjob -verbose -nice 19 --max_threads 1  -job 8 -swb_pid 344027 -gsub_pid 344409 -gsub_host kdplab01.uchicago.edu -gsub_port 36763  "/home/aknicholas/DB/smartPixTCAD-main/Cern_Examples/CV_pixel"
+>>>>>>>>>> job '8' status changed from 'pending' to 'running'
+12:19:01 Jul 09 2024     job 8 <sdevice> started on host 'kdplab01': "sdevice pp8_des.cmd"
+>>>>>>>>>> job '8' status changed from 'running' to 'done'
+12:19:49 Jul 09 2024 +++ job 8 <sdevice> done: exit(0)
+local% exec /code/Synopsys/tcad_sentaurus_vV-2024.03/sentaurus/current/bin/gjob -verbose -nice 19 --max_threads 1  -job 11 -swb_pid 344027 -gsub_pid 344409 -gsub_host kdplab01.uchicago.edu -gsub_port 36763  "/home/aknicholas/DB/smartPixTCAD-main/Cern_Examples/CV_pixel"
+>>>>>>>>>> job '11' status changed from 'pending' to 'running'
+12:19:50 Jul 09 2024     job 11 <sdevice> started on host 'kdplab01': "sdevice --max_threads 1  pp11_des.cmd"
+>>>>>>>>>> job '11' status changed from 'running' to 'done'
+12:20:39 Jul 09 2024 +++ job 11 <sdevice> done: exit(0)
+local% exec /code/Synopsys/tcad_sentaurus_vV-2024.03/sentaurus/current/bin/gjob -verbose -nice 19 --threads 1 --max_threads 1  -job 9 -swb_pid 344027 -gsub_pid 344409 -gsub_host kdplab01.uchicago.edu -gsub_port 36763  "/home/aknicholas/DB/smartPixTCAD-main/Cern_Examples/CV_pixel"
+>>>>>>>>>> job '9' status changed from 'pending' to 'running'
+12:20:40 Jul 09 2024     job 9 <svisual> started on host 'kdplab01': "svisual --threads 1 --max_threads 1  n9_vis.tcl"
+>>>>>>>>>> job '9' status changed from 'running' to 'done'
+12:21:21 Jul 09 2024 +++ job 9 <svisual> done: exit(0)
+local% exec /code/Synopsys/tcad_sentaurus_vV-2024.03/sentaurus/current/bin/gjob -verbose -nice 19 --threads 1 --max_threads 1  -job 12 -swb_pid 344027 -gsub_pid 344409 -gsub_host kdplab01.uchicago.edu -gsub_port 36763  "/home/aknicholas/DB/smartPixTCAD-main/Cern_Examples/CV_pixel"
+>>>>>>>>>> job '12' status changed from 'pending' to 'running'
+12:21:22 Jul 09 2024     job 12 <svisual> started on host 'kdplab01': "svisual --threads 1 --max_threads 1  n12_vis.tcl"
+>>>>>>>>>> job '12' status changed from 'running' to 'done'
+12:21:46 Jul 09 2024 +++ job 12 <svisual> done: exit(0)
+
+SCHEDULING REPORT
++++ done     : 8 11 9 12
+
+12:21:48 Jul 09 2024 <CV_pixel> done (168 sec)
+>>>>>> Writing to status file 168
+gsub exits with status 0

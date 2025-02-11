@@ -1,0 +1,18 @@
+# Copyright (C) 1994-2011 Synopsys Inc.
+# swbtree vK-2015.06-SP2, Tue Jun 28 17:06:47 2016
+
+# --- simulation flow
+sdevice sdevice "" {}
+sdevice Qf "1e12" {4e11}
+sdevice temp "237" {273.15}
+sdevice Vb "-1000" {-250 -250}
+# --- variables
+# --- scenarios and parameter specs
+scenario default Qf ""
+scenario default temp ""
+scenario default Vb ""
+# --- simulation tree
+0 1 0 {} {default} 0
+1 49 1 {4e11} {default} 0
+2 56 49 {273.15} {default} 0
+3 57 56 {-250} {default} 0

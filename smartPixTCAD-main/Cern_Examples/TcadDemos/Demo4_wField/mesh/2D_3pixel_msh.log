@@ -1,0 +1,74 @@
+****************************************************************************
+***                            Sentaurus Mesh                            ***
+***                        Version K-2015.06-SP2                         ***
+***                        (1.14, x86_64, Linux)                         ***
+***                                                                      ***
+***                       Copyright (C) 2005-2015                        ***
+***                            Synopsys, Inc.                          ***
+***                                                                      ***
+***  This software and the associated documentation are confidential     ***
+***  and proprietary to Synopsys, Inc.  Your use or disclosure of this   ***
+***  software is subject to the terms and conditions of a written        ***
+***  license agreement between you, or your company, and Synopsys, Inc.  ***
+****************************************************************************
+
+Compiled Tue Oct 13 18:08:17 PDT 2015 on: tcadbld1
+Running on: pclhcb134
+Hardware type: x86_64
+OS name: Linux
+OS release: 2.6.32-573.26.1.el6.x86_64
+OS version: #1 SMP Wed May 4 09:23:05 CEST 2016
+Process ID: 25216
+
+Flags used: -a -c boxmethod
+
+** Generating 2d grid **
+
+Creating binary tree...done.
+Imprinting binary tree on the boundary...done.
+Optimizing boundary nodes...done.
+
+Number of vertices after binary tree generation : 
+  15385 (tree) + 1711 (boundary)
+
+** Delaunizing the mesh **
+
+Creating delaunizer input...done.
+Solving edges...done 
+Optimizing elements...done. (15912 vertices)
+Fixing diagonals...done.
+
+The final mesh has: 
+   15860 points.
+   30478 elements.
+      12 regions.
+Max. connectivity = 7 located at (3.22266;-0.108398)
+
+
+==============================  tri-grid quality  ================================
+    0  10  20  30  40  50  60  70  80  90 100 110 120 130 140 150 160 170 180
+ %   .   .    2  .   31  32  .    3   1  32                                
+---------------------------------------------------------------------------------
+minAngle: 1.42853  maxAngle: 90
+nVerts = 15860  nTris = 30478  nMats = 8
+max connectivity (tris per node): 7
+bmin: -0 -0.5
+bmax: 165 200
+min edgeLength: 0.00976562  [near (9.99512 -0.108398)]
+min volume: 0.000529289  max volume: 4.03839  Total volume: 33076.5
+bbox  volume: 33082.5
+Are all boundaries on bbox? false
+=================================================================================
+Interpolating data...done.
+done.
+Saving file /scratch/cernbox/presentation/TCAD_lesson/Sentaurus-TCAD-tutorials/Demo4_wField/mesh/2D_3pixel_msh.tdr...done.
+
+===============================  Timer Report===================================
+              Total Mesh Generation Time:       1.3s       100%
+                       Rate of #Vertices:  1.22e+04
+                          Rate of #Edges:  2.35e+04
+                          Rate of #Faces:  2.34e+04
+                       Rate of #Elements:         0
+
+                            Time Covered:         0s         0%
+

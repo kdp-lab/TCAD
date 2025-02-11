@@ -1,0 +1,56 @@
+###########################################
+# Sentaurus Visual V-2024.03.
+# Tcl log file.
+#------------------------------------------
+# Date: Nov 12, 2024. 14:28:31.
+# Version: 35.3.8727837 (3.8727837)
+# Mode: Interactive (GUI).
+# Mesa: enabled.
+# Hostname: kdplab01.
+# Machine: Linux, x86_64, x86_64.
+# Kernel: 5.14.0-427.40.1.el9_4.x86_64.
+###########################################
+
+load_file /home/aknicholas/DB/smartPixTCAD-main/dot1_50x13_phase3_updated/smartpix/n3_200_des.tdr -fod
+create_plot -dataset n3_200_des
+select_plots {Plot_n3_200_des}
+#-> Plot_n3_200_des
+#-> Plot_n3_200_des
+#-> n3_200_des
+set_field_prop eDensity -plot Plot_n3_200_des -geom n3_200_des -show_bands
+#-> 0
+set_field_prop hDensity -plot Plot_n3_200_des -geom n3_200_des -show_bands
+#-> 0
+set_field_prop eDensity -plot Plot_n3_200_des -geom n3_200_des -show_bands
+#-> 0
+set_field_prop Abs(ElectricField-V) -plot Plot_n3_200_des -geom n3_200_des -show_bands
+#-> 0
+set_field_prop Abs(ElectricField-V) -plot Plot_n3_200_des -geom n3_200_des -hide_bands
+#-> 0
+set_field_prop ElectricField-X -plot Plot_n3_200_des -geom n3_200_des -show_bands
+#-> 0
+zoom_plot -plot Plot_n3_200_des -factor 0.953463
+set_field_prop ElectricField-X -plot Plot_n3_200_des -geom n3_200_des -hide_bands
+#-> 0
+set_field_prop Abs(ElectricField-V) -plot Plot_n3_200_des -geom n3_200_des -show_bands
+#-> 0
+set_field_prop Abs(ElectricField-V) -plot Plot_n3_200_des -geom n3_200_des -hide_bands
+#-> 0
+set_field_prop ElectrostaticPotential -plot Plot_n3_200_des -geom n3_200_des -show_bands
+#-> 0
+set_material_prop {Silicon} -plot Plot_n3_200_des -geom n3_200_des -show_mesh
+#-> 0
+set_material_prop {Contact Silicon} -plot Plot_n3_200_des -geom n3_200_des -show_mesh
+#-> 0
+set_material_prop {Contact Silicon} -plot Plot_n3_200_des -geom n3_200_des -hide_mesh
+#-> 0
+set_material_prop {Silicon} -plot Plot_n3_200_des -geom n3_200_des -show_mesh
+#-> 0
+set_field_prop ElectrostaticPotential -plot Plot_n3_200_des -geom n3_200_des -hide_bands
+#-> 0
+set_field_prop ElectrostaticPotential -plot Plot_n3_200_des -geom n3_200_des -show
+#-> 0
+set_material_prop {Silicon} -plot Plot_n3_200_des -geom n3_200_des -hide_mesh
+#-> 0
+set_field_prop ElectrostaticPotential -plot Plot_n3_200_des -geom n3_200_des -show_bands
+#-> 0

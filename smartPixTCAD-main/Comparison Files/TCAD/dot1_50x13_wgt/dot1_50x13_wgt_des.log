@@ -1,0 +1,632 @@
+*******************************************************************
+                      DESSIS - version 9.0.3
+              (compiled Tue Jun  3 04:58:39 CEST 2003)
+
+   Copyright (c) 1994-2003 ISE Integrated Systems Engineering AG
+                        Zurich, Switzerland
+*******************************************************************
+
+	Running on machine with the following configuration:
+	Host Name: castor.pha.jhu.edu
+	Operating System: Linux rel. 2.4.21-52.ELsmp ver. #1 SMP Fri Sep 28 13:31:57 CDT 2007
+	Machine Type: i686
+	Domain Name: (none)
+	Date: Fri Nov 10 14:09:33 2006  (EDT)
+
+OMP_NUM_THREADS == 4
+Input file: dot1_50x13_wgt_des.cmd
+
+Output file: dot1_50x13_wgt_des.log
+
+no ACExtract file
+
+PMIPath file: /usr/local/tcad/tcad/current/ix86/2.2/lib/dessis
+
+CMIPath file: /usr/local/tcad/tcad/current/ix86/2.2/lib/dessis
+
+SPICEPath file: /usr/local/tcad/tcad/current/lib/dessis/spice
+
+no DESSISPath file
+
+no CIRCUITSAVENAME file
+
+no CIRCUITLOADNAME file
+
+Numerical parameters:
+  Absolute error : 
+    Poisson : 1.0000e-03
+    Electron : 1.0000e-05
+    Hole : 1.0000e-05
+    Photon-Rate-Equation : 1.0000e-05
+    Rate-Stabilize-Equation : 1.0000e-05
+    QW-Scattering-Equations : 1.0000e-05
+    QW-eScattering-Equation : 1.0000e-05
+    QW-hScattering-Equation : 1.0000e-05
+    Optical Problem : 1.0000e-03
+    Wavelength : 1.0000e-03
+    Lattice-Temperature : 1.0000e-04
+    Electron-Temperature : 1.0000e-04
+    Hole-Temperature : 1.0000e-04
+    Lattice-Hole-Electron-Temperature : 1.0000e-03
+    Circuit : 1.0000e-03
+    TCircuit : 1.0000e-03
+    Contact : 1.0000e-03
+    TContact : 1.0000e-03
+    Continuation : 1.0000e-03
+    eLaplace : 1.0000e-03
+    hLaplace : 1.0000e-03
+    tLaplace : 1.0000e-03
+    MonteCarlo : 1.0000e-03
+    MCPoissonPDE : 1.0000e-03
+    eQuantumPotential : 1.0000e-03
+    hQuantumPotential : 1.0000e-03
+    quasi-fermi-potential : 1.0000e-03
+  RelErrControl (Reference error): 
+    Poisson : 0.025852
+    Electron : 1.0000e+10
+    Hole : 1.0000e+10
+    Photon-Rate-Equation : 1
+    Rate-Stabilize-Equation : 1
+    QW-Scattering-Equations : 1.0000e+10
+    QW-eScattering-Equation : 1.0000e+10
+    QW-hScattering-Equation : 1.0000e+10
+    Optical Problem : 1
+    Wavelength : 1
+    Lattice-Temperature : 3.0000e+02
+    Electron-Temperature : 3.0000e+02
+    Hole-Temperature : 3.0000e+02
+    Lattice-Hole-Electron-Temperature : 3.0000e+02
+    Circuit : 1
+    TCircuit : 1
+    Contact : 0.025852
+    TContact : 1
+    Continuation : 1
+    eLaplace : 1
+    hLaplace : 1
+    tLaplace : 1
+    MonteCarlo : 1
+    MCPoissonPDE : 1
+    eQuantumPotential : 0.025852
+    hQuantumPotential : 0.025852
+    quasi-fermi-potential : 0.025852
+  Relative error : 4.5 digits
+  Without checked transient error
+  Max. #iterations : 100
+  LineSearchDamping=1
+  #undamped iterations : 1000
+  transient method : TR-BDF
+  Linear solver : Pardiso
+  Nonlinear solver : Bank
+  do not use extrapolation in transient/quasistationary computations
+  use complex supernodal in ac-analysis (if possible)
+  do not use smoothed PDE's in transient/quasistationary computations
+  use automatic coupling of contact/circuit stuff
+  convert Bonsim models to Spice models
+  Spice temperature: 3.0015e+02
+  Spice minimum conductance gmin: 1.0000e-12
+  do not use default parameters from Dessis 5.0
+  Mininum |rhs| : 1.0000e-05
+  Maximum |rhs| : 1.0000e+15
+  Maximum |rhs| factor : 1.0000e+10
+  Number of threads: 1 (default)
+  Thread stacksize: 1000000 bytes (default)
+
+Default device parameters:
+  Electrodes:
+    "anode" : 0.0000e+00 V (Ohmic), area factor : 1
+    "cathode" : 0.0000e+00 V (Ohmic), area factor : 1
+    "pixel01" : 0.0000e+00 V (Ohmic), area factor : 1
+    "pixel02" : 0.0000e+00 V (Ohmic), area factor : 1
+    "pixel10" : 0.0000e+00 V (Ohmic), area factor : 1
+    "pixel11" : 0.0000e+00 V (Ohmic), area factor : 1
+    "pixel12" : 0.0000e+00 V (Ohmic), area factor : 1
+    "pixel20" : 0.0000e+00 V (Ohmic), area factor : 1
+    "pixel21" : 0.0000e+00 V (Ohmic), area factor : 1
+    "pixel22" : 0.0000e+00 V (Ohmic), area factor : 1
+  Files:
+    no Boundary file
+    Grid file: dot1_50x13_wgt_msh.grd
+    Doping file: dot1_50x13_wgt_msh.dat
+    no Load file
+    no Save file
+    Plot file: dot1_50x13_wgt_des.dat
+    no Path file
+    no optical-Generation file
+    no Lifetime file
+    no Temperature file
+    Current file: dot1_50x13_wgt_des.plt
+    no PMIUserFields file
+    no ModelParameters file
+    no Piezo file
+    no ModeGain file
+    no OpticalFarField file
+    no OpticalIntensityPattern file
+    no SaveOpticalIntensityPattern file
+    no OpticalXYAnglePattern file
+    no SaveOpticalXYAnglePattern file
+    no MonteCarloInput file
+    no MonteCarloOutput file
+    no ACPlot file
+-----------------------------------------------
+  Numerical parameters:
+    Without exact derivatives
+    Without avalanche derivatives
+    AvalMobDerivatives flag ignored as it is always set 
+    Without edge-wise discretization derivatives
+    Without self-consistent Wavelength Calculation
+    Without self-consistent Wavelength Calculation
+    Without self-consistent Optical Field Calculation
+    Without edge-wise magnetic discretization
+    Do not reinitialize quasi Fermi potentials in quasi-stationary simulations
+    Ignore ionization integral constraints
+    Without diagonal preconditioning
+    Solve non-coupled continuity equations in densities
+    Solve coupled continuity equations in densities
+    With Scharfetter-Gummel Discretization
+    Relative error : 4.5 digits
+    Delta for numerical tunnelling derivatives : 1.0000e-03
+    Do not compute breakdown paths and ionization integrals
+    QuasiFermiPotential is used for Contact Equation
+-----------------------------------------------
+-----------------------------------------------
+  Physical models:
+    Without incomplete ionization
+    Use Si parameters
+    Without SRH-Recombination
+    Without CDL-Recombination
+    Without Non Local Barrier Tunneling
+    Without Band-to-Band-Tunneling
+    Without Auger-Recombination
+    Without Radiative Recombination
+    Without Surface-Recombination
+    Without Trap-Assisted-Auger-Recombination
+    PMI recombination models: none
+  Without Piezo
+  Without Anisotropic Material Properties
+  Without Avalanche-Generation 
+  Without Energy Gap Levels
+  Without Alpha Particle
+  Without Heavy Ion
+  Without polarization
+  Volume charge density: 0.0000e+00 cm^-3
+  Device Temperature = 2.6300e+02 K
+  Without MagneticField
+  Intrinsic density models:
+    default bandgap model
+    Bandgap narrowing model: Bennett/Wilson with bandgap narrowing (no Fermi)
+  default affinity model
+  default effective mass model
+  CVT mobility model
+  Mobility dependence:
+    no Doping dependence
+    no E_normal dependence
+    no high-field saturation
+    no Carrier-Carrier scattering
+  LimitOfLatticeTemperature = 1.0000e+30
+  Energy relaxation time model: according to formula in parameter file
+  Lattice thermal conductivity model: according to formula in parameter file
+  Lattice heat capacity model: temperature dependent
+  no piezoelectric polarization model
+-----------------------------------------------
+Plot variables:
+  ElectrostaticPotential	
+------------------------------------------------
+NoisePlot variables:
+  none
+Plot groups:
+  none
+------------------------------------------------
+CurrentPlot variables:
+  none
+Devices:
+Systems:
+Solve :
+Poisson 
+Quasistationary ( Digits : 4.5, Max. #iterations : 100, 
+      Initial step in t : 0.05, 
+      Minimum step in t : 1.0000e-03, Maximum step in t : 1, 
+      Increment : 1.5, Decrement : 1.5, 
+      Goal values :
+        Contact anode : 1V
+    )
+  {
+    Poisson 
+  }
+Quasistationary ( Digits : 4.5, Max. #iterations : 100, 
+      Initial step in t : 0.1, 
+      Minimum step in t : 1.0000e-03, Maximum step in t : 1, 
+      Increment : 1.05, Decrement : 1.05, 
+      Goal values :
+        Contact anode : 1V
+    )
+  {
+    Poisson 
+  }
+Save( FilePrefix = "dot1_50x13_wgt_1" overwrite )
+  { }
+Plot( FilePrefix = "dot1_50x13_wgt_1" overwrite )
+  { }
+
+
+Solving the following problem(s):
+Reading grid 'dot1_50x13_wgt_msh.grd'... done.
+(Number of grid points is 12390.)
+
+Adding interfaces ... done.
+Computing edges ... done.
+Reading doping 'dot1_50x13_wgt_msh.dat'... done.
+Computing boxes ...
+  ElementWithMinVolume(  9247) Vertex0( 5512)( 1.000000e+02, 2.193750e+01, 3.906250e+00) Volume = 1.525879e-03 um3 (3.91e-09 from TotalVolume)
+    ElementWithMinEdge( 15564) Vertex0(11489)( 9.375000e+01, 1.220625e+02, 0.000000e+00) Length = 6.250000e-02 um
+   ElementWithMinAngle(  8789) Vertex0( 5484)( 9.843750e+01, 2.193750e+01, 1.953125e+00)  Angle = 4.318509e+00 degrees 
+
+  Computing Voronoi faces, coefficients, and measures ... 
+  TruncatedElementRatio = 0.0000e+00
+  TruncatedScheme = MaterialBoundaryTruncatedVoronoiBox
+
+    Computing Obtuse Elements ... 
+                       NumberOfVertices =  13700 
+                       NumberOfElements =  21996 
+                   NumberOfTetrahedrons =  10347  (47.04 %)
+                       NumberOfPyramids =   4299  (19.54 %)
+                         NumberOfBricks =   7350  (33.42 %)
+                 NumberOfObtuseElements =   3562  (16.19 %)
+            NumberOfNonDelaunayElements =      0  ( 0.00 %)
+              NumberOfTruncatedElements =      0  ( 0.00 %)
+
+      Obtuse Element time:   0.04 s
+      New Parameters time:   0.14 s
+
+      TotalVolume          = 3.906250000000e+05 um3 
+      BoxMethodTotalVolume = 3.906250000000e+05 um3 (DeltaVolume = 0.000000 %)
+    done.
+  done.
+  (times: wc = 0.21 s, tcpu = 0.21 s)
+done.
+
+
+=======
+Region: "substrate" (material is "Oxide")
+=======
+  Constants are not modified and equal to default ones
+
+==========
+Electrode: "anode"
+==========
+  Constants are not modified and equal to default ones
+
+==========
+Electrode: "cathode"
+==========
+  Constants are not modified and equal to default ones
+
+==========
+Electrode: "pixel01"
+==========
+  Constants are not modified and equal to default ones
+
+==========
+Electrode: "pixel02"
+==========
+  Constants are not modified and equal to default ones
+
+==========
+Electrode: "pixel10"
+==========
+  Constants are not modified and equal to default ones
+
+==========
+Electrode: "pixel11"
+==========
+  Constants are not modified and equal to default ones
+
+==========
+Electrode: "pixel12"
+==========
+  Constants are not modified and equal to default ones
+
+==========
+Electrode: "pixel20"
+==========
+  Constants are not modified and equal to default ones
+
+==========
+Electrode: "pixel21"
+==========
+  Constants are not modified and equal to default ones
+
+==========
+Electrode: "pixel22"
+==========
+  Constants are not modified and equal to default ones
+
+Use doping species (P) concentrations from file (Species => Na,Nd)!
+No doping concentration in doping file (Species => Nnet)!
+No total doping concentration in doping file (Species => Ntot)!
+
+
+
+With Constant Reference Potential:
+  Parameters of Reference Semiconductor:
+    The Electron Affinity: 4.05
+    The Band Gap: 1.165
+    The Electron DOS: 2.8000e+19
+    The Hole DOS: 1.0400e+19
+  The Constant Reference Potential: 4.6453
+
+===============================
+Starting solve of next problem:
+Poisson 
+===============================
+
+Computing poisson-equation 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      0.00e+00
+Finished, because |RHS| is less than 1.0000e-10.
+
+contact        voltage     electron current    hole current  conduction current
+ anode        0.000E+00       0.000E+00         0.000E+00        0.000E+00
+ cathode      0.000E+00       0.000E+00         0.000E+00        0.000E+00
+ pixel01      0.000E+00       0.000E+00         0.000E+00        0.000E+00
+ pixel02      0.000E+00       0.000E+00         0.000E+00        0.000E+00
+ pixel10      0.000E+00       0.000E+00         0.000E+00        0.000E+00
+ pixel11      0.000E+00       0.000E+00         0.000E+00        0.000E+00
+ pixel12      0.000E+00       0.000E+00         0.000E+00        0.000E+00
+ pixel20      0.000E+00       0.000E+00         0.000E+00        0.000E+00
+ pixel21      0.000E+00       0.000E+00         0.000E+00        0.000E+00
+ pixel22      0.000E+00       0.000E+00         0.000E+00        0.000E+00
+
+
+===============================
+Starting solve of next problem:
+Quasistationary ( Digits : 4.5, Max. #iterations : 100, 
+      Initial step in t : 0.05, 
+      Minimum step in t : 1.0000e-03, Maximum step in t : 1, 
+      Increment : 1.5, Decrement : 1.5, 
+      Goal values :
+        Contact anode : 1V
+    )
+  {
+    Poisson 
+  }
+===============================
+
+Computing poisson-equation 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      0.00e+00
+Finished, because |RHS| is less than 1.0000e-10.
+
+Computing step from t=0.0000e+00 to t=0.05 (Stepsize: 0.05) :
+Computing poisson-equation 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      2.61e-02
+    1      1.29e-16   1.00e+00   3.46e-01   5.53e+03    0         1      0.17
+Finished, because...
+|RHS| less than 1.0000e-05.
+
+Accumulated times:
+Rhs time:        0.00 s
+Jacobian time:   0.01 s
+Solve time:      0.16 s
+Total time:      0.17 s
+
+contact        voltage     electron current    hole current  conduction current
+ anode        5.000E-02       0.000E+00         0.000E+00        0.000E+00
+ cathode      0.000E+00       0.000E+00         0.000E+00        0.000E+00
+ pixel01      0.000E+00       0.000E+00         0.000E+00        0.000E+00
+ pixel02      0.000E+00       0.000E+00         0.000E+00        0.000E+00
+ pixel10      0.000E+00       0.000E+00         0.000E+00        0.000E+00
+ pixel11      0.000E+00       0.000E+00         0.000E+00        0.000E+00
+ pixel12      0.000E+00       0.000E+00         0.000E+00        0.000E+00
+ pixel20      0.000E+00       0.000E+00         0.000E+00        0.000E+00
+ pixel21      0.000E+00       0.000E+00         0.000E+00        0.000E+00
+ pixel22      0.000E+00       0.000E+00         0.000E+00        0.000E+00
+
+Computing step from t=0.05 to t=0.125 (Stepsize: 0.075) :
+Computing poisson-equation 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      3.92e-02
+    1      1.95e-16   1.00e+00   5.20e-01   5.02e+03    0         1      0.11
+Finished, because...
+|RHS| less than 1.0000e-05.
+
+Accumulated times:
+Rhs time:        0.01 s
+Jacobian time:   0.00 s
+Solve time:      0.10 s
+Total time:      0.11 s
+
+contact        voltage     electron current    hole current  conduction current
+ anode        1.250E-01       0.000E+00         0.000E+00        0.000E+00
+ cathode      0.000E+00       0.000E+00         0.000E+00        0.000E+00
+ pixel01      0.000E+00       0.000E+00         0.000E+00        0.000E+00
+ pixel02      0.000E+00       0.000E+00         0.000E+00        0.000E+00
+ pixel10      0.000E+00       0.000E+00         0.000E+00        0.000E+00
+ pixel11      0.000E+00       0.000E+00         0.000E+00        0.000E+00
+ pixel12      0.000E+00       0.000E+00         0.000E+00        0.000E+00
+ pixel20      0.000E+00       0.000E+00         0.000E+00        0.000E+00
+ pixel21      0.000E+00       0.000E+00         0.000E+00        0.000E+00
+ pixel22      0.000E+00       0.000E+00         0.000E+00        0.000E+00
+
+Computing step from t=0.125 to t=0.2375 (Stepsize: 0.1125) :
+Computing poisson-equation 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      5.88e-02
+    1      3.18e-16   1.00e+00   7.79e-01   4.90e+03    0         1      0.08
+Finished, because...
+|RHS| less than 1.0000e-05.
+
+Accumulated times:
+Rhs time:        0.00 s
+Jacobian time:   0.00 s
+Solve time:      0.08 s
+Total time:      0.08 s
+
+contact        voltage     electron current    hole current  conduction current
+ anode        2.375E-01       0.000E+00         0.000E+00        0.000E+00
+ cathode      0.000E+00       0.000E+00         0.000E+00        0.000E+00
+ pixel01      0.000E+00       0.000E+00         0.000E+00        0.000E+00
+ pixel02      0.000E+00       0.000E+00         0.000E+00        0.000E+00
+ pixel10      0.000E+00       0.000E+00         0.000E+00        0.000E+00
+ pixel11      0.000E+00       0.000E+00         0.000E+00        0.000E+00
+ pixel12      0.000E+00       0.000E+00         0.000E+00        0.000E+00
+ pixel20      0.000E+00       0.000E+00         0.000E+00        0.000E+00
+ pixel21      0.000E+00       0.000E+00         0.000E+00        0.000E+00
+ pixel22      0.000E+00       0.000E+00         0.000E+00        0.000E+00
+
+Computing step from t=0.2375 to t=0.40625 (Stepsize: 0.16875) :
+Computing poisson-equation 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      8.81e-02
+    1      4.14e-16   1.00e+00   1.17e+00   4.97e+03    0         1      0.11
+Finished, because...
+|RHS| less than 1.0000e-05.
+
+Accumulated times:
+Rhs time:        0.01 s
+Jacobian time:   0.00 s
+Solve time:      0.10 s
+Total time:      0.11 s
+
+contact        voltage     electron current    hole current  conduction current
+ anode        4.062E-01       0.000E+00         0.000E+00        0.000E+00
+ cathode      0.000E+00       0.000E+00         0.000E+00        0.000E+00
+ pixel01      0.000E+00       0.000E+00         0.000E+00        0.000E+00
+ pixel02      0.000E+00       0.000E+00         0.000E+00        0.000E+00
+ pixel10      0.000E+00       0.000E+00         0.000E+00        0.000E+00
+ pixel11      0.000E+00       0.000E+00         0.000E+00        0.000E+00
+ pixel12      0.000E+00       0.000E+00         0.000E+00        0.000E+00
+ pixel20      0.000E+00       0.000E+00         0.000E+00        0.000E+00
+ pixel21      0.000E+00       0.000E+00         0.000E+00        0.000E+00
+ pixel22      0.000E+00       0.000E+00         0.000E+00        0.000E+00
+
+Computing step from t=0.40625 to t=0.659375 (Stepsize: 0.253125) :
+Computing poisson-equation 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      1.32e-01
+    1      6.18e-16   1.00e+00   1.75e+00   5.16e+03    0         1      0.16
+Finished, because...
+|RHS| less than 1.0000e-05.
+
+Accumulated times:
+Rhs time:        0.00 s
+Jacobian time:   0.00 s
+Solve time:      0.16 s
+Total time:      0.16 s
+
+contact        voltage     electron current    hole current  conduction current
+ anode        6.594E-01       0.000E+00         0.000E+00        0.000E+00
+ cathode      0.000E+00       0.000E+00         0.000E+00        0.000E+00
+ pixel01      0.000E+00       0.000E+00         0.000E+00        0.000E+00
+ pixel02      0.000E+00       0.000E+00         0.000E+00        0.000E+00
+ pixel10      0.000E+00       0.000E+00         0.000E+00        0.000E+00
+ pixel11      0.000E+00       0.000E+00         0.000E+00        0.000E+00
+ pixel12      0.000E+00       0.000E+00         0.000E+00        0.000E+00
+ pixel20      0.000E+00       0.000E+00         0.000E+00        0.000E+00
+ pixel21      0.000E+00       0.000E+00         0.000E+00        0.000E+00
+ pixel22      0.000E+00       0.000E+00         0.000E+00        0.000E+00
+
+Computing step from t=0.659375 to t=1 (Stepsize: 0.340625) :
+Computing poisson-equation 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      1.78e-01
+    1      7.62e-16   1.00e+00   2.36e+00   5.04e+03    0         1      0.12
+Finished, because...
+|RHS| less than 1.0000e-05.
+
+Accumulated times:
+Rhs time:        0.00 s
+Jacobian time:   0.01 s
+Solve time:      0.10 s
+Total time:      0.12 s
+
+contact        voltage     electron current    hole current  conduction current
+ anode        1.000E+00       0.000E+00         0.000E+00        0.000E+00
+ cathode      0.000E+00       0.000E+00         0.000E+00        0.000E+00
+ pixel01      0.000E+00       0.000E+00         0.000E+00        0.000E+00
+ pixel02      0.000E+00       0.000E+00         0.000E+00        0.000E+00
+ pixel10      0.000E+00       0.000E+00         0.000E+00        0.000E+00
+ pixel11      0.000E+00       0.000E+00         0.000E+00        0.000E+00
+ pixel12      0.000E+00       0.000E+00         0.000E+00        0.000E+00
+ pixel20      0.000E+00       0.000E+00         0.000E+00        0.000E+00
+ pixel21      0.000E+00       0.000E+00         0.000E+00        0.000E+00
+ pixel22      0.000E+00       0.000E+00         0.000E+00        0.000E+00
+
+
+Finished, because of...
+Curve trace finished.
+
+
+===============================
+Starting solve of next problem:
+Quasistationary ( Digits : 4.5, Max. #iterations : 100, 
+      Initial step in t : 0.1, 
+      Minimum step in t : 1.0000e-03, Maximum step in t : 1, 
+      Increment : 1.05, Decrement : 1.05, 
+      Goal values :
+        Contact anode : 1V
+    )
+  {
+    Poisson 
+  }
+===============================
+
+
+Finished, because of...
+Nothing to do, since goal values are already initially met.
+
+
+===============================
+Starting solve of next problem:
+Save( FilePrefix = "dot1_50x13_wgt_1" overwrite )
+  { }
+===============================
+
+Saving device '':
+    Writing save 'dot1_50x13_wgt_1_des.sav'... done.
+Saving circuit:
+    Writing save 'dot1_50x13_wgt_1_circuit_des.sav' ... done.
+
+
+===============================
+Starting solve of next problem:
+Plot( FilePrefix = "dot1_50x13_wgt_1" overwrite )
+  { }
+===============================
+
+Plotting device '':
+    Writing plot 'dot1_50x13_wgt_1_des.dat'... done.
+
+Writing plot 'dot1_50x13_wgt_des.dat'... done.
+
+******************************************************************************
+Dessis process size: 208 megabytes
+Dessis simulation times:
+  wallclock: 3.26 s
+  total cpu: 3.07 s
+Dessis simulation finished (Date: Fri Nov 10 14:09:36 2006  (EDT)).
+********************************* Good Bye ! *********************************

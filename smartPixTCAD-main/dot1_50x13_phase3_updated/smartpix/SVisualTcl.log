@@ -1,0 +1,29 @@
+###########################################
+# Sentaurus Visual V-2024.03.
+# Tcl log file.
+#------------------------------------------
+# Date: Jan 20, 2025. 15:37:52.
+# Version: 35.3.8727837 (3.8727837)
+# Mode: Interactive (GUI).
+# Mesa: enabled.
+# Hostname: kdplab01.
+# Machine: Linux, x86_64, x86_64.
+# Kernel: 5.14.0-503.19.1.el9_5.x86_64.
+###########################################
+
+load_file /home/aknicholas/DB/smartPixTCAD-main/dot1_50x13_phase3_updated/smartpix/n3_50_des.tdr -fod
+create_plot -dataset n3_50_des
+select_plots {Plot_n3_50_des}
+#-> Plot_n3_50_des
+#-> Plot_n3_50_des
+#-> n3_50_des
+set_material_prop {Silicon} -plot Plot_n3_50_des -geom n3_50_des -show_mesh
+#-> 0
+set_material_prop {Contact} -plot Plot_n3_50_des -geom n3_50_des -show_mesh
+#-> 0
+zoom_plot -plot Plot_n3_50_des -factor 0.972437
+select_plots {}
+zoom_plot -factor 0.952264
+#!-> zoom_plot: Could not zoom plot.
+exit 0
+ 

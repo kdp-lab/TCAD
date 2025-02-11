@@ -1,0 +1,48 @@
+# Copyright (C) 1994-2023 Synopsys Inc.
+# swbtree vcurrent, saved by gsub0
+
+# --- simulation flow
+sde sde "" {}
+sde pStopConc "1e14" {1e15} V
+sde pStopDepth "0.4" {2} V
+sde implantWidth "39" {39} V
+sde gap "200" {200} V
+sde bulkConc "1e12" {4.7e12} R
+sdevice sdevice "" {}
+sdevice Qf "1e12" {1e12} V
+sdevice temp "288" {241.5} V
+sdevice bias "-160" {-1000} V
+sdevice fluence "0" {4e15} R
+# --- variables
+variable N1 ""
+variable N2 ""
+variable N3 ""
+variable N4 ""
+variable N5 ""
+variable N6 ""
+variable N7 ""
+variable N8 ""
+variable N9 ""
+variable CCE ""
+# --- scenarios and parameter specs
+scenario default pStopConc ""
+scenario default pStopDepth ""
+scenario default implantWidth ""
+scenario default gap ""
+scenario default bulkConc ""
+scenario default Qf ""
+scenario default temp ""
+scenario default bias ""
+scenario default fluence ""
+# --- simulation tree
+0 38 0 {} {default} 0
+1 5 38 {1e15} {default} 0
+2 18 5 {2} {default} 0
+3 34 18 {39} {default} 0
+4 50 34 {200} {default} 0
+5 51 50 {4.7e12} {default} 0
+6 52 51 {} {default} 0
+7 53 52 {1e12} {default} 0
+8 54 53 {241.5} {default} 0
+9 55 54 {-1000} {default} 0
+10 56 55 {4e15} {default} 0

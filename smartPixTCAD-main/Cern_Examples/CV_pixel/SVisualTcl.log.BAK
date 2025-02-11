@@ -1,0 +1,22 @@
+###########################################
+# Sentaurus Visual V-2024.03.
+# Tcl log file.
+#------------------------------------------
+# Date: Jul 09, 2024. 12:21:25.
+# Version: 35.3.8727837 (3.8727837)
+# Mode: Interactive (GUI).
+# Mesa: enabled.
+# Hostname: kdplab01.
+# Machine: Linux, x86_64, x86_64.
+# Kernel: 5.14.0-427.20.1.el9_4.x86_64.
+###########################################
+
+load_script_file /home/aknicholas/DB/smartPixTCAD-main/Cern_Examples/CV_pixel/n12_vis.tcl
+cd /home/aknicholas/DB/smartPixTCAD-main/Cern_Examples/CV_pixel
+# WARNING:The parameter 'scale_font_size' is deprecated. Please, use the parameter 'label_font_size'  instead.
+# WARNING:The parameter 'scale_font_size' is deprecated. Please, use the parameter 'label_font_size'  instead.
+# WARNING:The parameter 'font_att' is deprecated. Please, use the parameter 'label_font_att' for 1D and 'title_font_att' for 2D or 3D  instead.
+# WARNING:The parameter 'font_size' is deprecated. Please, use the parameter 'label_font_size'  instead.
+#-> 0
+exit 0
+ 

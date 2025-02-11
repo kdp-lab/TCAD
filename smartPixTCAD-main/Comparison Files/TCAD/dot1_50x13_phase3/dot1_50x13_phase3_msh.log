@@ -1,0 +1,113 @@
+> # ISE TCAD Software Release 9.0
+> # Version Mdraw 9.0.12
+> # Version Mesh 9.0.12
+> # Compiled Thu Jun 12 12:50:49 CEST 2003 on redhat103
+> # Copyright (c) 1994-2003 ISE Integrated Systems Engineering AG
+> Mesh version 9.0.12
+> (Compiled Thu Jun 12 12:50:49 CEST 2003)
+> (Compiled on redhat103)
+> Copyright (c) 1994-2003 ISE Integrated Systems Engineering AG, Zurich, Switzerland
+> Running on: Linux castor.pha.jhu.edu 2.4.21-52.ELsmp #1 SMP Fri Sep 28 13:31:57 CDT 2007 i686
+
+> Process ID: 1343
+> 
+> Flags used:
+> 
+> Reading Boundary... dot1_50x13_phase3.bnd
+> Loaded 11 point(s), 1 region(s), 2 contact(s). done. Time: 0.02 secs.
+> Statistics from input geometry:
+> 11 vertices, 16 edges, 7 faces, 3 elements (2 rectangles) (1 bricks)
+> 	2 2D elements
+> 	1 3D elements
+> Average edge length (std): 36.0625 (151.156)
+> Min edge length (13): 4
+> 
+> Average volume (std): 5208.33 (12757.8)
+> Min. element volume (0): 15625
+> 
+> Average connectivity: 2.90909
+> Max. connectivity (1): 5
+> 
+> Step sequence to perform: 
+> 	MLRefineGeometry-MLRefineOnSize-MLRefineOnProfiles
+> 
+> Fitting geometry ... Number of elements to check: 1
+> done. Time: 0 secs.
+> Refining on MaxElementSize ... Number of elements to check: 1
+> Number of elements to check: 1761
+> done. Time: 0.31 secs.
+> Refining on Profiles ... Number of elements to check: 1760
+> Number of elements to check: 2787
+> done. Time: 0.29 secs.
+> Handling green elements ... Number of elements to check: 4002
+> Number of elements to check: 186
+> Number of elements to check: 104
+> Number of elements to check: 130
+> Number of elements to check: 82
+> Number of elements to check: 105
+> Number of elements to check: 118
+> Number of elements to check: 125
+> Number of elements to check: 135
+> Number of elements to check: 122
+> Number of elements to check: 101
+> Number of elements to check: 68
+> Number of elements to check: 59
+> Number of elements to check: 66
+> Number of elements to check: 41
+> Number of elements to check: 38
+> Number of elements to check: 34
+> Number of elements to check: 23
+> Number of elements to check: 21
+> Number of elements to check: 10
+> Number of elements to check: 10
+> done. Time: 0.03 secs.
+> Building final elements ... Number of elements to check: 4002
+> Number of elements to check: 10622
+> done. Time: 0.2 secs.
+> Testing elements ... Number of elements to check: 12208
+> done. Time: 0.03 secs.
+> Preparing data for output... Number of final elements 12208
+> Statistics from Qtree/Oc-tree:
+> 5291 vertices, 22978 edges, 29896 faces, 12504 elements (177 triangles) (119 rectangles) (5100 tetrahedra) (5522 pyramids) (1586 bricks)
+> 	296 2D elements
+> 	12208 3D elements
+> Average edge length (std): 1.18914 (164.524)
+> Min edge length (5400): 0.09375
+> 
+> Average volume (std): 1.2496 (569.341)
+> Min. element volume (11816): 0.00152588
+> 
+> Average aspect ratio tetrahedra (std): 0.54559 (8.86316)
+> Min. aspect tetrahedra (11820): 0.0338954
+> Average connectivity: 8.68569
+> Max. connectivity (1727): 24
+> 
+> Pattern Statistics for IISbrick:
+> 	Pattern 1 GT: 1-irregular face = 80
+> 	Pattern 2 GT: 1-irregular edge = 257
+> 	Pattern 3 GT: 1-irregular vertex = 2079
+> 	Pattern 6 OGP: brick = 1586
+> done. Time: 0.29 secs.
+> 
+> Total time : 1.17 secs.
+> Delaunizing the elements... 
+> After Delaunization:
+> Statistics after Delaunization:
+> 5293 vertices, 23305 edges, 30694 faces, 12980 elements (184 triangles) (117 rectangles) (5912 tetrahedra) (5210 pyramids) (1557 bricks)
+> 	301 2D elements
+> 	12679 3D elements
+> Average edge length (std): 1.18214 (164.108)
+> Min edge length (5400): 0.09375
+> 
+> Average volume (std): 1.20359 (569.964)
+> Min. element volume (11818): 0.000762939
+> 
+> Average aspect ratio tetrahedra (std): 0.568222 (8.44236)
+> Min. aspect tetrahedra (2197): 0.100599
+> Average connectivity: 8.80521
+> Max. connectivity (4453): 25
+> 
+> Saving mesh `dot1_50x13_phase3' in DFISE format...
+>   Saving geometry `dot1_50x13_phase3_msh.grd'...done. Time: 0.39 secs.
+> Interpolating data ... done
+>   Saving data `dot1_50x13_phase3_msh.dat' ...done. Time: 0.03 secs.

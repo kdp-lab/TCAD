@@ -1,0 +1,25 @@
+###########################################
+# Sentaurus Visual V-2024.03.
+# Tcl log file.
+#------------------------------------------
+# Date: Aug 05, 2024. 14:46:46.
+# Version: 35.3.8727837 (3.8727837)
+# Mode: Interactive (GUI).
+# Mesa: enabled.
+# Hostname: kdplab01.
+# Machine: Linux, x86_64, x86_64.
+# Kernel: 5.14.0-427.24.1.el9_4.x86_64.
+###########################################
+
+load_file /home/aknicholas/DB/smartPixTCAD-main/Cern_Examples/CV_pixel/n8_ac_des.plt
+create_plot -1d
+select_plots {Plot_1}
+#-> Plot_1
+#-> Plot_1
+#-> n8_ac_des
+create_curve -axisX frequency -axisY v(cp) -dataset {n8_ac_des} -plot Plot_1
+#-> Curve_1
+create_curve -axisX frequency -axisY c(cp,cp) -dataset {n8_ac_des} -plot Plot_1
+#-> Curve_2
+exit 0
+ 

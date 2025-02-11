@@ -1,0 +1,12 @@
+tmp/*
+gen_wpot
+gen_efield
+
+# ignore tutorials
+Simple*
+
+# ignore outputs 
+dot1_50x13_phase3/*
+
+# ignore bookmarks
+*.V-2024.03

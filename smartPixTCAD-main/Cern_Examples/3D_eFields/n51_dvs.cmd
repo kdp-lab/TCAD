@@ -1,0 +1,138 @@
+(define pstop_hw 3.0)
+(define thickness 200) 
+
+(define pitch 55.0)
+(define hPitch (/ pitch 2.0))
+(define neg_hPitch (- 0 hPitch))
+
+(define implant_w 39) 
+(define imp_hw (/ implant_w 2.0)) 
+(define neg_imp_hw (- 0 (/ implant_w 2.0))) 
+
+(define sio_overhang 2.0)
+(define sio_w (+ (- pitch implant_w) (* 2 sio_overhang))) 
+(define sio_hw (/ sio_w 2.0))
+(define neg_sio_hw (- 0 sio_hw))
+
+(define al_overhang 4.5)
+(define al_imp_touch 2.0)
+(define sio_t -0.5)
+(define al_t -1.5)
+
+(define electrode_hw (- imp_hw sio_overhang))
+(define neg_electrode_hw (- 0 electrode_hw))
+
+(define sio_implant_w (- (- implant_w (* 2 sio_overhang)) (* 2 al_imp_touch)))
+(define sio_implant_hw (/ sio_implant_w 2.0))
+(define neg_sio_implant_hw (- 0.0 sio_implant_hw))
+
+(define al_implant_w (+ implant_w (* 2.0 al_overhang)))
+(define al_implant_hw (/ al_implant_w 2.0))
+(define neg_al_implant_hw (- 0.0 al_implant_hw))
+
+(sdegeo:set-default-boolean "AB")
+(sdegeo:create-cuboid (position 0 neg_imp_hw neg_imp_hw) (position sio_t imp_hw imp_hw) "SiO2" "temp")
+(sdegeo:fillet (list (car (find-edge-id (position -0.25 19.5 19.5)))) 3)
+(sdegeo:fillet (list (car (find-edge-id (position -0.25 -19.5 19.5)))) 3)
+(sdegeo:fillet (list (car (find-edge-id (position -0.25 -19.5 -19.5)))) 3)
+(sdegeo:fillet (list (car (find-edge-id (position -0.25 19.5 -19.5)))) 3)
+(extract-refwindow (list (car (find-face-id (position 0 0 0)))) "implant_area")
+(sdegeo:delete-region (list (car (find-body-id (position -0.25 0 0)))))
+
+(sdegeo:create-cuboid (position 0 neg_hPitch neg_hPitch)  (position sio_t (+ neg_hPitch pstop_hw) hPitch) "SiO2" "SiO1temp")
+(sdegeo:create-cuboid (position 0 neg_hPitch neg_hPitch)  (position sio_t hPitch (+ neg_hPitch pstop_hw)) "SiO2" "SiO2temp")
+(sdegeo:create-cuboid (position 0 hPitch neg_hPitch)  (position sio_t (- hPitch pstop_hw) hPitch) "SiO2" "SiO3temp")
+(sdegeo:create-cuboid (position 0 hPitch hPitch)  (position sio_t neg_hPitch (- hPitch pstop_hw)) "SiO2" "SiO4temp")
+(extract-refwindow (list (car (find-face-id (position 0 -26 0)))) "pstop_area")
+
+(sdegeo:create-cuboid (position 0 neg_hPitch neg_hPitch)  (position sio_t (- sio_hw hPitch) hPitch) "SiO2" "SiO1")
+(sdegeo:create-cuboid (position 0 neg_hPitch neg_hPitch)  (position sio_t hPitch (- sio_hw hPitch)) "SiO2" "SiO2")
+(sdegeo:create-cuboid (position 0 hPitch neg_hPitch)  (position sio_t (- hPitch sio_hw) hPitch) "SiO2" "SiO3")
+(sdegeo:create-cuboid (position 0 hPitch hPitch)  (position sio_t neg_hPitch (- hPitch sio_hw)) "SiO2" "SiO4")
+
+(sdegeo:fillet (list (car (find-edge-id (position -0.25 -17.5 -17.5)))) 6)
+(sdegeo:fillet (list (car (find-edge-id (position -0.25 17.5 -17.5)))) 6)
+(sdegeo:fillet (list (car (find-edge-id (position -0.25 -17.5 17.5)))) 6)
+(sdegeo:fillet (list (car (find-edge-id (position -0.25 17.5 17.5)))) 6)
+
+
+(sdegeo:set-default-boolean "ABA")
+(sdegeo:create-cuboid (position 0 neg_hPitch neg_hPitch)  (position thickness hPitch hPitch) "Silicon" "bulk")
+
+(sdedr:define-refeval-window "backside_implant_area" "Rectangle" (position thickness hPitch hPitch) (position thickness neg_hPitch neg_hPitch))
+(sdedr:define-refeval-window "top_electrode_area" "Rectangle" (position 0 (- sio_hw hPitch) (- sio_hw hPitch)) (position 0 (- hPitch sio_hw) (- hPitch sio_hw)))
+
+(sdegeo:define-contact-set "backside_electrode" 4  (color:rgb 1 0 0 ) "##")
+(sdegeo:define-contact-set "implant_electrode" 4  (color:rgb 1 0 0 ) "##")
+;;(sdegeo:define-3d-contact (list (car (find-face-id (position 0 0 0)))) "implant_electrode")
+(sdegeo:define-3d-contact (list (car (find-face-id (position thickness 0 0)))) "backside_electrode")
+
+(sdegeo:set-default-boolean "BAB")
+(sdegeo:create-cuboid (position 0 neg_sio_implant_hw neg_sio_implant_hw)  (position sio_t sio_implant_hw sio_implant_hw) "SiO2" "MID_OX")
+(sdegeo:fillet (list (car (find-edge-id (position -0.25 15.5 15.5)))) 4.5)
+(sdegeo:fillet (list (car (find-edge-id (position -0.25 -15.5 15.5)))) 4.5)
+(sdegeo:fillet (list (car (find-edge-id (position -0.25 -15.5 -15.5)))) 4.5)
+(sdegeo:fillet (list (car (find-edge-id (position -0.25 15.5 -15.5)))) 4.5)
+
+(sdegeo:create-cuboid (position 0 neg_al_implant_hw neg_al_implant_hw)  (position al_t al_implant_hw al_implant_hw) "Aluminum" "AL")
+(sdegeo:fillet (list (car (find-edge-id (position -1.0 24.0 24.0)))) 9)
+(sdegeo:fillet (list (car (find-edge-id (position -1.0 -24.0 24.0)))) 9)
+(sdegeo:fillet (list (car (find-edge-id (position -1.0 -24.0 -24.0)))) 9)
+(sdegeo:fillet (list (car (find-edge-id (position -1.0 24.0 -24.0)))) 9)
+
+;; (sdedr:define-refeval-window "implant_area" "Rectangle" (position 0 neg_imp_hw neg_imp_hw) (position 0 imp_hw imp_hw))
+(sdegeo:set-current-contact-set "implant_electrode")
+(sdegeo:set-contact-boundary-faces (list (car (find-body-id (position -0.93899522 0 0)))) "implant_electrode")
+(sdegeo:delete-region (list (car (find-body-id (position -0.93899522 0 0)))))
+
+(sdedr:define-constant-profile "bulk_profile" "BoronActiveConcentration" 4.7e12)
+(sdedr:define-gaussian-profile "nplus_implant_profile" "PhosphorusActiveConcentration" "PeakPos" 0  "PeakVal" 1e+19 "ValueAtDepth" 1e12 "Depth" 2.4 "Gauss"  "Factor" 0.8)
+(sdedr:define-gaussian-profile "pplus_implant_profile" "BoronActiveConcentration" "PeakPos" 0  "PeakVal" 1e+19 "ValueAtDepth" 1e12 "Depth" 2.4 "Gauss" "Factor" 0.8)
+(sdedr:define-gaussian-profile "pstop_profile" "BoronActiveConcentration" "PeakPos" 0  "PeakVal" 1e15 "ValueAtDepth" 1e12 "Depth" 2 "Gauss"  "Factor" 0.8)
+
+(sdedr:define-constant-profile-region "bulk_placement" "bulk_profile" "bulk")
+(sdedr:define-analytical-profile-placement "implant_placement" "nplus_implant_profile" "implant_area" "Both" "NoReplace" "Eval")
+(sdedr:define-analytical-profile-placement "backside_implant_placement" "pplus_implant_profile" "backside_implant_area" "Both" "NoReplace" "Eval")
+
+(sdedr:define-analytical-profile-placement "pstop_placement" "pstop_profile" "pstop_area" "Both" "NoReplace" "Eval")
+
+(sdedr:define-refeval-window "RefWin_all" "Cuboid" (position -10 30 30) (position 210 -30 -30))
+(sdedr:define-refeval-window "implant_refinement_area" "Cuboid" (position 0 hPitch hPitch) (position 2.5 neg_hPitch neg_hPitch))
+(sdedr:define-refeval-window "backside_implant_refinement_area" "Cuboid" (position thickness hPitch hPitch) (position 197.5 neg_hPitch neg_hPitch))
+(sdedr:define-refeval-window "ref1top" "Cuboid" (position 0 hPitch hPitch) (position 2.5 neg_hPitch neg_hPitch))
+(sdedr:define-refeval-window "ref2top" "Cuboid" (position -0.5 hPitch hPitch) (position 4 neg_hPitch neg_hPitch))
+(sdedr:define-refeval-window "ref3top" "Cuboid" (position 0 hPitch hPitch) (position 6 neg_hPitch neg_hPitch))
+(sdedr:define-refeval-window "ref4top" "Cuboid" (position 0 hPitch hPitch) (position 20 neg_hPitch neg_hPitch))
+(sdedr:define-refeval-window "ref1bot" "Cuboid" (position 201.1 hPitch hPitch) (position 198 neg_hPitch neg_hPitch))
+(sdedr:define-refeval-window "ref2bot" "Cuboid" (position 201.1 hPitch hPitch) (position 196 neg_hPitch neg_hPitch))
+(sdedr:define-refeval-window "ref3bot" "Cuboid" (position 201.1 hPitch hPitch) (position 194 neg_hPitch neg_hPitch))
+
+;;(sdedr:define-refeval-window "ref1mip" "Cuboid" (position 201.1 1 1) (position 0 -1 -1))
+;;(sdedr:define-refeval-window "ref2mip" "Cuboid" (position 201.1 2 2) (position 0 -2 -2))
+;;(sdedr:define-refeval-window "ref3mip" "Cuboid" (position 201.1 4 4) (position 0 -4 -4))
+
+(sdedr:define-refinement-size "Ref_all_def" 5 5 5 5 5 5 )
+(sdedr:define-refinement-size "ref1" 0.8 0.8 0.8 0.05 0.10 0.10 )
+(sdedr:define-refinement-size "ref2" 1 1 1 0.20 0.3 0.3 )
+(sdedr:define-refinement-size "ref3" 2 2 2 0.30 0.5 0.5)
+(sdedr:define-refinement-size "ref4" 2 2 2 0.75 0.75 0.75 ) 
+(sdedr:define-refinement-size "implant_refinement_def" 1 2.5 2.5 0.1 0.15 0.15 )
+(sdedr:define-refinement-function "implant_refinement_def" "DopingConcentration" "MaxTransDiff" 1)
+
+(sdedr:define-refinement-placement "implant_refinement" "implant_refinement_def" (list "window" "implant_area" ) )
+(sdedr:define-refinement-placement "backside_implant_refinement" "implant_refinement_def" (list "window" "backside_implant_area" ) )
+(sdedr:define-refinement-placement "Everything_refinement" "Ref_all_def" (list "window" "RefWin_all" ) )
+(sdedr:define-refinement-placement "ref1_top_refinement" "ref1" (list "window" "ref1top" ) )
+(sdedr:define-refinement-placement "ref2_top_refinement" "ref2" (list "window" "ref2top" ) )
+(sdedr:define-refinement-placement "ref3_top_refinement" "ref3" (list "window" "ref3top" ) )
+(sdedr:define-refinement-placement "ref4_top_refinement" "ref4" (list "window" "ref4top" ) )
+(sdedr:define-refinement-placement "ref1_bot_refinement" "ref1" (list "window" "ref1bot" ) )
+(sdedr:define-refinement-placement "ref2_bot_refinement" "ref2" (list "window" "ref2bot" ) )
+(sdedr:define-refinement-placement "ref3_bot_refinement" "ref3" (list "window" "ref3bot" ) )
+;;(sdedr:define-refinement-placement "ref1_mip_refinement" "ref1" (list "window" "ref1mip" ) )
+;;(sdedr:define-refinement-placement "ref2_mip_refinement" "ref2" (list "window" "ref2mip" ) )
+;;(sdedr:define-refinement-placement "ref3_mip_refinement" "ref3" (list "window" "ref3mip" ) )
+
+(sde:build-mesh "snmesh" "" "n51_msh")
+(exit)
+

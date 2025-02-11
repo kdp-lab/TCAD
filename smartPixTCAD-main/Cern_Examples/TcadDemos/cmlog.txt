@@ -1,0 +1,5 @@
+DATE: 06/27/16 - 06/27/16 cmlog.txt
+
+This localhost (server) information:
+	Name:    afolkestvml.cern.ch
+	Address: 188.184.164.104

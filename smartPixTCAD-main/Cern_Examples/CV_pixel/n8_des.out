@@ -1,0 +1,4230 @@
+****************************************************************************
+***                           Sentaurus Device                           ***
+***                          Version V-2024.03                           ***
+***                      (3.8727837, x86_64, Linux)                      ***
+***                                                                      ***
+***                       Copyright (C) 1994-2024                        ***
+***                            Synopsys, Inc.                            ***
+***                                                                      ***
+***  This software and the associated documentation are confidential     ***
+***  and proprietary to Synopsys, Inc.  Your use or disclosure of this   ***
+***  software is subject to the terms and conditions of a written        ***
+***  license agreement between you, or your company, and Synopsys, Inc.  ***
+****************************************************************************
+
+Compiled Tue Feb 13 13:43:31 PST 2024 on sce-tcad-build01 (x86_64, Linux)
+
+	Running on machine with the following configuration:
+	Host Name: kdplab01
+	Operating System: Linux rel. 5.14.0-427.20.1.el9_4.x86_64 ver. #1 SMP PREEMPT_DYNAMIC Mon Jun 10 08:04:28 EDT 2024
+	Machine Type: x86_64
+	Process ID: 344624
+	Number of processors: 64
+	Domain Name: (none)
+	Date: Tue Jul  9 12:19:03 2024  (CDT)
+
+Parsing "/code/Synopsys/tcad_sentaurus_vV-2024.03/sentaurus/current/bin/../tcad/current/lib/Molefraction.txt"
+Inputfile = pp8_des.cmd
+Tue Jul  9 12:19:03 2024: checked out 1 sdevice license(s)
+Parsing circuit file /code/Synopsys/tcad_sentaurus_vV-2024.03/sentaurus/current/bin/../tcad/current/linux64/lib/sdevice/sd_SRL1.ccf
+Parsing circuit file /code/Synopsys/tcad_sentaurus_vV-2024.03/sentaurus/current/bin/../tcad/current/linux64/lib/sdevice/sd_hb_isource.ccf
+Parsing circuit file /code/Synopsys/tcad_sentaurus_vV-2024.03/sentaurus/current/bin/../tcad/current/linux64/lib/sdevice/sd_hb_sRL.ccf
+Parsing circuit file /code/Synopsys/tcad_sentaurus_vV-2024.03/sentaurus/current/bin/../tcad/current/linux64/lib/sdevice/sd_hb_vsource2.ccf
+Parsing circuit file /code/Synopsys/tcad_sentaurus_vV-2024.03/sentaurus/current/bin/../tcad/current/linux64/lib/sdevice/sd_hb_isource2.ccf
+Parsing circuit file /code/Synopsys/tcad_sentaurus_vV-2024.03/sentaurus/current/bin/../tcad/current/linux64/lib/sdevice/sd_hb_vsource.ccf
+Parsing circuit file /code/Synopsys/tcad_sentaurus_vV-2024.03/sentaurus/current/bin/../tcad/current/linux64/lib/sdevice/bs_psource.ccf
+Parsing circuit file /code/Synopsys/tcad_sentaurus_vV-2024.03/sentaurus/current/bin/../tcad/current/linux64/lib/sdevice/sd_hb_pGC.ccf
+Parsing circuit file /code/Synopsys/tcad_sentaurus_vV-2024.03/sentaurus/current/bin/../tcad/current/linux64/lib/scm/satinductor.ccf
+Parsing circuit file /code/Synopsys/tcad_sentaurus_vV-2024.03/sentaurus/current/bin/../tcad/current/linux64/lib/scm/ferroelectric.ccf
+Parsing circuit file /code/Synopsys/tcad_sentaurus_vV-2024.03/sentaurus/current/bin/../tcad/current/linux64/lib/scm/MOS_harness.ccf
+Loading shared object file /code/Synopsys/tcad_sentaurus_vV-2024.03/sentaurus/current/bin/../tcad/current/linux64/lib/scm/MOS_harness.so.linux64
+Loading shared object file /code/Synopsys/tcad_sentaurus_vV-2024.03/sentaurus/current/bin/../tcad/current/linux64/lib/scm/ferroelectric.so.linux64
+Loading shared object file /code/Synopsys/tcad_sentaurus_vV-2024.03/sentaurus/current/bin/../tcad/current/linux64/lib/scm/satinductor.so.linux64
+Loading shared object file /code/Synopsys/tcad_sentaurus_vV-2024.03/sentaurus/current/bin/../tcad/current/linux64/lib/sdevice/sd_hb_pGC.so.linux64
+Loading shared object file /code/Synopsys/tcad_sentaurus_vV-2024.03/sentaurus/current/bin/../tcad/current/linux64/lib/sdevice/bs_psource.so.linux64
+Loading shared object file /code/Synopsys/tcad_sentaurus_vV-2024.03/sentaurus/current/bin/../tcad/current/linux64/lib/sdevice/sd_hb_vsource.so.linux64
+Loading shared object file /code/Synopsys/tcad_sentaurus_vV-2024.03/sentaurus/current/bin/../tcad/current/linux64/lib/sdevice/sd_hb_isource2.so.linux64
+Loading shared object file /code/Synopsys/tcad_sentaurus_vV-2024.03/sentaurus/current/bin/../tcad/current/linux64/lib/sdevice/sd_hb_vsource2.so.linux64
+Loading shared object file /code/Synopsys/tcad_sentaurus_vV-2024.03/sentaurus/current/bin/../tcad/current/linux64/lib/sdevice/sd_hb_sRL.so.linux64
+Loading shared object file /code/Synopsys/tcad_sentaurus_vV-2024.03/sentaurus/current/bin/../tcad/current/linux64/lib/sdevice/sd_hb_isource.so.linux64
+Loading shared object file /code/Synopsys/tcad_sentaurus_vV-2024.03/sentaurus/current/bin/../tcad/current/linux64/lib/sdevice/sd_SRL1.so.linux64
+
+Input source: pp8_des.cmd
+
+===============================
+
+Output file: n8_des.log
+
+
+GlobalParameter {
+}
+ACExtract file: n8_ac_des.plt
+
+PMIPath file: /code/Synopsys/tcad_sentaurus_vV-2024.03/sentaurus/current/bin/../tcad/current/linux64/lib/sdevice-35.3.8727837 /code/Synopsys/tcad_sentaurus_vV-2024.03/sentaurus/current/bin/../tcad/current/linux64/lib/sdevice
+
+CMIPath file: /code/Synopsys/tcad_sentaurus_vV-2024.03/sentaurus/current/bin/../tcad/current/linux64/lib/sdevice /code/Synopsys/tcad_sentaurus_vV-2024.03/sentaurus/current/bin/../tcad/current/linux64/lib/scm
+
+SPICEPath file: /code/Synopsys/tcad_sentaurus_vV-2024.03/sentaurus/current/bin/../tcad/current/lib/sdevice-35.3.8727837/spice
+
+no DevicePath file
+
+no CIRCUITSAVENAME file
+
+no CIRCUITLOADNAME file
+
+Numerical parameters:
+  Absolute error : 
+    Poisson : 1.0000e-03
+    eqPoisson : 1.0000e-03
+    Electron : 1.0000e-05
+    Hole : 1.0000e-05
+    Photon-Rate-Equation : 1.0000e-07
+    Photon-Phase-Equation : 1.0000e-05
+    Rate-Stabilize-Equation : 1.0000e-07
+    QW-Scattering-Equations : 1.0000e-05
+    QW-eScattering-Equation : 1.0000e-05
+    QW-hScattering-Equation : 1.0000e-05
+    Optical Problem : 1.0000e-03
+    Wavelength : 1.0000e-03
+    Bandstructure : 1.0000e-03
+    EmissionTable : 1.0000e-03
+    DephasingRates : 1.0000e-03
+    Photon Recycling : 1.0000e-03
+    Electron-Temperature : 1.0000e-04
+    Hole-Temperature : 1.0000e-04
+    Lattice-Hole-Electron-Temperature : 1.0000e-03
+    Circuit : 1.0000e-03
+    TCircuit : 1.0000e-03
+    Contact : 1.0000e-03
+    TContact : 1.0000e-03
+    Continuation : 1.0000e-03
+    eLaplace : 1.0000e-03
+    hLaplace : 1.0000e-03
+    tLaplace : 1.0000e-03
+    electron quasi-fermi-potential : 1.0000e-03
+    hole quasi-fermi-potential : 1.0000e-03
+    MonteCarlo : 1.0000e-03
+    MCPoissonPDE : 1.0000e-03
+    eQuantumPotential : 1.0000e-03
+    hQuantumPotential : 1.0000e-03
+    quasi-fermi-potential : 1.0000e-03
+    ConductiveInsulator : 1.0000e-03
+    ContactAndConductiveInsulator : 1.0000e-03
+    SingletExciton : 1.0000e-05
+    FEPolarization : 1.0000e-05
+    FEPolarizationX : 1.0000e-05
+    FEPolarizationY : 1.0000e-05
+    FEPolarizationZ : 1.0000e-05
+    FEPolDivFree : 1.0000e-03
+    eHopping : 1.0000e-03
+    hHopping : 1.0000e-03
+    HydrogenAtom : 1.0000e-03
+    HydrogenMolecule : 1.0000e-03
+    HydrogenIon : 1.0000e-03
+    HydrogenSpeciesA : 1.0000e-03
+    HydrogenSpeciesB : 1.0000e-03
+    HydrogenSpeciesC : 1.0000e-03
+    HydrogenSiliconBondOccupation : 1.0000e-03
+    TrapPDE : 1.0000e-03
+    eSHEDistribution : 1.0000e-03
+    hSHEDistribution : 1.0000e-03
+    Landau-Lifshitz-Gilbert[theta] : 1.0000e-03
+    Landau-Lifshitz-Gilbert[phi] : 1.0000e-03
+    Landau-Lifshitz-Gilbert[x] : 1.0000e-03
+    Landau-Lifshitz-Gilbert[y] : 1.0000e-03
+    Landau-Lifshitz-Gilbert[z] : 1.0000e-03
+    Mechanics : 1.0000e-03
+    ExternalTransportSolver : 1.0000e-03
+    ReactionDiffusionPDE : 1.0000e-03
+    eDensity_Valley1 : 1.0000e-05
+    eDensity_Valley2 : 1.0000e-05
+    eDensity_Valley3 : 1.0000e-05
+    eDensity_Valley4 : 1.0000e-05
+    hDensity_Valley1 : 1.0000e-05
+    hDensity_Valley2 : 1.0000e-05
+    hDensity_Valley3 : 1.0000e-05
+    hDensity_Valley4 : 1.0000e-05
+    eMVTransitionRate : 1.0000e-05
+    hMVTransitionRate : 1.0000e-05
+  RelErrControl (Reference error): 
+    Poisson : 0.025852
+    eqPoisson : 1
+    Electron : 1.0000e+10
+    Hole : 1.0000e+10
+    Photon-Rate-Equation : 1.0000e-07
+    Photon-Phase-Equation : 1
+    Rate-Stabilize-Equation : 1.0000e-07
+    QW-Scattering-Equations : 1.0000e+10
+    QW-eScattering-Equation : 1.0000e+10
+    QW-hScattering-Equation : 1.0000e+10
+    Optical Problem : 1
+    Wavelength : 1
+    Bandstructure : 1
+    EmissionTable : 1
+    DephasingRates : 1
+    Photon Recycling : 1
+    Electron-Temperature : 3.0000e+02
+    Hole-Temperature : 3.0000e+02
+    Lattice-Hole-Electron-Temperature : 3.0000e+02
+    Circuit : 1
+    TCircuit : 1
+    Contact : 0.025852
+    TContact : 1
+    Continuation : 1
+    eLaplace : 1
+    hLaplace : 1
+    tLaplace : 1
+    electron quasi-fermi-potential : 0.025852
+    hole quasi-fermi-potential : 0.025852
+    MonteCarlo : 1
+    MCPoissonPDE : 1
+    eQuantumPotential : 0.025852
+    hQuantumPotential : 0.025852
+    quasi-fermi-potential : 0.025852
+    ConductiveInsulator : 1
+    ContactAndConductiveInsulator : 1
+    SingletExciton : 1.0000e+10
+    FEPolarization : 0.025852
+    FEPolarizationX : 0.025852
+    FEPolarizationY : 0.025852
+    FEPolarizationZ : 0.025852
+    FEPolDivFree : 1
+    eHopping : 0.025852
+    hHopping : 0.025852
+    HydrogenAtom : 1.0000e+10
+    HydrogenMolecule : 1.0000e+10
+    HydrogenIon : 1.0000e+10
+    HydrogenSpeciesA : 1.0000e+10
+    HydrogenSpeciesB : 1.0000e+10
+    HydrogenSpeciesC : 1.0000e+10
+    HydrogenSiliconBondOccupation : 1
+    TrapPDE : 1.0000e-05
+    eSHEDistribution : 0.025852
+    hSHEDistribution : 0.025852
+    Landau-Lifshitz-Gilbert[theta] : 1
+    Landau-Lifshitz-Gilbert[phi] : 1
+    Landau-Lifshitz-Gilbert[x] : 1
+    Landau-Lifshitz-Gilbert[y] : 1
+    Landau-Lifshitz-Gilbert[z] : 1
+    Mechanics : 1
+    ExternalTransportSolver : 1
+    ReactionDiffusionPDE : 1
+    eDensity_Valley1 : 1.0000e+10
+    eDensity_Valley2 : 1.0000e+10
+    eDensity_Valley3 : 1.0000e+10
+    eDensity_Valley4 : 1.0000e+10
+    hDensity_Valley1 : 1.0000e+10
+    hDensity_Valley2 : 1.0000e+10
+    hDensity_Valley3 : 1.0000e+10
+    hDensity_Valley4 : 1.0000e+10
+    eMVTransitionRate : 1.0000e+10
+    hMVTransitionRate : 1.0000e+10
+  Relative error : 5 digits
+  Without checked transient error
+  Max. #iterations : 15
+  LineSearchDamping=1
+  #undamped iterations : 50
+  No incomplete Newton
+  transient method : TR-BDF
+  Linear solver : blocked decomposition
+  Linear solver for AC analysis : blocked decomposition
+  Linear solver for SHEDistribution Model : Super
+  use linear extrapolation in transient/quasistationary computations
+  use complex supernodal in ac-analysis (if possible)
+  do not use smoothed PDE's in transient/quasistationary computations
+  use automatic coupling of contact/circuit stuff
+  Spice temperature: 3.0015e+02
+  Spice nominal temperature of parameter measurements: 3.0015e+02
+  Spice minimum conductance gmin: 1.0000e-12
+  Use 64 bit (double) normal precision floating point arithmetic.
+  Mininum |rhs| : 1.0000e-05
+  Maximum |rhs| (transient): 1.0000e+15
+  Maximum |rhs| (non-transient): 1.0000e+100
+  Maximum |rhs| factor : 1.0000e+10
+  Maximum |rhs| factor1 : 1.0000e+100
+  Lattice Temperature Range : (50,5.0000e+03)
+  Carrier Temperature Range : (10,8.0000e+04)
+  SHESORError : 0.0000e+00
+  Simplified first order SHE of BTE will be solved
+  SHERefinementCutoff : 20
+  No user dependencies.
+  Number of assembly threads: 1 (command line max_threads)
+  Number of solver threads: 1 (command line max_threads)
+  Thread stacksize: 1000000 bytes (default)
+  Go serial if not enough parallel licenses are available.
+  Model: Math  Switched on
+
+Default device parameters:
+  RayTrace Boundaries:
+  Files:
+    no Boundary file
+    no Grid file
+    no Doping file
+    no MobilityDoping file
+    MIMCurrent file: pp8_des_mimcur_des.plt
+    no MIMDefects file
+    no InitialDefects file
+    no CyclicNorm file
+    no MIMBand file
+    MIMSensitivity file: pp8_des_mimsa_des.tdr
+    no Load file
+    no Save file
+    no Plot file
+    no DevFieldsName file
+    AutoNewtonPlot file: n8_des_%ld_des.tdr
+    no Path file
+    no Lifetime file
+    no Temperature file
+    no Current file
+    no PMIUserFields file
+    no Extraction file
+    no ModelParameters file
+    ParameterPath directories: 
+    no Piezo file
+    no mcDOS file
+    no ModeGain file
+    no Optical emission table for stimulated emission file
+    no Optical emission table for spontaneous emission file
+    no Optical emission table for photon phase change coefficient file
+    no EmissionTable file
+    no DephasingRates file
+    no OpticalFarField file
+    no OpticalIntensityPattern file
+    no SaveOpticalIntensityPattern file
+    no IlluminationSpectrum file
+    no SpectralPlot file
+    no OpticalSolverInput file
+    no OpticalGenerationInput file
+    no OpticalGenerationOutuput file
+    no OptGenTransientScaling file
+    no MonteCarloInput file
+    no MonteCarloOutput file
+    no ACPlot file
+-----------------------------------------------
+  Numerical parameters:
+    With avalanche derivatives
+    Using New Plot Names
+    Using old wavelength search algorithm
+    Do not reinitialize quasi Fermi potentials in quasi-stationary simulations
+    Ignore ionization integral constraints
+    Without diagonal preconditioning
+    With Scharfetter-Gummel Discretization
+    Relative error : 5 digits
+    Delta for numerical tunnelling derivatives : 1.0000e-03
+    Linear solver (submethod) : Pardiso
+    Do not compute breakdown paths, ionization integrals, and Off-state Breakdown Analysis (OBA)
+    QuasiFermiPotential is used for Contact Equation
+    With usage of best vertex in element (maximum element-vertex volume angle) for impact ionization models
+-----------------------------------------------
+-----------------------------------------------
+  Physical models:
+    Without incomplete ionization
+    Use Si parameters
+    TATNonlocalPathNC = 0.0000e+00
+    Without SRH-Recombination
+    Without CDL-Recombination
+    With optical generation computation 
+    Without Band-to-Band-Tunneling
+    Without Auger-Recombination
+    Without Radiative Recombination
+    Without Surface-Recombination
+    Without Trap-Assisted-Auger-Recombination
+    PMI recombination models: none
+    Without thermal resistance interfaces
+    Without distributed resistance interfaces for electrons
+    Without distributed resistance interfaces for holes
+    Without Piezo
+    Without Anisotropic Material Properties
+    Without Avalanche-Generation 
+    Without Alpha Particle
+    Without Heavy Ion
+    Without polarization
+    Volume charge density: 0.0000e+00 cm^-3
+    Device Temperature = 3.0000e+02 K
+    Electron Quasi Fermi Potential: 0.0000e+00 V
+    Hole Quasi Fermi Potential: 0.0000e+00 V
+    Without MagneticField
+    With SingletExciton Barrier Type
+    Intrinsic density models:
+      default bandgap model
+      Bandgap narrowing model: Bennett/Wilson with bandgap narrowing (no Fermi)
+    default affinity model
+    default effective mass model
+    Electron mobility:
+      no Doping dependence (using constant mobility)
+      no Carrier-Carrier scattering
+      no bulk trap Coulomb scattering 
+      no E_normal dependence
+      Without ThinLayer mobility model
+      no high-field saturation
+      Einstein relation for diffusivity-mobility ratio
+      no band tail high-field mobility
+    Hole mobility:
+      no Doping dependence (using constant mobility)
+      no Carrier-Carrier scattering
+      no bulk trap Coulomb scattering 
+      no E_normal dependence
+      Without ThinLayer mobility model
+      no high-field saturation
+      Einstein relation for diffusivity-mobility ratio
+      no band tail high-field mobility
+    Energy relaxation time model: according to formula in parameter file
+    Schottky resistance model: default bult-in model
+    Lattice thermal conductivity model: according to formula in parameter file
+    Metal Resistivity model: according to formula in parameter file
+    Thermo Electric Power model: extraploted Si data
+    Metal Thermo Electric Power model: MetalThermoElectricPower model not defined
+    Lattice heat capacity model: temperature dependent
+    no piezoelectric polarization model
+    Without default parameters from file (use built-in default parameters)
+-----------------------------------------------
+  Process information for extraction purposes:
+    none
+  Plot variables:
+    eDensity
+    hDensity
+    eCurrentDensity/Vector
+    hCurrentDensity/Vector
+    ElectrostaticPotential
+    ElectricField/Vector
+    SpaceCharge
+    DopingConcentration
+    eQuasiFermiPotential
+    hQuasiFermiPotential
+    DonorConcentration
+    AcceptorConcentration
+    eTrappedCharge
+    hTrappedCharge
+    eGapStatesRecombination
+    hGapStatesRecombination
+
+------------------------------------------------
+  NoisePlot variables:
+    none
+  Plot groups:
+    none
+
+------------------------------------------------
+  CurrentPlot variables:
+    none
+Devices:
+Device Pixel:
+Parameters
+Electrodes:
+  "IMP1_electrode" : 0.0000e+00 V (Ohmic, Material = "Aluminum"), area factor : 1
+  "BOT_electrode" : 0.0000e+00 V (Ohmic, Material = "Aluminum"), area factor : 1
+RayTrace Boundaries:
+Files:
+  Grid file: ../meshes/2D_P1_msh.tdr
+  MIMCurrent file: pp8_des_mimcur_des.plt
+  MIMSensitivity file: pp8_des_mimsa_des.tdr
+  Plot file: n8_des.tdr
+  AutoNewtonPlot file: n8_des_%ld_des.tdr
+  Current file: n8_des.plt
+  ModelParameters file: sdevice.par
+-----------------------------------------------
+Numerical parameters:
+  With usage of best vertex in element (maximum element-vertex volume angle) for impact ionization models
+-----------------------------------------------
+-----------------------------------------------
+Physical models:
+  With SRH-Recombination
+    With Hurkx field dependent lifetimes (trap assisted tunneling model)
+    With doping dependent lifetimes
+    With temperature dependent lifetimes (power law)
+  Without thermal resistance interfaces
+  Without distributed resistance interfaces for electrons
+  Without distributed resistance interfaces for holes
+
+  With Avalanche-Generation: 
+  For electrons:
+    driving force is Parallel (to current) Electric Field,
+    model according to van Overstraeten / de Man
+  For holes:
+    driving force is Parallel (to current) Electric Field,
+    model according to van Overstraeten / de Man
+
+  Device Temperature = 2.9315e+02 K
+  Fermi Statistic 
+  Intrinsic density models:
+    default bandgap model
+    Bandgap narrowing model: Slotboom with bandgap narrowing (Fermi)
+  Electron mobility:
+    Philips unified mobility with Phosphorus as n-type
+    High-field mobility: Caughey-Thomas saturation model, using gradient quasi-Fermi potential
+  Hole mobility:
+    Philips unified mobility with Phosphorus as n-type
+    High-field mobility: Caughey-Thomas saturation model, using gradient quasi-Fermi potential
+-----------------------------------------------
+- - - - - - - - - - - - - - - - - - - - - - - - 
+The following Physical models have been specified
+              for Interface = 'Oxide/Silicon'
+  Without thermal resistance interfaces
+  Without distributed resistance interfaces for electrons
+  Without distributed resistance interfaces for holes
+  With Charges:
+    Uniform Surface Conc = 1.0000e+11 cm^-2
+- - - - - - - - - - - - - - - - - - - - - - - -
+
+------------------------------------------------
+
+------------------------------------------------
+Systems:
+System :
+DEVICE MOS_harness
+  PARAMETERS 
+END DEVICE
+DEVICE ferroelectric
+  PARAMETERS 
+    A = 1
+    Cint = 2.5e+07
+    T = 300
+    Tc = 665.7
+    alpha = 1
+    alpha0 = 0
+    beta = 0
+    gamma = 0
+    rho = 0
+    t = 1
+END DEVICE
+DEVICE satinductor
+  PARAMETERS 
+    Ms = 1.6e+06
+    N = 1
+    a = 1100
+    ae = 1
+    alpha = 0.0016
+    c = 0.17
+    k = 400
+    le = 1
+    lg = 0
+    ue = 0
+END DEVICE
+PSET MOS_harness_pset
+  PARAMETERS 
+END PSET
+PSET ferroelectric_pset
+  PARAMETERS 
+    A = 1e-08
+    Cint = 2.5e+07
+    T = 300
+    Tc = 665.7
+    alpha = -4e+07
+    alpha0 = 0
+    beta = -5e+06
+    gamma = 5e+07
+    rho = 0
+    t = 0.06
+END PSET
+PSET satinductor_pset
+  PARAMETERS 
+    Ms = 1.6e+06
+    N = 1
+    a = 1100
+    ae = 1
+    alpha = 0.0016
+    c = 0.17
+    k = 400
+    le = 1
+    lg = 0
+    ue = 0
+END PSET
+Pixel pixel ( BOT_electrode=cp IMP1_electrode=cn ){
+RayTrace Boundaries:
+With usage of best vertex in element (maximum element-vertex volume angle) for impact ionization models
+-----------------------------------------------
+Physical models:
+  Without thermal resistance interfaces
+  Without distributed resistance interfaces for electrons
+  Without distributed resistance interfaces for holes
+-----------------------------------------------
+
+------------------------------------------------
+
+------------------------------------------------
+    }
+Vsource_pset vn ( cn 0 ){
+	dc	= 0
+}
+Vsource_pset vp ( cp 0 ){
+	dc	= 0
+}
+
+
+Solve :
+ Poisson
+Coupled ( Digits : 5, Max. #iterations : 100, 
+    Solver : blocked decomposition,
+    #undamped iterations : 50 
+    )
+    { Poisson Electron Hole } 
+Save( FilePrefix = "n8_init" overwrite )
+  { }
+ACCoupled ( Digits : 5, Max. #iterations : 15, 
+      Solver : blocked decomposition,
+      AC Solver : blocked decomposition,
+      #undamped iterations : 50 ,
+      StartFrequency: 1.0000e+03, EndFrequency: 1.0000e+03, 
+      NumberOfPoints: 1 Mode: Decade, 
+      Node(cp, cn) 
+      Exclude(vp, vn) 
+
+    )
+  { Poisson Electron Hole Circuit Contact }
+Quasistationary ( Digits : 5, Max. #iterations : 15, 
+      Initial step in t : 1.0000e-07, 
+      Minimum step in t : 1.0000e-10, Maximum step in t : 0.04, 
+      Increment : 1.25, Decrement : 4, 
+      Goal values :
+        Circuit element vp.dc : -3.0000e+02V
+    )
+  {
+    ACCoupled ( Digits : 5, Max. #iterations : 10, 
+          Solver : blocked decomposition,
+          AC Solver : blocked decomposition,
+          #undamped iterations : 50 ,
+          StartFrequency: 1.0000e+03, EndFrequency: 1.0000e+03, 
+          NumberOfPoints: 1 Mode: Decade, 
+          Node(cp, cn) 
+          Exclude(vp, vn) 
+
+        )
+      { Poisson Electron Hole Circuit Contact }
+  }
+
+===============================
+
+Reading device instance 'pixel'
+Reading grid '../meshes/2D_P1_msh.tdr' ... 
+  coordinate system: DFISE, 2d_dfise (y is device down direction, 3d extension right-handed)
+  use coordinate system as is (no transformation)
+  TDR format
+  Number of grid points is 3987.
+done.
+
+Adding interfaces and contacts .... done.
+
+Computing edges ...
+  Number of edges: 12028
+done.
+Computing boxes ...
+
+  CVPL_AverageBoxMethod = TRUE 
+   
+  Boxmethod Parallel Computing: nbThreads = 1 
+
+  Computing Delaunay coefficients ...   done.
+  Delaunay coefficients time: (wallclock = 0.0000e+00 s, tcpu = 0.0000e+00 s)
+
+  Parallel Computing Voronoi faces, coefficients, and measures ... 
+  CVPL_Algorithm = TRUE 
+
+    Computing Obtuse Elements ... 
+     Obtuse Elements time:  tcpu = 0.0000e+00 s
+      New Parameters time: (wallclock = 0.0000e+00 s, tcpu = 0.0000e+00 s)
+      Control Volumes For Avalanche time: (wallclock = 0.0000e+00 s, tcpu = 0.0000e+00 s)
+
+Info for all regions (NumberOfRegions = 4):
+        ElementWithMinVolume(   109) Vertex0(  359)( 1.200000e+01,-1.083984e-01) Volume = 1.693726e-03 um3 (1.54e-07 from TotalVolume)
+          ElementWithMinEdge(  7536) Vertex0( 3986)( 1.203125e+01, 0.000000e+00) Length = 3.125000e-02 um
+              MaxFlatElement(  7226) Vertex0( 3813)( 4.984375e+01, 1.906016e+02)  Angle = 6.124958e+01 degrees
+         ElementWithMinAngle(   397) Vertex0( 3984)( 1.200000e+01,-5.000000e-01)  Angle = 4.562563e+00 degrees
+   ElementWithMaxQualityEdge(   397) Vertex0( 3984)( 1.200000e+01,-5.000000e-01)    R/L = 6.285543e+00 
+ ElementWithMaxQualityHeight(   397) Vertex0( 3984)( 1.200000e+01,-5.000000e-01)    R/H = 6.305525e+00 
+
+Info for semiconductor regions (NumberOfRegions = 1):
+        ElementWithMinVolume(  7536) Vertex0( 3986)( 1.203125e+01, 0.000000e+00) Volume = 4.425049e-03 um3 (4.01e-07 from TotalVolume)
+          ElementWithMinEdge(  7536) Vertex0( 3986)( 1.203125e+01, 0.000000e+00) Length = 3.125000e-02 um
+              MaxFlatElement(  7226) Vertex0( 3813)( 4.984375e+01, 1.906016e+02)  Angle = 6.124958e+01 degrees
+         ElementWithMinAngle(  7536) Vertex0( 3986)( 1.203125e+01, 0.000000e+00)  Angle = 6.296819e+00 degrees
+   ElementWithMaxQualityEdge(  7536) Vertex0( 3986)( 1.203125e+01, 0.000000e+00)    R/L = 4.558753e+00 
+ ElementWithMaxQualityHeight(  7536) Vertex0( 3986)( 1.203125e+01, 0.000000e+00)    R/H = 4.586422e+00 
+
+   NumberOfEdges              =  12028 
+   NumberOfGeometricalEdges   =  11524 
+   NumberOfDoubleEdges        =      0 
+   MaxNumberOfEdgesPerVertex  =      7; vertex(64) = ( 3.437500e+00, -1.083984e-01) [um]
+   MaxNumberOfElementsPerEdge =      2; edge(0) = (0, 8) 
+                                        vertex(0) = ( 4.296875e-01, -1.083984e-01) [um]
+                                        vertex(8) = ( 8.593750e-01, -0.000000e+00) [um]
+
+                        NumberOfVertices =   4241 
+                        NumberOfElements =   7538 
+                       NumberOfTriangles =   7538  (100.00 %)
+                      NumberOfRectangles =      0  ( 0.00 %)
+                  NumberOfObtuseElements =      0  ( 0.00 %)
+
+  VertexWithMaxMeasure( 3251)( 3.093750e+01, 1.655391e+02)
+  MaxVertMeasure(1.076904e+01)/VertVolume(5.384521e+00) = 2.00e+00
+
+
+/-------- Region non-Delaunay elements -----------------------------------------------------------------
+ Region      Volume      BoxMethodVolume  DeltaVolume  Elements  non-Delaunay      non-DelaunayVolume 
+  name        [um2]          [um2]           [%]                   Elements              [um2]   [%]   
+ -------------------------------------------------------------------------------------------------------
+ OX1      5.0000000e+00  5.0000000e+00     1.8e-13       109       0 ( 0.00 %)   0.0000000e+00 ( 0.0000) 
+ MID_OX1  1.5500000e+01  1.5500000e+01     1.7e-13       294       0 ( 0.00 %)   0.0000000e+00 ( 0.0000) 
+ OX2      5.0000000e+00  5.0000000e+00     8.0e-14       109       0 ( 0.00 %)   0.0000000e+00 ( 0.0000) 
+ bulk     1.1000000e+04  1.1000000e+04     1.3e-11      7026       0 ( 0.00 %)   0.0000000e+00 ( 0.0000) 
+ .......................................................................................................
+ Total    1.1025500e+04  1.1025500e+04     1.2e-11      7538       0 ( 0.00 %)   0.0000000e+00 ( 0.0000) 
+\-------------------------------------------------------------------------------------------------------
+    done.
+  done.
+  (times: wallclock = 0.01 s, tcpu = 0.01 s)
+done.
+Reading doping '../meshes/2D_P1_msh.tdr' (TDR format) ...
+done.
+done.
+Reading parameter file 'sdevice.par' ...
+---------------------------------------------------
+ Reading parameters for material "Silicon"
+---------------------------------------------------
+
+	Differences compared with default parameters:
+	Scharfetter(elec): tau_max = 0.01, instead of: 1.0000e-05 [s]
+	Scharfetter(hole): tau_max = 1.0000e-03, instead of: 3.0000e-06 [s]
+
+
+=======
+Region: "MID_OX1"
+  (material is "Oxide")
+=======
+  Using default lattice crystal coordinate system:
+    effective LatticeParameters:
+      X = (1, 0.0000e+00, 0.0000e+00)
+      Y = (0.0000e+00, 1, 0.0000e+00)
+      Z = (0.0000e+00, 0.0000e+00, 1)
+  Constants are not modified and equal to default ones
+
+=======
+Region: "OX1"
+  (material is "Oxide")
+=======
+  Using default lattice crystal coordinate system:
+    effective LatticeParameters:
+      X = (1, 0.0000e+00, 0.0000e+00)
+      Y = (0.0000e+00, 1, 0.0000e+00)
+      Z = (0.0000e+00, 0.0000e+00, 1)
+  Constants are not modified and equal to default ones
+
+=======
+Region: "OX2"
+  (material is "Oxide")
+=======
+  Using default lattice crystal coordinate system:
+    effective LatticeParameters:
+      X = (1, 0.0000e+00, 0.0000e+00)
+      Y = (0.0000e+00, 1, 0.0000e+00)
+      Z = (0.0000e+00, 0.0000e+00, 1)
+  Constants are not modified and equal to default ones
+
+=======
+Region: "bulk"
+  (material is "Silicon")
+=======
+  Model: "Scharfetter"
+    Parameter "taumax_e" is modified from 1e-05 to 0.01
+    Parameter "taumax_h" is modified from 3e-06 to 0.001
+  Using default lattice crystal coordinate system:
+    effective LatticeParameters:
+      X = (1, 0.0000e+00, 0.0000e+00)
+      Y = (0.0000e+00, 1, 0.0000e+00)
+      Z = (0.0000e+00, 0.0000e+00, 1)
+
+================
+RegionInterface: "MID_OX1/bulk"
+  (material interface is "Oxide/Silicon")
+================
+  Constants are not modified and equal to default ones
+
+================
+RegionInterface: "OX1/bulk"
+  (material interface is "Oxide/Silicon")
+================
+  Constants are not modified and equal to default ones
+
+================
+RegionInterface: "OX2/bulk"
+  (material interface is "Oxide/Silicon")
+================
+  Constants are not modified and equal to default ones
+
+==========
+Electrode: "BOT_electrode"
+==========
+  Constants are not modified and equal to default ones
+
+==========
+Electrode: "IMP1_electrode"
+==========
+  Constants are not modified and equal to default ones
+
+
+Acceptor and donor concentrations (AcceptorConcentration, DonorConcentration):
+    computed based on the following species from the doping file:
+        PhosphorusActiveConcentration (donor)
+        BoronActiveConcentration (acceptor)
+Net doping concentration (DopingConcentration):
+    obtained from doping file
+Total doping concentration (TotalConcentration):
+    recomputed from acceptor and donor concentrations
+
+
+Done reading device instance 'pixel'
+
+With Constant Reference Potential:
+  Parameters of Reference Semiconductor:
+    The Electron Affinity: 4.07187
+    The Band Gap: 1.1211
+    The Electron DOS: 2.8527e+19
+    The Hole DOS: 3.0784e+19
+  The Constant Reference Potential: 4.63146
+
+===============================
+Starting solve of next problem:
+ Poisson
+===============================
+
+Computing poisson-equation 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+  Work function of contact 'BOT_electrode':
+    is ignored at contact vertices connected to semiconductor
+  Work function of contact 'IMP1_electrode':
+    is ignored at contact vertices connected to semiconductor
+    0      4.13e+01                                                      0.01
+    1      9.04e+06   1.00e+00   7.15e+00   8.88e+04    0         1      0.02
+    2      1.77e+06   1.00e+00   2.85e+00   5.35e+04    0         1      0.03
+    3      4.24e+05   1.00e+00   1.75e+00   3.95e+04    0         1      0.04
+    4      1.30e+05   1.00e+00   3.18e-01   6.83e+03    0         1      0.04
+    5      4.49e+04   1.00e+00   1.83e-01   1.71e+03    0         1      0.05
+    6      1.61e+04   1.00e+00   1.65e-01   1.74e+03    0         1      0.06
+    7      5.88e+03   1.00e+00   1.52e-01   1.70e+03    0         1      0.06
+    8      2.16e+03   1.00e+00   1.38e-01   1.51e+03    0         1      0.07
+    9      7.92e+02   1.00e+00   1.24e-01   1.24e+03    0         1      0.08
+   10      2.92e+02   1.00e+00   1.13e-01   1.01e+03    0         1      0.09
+   11      1.07e+02   1.00e+00   1.03e-01   9.24e+02    0         1      0.09
+   12      3.95e+01   1.00e+00   9.07e-02   9.05e+02    0         1      0.10
+   13      1.42e+01   1.00e+00   7.81e-02   8.99e+02    0         1      0.11
+   14      4.53e+00   1.00e+00   6.26e-02   8.10e+02    0         1      0.11
+   15      8.83e-01   1.00e+00   3.51e-02   4.80e+02    0         1      0.12
+   16      4.30e-02   1.00e+00   8.26e-03   1.13e+02    0         1      0.13
+   17      9.85e-05   1.00e+00   3.66e-04   4.92e+00    0         1      0.14
+   18      4.69e-10   1.00e+00   7.05e-07   9.23e-03    0         1      0.14
+Finished, because...
+Error smaller than 1 ( 9.2304E-03 ).
+
+Accumulated times:
+Assembly time:        0.06 s
+Solve time:      0.08 s
+Total time:      0.14 s
+
+Device Instance 'pixel':
+Contact              Voltage              Electron      Hole         Conduction 
+                 outer       inner        current       current      current
+ BOT_electro  0.000E+00    0.000E+00      1.991E-20     9.273E-29    1.991E-20
+ IMP1_electr  0.000E+00    0.000E+00     -1.991E-20    -9.280E-29   -1.991E-20
+
+
+===============================
+Starting solve of next problem:
+Coupled ( Digits : 5, Max. #iterations : 100, 
+    Solver : blocked decomposition,
+    #undamped iterations : 50 
+    )
+    { Poisson Electron Hole } 
+===============================
+
+Computing Coupled( 3 circuit-equation(s) , 1 poisson-equation(s) , 
+                   1 current-contact-equation(s) , 1 electron-equation(s) , 
+                   1 hole-equation(s) ) 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      6.58e-04                                                      0.06
+    1      1.69e-04   1.00e+00   2.91e-12   1.72e-07    0         3      0.23
+Finished, because...
+Error smaller than 1 ( 1.7246E-07 ).
+
+Accumulated times:
+Assembly time:        0.18 s
+Solve time:      0.05 s
+Total time:      0.23 s
+
+Device Instance 'pixel':
+Contact              Voltage              Electron      Hole         Conduction 
+                 outer       inner        current       current      current
+ BOT_electro  0.000E+00    0.000E+00      3.335E-21     9.072E-31    3.335E-21
+ IMP1_electr  0.000E+00    0.000E+00     -3.335E-21    -8.192E-31   -3.335E-21
+
+
+===============================
+Starting solve of next problem:
+Save( FilePrefix = "n8_init" overwrite )
+  { }
+===============================
+
+Saving device 'pixel':
+    Writing save 'n8_init_pixel_des.sav' (TDR format) ... done.
+Saving circuit:
+    Writing 'n8_init_circuit_des.sav' ... done.
+
+
+===============================
+Starting solve of next problem:
+ACCoupled ( Digits : 5, Max. #iterations : 15, 
+      Solver : blocked decomposition,
+      AC Solver : blocked decomposition,
+      #undamped iterations : 50 ,
+      StartFrequency: 1.0000e+03, EndFrequency: 1.0000e+03, 
+      NumberOfPoints: 1 Mode: Decade, 
+      Node(cp, cn) 
+      Exclude(vp, vn) 
+
+    )
+  { Poisson Electron Hole Circuit Contact }
+===============================
+
+Computing Coupled( 3 circuit-equation(s) , 1 poisson-equation(s) , 
+                   1 current-contact-equation(s) , 1 electron-equation(s) , 
+                   1 hole-equation(s) ) 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      1.69e-04                                                      0.06
+    1      1.69e-04   1.00e+00   9.94e-16   1.15e-11    0         3      0.19
+Finished, because...
+Error smaller than 1 ( 1.1528E-11 ).
+
+Accumulated times:
+Assembly time:        0.14 s
+Solve time:      0.05 s
+Total time:      0.19 s
+
+
+AC small signal computation
+---------------------------
+(Using complex mode)
+
+
+Computing frequency 1.0000e+03 OK (time:  0.06 s)
+
+Device Instance 'pixel':
+Contact              Voltage              Electron      Hole         Conduction 
+                 outer       inner        current       current      current
+ BOT_electro  0.000E+00    0.000E+00      4.777E-21     8.335E-31    4.777E-21
+ IMP1_electr  0.000E+00    0.000E+00     -4.777E-21    -7.406E-31   -4.777E-21
+
+
+===============================
+Starting solve of next problem:
+Quasistationary ( Digits : 5, Max. #iterations : 15, 
+      Initial step in t : 1.0000e-07, 
+      Minimum step in t : 1.0000e-10, Maximum step in t : 0.04, 
+      Increment : 1.25, Decrement : 4, 
+      Goal values :
+        Circuit element vp.dc : -3.0000e+02V
+    )
+  {
+    ACCoupled ( Digits : 5, Max. #iterations : 10, 
+          Solver : blocked decomposition,
+          AC Solver : blocked decomposition,
+          #undamped iterations : 50 ,
+          StartFrequency: 1.0000e+03, EndFrequency: 1.0000e+03, 
+          NumberOfPoints: 1 Mode: Decade, 
+          Node(cp, cn) 
+          Exclude(vp, vn) 
+
+        )
+      { Poisson Electron Hole Circuit Contact }
+  }
+===============================
+
+Computing step from t=0.0000e+00 to t=1.0000e-07 (Stepsize: 1.0000e-07) :
+Computing Coupled( 3 circuit-equation(s) , 1 poisson-equation(s) , 
+                   1 current-contact-equation(s) , 1 electron-equation(s) , 
+                   1 hole-equation(s) ) 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      3.73e+06                                                      0.06
+    1      2.12e-04   1.00e+00   8.22e-04   1.51e+01    0         3      0.19
+    2      1.69e-04   1.00e+00   3.61e-07   1.43e-03    0         3      0.29
+Finished, because...
+Error smaller than 1 ( 1.4325E-03 ).
+
+Accumulated times:
+Assembly time:        0.22 s
+Solve time:      0.07 s
+Total time:      0.29 s
+
+Device Instance 'pixel':
+Contact              Voltage              Electron      Hole         Conduction 
+                 outer       inner        current       current      current
+ BOT_electro -3.000E-05   -3.000E-05     -7.168E-22    -1.072E-20   -1.144E-20
+ IMP1_electr  0.000E+00    0.000E+00      1.141E-20     2.998E-23    1.144E-20
+
+
+AC small signal computation
+---------------------------
+(Using complex mode)
+
+
+Computing frequency 1.0000e+03 OK (time:  0.06 s)
+
+Computing step from t=1.0000e-07 to t=2.2167e-07 (Stepsize: 1.2167e-07) :
+Extrapolating values for t = 2.2167e-07 ... done.
+Computing Coupled( 3 circuit-equation(s) , 1 poisson-equation(s) , 
+                   1 current-contact-equation(s) , 1 electron-equation(s) , 
+                   1 hole-equation(s) ) 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      3.54e-04                                                      0.06
+    1      1.69e-04   1.00e+00   4.98e-08   4.19e-04    0         3      0.17
+Finished, because...
+Error smaller than 1 ( 4.1920E-04 ).
+
+Accumulated times:
+Assembly time:        0.15 s
+Solve time:      0.02 s
+Total time:      0.17 s
+
+Device Instance 'pixel':
+Contact              Voltage              Electron      Hole         Conduction 
+                 outer       inner        current       current      current
+ BOT_electro -6.650E-05   -6.650E-05     -2.259E-22    -2.375E-20   -2.398E-20
+ IMP1_electr  0.000E+00    0.000E+00      2.391E-20     6.642E-23    2.398E-20
+
+
+AC small signal computation
+---------------------------
+(Using complex mode)
+
+
+Computing frequency 1.0000e+03 OK (time:  0.05 s)
+
+Computing step from t=2.2167e-07 to t=3.7375e-07 (Stepsize: 1.5208e-07) :
+Extrapolating values for t = 3.7375e-07 ... done.
+Computing Coupled( 3 circuit-equation(s) , 1 poisson-equation(s) , 
+                   1 current-contact-equation(s) , 1 electron-equation(s) , 
+                   1 hole-equation(s) ) 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      1.69e-04                                                      0.06
+    1      1.69e-04   1.00e+00   7.70e-08   6.47e-04    0         3      0.16
+Finished, because...
+Error smaller than 1 ( 6.4701E-04 ).
+
+Accumulated times:
+Assembly time:        0.13 s
+Solve time:      0.02 s
+Total time:      0.16 s
+
+Device Instance 'pixel':
+Contact              Voltage              Electron      Hole         Conduction 
+                 outer       inner        current       current      current
+ BOT_electro -1.121E-04   -1.121E-04     -3.719E-21    -4.003E-20   -4.375E-20
+ IMP1_electr  0.000E+00    0.000E+00      4.363E-20     1.119E-22    4.375E-20
+
+
+AC small signal computation
+---------------------------
+(Using complex mode)
+
+
+Computing frequency 1.0000e+03 OK (time:  0.06 s)
+
+Computing step from t=3.7375e-07 to t=5.6385e-07 (Stepsize: 1.9010e-07) :
+Extrapolating values for t = 5.6385e-07 ... done.
+Computing Coupled( 3 circuit-equation(s) , 1 poisson-equation(s) , 
+                   1 current-contact-equation(s) , 1 electron-equation(s) , 
+                   1 hole-equation(s) ) 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      3.54e-04                                                      0.06
+    1      1.69e-04   1.00e+00   1.22e-07   1.01e-03    0         3      0.16
+Finished, because...
+Error smaller than 1 ( 1.0107E-03 ).
+
+Accumulated times:
+Assembly time:        0.14 s
+Solve time:      0.02 s
+Total time:      0.16 s
+
+Device Instance 'pixel':
+Contact              Voltage              Electron      Hole         Conduction 
+                 outer       inner        current       current      current
+ BOT_electro -1.692E-04   -1.692E-04     -1.400E-20    -6.035E-20   -7.435E-20
+ IMP1_electr  0.000E+00    0.000E+00      7.418E-20     1.686E-22    7.435E-20
+
+
+AC small signal computation
+---------------------------
+(Using complex mode)
+
+
+Computing frequency 1.0000e+03 OK (time:  0.06 s)
+
+Computing step from t=5.6385e-07 to t=8.0148e-07 (Stepsize: 2.3763e-07) :
+Extrapolating values for t = 8.0148e-07 ... done.
+Computing Coupled( 3 circuit-equation(s) , 1 poisson-equation(s) , 
+                   1 current-contact-equation(s) , 1 electron-equation(s) , 
+                   1 hole-equation(s) ) 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      3.54e-04                                                      0.07
+    1      1.69e-04   1.00e+00   1.88e-07   1.58e-03    0         3      0.17
+Finished, because...
+Error smaller than 1 ( 1.5788E-03 ).
+
+Accumulated times:
+Assembly time:        0.15 s
+Solve time:      0.02 s
+Total time:      0.17 s
+
+Device Instance 'pixel':
+Contact              Voltage              Electron      Hole         Conduction 
+                 outer       inner        current       current      current
+ BOT_electro -2.404E-04   -2.404E-04      3.527E-21    -8.571E-20   -8.218E-20
+ IMP1_electr  0.000E+00    0.000E+00      8.194E-20     2.393E-22    8.218E-20
+
+
+AC small signal computation
+---------------------------
+(Using complex mode)
+
+
+Computing frequency 1.0000e+03 OK (time:  0.05 s)
+
+Computing step from t=8.0148e-07 to t=1.0985e-06 (Stepsize: 2.9704e-07) :
+Extrapolating values for t = 1.0985e-06 ... done.
+Computing Coupled( 3 circuit-equation(s) , 1 poisson-equation(s) , 
+                   1 current-contact-equation(s) , 1 electron-equation(s) , 
+                   1 hole-equation(s) ) 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      1.11e-03                                                      0.07
+    1      1.69e-04   1.00e+00   2.95e-07   2.47e-03    0         3      0.17
+Finished, because...
+Error smaller than 1 ( 2.4660E-03 ).
+
+Accumulated times:
+Assembly time:        0.15 s
+Solve time:      0.02 s
+Total time:      0.17 s
+
+Device Instance 'pixel':
+Contact              Voltage              Electron      Hole         Conduction 
+                 outer       inner        current       current      current
+ BOT_electro -3.296E-04   -3.296E-04     -8.416E-21    -1.174E-19   -1.258E-19
+ IMP1_electr  0.000E+00    0.000E+00      1.254E-19     3.274E-22    1.258E-19
+
+
+AC small signal computation
+---------------------------
+(Using complex mode)
+
+
+Computing frequency 1.0000e+03 OK (time:  0.06 s)
+
+Computing step from t=1.0985e-06 to t=1.4698e-06 (Stepsize: 3.7130e-07) :
+Extrapolating values for t = 1.4698e-06 ... done.
+Computing Coupled( 3 circuit-equation(s) , 1 poisson-equation(s) , 
+                   1 current-contact-equation(s) , 1 electron-equation(s) , 
+                   1 hole-equation(s) ) 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      2.58e-04                                                      0.06
+    1      1.69e-04   1.00e+00   4.62e-07   3.85e-03    0         3      0.16
+Finished, because...
+Error smaller than 1 ( 3.8515E-03 ).
+
+Accumulated times:
+Assembly time:        0.14 s
+Solve time:      0.02 s
+Total time:      0.16 s
+
+Device Instance 'pixel':
+Contact              Voltage              Electron      Hole         Conduction 
+                 outer       inner        current       current      current
+ BOT_electro -4.409E-04   -4.409E-04     -4.464E-21    -1.568E-19   -1.613E-19
+ IMP1_electr  0.000E+00    0.000E+00      1.609E-19     4.371E-22    1.613E-19
+
+
+AC small signal computation
+---------------------------
+(Using complex mode)
+
+
+Computing frequency 1.0000e+03 OK (time:  0.06 s)
+
+Computing step from t=1.4698e-06 to t=1.9339e-06 (Stepsize: 4.6412e-07) :
+Extrapolating values for t = 1.9339e-06 ... done.
+Computing Coupled( 3 circuit-equation(s) , 1 poisson-equation(s) , 
+                   1 current-contact-equation(s) , 1 electron-equation(s) , 
+                   1 hole-equation(s) ) 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      1.69e-04                                                      0.07
+    1      1.69e-04   1.00e+00   7.23e-07   6.01e-03    0         3      0.17
+Finished, because...
+Error smaller than 1 ( 6.0147E-03 ).
+
+Accumulated times:
+Assembly time:        0.15 s
+Solve time:      0.02 s
+Total time:      0.17 s
+
+Device Instance 'pixel':
+Contact              Voltage              Electron      Hole         Conduction 
+                 outer       inner        current       current      current
+ BOT_electro -5.802E-04   -5.802E-04     -1.765E-21    -2.060E-19   -2.078E-19
+ IMP1_electr  0.000E+00    0.000E+00      2.072E-19     5.736E-22    2.078E-19
+
+
+AC small signal computation
+---------------------------
+(Using complex mode)
+
+
+Computing frequency 1.0000e+03 OK (time:  0.05 s)
+
+Computing step from t=1.9339e-06 to t=2.5141e-06 (Stepsize: 5.8015e-07) :
+Extrapolating values for t = 2.5141e-06 ... done.
+Computing Coupled( 3 circuit-equation(s) , 1 poisson-equation(s) , 
+                   1 current-contact-equation(s) , 1 electron-equation(s) , 
+                   1 hole-equation(s) ) 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      1.11e-03                                                      0.07
+    1      1.69e-04   1.00e+00   1.13e-06   9.39e-03    0         3      0.17
+Finished, because...
+Error smaller than 1 ( 9.3916E-03 ).
+
+Accumulated times:
+Assembly time:        0.15 s
+Solve time:      0.02 s
+Total time:      0.17 s
+
+Device Instance 'pixel':
+Contact              Voltage              Electron      Hole         Conduction 
+                 outer       inner        current       current      current
+ BOT_electro -7.542E-04   -7.542E-04     -1.192E-20    -2.673E-19   -2.792E-19
+ IMP1_electr  0.000E+00    0.000E+00      2.785E-19     7.431E-22    2.792E-19
+
+
+AC small signal computation
+---------------------------
+(Using complex mode)
+
+
+Computing frequency 1.0000e+03 OK (time:  0.06 s)
+
+Computing step from t=2.5141e-06 to t=3.2393e-06 (Stepsize: 7.2519e-07) :
+Extrapolating values for t = 3.2393e-06 ... done.
+Computing Coupled( 3 circuit-equation(s) , 1 poisson-equation(s) , 
+                   1 current-contact-equation(s) , 1 electron-equation(s) , 
+                   1 hole-equation(s) ) 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      3.54e-04                                                      0.06
+    1      1.69e-04   1.00e+00   1.77e-06   1.47e-02    0         3      0.16
+Finished, because...
+Error smaller than 1 ( 1.4662E-02 ).
+
+Accumulated times:
+Assembly time:        0.14 s
+Solve time:      0.02 s
+Total time:      0.16 s
+
+Device Instance 'pixel':
+Contact              Voltage              Electron      Hole         Conduction 
+                 outer       inner        current       current      current
+ BOT_electro -9.718E-04   -9.718E-04     -1.977E-21    -3.435E-19   -3.455E-19
+ IMP1_electr  0.000E+00    0.000E+00      3.446E-19     9.534E-22    3.455E-19
+
+
+AC small signal computation
+---------------------------
+(Using complex mode)
+
+
+Computing frequency 1.0000e+03 OK (time:  0.06 s)
+
+Computing step from t=3.2393e-06 to t=4.1458e-06 (Stepsize: 9.0649e-07) :
+Extrapolating values for t = 4.1458e-06 ... done.
+Computing Coupled( 3 circuit-equation(s) , 1 poisson-equation(s) , 
+                   1 current-contact-equation(s) , 1 electron-equation(s) , 
+                   1 hole-equation(s) ) 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      1.11e-03                                                      0.07
+    1      1.69e-04   1.00e+00   2.78e-06   2.29e-02    0         3      0.17
+Finished, because...
+Error smaller than 1 ( 2.2885E-02 ).
+
+Accumulated times:
+Assembly time:        0.15 s
+Solve time:      0.02 s
+Total time:      0.17 s
+
+Device Instance 'pixel':
+Contact              Voltage              Electron      Hole         Conduction 
+                 outer       inner        current       current      current
+ BOT_electro -1.244E-03   -1.244E-03     -2.348E-20    -4.383E-19   -4.618E-19
+ IMP1_electr  0.000E+00    0.000E+00      4.606E-19     1.214E-21    4.618E-19
+
+
+AC small signal computation
+---------------------------
+(Using complex mode)
+
+
+Computing frequency 1.0000e+03 OK (time:  0.05 s)
+
+Computing step from t=4.1458e-06 to t=5.2789e-06 (Stepsize: 1.1331e-06) :
+Extrapolating values for t = 5.2789e-06 ... done.
+Computing Coupled( 3 circuit-equation(s) , 1 poisson-equation(s) , 
+                   1 current-contact-equation(s) , 1 electron-equation(s) , 
+                   1 hole-equation(s) ) 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      1.11e-03                                                      0.07
+    1      1.69e-04   1.00e+00   4.35e-06   3.57e-02    0         3      0.17
+Finished, because...
+Error smaller than 1 ( 3.5711E-02 ).
+
+Accumulated times:
+Assembly time:        0.14 s
+Solve time:      0.03 s
+Total time:      0.17 s
+
+Device Instance 'pixel':
+Contact              Voltage              Electron      Hole         Conduction 
+                 outer       inner        current       current      current
+ BOT_electro -1.584E-03   -1.584E-03     -2.902E-20    -5.560E-19   -5.850E-19
+ IMP1_electr  0.000E+00    0.000E+00      5.835E-19     1.535E-21    5.850E-19
+
+
+AC small signal computation
+---------------------------
+(Using complex mode)
+
+
+Computing frequency 1.0000e+03 OK (time:  0.06 s)
+
+Computing step from t=5.2789e-06 to t=6.6953e-06 (Stepsize: 1.4164e-06) :
+Extrapolating values for t = 6.6953e-06 ... done.
+Computing Coupled( 3 circuit-equation(s) , 1 poisson-equation(s) , 
+                   1 current-contact-equation(s) , 1 electron-equation(s) , 
+                   1 hole-equation(s) ) 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      6.41e-04                                                      0.06
+    1      1.69e-04   1.00e+00   6.83e-06   5.57e-02    0         3      0.16
+Finished, because...
+Error smaller than 1 ( 5.5704E-02 ).
+
+Accumulated times:
+Assembly time:        0.14 s
+Solve time:      0.02 s
+Total time:      0.17 s
+
+Device Instance 'pixel':
+Contact              Voltage              Electron      Hole         Conduction 
+                 outer       inner        current       current      current
+ BOT_electro -2.009E-03   -2.009E-03     -1.652E-20    -7.018E-19   -7.183E-19
+ IMP1_electr  0.000E+00    0.000E+00      7.164E-19     1.931E-21    7.183E-19
+
+
+AC small signal computation
+---------------------------
+(Using complex mode)
+
+
+Computing frequency 1.0000e+03 OK (time:  0.06 s)
+
+Computing step from t=6.6953e-06 to t=8.4657e-06 (Stepsize: 1.7705e-06) :
+Extrapolating values for t = 8.4657e-06 ... done.
+Computing Coupled( 3 circuit-equation(s) , 1 poisson-equation(s) , 
+                   1 current-contact-equation(s) , 1 electron-equation(s) , 
+                   1 hole-equation(s) ) 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      6.41e-04                                                      0.07
+    1      1.69e-04   1.00e+00   1.07e-05   8.69e-02    0         3      0.17
+Finished, because...
+Error smaller than 1 ( 8.6852E-02 ).
+
+Accumulated times:
+Assembly time:        0.15 s
+Solve time:      0.02 s
+Total time:      0.17 s
+
+Device Instance 'pixel':
+Contact              Voltage              Electron      Hole         Conduction 
+                 outer       inner        current       current      current
+ BOT_electro -2.540E-03   -2.540E-03     -6.526E-21    -8.821E-19   -8.886E-19
+ IMP1_electr  0.000E+00    0.000E+00      8.862E-19     2.416E-21    8.886E-19
+
+
+AC small signal computation
+---------------------------
+(Using complex mode)
+
+
+Computing frequency 1.0000e+03 OK (time:  0.06 s)
+
+Computing step from t=8.4657e-06 to t=1.0679e-05 (Stepsize: 2.2131e-06) :
+Extrapolating values for t = 1.0679e-05 ... done.
+Computing Coupled( 3 circuit-equation(s) , 1 poisson-equation(s) , 
+                   1 current-contact-equation(s) , 1 electron-equation(s) , 
+                   1 hole-equation(s) ) 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      1.11e-03                                                      0.06
+    1      1.69e-04   1.00e+00   1.69e-05   1.35e-01    0         3      0.16
+Finished, because...
+Error smaller than 1 ( 1.3534E-01 ).
+
+Accumulated times:
+Assembly time:        0.14 s
+Solve time:      0.02 s
+Total time:      0.16 s
+
+Device Instance 'pixel':
+Contact              Voltage              Electron      Hole         Conduction 
+                 outer       inner        current       current      current
+ BOT_electro -3.204E-03   -3.204E-03      2.705E-20    -1.104E-18   -1.077E-18
+ IMP1_electr  0.000E+00    0.000E+00      1.074E-18     3.009E-21    1.077E-18
+
+
+AC small signal computation
+---------------------------
+(Using complex mode)
+
+
+Computing frequency 1.0000e+03 OK (time:  0.06 s)
+
+Computing step from t=1.0679e-05 to t=1.3445e-05 (Stepsize: 2.7664e-06) :
+Extrapolating values for t = 1.3445e-05 ... done.
+Computing Coupled( 3 circuit-equation(s) , 1 poisson-equation(s) , 
+                   1 current-contact-equation(s) , 1 electron-equation(s) , 
+                   1 hole-equation(s) ) 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      3.55e-04                                                      0.07
+    1      1.68e-04   1.00e+00   2.65e-05   2.11e-01    0         3      0.17
+Finished, because...
+Error smaller than 1 ( 2.1075E-01 ).
+
+Accumulated times:
+Assembly time:        0.15 s
+Solve time:      0.02 s
+Total time:      0.17 s
+
+Device Instance 'pixel':
+Contact              Voltage              Electron      Hole         Conduction 
+                 outer       inner        current       current      current
+ BOT_electro -4.034E-03   -4.034E-03      1.448E-19    -1.378E-18   -1.233E-18
+ IMP1_electr  0.000E+00    0.000E+00      1.229E-18     3.728E-21    1.233E-18
+
+
+AC small signal computation
+---------------------------
+(Using complex mode)
+
+
+Computing frequency 1.0000e+03 OK (time:  0.06 s)
+
+Computing step from t=1.3445e-05 to t=1.6903e-05 (Stepsize: 3.4580e-06) :
+Extrapolating values for t = 1.6903e-05 ... done.
+Computing Coupled( 3 circuit-equation(s) , 1 poisson-equation(s) , 
+                   1 current-contact-equation(s) , 1 electron-equation(s) , 
+                   1 hole-equation(s) ) 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      6.41e-04                                                      0.06
+    1      1.68e-04   1.00e+00   4.18e-05   3.28e-01    0         3      0.16
+Finished, because...
+Error smaller than 1 ( 3.2790E-01 ).
+
+Accumulated times:
+Assembly time:        0.14 s
+Solve time:      0.02 s
+Total time:      0.16 s
+
+Device Instance 'pixel':
+Contact              Voltage              Electron      Hole         Conduction 
+                 outer       inner        current       current      current
+ BOT_electro -5.071E-03   -5.071E-03      4.374E-19    -1.712E-18   -1.275E-18
+ IMP1_electr  0.000E+00    0.000E+00      1.270E-18     4.594E-21    1.275E-18
+
+
+AC small signal computation
+---------------------------
+(Using complex mode)
+
+
+Computing frequency 1.0000e+03 OK (time:  0.06 s)
+
+Computing step from t=1.6903e-05 to t=2.1226e-05 (Stepsize: 4.3225e-06) :
+Extrapolating values for t = 2.1226e-05 ... done.
+Computing Coupled( 3 circuit-equation(s) , 1 poisson-equation(s) , 
+                   1 current-contact-equation(s) , 1 electron-equation(s) , 
+                   1 hole-equation(s) ) 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      1.68e-04                                                      0.06
+    1      1.68e-04   1.00e+00   6.61e-05   5.10e-01    0         3      0.16
+Finished, because...
+Error smaller than 1 ( 5.0966E-01 ).
+
+Accumulated times:
+Assembly time:        0.14 s
+Solve time:      0.02 s
+Total time:      0.16 s
+
+Device Instance 'pixel':
+Contact              Voltage              Electron      Hole         Conduction 
+                 outer       inner        current       current      current
+ BOT_electro -6.368E-03   -6.368E-03      1.138E-18    -2.120E-18   -9.818E-19
+ IMP1_electr  0.000E+00    0.000E+00      9.762E-19     5.628E-21    9.818E-19
+
+
+AC small signal computation
+---------------------------
+(Using complex mode)
+
+
+Computing frequency 1.0000e+03 OK (time:  0.06 s)
+
+Computing step from t=2.1226e-05 to t=2.6629e-05 (Stepsize: 5.4031e-06) :
+Extrapolating values for t = 2.6629e-05 ... done.
+Computing Coupled( 3 circuit-equation(s) , 1 poisson-equation(s) , 
+                   1 current-contact-equation(s) , 1 electron-equation(s) , 
+                   1 hole-equation(s) ) 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      1.68e-04                                                      0.07
+    1      1.68e-04   1.00e+00   1.05e-04   7.91e-01    0         3      0.17
+Finished, because...
+Error smaller than 1 ( 7.9119E-01 ).
+
+Accumulated times:
+Assembly time:        0.15 s
+Solve time:      0.02 s
+Total time:      0.17 s
+
+Device Instance 'pixel':
+Contact              Voltage              Electron      Hole         Conduction 
+                 outer       inner        current       current      current
+ BOT_electro -7.989E-03   -7.989E-03      2.881E-18    -2.613E-18    2.679E-19
+ IMP1_electr  0.000E+00    0.000E+00     -2.748E-19     6.848E-21   -2.679E-19
+
+
+AC small signal computation
+---------------------------
+(Using complex mode)
+
+
+Computing frequency 1.0000e+03 OK (time:  0.05 s)
+
+Computing step from t=2.6629e-05 to t=3.3383e-05 (Stepsize: 6.7539e-06) :
+Extrapolating values for t = 3.3383e-05 ... done.
+Computing Coupled( 3 circuit-equation(s) , 1 poisson-equation(s) , 
+                   1 current-contact-equation(s) , 1 electron-equation(s) , 
+                   1 hole-equation(s) ) 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      2.64e-04                                                      0.07
+    1      1.68e-04   1.00e+00   1.66e-04   1.23e+00    0         3      0.17
+    2      1.68e-04   1.00e+00   1.44e-09   4.79e-05    0         3      0.27
+Finished, because...
+Error smaller than 1 ( 4.7895E-05 ).
+
+Accumulated times:
+Assembly time:        0.23 s
+Solve time:      0.04 s
+Total time:      0.27 s
+
+Device Instance 'pixel':
+Contact              Voltage              Electron      Hole         Conduction 
+                 outer       inner        current       current      current
+ BOT_electro -1.001E-02   -1.001E-02     -1.516E-19    -3.206E-18   -3.357E-18
+ IMP1_electr  0.000E+00    0.000E+00      3.349E-18     8.267E-21    3.357E-18
+
+
+AC small signal computation
+---------------------------
+(Using complex mode)
+
+
+Computing frequency 1.0000e+03 OK (time:  0.06 s)
+
+Computing step from t=3.3383e-05 to t=4.1600e-05 (Stepsize: 8.2172e-06) :
+Extrapolating values for t = 4.1600e-05 ... done.
+Computing Coupled( 3 circuit-equation(s) , 1 poisson-equation(s) , 
+                   1 current-contact-equation(s) , 1 electron-equation(s) , 
+                   1 hole-equation(s) ) 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      6.41e-04                                                      0.06
+    1      1.68e-04   1.00e+00   2.52e-04   1.82e+00    0         3      0.16
+    2      1.68e-04   1.00e+00   3.24e-09   1.06e-04    0         3      0.26
+Finished, because...
+Error smaller than 1 ( 1.0601E-04 ).
+
+Accumulated times:
+Assembly time:        0.22 s
+Solve time:      0.04 s
+Total time:      0.26 s
+
+Device Instance 'pixel':
+Contact              Voltage              Electron      Hole         Conduction 
+                 outer       inner        current       current      current
+ BOT_electro -1.248E-02   -1.248E-02     -1.777E-19    -3.892E-18   -4.070E-18
+ IMP1_electr  0.000E+00    0.000E+00      4.060E-18     9.846E-21    4.070E-18
+
+
+AC small signal computation
+---------------------------
+(Using complex mode)
+
+
+Computing frequency 1.0000e+03 OK (time:  0.06 s)
+
+Computing step from t=4.1600e-05 to t=5.1597e-05 (Stepsize: 9.9976e-06) :
+Extrapolating values for t = 5.1597e-05 ... done.
+Computing Coupled( 3 circuit-equation(s) , 1 poisson-equation(s) , 
+                   1 current-contact-equation(s) , 1 electron-equation(s) , 
+                   1 hole-equation(s) ) 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      3.55e-04                                                      0.07
+    1      1.68e-04   1.00e+00   3.79e-04   2.66e+00    0         3      0.17
+    2      1.68e-04   1.00e+00   7.07e-09   2.28e-04    0         3      0.27
+Finished, because...
+Error smaller than 1 ( 2.2827E-04 ).
+
+Accumulated times:
+Assembly time:        0.23 s
+Solve time:      0.04 s
+Total time:      0.27 s
+
+Device Instance 'pixel':
+Contact              Voltage              Electron      Hole         Conduction 
+                 outer       inner        current       current      current
+ BOT_electro -1.548E-02   -1.548E-02     -2.153E-19    -4.681E-18   -4.896E-18
+ IMP1_electr  0.000E+00    0.000E+00      4.884E-18     1.157E-20    4.896E-18
+
+
+AC small signal computation
+---------------------------
+(Using complex mode)
+
+
+Computing frequency 1.0000e+03 OK (time:  0.05 s)
+
+Computing step from t=5.1597e-05 to t=6.3761e-05 (Stepsize: 1.2164e-05) :
+Extrapolating values for t = 6.3761e-05 ... done.
+Computing Coupled( 3 circuit-equation(s) , 1 poisson-equation(s) , 
+                   1 current-contact-equation(s) , 1 electron-equation(s) , 
+                   1 hole-equation(s) ) 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      6.40e-04                                                      0.07
+    1      1.68e-04   1.00e+00   5.70e-04   3.88e+00    0         3      0.17
+    2      1.68e-04   1.00e+00   1.53e-08   4.90e-04    0         3      0.27
+Finished, because...
+Error smaller than 1 ( 4.8961E-04 ).
+
+Accumulated times:
+Assembly time:        0.22 s
+Solve time:      0.04 s
+Total time:      0.27 s
+
+Device Instance 'pixel':
+Contact              Voltage              Electron      Hole         Conduction 
+                 outer       inner        current       current      current
+ BOT_electro -1.913E-02   -1.913E-02     -2.492E-19    -5.576E-18   -5.825E-18
+ IMP1_electr  0.000E+00    0.000E+00      5.811E-18     1.341E-20    5.825E-18
+
+
+AC small signal computation
+---------------------------
+(Using complex mode)
+
+
+Computing frequency 1.0000e+03 OK (time:  0.06 s)
+
+Computing step from t=6.3761e-05 to t=7.8560e-05 (Stepsize: 1.4799e-05) :
+Extrapolating values for t = 7.8560e-05 ... done.
+Computing Coupled( 3 circuit-equation(s) , 1 poisson-equation(s) , 
+                   1 current-contact-equation(s) , 1 electron-equation(s) , 
+                   1 hole-equation(s) ) 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      5.48e-04                                                      0.06
+    1      1.96e-04   1.00e+00   8.53e-04   5.64e+00    0         3      0.16
+    2      1.68e-04   1.00e+00   3.29e-08   1.05e-03    0         3      0.26
+Finished, because...
+Error smaller than 1 ( 1.0451E-03 ).
+
+Accumulated times:
+Assembly time:        0.22 s
+Solve time:      0.04 s
+Total time:      0.26 s
+
+Device Instance 'pixel':
+Contact              Voltage              Electron      Hole         Conduction 
+                 outer       inner        current       current      current
+ BOT_electro -2.357E-02   -2.357E-02     -2.797E-19    -6.579E-18   -6.859E-18
+ IMP1_electr  0.000E+00    0.000E+00      6.843E-18     1.532E-20    6.859E-18
+
+
+AC small signal computation
+---------------------------
+(Using complex mode)
+
+
+Computing frequency 1.0000e+03 OK (time:  0.06 s)
+
+Computing step from t=7.8560e-05 to t=9.6566e-05 (Stepsize: 1.8006e-05) :
+Extrapolating values for t = 9.6566e-05 ... done.
+Computing Coupled( 3 circuit-equation(s) , 1 poisson-equation(s) , 
+                   1 current-contact-equation(s) , 1 electron-equation(s) , 
+                   1 hole-equation(s) ) 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      8.22e-04                                                      0.07
+    1      4.14e-04   1.00e+00   1.27e-03   8.17e+00    0         3      0.17
+    2      1.67e-04   1.00e+00   7.08e-08   2.22e-03    0         3      0.27
+Finished, because...
+Error smaller than 1 ( 2.2175E-03 ).
+
+Accumulated times:
+Assembly time:        0.23 s
+Solve time:      0.04 s
+Total time:      0.27 s
+
+Device Instance 'pixel':
+Contact              Voltage              Electron      Hole         Conduction 
+                 outer       inner        current       current      current
+ BOT_electro -2.897E-02   -2.897E-02     -3.193E-19    -7.688E-18   -8.007E-18
+ IMP1_electr  0.000E+00    0.000E+00      7.990E-18     1.722E-20    8.007E-18
+
+
+AC small signal computation
+---------------------------
+(Using complex mode)
+
+
+Computing frequency 1.0000e+03 OK (time:  0.05 s)
+
+Computing step from t=9.6566e-05 to t=1.1847e-04 (Stepsize: 2.1907e-05) :
+Extrapolating values for t = 1.1847e-04 ... done.
+Computing Coupled( 3 circuit-equation(s) , 1 poisson-equation(s) , 
+                   1 current-contact-equation(s) , 1 electron-equation(s) , 
+                   1 hole-equation(s) ) 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      1.23e-03                                                      0.06
+    1      8.71e-04   1.00e+00   1.87e-03   1.18e+01    0         3      0.16
+    2      1.67e-04   1.00e+00   1.57e-07   4.67e-03    0         3      0.26
+Finished, because...
+Error smaller than 1 ( 4.6703E-03 ).
+
+Accumulated times:
+Assembly time:        0.21 s
+Solve time:      0.04 s
+Total time:      0.26 s
+
+Device Instance 'pixel':
+Contact              Voltage              Electron      Hole         Conduction 
+                 outer       inner        current       current      current
+ BOT_electro -3.554E-02   -3.554E-02     -3.447E-19    -8.895E-18   -9.240E-18
+ IMP1_electr  0.000E+00    0.000E+00      9.221E-18     1.906E-20    9.240E-18
+
+
+AC small signal computation
+---------------------------
+(Using complex mode)
+
+
+Computing frequency 1.0000e+03 OK (time:  0.06 s)
+
+Computing step from t=1.1847e-04 to t=1.4513e-04 (Stepsize: 2.6653e-05) :
+Extrapolating values for t = 1.4513e-04 ... done.
+Computing Coupled( 3 circuit-equation(s) , 1 poisson-equation(s) , 
+                   1 current-contact-equation(s) , 1 electron-equation(s) , 
+                   1 hole-equation(s) ) 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      1.85e-03                                                      0.06
+    1      1.80e-03   1.00e+00   2.75e-03   1.67e+01    0         3      0.16
+    2      1.67e-04   1.00e+00   3.89e-07   9.73e-03    0         3      0.26
+Finished, because...
+Error smaller than 1 ( 9.7342E-03 ).
+
+Accumulated times:
+Assembly time:        0.22 s
+Solve time:      0.04 s
+Total time:      0.26 s
+
+Device Instance 'pixel':
+Contact              Voltage              Electron      Hole         Conduction 
+                 outer       inner        current       current      current
+ BOT_electro -4.354E-02   -4.354E-02     -3.695E-19    -1.019E-17   -1.056E-17
+ IMP1_electr  0.000E+00    0.000E+00      1.054E-17     2.073E-20    1.056E-17
+
+
+AC small signal computation
+---------------------------
+(Using complex mode)
+
+
+Computing frequency 1.0000e+03 OK (time:  0.06 s)
+
+Computing step from t=1.4513e-04 to t=1.7755e-04 (Stepsize: 3.2428e-05) :
+Extrapolating values for t = 1.7755e-04 ... done.
+Computing Coupled( 3 circuit-equation(s) , 1 poisson-equation(s) , 
+                   1 current-contact-equation(s) , 1 electron-equation(s) , 
+                   1 hole-equation(s) ) 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      2.79e-03                                                      0.07
+    1      3.62e-03   1.00e+00   4.03e-03   2.36e+01    0         3      0.17
+    2      1.67e-04   1.00e+00   1.11e-06   2.00e-02    0         3      0.27
+Finished, because...
+Error smaller than 1 ( 2.0043E-02 ).
+
+Accumulated times:
+Assembly time:        0.23 s
+Solve time:      0.04 s
+Total time:      0.27 s
+
+Device Instance 'pixel':
+Contact              Voltage              Electron      Hole         Conduction 
+                 outer       inner        current       current      current
+ BOT_electro -5.327E-02   -5.327E-02     -3.978E-19    -1.157E-17   -1.197E-17
+ IMP1_electr  0.000E+00    0.000E+00      1.195E-17     2.216E-20    1.197E-17
+
+
+AC small signal computation
+---------------------------
+(Using complex mode)
+
+
+Computing frequency 1.0000e+03 OK (time:  0.06 s)
+
+Computing step from t=1.7755e-04 to t=2.1701e-04 (Stepsize: 3.9454e-05) :
+Extrapolating values for t = 2.1701e-04 ... done.
+Computing Coupled( 3 circuit-equation(s) , 1 poisson-equation(s) , 
+                   1 current-contact-equation(s) , 1 electron-equation(s) , 
+                   1 hole-equation(s) ) 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      4.20e-03                                                      0.06
+    1      7.02e-03   1.00e+00   6.03e-03   3.29e+01    0         3      0.16
+    2      1.67e-04   1.00e+00   3.36e-06   4.06e-02    0         3      0.26
+Finished, because...
+Error smaller than 1 ( 4.0623E-02 ).
+
+Accumulated times:
+Assembly time:        0.22 s
+Solve time:      0.04 s
+Total time:      0.26 s
+
+Device Instance 'pixel':
+Contact              Voltage              Electron      Hole         Conduction 
+                 outer       inner        current       current      current
+ BOT_electro -6.510E-02   -6.510E-02     -4.176E-19    -1.303E-17   -1.344E-17
+ IMP1_electr  0.000E+00    0.000E+00      1.342E-17     2.329E-20    1.344E-17
+
+
+AC small signal computation
+---------------------------
+(Using complex mode)
+
+
+Computing frequency 1.0000e+03 OK (time:  0.06 s)
+
+Computing step from t=2.1701e-04 to t=2.6501e-04 (Stepsize: 4.8003e-05) :
+Extrapolating values for t = 2.6501e-04 ... done.
+Computing Coupled( 3 circuit-equation(s) , 1 poisson-equation(s) , 
+                   1 current-contact-equation(s) , 1 electron-equation(s) , 
+                   1 hole-equation(s) ) 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      6.31e-03                                                      0.07
+    1      1.56e-02   1.00e+00   9.35e-03   4.53e+01    0         3      0.17
+    2      1.67e-04   1.00e+00   9.26e-06   8.07e-02    0         3      0.27
+Finished, because...
+Error smaller than 1 ( 8.0707E-02 ).
+
+Accumulated times:
+Assembly time:        0.21 s
+Solve time:      0.04 s
+Total time:      0.27 s
+
+Device Instance 'pixel':
+Contact              Voltage              Electron      Hole         Conduction 
+                 outer       inner        current       current      current
+ BOT_electro -7.950E-02   -7.950E-02     -3.870E-19    -1.458E-17   -1.497E-17
+ IMP1_electr  0.000E+00    0.000E+00      1.494E-17     2.412E-20    1.497E-17
+
+
+AC small signal computation
+---------------------------
+(Using complex mode)
+
+
+Computing frequency 1.0000e+03 OK (time:  0.06 s)
+
+Computing step from t=2.6501e-04 to t=3.2342e-04 (Stepsize: 5.8404e-05) :
+Extrapolating values for t = 3.2342e-04 ... done.
+Computing Coupled( 3 circuit-equation(s) , 1 poisson-equation(s) , 
+                   1 current-contact-equation(s) , 1 electron-equation(s) , 
+                   1 hole-equation(s) ) 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      9.45e-03                                                      0.06
+    1      3.40e-02   1.00e+00   1.45e-02   6.16e+01    0         3      0.16
+    2      1.67e-04   1.00e+00   1.85e-05   1.56e-01    0         3      0.26
+Finished, because...
+Error smaller than 1 ( 1.5622E-01 ).
+
+Accumulated times:
+Assembly time:        0.22 s
+Solve time:      0.04 s
+Total time:      0.26 s
+
+Device Instance 'pixel':
+Contact              Voltage              Electron      Hole         Conduction 
+                 outer       inner        current       current      current
+ BOT_electro -9.702E-02   -9.702E-02     -2.461E-19    -1.627E-17   -1.652E-17
+ IMP1_electr  0.000E+00    0.000E+00      1.649E-17     2.465E-20    1.652E-17
+
+
+AC small signal computation
+---------------------------
+(Using complex mode)
+
+
+Computing frequency 1.0000e+03 OK (time:  0.06 s)
+
+Computing step from t=3.2342e-04 to t=3.9447e-04 (Stepsize: 7.1058e-05) :
+Extrapolating values for t = 3.9447e-04 ... done.
+Computing Coupled( 3 circuit-equation(s) , 1 poisson-equation(s) , 
+                   1 current-contact-equation(s) , 1 electron-equation(s) , 
+                   1 hole-equation(s) ) 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      1.40e-02                                                      0.07
+    1      7.18e-02   1.00e+00   2.13e-02   8.27e+01    0         3      0.17
+    2      3.56e-04   1.00e+00   1.96e-05   2.93e-01    0         3      0.27
+Finished, because...
+Error smaller than 1 ( 2.9286E-01 ).
+
+Accumulated times:
+Assembly time:        0.23 s
+Solve time:      0.04 s
+Total time:      0.27 s
+
+Device Instance 'pixel':
+Contact              Voltage              Electron      Hole         Conduction 
+                 outer       inner        current       current      current
+ BOT_electro -1.183E-01   -1.183E-01      3.541E-19    -1.816E-17   -1.781E-17
+ IMP1_electr  0.000E+00    0.000E+00      1.778E-17     2.494E-20    1.781E-17
+
+
+AC small signal computation
+---------------------------
+(Using complex mode)
+
+
+Computing frequency 1.0000e+03 OK (time:  0.05 s)
+
+Computing step from t=3.9447e-04 to t=4.8093e-04 (Stepsize: 8.6454e-05) :
+Extrapolating values for t = 4.8093e-04 ... done.
+Computing Coupled( 3 circuit-equation(s) , 1 poisson-equation(s) , 
+                   1 current-contact-equation(s) , 1 electron-equation(s) , 
+                   1 hole-equation(s) ) 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      2.06e-02                                                      0.07
+    1      1.45e-01   1.00e+00   3.57e-02   1.10e+02    0         3      0.17
+    2      3.56e-04   1.00e+00   3.57e-05   5.31e-01    0         3      0.27
+Finished, because...
+Error smaller than 1 ( 5.3096E-01 ).
+
+Accumulated times:
+Assembly time:        0.22 s
+Solve time:      0.04 s
+Total time:      0.27 s
+
+Device Instance 'pixel':
+Contact              Voltage              Electron      Hole         Conduction 
+                 outer       inner        current       current      current
+ BOT_electro -1.443E-01   -1.443E-01      2.782E-18    -2.032E-17   -1.754E-17
+ IMP1_electr  0.000E+00    0.000E+00      1.751E-17     2.508E-20    1.754E-17
+
+
+AC small signal computation
+---------------------------
+(Using complex mode)
+
+
+Computing frequency 1.0000e+03 OK (time:  0.06 s)
+
+Computing step from t=4.8093e-04 to t=5.8611e-04 (Stepsize: 1.0519e-04) :
+Extrapolating values for t = 5.8611e-04 ... done.
+Computing Coupled( 3 circuit-equation(s) , 1 poisson-equation(s) , 
+                   1 current-contact-equation(s) , 1 electron-equation(s) , 
+                   1 hole-equation(s) ) 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      2.95e-02                                                      0.07
+    1      2.89e-01   1.00e+00   8.48e-02   1.44e+02    0         3      0.17
+    2      3.56e-04   1.00e+00   1.29e-04   9.46e-01    0         3      0.27
+Finished, because...
+Error smaller than 1 ( 9.4554E-01 ).
+
+Accumulated times:
+Assembly time:        0.23 s
+Solve time:      0.04 s
+Total time:      0.27 s
+
+Device Instance 'pixel':
+Contact              Voltage              Electron      Hole         Conduction 
+                 outer       inner        current       current      current
+ BOT_electro -1.758E-01   -1.758E-01      1.248E-17    -2.283E-17   -1.035E-17
+ IMP1_electr  0.000E+00    0.000E+00      1.032E-17     2.514E-20    1.035E-17
+
+
+AC small signal computation
+---------------------------
+(Using complex mode)
+
+
+Computing frequency 1.0000e+03 OK (time:  0.05 s)
+
+Computing step from t=5.8611e-04 to t=7.1409e-04 (Stepsize: 1.2798e-04) :
+Extrapolating values for t = 7.1409e-04 ... done.
+Computing Coupled( 3 circuit-equation(s) , 1 poisson-equation(s) , 
+                   1 current-contact-equation(s) , 1 electron-equation(s) , 
+                   1 hole-equation(s) ) 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      4.05e-02                                                      0.07
+    1      6.22e-01   1.00e+00   1.84e-01   1.90e+02    0         3      0.17
+    2      1.67e-04   1.00e+00   3.10e-04   1.73e+00    0         3      0.27
+    3      3.56e-04   1.00e+00   1.24e-08   4.02e-05    0         3      0.37
+Finished, because...
+Error smaller than 1 ( 4.0221E-05 ).
+
+Accumulated times:
+Assembly time:        0.31 s
+Solve time:      0.06 s
+Total time:      0.37 s
+
+Device Instance 'pixel':
+Contact              Voltage              Electron      Hole         Conduction 
+                 outer       inner        current       current      current
+ BOT_electro -2.142E-01   -2.142E-01     -4.576E-19    -2.585E-17   -2.630E-17
+ IMP1_electr  0.000E+00    0.000E+00      2.628E-17     2.515E-20    2.630E-17
+
+
+AC small signal computation
+---------------------------
+(Using complex mode)
+
+
+Computing frequency 1.0000e+03 OK (time:  0.06 s)
+
+Computing step from t=7.1409e-04 to t=8.6552e-04 (Stepsize: 1.5144e-04) :
+Extrapolating values for t = 8.6552e-04 ... done.
+Computing Coupled( 3 circuit-equation(s) , 1 poisson-equation(s) , 
+                   1 current-contact-equation(s) , 1 electron-equation(s) , 
+                   1 hole-equation(s) ) 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      5.48e-02                                                      0.07
+    1      1.17e+00   1.00e+00   2.23e-01   2.42e+02    0         3      0.17
+    2      3.56e-04   1.00e+00   4.16e-04   3.10e+00    0         3      0.27
+    3      3.56e-04   1.00e+00   5.31e-08   1.19e-04    0         3      0.37
+Finished, because...
+Error smaller than 1 ( 1.1930E-04 ).
+
+Accumulated times:
+Assembly time:        0.30 s
+Solve time:      0.06 s
+Total time:      0.37 s
+
+Device Instance 'pixel':
+Contact              Voltage              Electron      Hole         Conduction 
+                 outer       inner        current       current      current
+ BOT_electro -2.597E-01   -2.597E-01     -4.532E-19    -2.943E-17   -2.988E-17
+ IMP1_electr  0.000E+00    0.000E+00      2.986E-17     2.515E-20    2.988E-17
+
+
+AC small signal computation
+---------------------------
+(Using complex mode)
+
+
+Computing frequency 1.0000e+03 OK (time:  0.06 s)
+
+Computing step from t=8.6552e-04 to t=1.0447e-03 (Stepsize: 1.7920e-04) :
+Extrapolating values for t = 1.0447e-03 ... done.
+Computing Coupled( 3 circuit-equation(s) , 1 poisson-equation(s) , 
+                   1 current-contact-equation(s) , 1 electron-equation(s) , 
+                   1 hole-equation(s) ) 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      7.40e-02                                                      0.07
+    1      1.81e+00   1.00e+00   1.65e-01   3.08e+02    0         3      0.17
+    2      3.56e-04   1.00e+00   7.48e-04   5.55e+00    0         3      0.27
+    3      3.56e-04   1.00e+00   1.06e-07   3.14e-04    0         3      0.37
+Finished, because...
+Error smaller than 1 ( 3.1351E-04 ).
+
+Accumulated times:
+Assembly time:        0.31 s
+Solve time:      0.06 s
+Total time:      0.37 s
+
+Device Instance 'pixel':
+Contact              Voltage              Electron      Hole         Conduction 
+                 outer       inner        current       current      current
+ BOT_electro -3.134E-01   -3.134E-01     -4.582E-19    -3.327E-17   -3.373E-17
+ IMP1_electr  0.000E+00    0.000E+00      3.371E-17     2.515E-20    3.373E-17
+
+
+AC small signal computation
+---------------------------
+(Using complex mode)
+
+
+Computing frequency 1.0000e+03 OK (time:  0.06 s)
+
+Computing step from t=1.0447e-03 to t=1.2568e-03 (Stepsize: 2.1205e-04) :
+Extrapolating values for t = 1.2568e-03 ... done.
+Computing Coupled( 3 circuit-equation(s) , 1 poisson-equation(s) , 
+                   1 current-contact-equation(s) , 1 electron-equation(s) , 
+                   1 hole-equation(s) ) 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      9.04e-02                                                      0.07
+    1      2.12e+00   1.00e+00   1.88e-01   3.90e+02    0         3      0.17
+    2      2.13e-04   1.00e+00   1.18e-03   9.33e+00    0         3      0.27
+    3      1.67e-04   1.00e+00   2.34e-07   6.52e-04    0         3      0.37
+Finished, because...
+Error smaller than 1 ( 6.5178E-04 ).
+
+Accumulated times:
+Assembly time:        0.31 s
+Solve time:      0.06 s
+Total time:      0.37 s
+
+Device Instance 'pixel':
+Contact              Voltage              Electron      Hole         Conduction 
+                 outer       inner        current       current      current
+ BOT_electro -3.770E-01   -3.770E-01     -4.529E-19    -3.678E-17   -3.723E-17
+ IMP1_electr  0.000E+00    0.000E+00      3.720E-17     2.515E-20    3.723E-17
+
+
+AC small signal computation
+---------------------------
+(Using complex mode)
+
+
+Computing frequency 1.0000e+03 OK (time:  0.06 s)
+
+Computing step from t=1.2568e-03 to t=1.5077e-03 (Stepsize: 2.5093e-04) :
+Extrapolating values for t = 1.5077e-03 ... done.
+Computing Coupled( 3 circuit-equation(s) , 1 poisson-equation(s) , 
+                   1 current-contact-equation(s) , 1 electron-equation(s) , 
+                   1 hole-equation(s) ) 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      9.45e-02                                                      0.07
+    1      3.88e+00   1.00e+00   3.40e-01   4.85e+02    0         3      0.17
+    2      6.96e-04   1.00e+00   1.67e-03   1.40e+01    0         3      0.27
+    3      1.67e-04   1.00e+00   3.37e-07   9.21e-04    0         3      0.38
+Finished, because...
+Error smaller than 1 ( 9.2134E-04 ).
+
+Accumulated times:
+Assembly time:        0.31 s
+Solve time:      0.06 s
+Total time:      0.38 s
+
+Device Instance 'pixel':
+Contact              Voltage              Electron      Hole         Conduction 
+                 outer       inner        current       current      current
+ BOT_electro -4.523E-01   -4.523E-01     -4.558E-19    -3.986E-17   -4.031E-17
+ IMP1_electr  0.000E+00    0.000E+00      4.029E-17     2.515E-20    4.031E-17
+
+
+AC small signal computation
+---------------------------
+(Using complex mode)
+
+
+Computing frequency 1.0000e+03 OK (time:  0.06 s)
+
+Computing step from t=1.5077e-03 to t=1.8046e-03 (Stepsize: 2.9694e-04) :
+Extrapolating values for t = 1.8046e-03 ... done.
+Computing Coupled( 3 circuit-equation(s) , 1 poisson-equation(s) , 
+                   1 current-contact-equation(s) , 1 electron-equation(s) , 
+                   1 hole-equation(s) ) 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      1.29e-01                                                      0.06
+    1      6.79e+00   1.00e+00   2.40e-01   6.05e+02    0         3      0.17
+    2      2.27e-03   1.00e+00   1.40e-03   2.05e+01    0         3      0.27
+    3      1.67e-04   1.00e+00   6.08e-07   3.83e-03    0         3      0.37
+Finished, because...
+Error smaller than 1 ( 3.8294E-03 ).
+
+Accumulated times:
+Assembly time:        0.31 s
+Solve time:      0.06 s
+Total time:      0.37 s
+
+Device Instance 'pixel':
+Contact              Voltage              Electron      Hole         Conduction 
+                 outer       inner        current       current      current
+ BOT_electro -5.414E-01   -5.414E-01     -4.470E-19    -4.380E-17   -4.424E-17
+ IMP1_electr  0.000E+00    0.000E+00      4.422E-17     2.515E-20    4.424E-17
+
+
+AC small signal computation
+---------------------------
+(Using complex mode)
+
+
+Computing frequency 1.0000e+03 OK (time:  0.05 s)
+
+Computing step from t=1.8046e-03 to t=2.1560e-03 (Stepsize: 3.5137e-04) :
+Extrapolating values for t = 2.1560e-03 ... done.
+Computing Coupled( 3 circuit-equation(s) , 1 poisson-equation(s) , 
+                   1 current-contact-equation(s) , 1 electron-equation(s) , 
+                   1 hole-equation(s) ) 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      1.69e-01                                                      0.07
+    1      1.17e+01   1.00e+00   1.62e-01   8.13e+02    0         3      0.17
+    2      7.76e-03   1.00e+00   1.45e-03   3.98e+01    0         3      0.27
+    3      1.67e-04   1.00e+00   1.25e-06   1.41e-02    0         3      0.38
+Finished, because...
+Error smaller than 1 ( 1.4077E-02 ).
+
+Accumulated times:
+Assembly time:        0.31 s
+Solve time:      0.06 s
+Total time:      0.38 s
+
+Device Instance 'pixel':
+Contact              Voltage              Electron      Hole         Conduction 
+                 outer       inner        current       current      current
+ BOT_electro -6.468E-01   -6.468E-01     -4.639E-19    -4.993E-17   -5.040E-17
+ IMP1_electr  0.000E+00    0.000E+00      5.037E-17     2.515E-20    5.040E-17
+
+
+AC small signal computation
+---------------------------
+(Using complex mode)
+
+
+Computing frequency 1.0000e+03 OK (time:  0.05 s)
+
+Computing step from t=2.1560e-03 to t=2.5718e-03 (Stepsize: 4.1579e-04) :
+Extrapolating values for t = 2.5718e-03 ... done.
+Computing Coupled( 3 circuit-equation(s) , 1 poisson-equation(s) , 
+                   1 current-contact-equation(s) , 1 electron-equation(s) , 
+                   1 hole-equation(s) ) 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      2.10e-01                                                      0.07
+    1      1.17e+01   1.00e+00   1.33e-01   1.09e+03    0         3      0.17
+    2      6.90e-03   1.00e+00   1.77e-03   7.54e+01    0         3      0.28
+    3      1.67e-04   1.00e+00   5.30e-06   2.52e-02    0         3      0.38
+Finished, because...
+Error smaller than 1 ( 2.5176E-02 ).
+
+Accumulated times:
+Assembly time:        0.32 s
+Solve time:      0.06 s
+Total time:      0.38 s
+
+Device Instance 'pixel':
+Contact              Voltage              Electron      Hole         Conduction 
+                 outer       inner        current       current      current
+ BOT_electro -7.715E-01   -7.715E-01     -4.580E-19    -5.555E-17   -5.600E-17
+ IMP1_electr  0.000E+00    0.000E+00      5.598E-17     2.515E-20    5.600E-17
+
+
+AC small signal computation
+---------------------------
+(Using complex mode)
+
+
+Computing frequency 1.0000e+03 OK (time:  0.05 s)
+
+Computing step from t=2.5718e-03 to t=3.0638e-03 (Stepsize: 4.9202e-04) :
+Extrapolating values for t = 3.0638e-03 ... done.
+Computing Coupled( 3 circuit-equation(s) , 1 poisson-equation(s) , 
+                   1 current-contact-equation(s) , 1 electron-equation(s) , 
+                   1 hole-equation(s) ) 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      2.09e-01                                                      0.06
+    1      2.32e+01   1.00e+00   1.36e-01   1.30e+03    0         3      0.16
+    2      3.00e-02   1.00e+00   2.86e-03   9.61e+01    0         3      0.27
+    3      1.67e-04   1.00e+00   1.56e-05   3.94e-02    0         3      0.37
+Finished, because...
+Error smaller than 1 ( 3.9399E-02 ).
+
+Accumulated times:
+Assembly time:        0.31 s
+Solve time:      0.06 s
+Total time:      0.37 s
+
+Device Instance 'pixel':
+Contact              Voltage              Electron      Hole         Conduction 
+                 outer       inner        current       current      current
+ BOT_electro -9.191E-01   -9.191E-01     -4.438E-19    -6.032E-17   -6.076E-17
+ IMP1_electr  0.000E+00    0.000E+00      6.074E-17     2.515E-20    6.076E-17
+
+
+AC small signal computation
+---------------------------
+(Using complex mode)
+
+
+Computing frequency 1.0000e+03 OK (time:  0.05 s)
+
+Computing step from t=3.0638e-03 to t=3.6461e-03 (Stepsize: 5.8222e-04) :
+Extrapolating values for t = 3.6461e-03 ... done.
+Computing Coupled( 3 circuit-equation(s) , 1 poisson-equation(s) , 
+                   1 current-contact-equation(s) , 1 electron-equation(s) , 
+                   1 hole-equation(s) ) 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      2.88e-01                                                      0.06
+    1      3.90e+01   1.00e+00   1.49e-01   1.72e+03    0         3      0.16
+    2      9.50e-02   1.00e+00   3.50e-03   1.64e+02    0         3      0.27
+    3      1.67e-04   1.00e+00   1.85e-05   2.20e-01    0         3      0.37
+Finished, because...
+Error smaller than 1 ( 2.1954E-01 ).
+
+Accumulated times:
+Assembly time:        0.31 s
+Solve time:      0.06 s
+Total time:      0.37 s
+
+Device Instance 'pixel':
+Contact              Voltage              Electron      Hole         Conduction 
+                 outer       inner        current       current      current
+ BOT_electro -1.094E+00   -1.094E+00     -4.264E-19    -6.888E-17   -6.931E-17
+ IMP1_electr  0.000E+00    0.000E+00      6.929E-17     2.515E-20    6.931E-17
+
+
+AC small signal computation
+---------------------------
+(Using complex mode)
+
+
+Computing frequency 1.0000e+03 OK (time:  0.06 s)
+
+Computing step from t=3.6461e-03 to t=4.3350e-03 (Stepsize: 6.8896e-04) :
+Extrapolating values for t = 4.3350e-03 ... done.
+Computing Coupled( 3 circuit-equation(s) , 1 poisson-equation(s) , 
+                   1 current-contact-equation(s) , 1 electron-equation(s) , 
+                   1 hole-equation(s) ) 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      3.42e-01                                                      0.06
+    1      4.09e+01   1.00e+00   1.26e-01   2.50e+03    0         3      0.17
+    2      9.82e-02   1.00e+00   5.52e-03   3.19e+02    0         3      0.27
+    3      8.29e-04   1.00e+00   1.59e-04   2.10e-01    0         3      0.37
+Finished, because...
+Error smaller than 1 ( 2.0995E-01 ).
+
+Accumulated times:
+Assembly time:        0.31 s
+Solve time:      0.06 s
+Total time:      0.37 s
+
+Device Instance 'pixel':
+Contact              Voltage              Electron      Hole         Conduction 
+                 outer       inner        current       current      current
+ BOT_electro -1.301E+00   -1.301E+00     -4.458E-19    -7.539E-17   -7.583E-17
+ IMP1_electr  0.000E+00    0.000E+00      7.581E-17     2.515E-20    7.583E-17
+
+
+AC small signal computation
+---------------------------
+(Using complex mode)
+
+
+Computing frequency 1.0000e+03 OK (time:  0.06 s)
+
+Computing step from t=4.3350e-03 to t=5.1503e-03 (Stepsize: 8.1527e-04) :
+Extrapolating values for t = 5.1503e-03 ... done.
+Computing Coupled( 3 circuit-equation(s) , 1 poisson-equation(s) , 
+                   1 current-contact-equation(s) , 1 electron-equation(s) , 
+                   1 hole-equation(s) ) 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      3.85e-01                                                      0.06
+    1      8.27e+01   1.00e+00   1.05e-01   2.79e+03    0         3      0.17
+    2      4.34e-01   1.00e+00   7.07e-03   3.45e+02    0         3      0.27
+    3      8.29e-04   1.00e+00   1.58e-04   9.86e-01    0         3      0.37
+Finished, because...
+Error smaller than 1 ( 9.8631E-01 ).
+
+Accumulated times:
+Assembly time:        0.31 s
+Solve time:      0.06 s
+Total time:      0.37 s
+
+Device Instance 'pixel':
+Contact              Voltage              Electron      Hole         Conduction 
+                 outer       inner        current       current      current
+ BOT_electro -1.545E+00   -1.545E+00      8.655E-20    -8.437E-17   -8.428E-17
+ IMP1_electr  0.000E+00    0.000E+00      8.426E-17     2.515E-20    8.428E-17
+
+
+AC small signal computation
+---------------------------
+(Using complex mode)
+
+
+Computing frequency 1.0000e+03 OK (time:  0.06 s)
+
+Computing step from t=5.1503e-03 to t=6.1150e-03 (Stepsize: 9.6474e-04) :
+Extrapolating values for t = 6.1150e-03 ... done.
+Computing Coupled( 3 circuit-equation(s) , 1 poisson-equation(s) , 
+                   1 current-contact-equation(s) , 1 electron-equation(s) , 
+                   1 hole-equation(s) ) 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      4.88e-01                                                      0.07
+    1      8.25e+01   1.00e+00   1.45e-01   5.14e+03    0         3      0.17
+    2      3.62e-01   1.00e+00   1.54e-02   8.49e+02    0         3      0.27
+    3      8.29e-04   1.00e+00   1.72e-03   1.57e+00    0         3      0.37
+    4      8.29e-04   1.00e+00   3.61e-07   8.32e-06    0         3      0.48
+Finished, because...
+Error smaller than 1 ( 8.3180E-06 ).
+
+Accumulated times:
+Assembly time:        0.40 s
+Solve time:      0.08 s
+Total time:      0.48 s
+
+Device Instance 'pixel':
+Contact              Voltage              Electron      Hole         Conduction 
+                 outer       inner        current       current      current
+ BOT_electro -1.835E+00   -1.835E+00     -4.548E-19    -9.269E-17   -9.315E-17
+ IMP1_electr  0.000E+00    0.000E+00      9.312E-17     2.515E-20    9.315E-17
+
+
+AC small signal computation
+---------------------------
+(Using complex mode)
+
+
+Computing frequency 1.0000e+03 OK (time:  0.06 s)
+
+Computing step from t=6.1150e-03 to t=7.2245e-03 (Stepsize: 1.1095e-03) :
+Extrapolating values for t = 7.2245e-03 ... done.
+Computing Coupled( 3 circuit-equation(s) , 1 poisson-equation(s) , 
+                   1 current-contact-equation(s) , 1 electron-equation(s) , 
+                   1 hole-equation(s) ) 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      5.00e-01                                                      0.07
+    1      1.53e+02   1.00e+00   1.54e-01   5.08e+03    0         3      0.17
+    2      1.60e+00   1.00e+00   1.96e-02   7.83e+02    0         3      0.27
+    3      8.29e-04   1.00e+00   7.26e-04   4.80e+00    0         3      0.38
+    4      8.29e-04   1.00e+00   3.62e-08   1.92e-04    0         3      0.48
+Finished, because...
+Error smaller than 1 ( 1.9226E-04 ).
+
+Accumulated times:
+Assembly time:        0.40 s
+Solve time:      0.08 s
+Total time:      0.48 s
+
+Device Instance 'pixel':
+Contact              Voltage              Electron      Hole         Conduction 
+                 outer       inner        current       current      current
+ BOT_electro -2.167E+00   -2.167E+00     -4.581E-19    -1.036E-16   -1.041E-16
+ IMP1_electr  0.000E+00    0.000E+00      1.040E-16     2.515E-20    1.041E-16
+
+
+AC small signal computation
+---------------------------
+(Using complex mode)
+
+
+Computing frequency 1.0000e+03 OK (time:  0.06 s)
+
+Computing step from t=7.2245e-03 to t=8.5004e-03 (Stepsize: 1.2759e-03) :
+Extrapolating values for t = 8.5004e-03 ... done.
+Computing Coupled( 3 circuit-equation(s) , 1 poisson-equation(s) , 
+                   1 current-contact-equation(s) , 1 electron-equation(s) , 
+                   1 hole-equation(s) ) 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      5.74e-01                                                      0.07
+    1      1.50e+02   1.00e+00   1.72e-01   9.65e+03    0         3      0.17
+    2      1.54e+00   1.00e+00   4.33e-02   1.58e+03    0         3      0.27
+    3      8.29e-04   1.00e+00   2.32e-02   4.40e+00    0         3      0.37
+    4      8.29e-04   1.00e+00   9.24e-05   4.33e-05    0         3      0.47
+Finished, because...
+Error smaller than 1 ( 4.3266E-05 ).
+
+Accumulated times:
+Assembly time:        0.38 s
+Solve time:      0.08 s
+Total time:      0.47 s
+
+Device Instance 'pixel':
+Contact              Voltage              Electron      Hole         Conduction 
+                 outer       inner        current       current      current
+ BOT_electro -2.550E+00   -2.550E+00     -4.571E-19    -1.119E-16   -1.124E-16
+ IMP1_electr  0.000E+00    0.000E+00      1.124E-16     2.515E-20    1.124E-16
+
+
+AC small signal computation
+---------------------------
+(Using complex mode)
+
+
+Computing frequency 1.0000e+03 OK (time:  0.06 s)
+
+Computing step from t=8.5004e-03 to t=9.9676e-03 (Stepsize: 1.4673e-03) :
+Extrapolating values for t = 9.9676e-03 ... done.
+Computing Coupled( 3 circuit-equation(s) , 1 poisson-equation(s) , 
+                   1 current-contact-equation(s) , 1 electron-equation(s) , 
+                   1 hole-equation(s) ) 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      6.52e-01                                                      0.07
+    1      2.06e+02   1.00e+00   2.45e-01   1.66e+04    0         3      0.17
+    2      3.26e+00   1.00e+00   7.40e-02   2.12e+03    0         3      0.27
+    3      8.29e-04   1.00e+00   3.47e-02   2.20e+01    0         3      0.38
+    4      8.29e-04   1.00e+00   2.28e-04   1.97e-03    0         3      0.48
+Finished, because...
+Error smaller than 1 ( 1.9665E-03 ).
+
+Accumulated times:
+Assembly time:        0.40 s
+Solve time:      0.08 s
+Total time:      0.48 s
+
+Device Instance 'pixel':
+Contact              Voltage              Electron      Hole         Conduction 
+                 outer       inner        current       current      current
+ BOT_electro -2.990E+00   -2.990E+00     -4.552E-19    -1.246E-16   -1.251E-16
+ IMP1_electr  0.000E+00    0.000E+00      1.250E-16     2.515E-20    1.251E-16
+
+
+AC small signal computation
+---------------------------
+(Using complex mode)
+
+
+Computing frequency 1.0000e+03 OK (time:  0.06 s)
+
+Computing step from t=9.9676e-03 to t=0.011655 (Stepsize: 1.6873e-03) :
+Extrapolating values for t = 0.011655 ... done.
+Computing Coupled( 3 circuit-equation(s) , 1 poisson-equation(s) , 
+                   1 current-contact-equation(s) , 1 electron-equation(s) , 
+                   1 hole-equation(s) ) 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      5.66e-01                                                      0.06
+    1      3.11e+02   1.00e+00   2.63e-01   1.11e+04    0         3      0.17
+    2      6.73e+00   1.00e+00   1.51e-01   1.71e+03    0         3      0.27
+    3      9.02e-04   1.00e+00   1.01e-02   1.99e+01    0         3      0.37
+    4      8.29e-04   1.00e+00   7.37e-06   3.55e-03    0         3      0.47
+Finished, because...
+Error smaller than 1 ( 3.5494E-03 ).
+
+Accumulated times:
+Assembly time:        0.39 s
+Solve time:      0.08 s
+Total time:      0.47 s
+
+Device Instance 'pixel':
+Contact              Voltage              Electron      Hole         Conduction 
+                 outer       inner        current       current      current
+ BOT_electro -3.496E+00   -3.496E+00     -4.610E-19    -1.365E-16   -1.370E-16
+ IMP1_electr  0.000E+00    0.000E+00      1.370E-16     2.516E-20    1.370E-16
+
+
+AC small signal computation
+---------------------------
+(Using complex mode)
+
+
+Computing frequency 1.0000e+03 OK (time:  0.06 s)
+
+Computing step from t=0.011655 to t=0.0135954 (Stepsize: 1.9404e-03) :
+Extrapolating values for t = 0.0135954 ... done.
+Computing Coupled( 3 circuit-equation(s) , 1 poisson-equation(s) , 
+                   1 current-contact-equation(s) , 1 electron-equation(s) , 
+                   1 hole-equation(s) ) 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      7.91e-01                                                      0.07
+    1      3.25e+02   1.00e+00   3.18e-01   2.50e+04    0         3      0.17
+    2      6.88e+00   1.00e+00   2.54e-01   2.27e+03    0         3      0.27
+    3      8.29e-04   1.00e+00   1.91e-01   1.19e+01    0         3      0.37
+    4      8.29e-04   1.00e+00   1.77e-03   1.16e-03    0         3      0.48
+Finished, because...
+Error smaller than 1 ( 1.1607E-03 ).
+
+Accumulated times:
+Assembly time:        0.39 s
+Solve time:      0.08 s
+Total time:      0.48 s
+
+Device Instance 'pixel':
+Contact              Voltage              Electron      Hole         Conduction 
+                 outer       inner        current       current      current
+ BOT_electro -4.079E+00   -4.079E+00     -4.661E-19    -1.477E-16   -1.481E-16
+ IMP1_electr  0.000E+00    0.000E+00      1.481E-16     2.516E-20    1.481E-16
+
+
+AC small signal computation
+---------------------------
+(Using complex mode)
+
+
+Computing frequency 1.0000e+03 OK (time:  0.06 s)
+
+Computing step from t=0.0135954 to t=0.0158269 (Stepsize: 2.2315e-03) :
+Extrapolating values for t = 0.0158269 ... done.
+Computing Coupled( 3 circuit-equation(s) , 1 poisson-equation(s) , 
+                   1 current-contact-equation(s) , 1 electron-equation(s) , 
+                   1 hole-equation(s) ) 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      9.00e-01                                                      0.07
+    1      3.05e+02   1.00e+00   4.43e-01   6.92e+04    0         3      0.17
+    2      3.83e+00   1.00e+00   4.24e-01   2.91e+03    0         3      0.28
+    3      8.29e-04   1.00e+00   3.27e-01   3.31e+01    0         3      0.38
+    4      8.29e-04   1.00e+00   1.79e-03   1.90e-03    0         3      0.48
+Finished, because...
+Error smaller than 1 ( 1.8965E-03 ).
+
+Accumulated times:
+Assembly time:        0.40 s
+Solve time:      0.08 s
+Total time:      0.48 s
+
+Device Instance 'pixel':
+Contact              Voltage              Electron      Hole         Conduction 
+                 outer       inner        current       current      current
+ BOT_electro -4.748E+00   -4.748E+00     -4.520E-19    -1.614E-16   -1.618E-16
+ IMP1_electr  0.000E+00    0.000E+00      1.618E-16     2.516E-20    1.618E-16
+
+
+AC small signal computation
+---------------------------
+(Using complex mode)
+
+
+Computing frequency 1.0000e+03 OK (time:  0.06 s)
+
+Computing step from t=0.0158269 to t=0.0183931 (Stepsize: 2.5662e-03) :
+Extrapolating values for t = 0.0183931 ... done.
+Computing Coupled( 3 circuit-equation(s) , 1 poisson-equation(s) , 
+                   1 current-contact-equation(s) , 1 electron-equation(s) , 
+                   1 hole-equation(s) ) 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      9.10e-01                                                      0.07
+    1      2.82e+02   1.00e+00   4.57e-01   1.23e+05    0         3      0.17
+    2      9.30e+00   1.00e+00   4.77e-01   3.21e+03    0         3      0.27
+    3      8.69e-04   1.00e+00   3.95e-01   6.77e+01    0         3      0.37
+    4      8.29e-04   1.00e+00   1.64e-03   1.20e-02    0         3      0.48
+Finished, because...
+Error smaller than 1 ( 1.1952E-02 ).
+
+Accumulated times:
+Assembly time:        0.39 s
+Solve time:      0.08 s
+Total time:      0.48 s
+
+Device Instance 'pixel':
+Contact              Voltage              Electron      Hole         Conduction 
+                 outer       inner        current       current      current
+ BOT_electro -5.518E+00   -5.518E+00     -4.530E-19    -1.769E-16   -1.773E-16
+ IMP1_electr  0.000E+00    0.000E+00      1.773E-16     2.516E-20    1.773E-16
+
+
+AC small signal computation
+---------------------------
+(Using complex mode)
+
+
+Computing frequency 1.0000e+03 OK (time:  0.06 s)
+
+Computing step from t=0.0183931 to t=0.0213443 (Stepsize: 2.9512e-03) :
+Extrapolating values for t = 0.0213443 ... done.
+Computing Coupled( 3 circuit-equation(s) , 1 poisson-equation(s) , 
+                   1 current-contact-equation(s) , 1 electron-equation(s) , 
+                   1 hole-equation(s) ) 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      8.82e-01                                                      0.06
+    1      2.81e+02   1.00e+00   4.29e-01   1.68e+05    0         3      0.17
+    2      1.86e+01   1.00e+00   4.54e-01   3.31e+03    0         3      0.27
+    3      3.90e-03   1.00e+00   4.16e-01   9.41e+01    0         3      0.37
+    4      3.09e-03   1.00e+00   1.83e-03   2.86e-02    0         3      0.47
+Finished, because...
+Error smaller than 1 ( 2.8568E-02 ).
+
+Accumulated times:
+Assembly time:        0.39 s
+Solve time:      0.08 s
+Total time:      0.47 s
+
+Device Instance 'pixel':
+Contact              Voltage              Electron      Hole         Conduction 
+                 outer       inner        current       current      current
+ BOT_electro -6.403E+00   -6.403E+00     -4.594E-19    -1.932E-16   -1.937E-16
+ IMP1_electr  0.000E+00    0.000E+00      1.937E-16     2.516E-20    1.937E-16
+
+
+AC small signal computation
+---------------------------
+(Using complex mode)
+
+
+Computing frequency 1.0000e+03 OK (time:  0.06 s)
+
+Computing step from t=0.0213443 to t=0.0247381 (Stepsize: 3.3938e-03) :
+Extrapolating values for t = 0.0247381 ... done.
+Computing Coupled( 3 circuit-equation(s) , 1 poisson-equation(s) , 
+                   1 current-contact-equation(s) , 1 electron-equation(s) , 
+                   1 hole-equation(s) ) 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      8.75e-01                                                      0.07
+    1      2.97e+02   1.00e+00   4.44e-01   2.00e+05    0         3      0.17
+    2      2.67e+01   1.00e+00   4.35e-01   3.29e+03    0         3      0.27
+    3      1.09e-02   1.00e+00   4.01e-01   1.04e+02    0         3      0.37
+    4      4.74e-03   1.00e+00   1.89e-03   3.51e-02    0         3      0.48
+Finished, because...
+Error smaller than 1 ( 3.5144E-02 ).
+
+Accumulated times:
+Assembly time:        0.40 s
+Solve time:      0.08 s
+Total time:      0.48 s
+
+Device Instance 'pixel':
+Contact              Voltage              Electron      Hole         Conduction 
+                 outer       inner        current       current      current
+ BOT_electro -7.421E+00   -7.421E+00     -4.644E-19    -2.102E-16   -2.106E-16
+ IMP1_electr  0.000E+00    0.000E+00      2.106E-16     2.516E-20    2.106E-16
+
+
+AC small signal computation
+---------------------------
+(Using complex mode)
+
+
+Computing frequency 1.0000e+03 OK (time:  0.05 s)
+
+Computing step from t=0.0247381 to t=0.0286411 (Stepsize: 3.9029e-03) :
+Extrapolating values for t = 0.0286411 ... done.
+Computing Coupled( 3 circuit-equation(s) , 1 poisson-equation(s) , 
+                   1 current-contact-equation(s) , 1 electron-equation(s) , 
+                   1 hole-equation(s) ) 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      9.81e-01                                                      0.07
+    1      3.65e+02   1.00e+00   4.72e-01   2.22e+05    0         3      0.18
+    2      3.27e+01   1.00e+00   3.50e-01   3.14e+03    0         3      0.28
+    3      2.59e-02   1.00e+00   3.19e-01   9.58e+01    0         3      0.38
+    4      4.74e-03   1.00e+00   1.65e-03   3.01e-02    0         3      0.48
+Finished, because...
+Error smaller than 1 ( 3.0148E-02 ).
+
+Accumulated times:
+Assembly time:        0.39 s
+Solve time:      0.08 s
+Total time:      0.48 s
+
+Device Instance 'pixel':
+Contact              Voltage              Electron      Hole         Conduction 
+                 outer       inner        current       current      current
+ BOT_electro -8.592E+00   -8.592E+00     -4.615E-19    -2.278E-16   -2.283E-16
+ IMP1_electr  0.000E+00    0.000E+00      2.283E-16     2.516E-20    2.283E-16
+
+
+AC small signal computation
+---------------------------
+(Using complex mode)
+
+
+Computing frequency 1.0000e+03 OK (time:  0.06 s)
+
+Computing step from t=0.0286411 to t=0.0331294 (Stepsize: 4.4884e-03) :
+Extrapolating values for t = 0.0331294 ... done.
+Computing Coupled( 3 circuit-equation(s) , 1 poisson-equation(s) , 
+                   1 current-contact-equation(s) , 1 electron-equation(s) , 
+                   1 hole-equation(s) ) 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      1.07e+00                                                      0.07
+    1      5.32e+02   1.00e+00   5.16e-01   2.26e+05    0         3      0.17
+    2      3.47e+01   1.00e+00   2.86e-01   2.69e+03    0         3      0.27
+    3      4.75e-02   1.00e+00   2.64e-01   9.56e+01    0         3      0.38
+    4      4.74e-03   1.00e+00   1.87e-03   4.81e-02    0         3      0.48
+Finished, because...
+Error smaller than 1 ( 4.8057E-02 ).
+
+Accumulated times:
+Assembly time:        0.40 s
+Solve time:      0.08 s
+Total time:      0.48 s
+
+Device Instance 'pixel':
+Contact              Voltage              Electron      Hole         Conduction 
+                 outer       inner        current       current      current
+ BOT_electro -9.939E+00   -9.939E+00     -4.511E-19    -2.464E-16   -2.469E-16
+ IMP1_electr  0.000E+00    0.000E+00      2.469E-16     2.516E-20    2.469E-16
+
+
+AC small signal computation
+---------------------------
+(Using complex mode)
+
+
+Computing frequency 1.0000e+03 OK (time:  0.06 s)
+
+Computing step from t=0.0331294 to t=0.038291 (Stepsize: 5.1616e-03) :
+Extrapolating values for t = 0.038291 ... done.
+Computing Coupled( 3 circuit-equation(s) , 1 poisson-equation(s) , 
+                   1 current-contact-equation(s) , 1 electron-equation(s) , 
+                   1 hole-equation(s) ) 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      1.31e+00                                                      0.07
+    1      9.56e+02   1.00e+00   6.01e-01   1.90e+05    0         3      0.17
+    2      3.20e+01   1.00e+00   3.06e-01   2.38e+03    0         3      0.27
+    3      1.39e-02   1.00e+00   6.07e-02   1.87e+02    0         3      0.37
+    4      4.74e-03   1.00e+00   6.46e-04   2.23e-02    0         3      0.48
+Finished, because...
+Error smaller than 1 ( 2.2265E-02 ).
+
+Accumulated times:
+Assembly time:        0.39 s
+Solve time:      0.08 s
+Total time:      0.48 s
+
+Device Instance 'pixel':
+Contact              Voltage              Electron      Hole         Conduction 
+                 outer       inner        current       current      current
+ BOT_electro -1.149E+01   -1.149E+01     -4.465E-19    -2.674E-16   -2.679E-16
+ IMP1_electr  0.000E+00    0.000E+00      2.678E-16     2.516E-20    2.679E-16
+
+
+AC small signal computation
+---------------------------
+(Using complex mode)
+
+
+Computing frequency 1.0000e+03 OK (time:  0.06 s)
+
+Computing step from t=0.038291 to t=0.0442269 (Stepsize: 5.9359e-03) :
+Extrapolating values for t = 0.0442269 ... done.
+Computing Coupled( 3 circuit-equation(s) , 1 poisson-equation(s) , 
+                   1 current-contact-equation(s) , 1 electron-equation(s) , 
+                   1 hole-equation(s) ) 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      1.60e+00                                                      0.07
+    1      8.55e+02   1.00e+00   6.39e-01   3.22e+05    0         3      0.17
+    2      6.76e+01   1.00e+00   4.38e-01   3.56e+03    0         3      0.28
+    3      9.72e-02   1.00e+00   3.80e-01   6.69e+01    0         3      0.38
+    4      4.74e-03   1.00e+00   1.86e-03   5.56e-02    0         3      0.48
+Finished, because...
+Error smaller than 1 ( 5.5585E-02 ).
+
+Accumulated times:
+Assembly time:        0.40 s
+Solve time:      0.08 s
+Total time:      0.48 s
+
+Device Instance 'pixel':
+Contact              Voltage              Electron      Hole         Conduction 
+                 outer       inner        current       current      current
+ BOT_electro -1.327E+01   -1.327E+01     -4.576E-19    -2.917E-16   -2.922E-16
+ IMP1_electr  0.000E+00    0.000E+00      2.922E-16     2.516E-20    2.922E-16
+
+
+AC small signal computation
+---------------------------
+(Using complex mode)
+
+
+Computing frequency 1.0000e+03 OK (time:  0.06 s)
+
+Computing step from t=0.0442269 to t=0.0510531 (Stepsize: 6.8262e-03) :
+Extrapolating values for t = 0.0510531 ... done.
+Computing Coupled( 3 circuit-equation(s) , 1 poisson-equation(s) , 
+                   1 current-contact-equation(s) , 1 electron-equation(s) , 
+                   1 hole-equation(s) ) 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      1.74e+00                                                      0.07
+    1      5.00e+02   1.00e+00   6.83e-01   3.75e+05    0         3      0.17
+    2      1.15e+02   1.00e+00   2.79e-01   2.54e+03    0         3      0.27
+    3      7.44e-01   1.00e+00   1.94e-01   7.41e+02    0         3      0.37
+    4      4.74e-03   1.00e+00   3.08e-03   1.43e+00    0         3      0.48
+    5      1.09e-02   1.00e+00   2.07e-06   6.71e-06    0         3      0.58
+Finished, because...
+Error smaller than 1 ( 6.7128E-06 ).
+
+Accumulated times:
+Assembly time:        0.47 s
+Solve time:      0.11 s
+Total time:      0.58 s
+
+Device Instance 'pixel':
+Contact              Voltage              Electron      Hole         Conduction 
+                 outer       inner        current       current      current
+ BOT_electro -1.532E+01   -1.532E+01     -4.534E-19    -3.141E-16   -3.145E-16
+ IMP1_electr  0.000E+00    0.000E+00      3.145E-16     2.516E-20    3.145E-16
+
+
+AC small signal computation
+---------------------------
+(Using complex mode)
+
+
+Computing frequency 1.0000e+03 OK (time:  0.06 s)
+
+Computing step from t=0.0510531 to t=0.0586757 (Stepsize: 7.6226e-03) :
+Extrapolating values for t = 0.0586757 ... done.
+Computing Coupled( 3 circuit-equation(s) , 1 poisson-equation(s) , 
+                   1 current-contact-equation(s) , 1 electron-equation(s) , 
+                   1 hole-equation(s) ) 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      1.44e+00                                                      0.07
+    1      1.29e+03   1.00e+00   7.50e-01   3.91e+05    0         3      0.17
+    2      8.41e+01   1.00e+00   5.80e-01   3.67e+03    0         3      0.27
+    3      1.04e-01   1.00e+00   4.18e-01   2.81e+02    0         3      0.38
+    4      4.74e-03   1.00e+00   2.11e-03   4.18e-01    0         3      0.48
+Finished, because...
+Error smaller than 1 ( 4.1828E-01 ).
+
+Accumulated times:
+Assembly time:        0.40 s
+Solve time:      0.08 s
+Total time:      0.48 s
+
+Device Instance 'pixel':
+Contact              Voltage              Electron      Hole         Conduction 
+                 outer       inner        current       current      current
+ BOT_electro -1.760E+01   -1.760E+01     -4.561E-19    -3.408E-16   -3.412E-16
+ IMP1_electr  0.000E+00    0.000E+00      3.412E-16     2.516E-20    3.412E-16
+
+
+AC small signal computation
+---------------------------
+(Using complex mode)
+
+
+Computing frequency 1.0000e+03 OK (time:  0.06 s)
+
+Computing step from t=0.0586757 to t=0.0674418 (Stepsize: 8.7660e-03) :
+Extrapolating values for t = 0.0674418 ... done.
+Computing Coupled( 3 circuit-equation(s) , 1 poisson-equation(s) , 
+                   1 current-contact-equation(s) , 1 electron-equation(s) , 
+                   1 hole-equation(s) ) 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      1.98e+00                                                      0.07
+    1      7.75e+02   1.00e+00   7.99e-01   4.40e+05    0         3      0.17
+    2      2.13e+02   1.00e+00   2.98e-01   2.74e+03    0         3      0.27
+    3      2.47e+00   1.00e+00   2.02e-01   2.44e+03    0         3      0.38
+    4      4.74e-03   1.00e+00   1.50e-01   2.60e+01    0         3      0.48
+    5      4.74e-03   1.00e+00   1.38e-03   1.11e-03    0         3      0.58
+Finished, because...
+Error smaller than 1 ( 1.1122E-03 ).
+
+Accumulated times:
+Assembly time:        0.47 s
+Solve time:      0.10 s
+Total time:      0.58 s
+
+Device Instance 'pixel':
+Contact              Voltage              Electron      Hole         Conduction 
+                 outer       inner        current       current      current
+ BOT_electro -2.023E+01   -2.023E+01     -4.546E-19    -3.665E-16   -3.670E-16
+ IMP1_electr  0.000E+00    0.000E+00      3.670E-16     2.516E-20    3.670E-16
+
+
+AC small signal computation
+---------------------------
+(Using complex mode)
+
+
+Computing frequency 1.0000e+03 OK (time:  0.06 s)
+
+Computing step from t=0.0674418 to t=0.0772305 (Stepsize: 9.7887e-03) :
+Extrapolating values for t = 0.0772305 ... done.
+Computing Coupled( 3 circuit-equation(s) , 1 poisson-equation(s) , 
+                   1 current-contact-equation(s) , 1 electron-equation(s) , 
+                   1 hole-equation(s) ) 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      1.85e+00                                                      0.07
+    1      9.52e+02   1.00e+00   8.80e-01   4.47e+05    0         3      0.17
+    2      2.06e+02   1.00e+00   5.27e-01   3.11e+03    0         3      0.27
+    3      3.75e+00   1.00e+00   1.71e-01   1.91e+03    0         3      0.38
+    4      4.74e-03   1.00e+00   1.68e-02   2.19e+01    0         3      0.48
+    5      4.74e-03   1.00e+00   4.64e-05   2.43e-03    0         3      0.58
+Finished, because...
+Error smaller than 1 ( 2.4347E-03 ).
+
+Accumulated times:
+Assembly time:        0.48 s
+Solve time:      0.10 s
+Total time:      0.58 s
+
+Device Instance 'pixel':
+Contact              Voltage              Electron      Hole         Conduction 
+                 outer       inner        current       current      current
+ BOT_electro -2.317E+01   -2.317E+01     -4.582E-19    -3.971E-16   -3.976E-16
+ IMP1_electr  0.000E+00    0.000E+00      3.975E-16     2.516E-20    3.976E-16
+
+
+AC small signal computation
+---------------------------
+(Using complex mode)
+
+
+Computing frequency 1.0000e+03 OK (time:  0.06 s)
+
+Computing step from t=0.0772305 to t=0.0881612 (Stepsize: 0.0109307) :
+Extrapolating values for t = 0.0881612 ... done.
+Computing Coupled( 3 circuit-equation(s) , 1 poisson-equation(s) , 
+                   1 current-contact-equation(s) , 1 electron-equation(s) , 
+                   1 hole-equation(s) ) 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      2.17e+00                                                      0.07
+    1      1.30e+03   1.00e+00   9.38e-01   4.78e+05    0         3      0.17
+    2      3.00e+02   1.00e+00   3.49e-01   2.75e+03    0         3      0.27
+    3      7.58e+00   1.00e+00   9.21e-02   1.60e+03    0         3      0.38
+    4      4.74e-03   1.00e+00   1.10e-02   2.16e+01    0         3      0.48
+    5      4.74e-03   1.00e+00   8.24e-06   3.50e-03    0         3      0.59
+Finished, because...
+Error smaller than 1 ( 3.5021E-03 ).
+
+Accumulated times:
+Assembly time:        0.48 s
+Solve time:      0.10 s
+Total time:      0.59 s
+
+Device Instance 'pixel':
+Contact              Voltage              Electron      Hole         Conduction 
+                 outer       inner        current       current      current
+ BOT_electro -2.645E+01   -2.645E+01     -4.525E-19    -4.265E-16   -4.269E-16
+ IMP1_electr  0.000E+00    0.000E+00      4.269E-16     2.516E-20    4.269E-16
+
+
+AC small signal computation
+---------------------------
+(Using complex mode)
+
+
+Computing frequency 1.0000e+03 OK (time:  0.06 s)
+
+Computing step from t=0.0881612 to t=0.100367 (Stepsize: 0.012206) :
+Extrapolating values for t = 0.100367 ... done.
+Computing Coupled( 3 circuit-equation(s) , 1 poisson-equation(s) , 
+                   1 current-contact-equation(s) , 1 electron-equation(s) , 
+                   1 hole-equation(s) ) 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      2.51e+00                                                      0.07
+    1      1.15e+03   1.00e+00   1.00e+00   5.27e+05    0         3      0.18
+    2      4.67e+02   1.00e+00   4.73e-01   1.78e+04    0         3      0.28
+    3      1.35e+01   1.00e+00   2.73e-01   2.42e+03    0         3      0.38
+    4      4.74e-03   1.00e+00   1.49e-01   3.30e+01    0         3      0.48
+    5      4.74e-03   1.00e+00   1.19e-03   4.27e-03    0         3      0.59
+Finished, because...
+Error smaller than 1 ( 4.2713E-03 ).
+
+Accumulated times:
+Assembly time:        0.48 s
+Solve time:      0.10 s
+Total time:      0.59 s
+
+Device Instance 'pixel':
+Contact              Voltage              Electron      Hole         Conduction 
+                 outer       inner        current       current      current
+ BOT_electro -3.011E+01   -3.011E+01     -4.467E-19    -4.566E-16   -4.571E-16
+ IMP1_electr  0.000E+00    0.000E+00      4.570E-16     2.516E-20    4.571E-16
+
+
+AC small signal computation
+---------------------------
+(Using complex mode)
+
+
+Computing frequency 1.0000e+03 OK (time:  0.06 s)
+
+Computing step from t=0.100367 to t=0.113997 (Stepsize: 0.01363) :
+Extrapolating values for t = 0.113997 ... done.
+Computing Coupled( 3 circuit-equation(s) , 1 poisson-equation(s) , 
+                   1 current-contact-equation(s) , 1 electron-equation(s) , 
+                   1 hole-equation(s) ) 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      2.85e+00                                                      0.07
+    1      1.21e+03   1.00e+00   1.09e+00   5.35e+05    0         3      0.18
+    2      4.86e+02   1.00e+00   5.80e-01   3.87e+04    0         3      0.28
+    3      1.11e+01   1.00e+00   3.61e-01   2.78e+03    0         3      0.38
+    4      4.74e-03   1.00e+00   2.35e-01   6.05e+01    0         3      0.48
+    5      4.74e-03   1.00e+00   1.10e-03   5.08e-03    0         3      0.59
+Finished, because...
+Error smaller than 1 ( 5.0756E-03 ).
+
+Accumulated times:
+Assembly time:        0.48 s
+Solve time:      0.10 s
+Total time:      0.59 s
+
+Device Instance 'pixel':
+Contact              Voltage              Electron      Hole         Conduction 
+                 outer       inner        current       current      current
+ BOT_electro -3.420E+01   -3.420E+01     -4.537E-19    -4.894E-16   -4.899E-16
+ IMP1_electr  0.000E+00    0.000E+00      4.899E-16     2.516E-20    4.899E-16
+
+
+AC small signal computation
+---------------------------
+(Using complex mode)
+
+
+Computing frequency 1.0000e+03 OK (time:  0.06 s)
+
+Computing step from t=0.113997 to t=0.129217 (Stepsize: 0.0152202) :
+Extrapolating values for t = 0.129217 ... done.
+Computing Coupled( 3 circuit-equation(s) , 1 poisson-equation(s) , 
+                   1 current-contact-equation(s) , 1 electron-equation(s) , 
+                   1 hole-equation(s) ) 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      3.18e+00                                                      0.07
+    1      1.23e+03   1.00e+00   1.19e+00   5.63e+05    0         3      0.17
+    2      5.57e+02   1.00e+00   6.54e-01   5.97e+04    0         3      0.27
+    3      1.11e+01   1.00e+00   3.79e-01   2.83e+03    0         3      0.37
+    4      4.74e-03   1.00e+00   2.49e-01   8.91e+01    0         3      0.48
+    5      4.74e-03   1.00e+00   1.16e-03   1.03e-02    0         3      0.58
+Finished, because...
+Error smaller than 1 ( 1.0343E-02 ).
+
+Accumulated times:
+Assembly time:        0.47 s
+Solve time:      0.10 s
+Total time:      0.58 s
+
+Device Instance 'pixel':
+Contact              Voltage              Electron      Hole         Conduction 
+                 outer       inner        current       current      current
+ BOT_electro -3.877E+01   -3.877E+01     -4.538E-19    -5.243E-16   -5.247E-16
+ IMP1_electr  0.000E+00    0.000E+00      5.247E-16     2.516E-20    5.247E-16
+
+
+AC small signal computation
+---------------------------
+(Using complex mode)
+
+
+Computing frequency 1.0000e+03 OK (time:  0.06 s)
+
+Computing step from t=0.129217 to t=0.146213 (Stepsize: 0.0169959) :
+Extrapolating values for t = 0.146213 ... done.
+Computing Coupled( 3 circuit-equation(s) , 1 poisson-equation(s) , 
+                   1 current-contact-equation(s) , 1 electron-equation(s) , 
+                   1 hole-equation(s) ) 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      3.49e+00                                                      0.07
+    1      1.18e+03   1.00e+00   1.30e+00   6.01e+05    0         3      0.17
+    2      7.47e+02   1.00e+00   7.08e-01   7.22e+04    0         3      0.28
+    3      2.41e+01   1.00e+00   3.22e-01   2.69e+03    0         3      0.38
+    4      5.13e-03   1.00e+00   1.86e-01   1.20e+02    0         3      0.48
+    5      4.74e-03   1.00e+00   1.21e-03   1.62e-02    0         3      0.58
+Finished, because...
+Error smaller than 1 ( 1.6225E-02 ).
+
+Accumulated times:
+Assembly time:        0.48 s
+Solve time:      0.10 s
+Total time:      0.58 s
+
+Device Instance 'pixel':
+Contact              Voltage              Electron      Hole         Conduction 
+                 outer       inner        current       current      current
+ BOT_electro -4.386E+01   -4.386E+01     -4.530E-19    -5.611E-16   -5.615E-16
+ IMP1_electr  0.000E+00    0.000E+00      5.615E-16     2.517E-20    5.615E-16
+
+
+AC small signal computation
+---------------------------
+(Using complex mode)
+
+
+Computing frequency 1.0000e+03 OK (time:  0.06 s)
+
+Computing step from t=0.146213 to t=0.165192 (Stepsize: 0.0189787) :
+Extrapolating values for t = 0.165192 ... done.
+Computing Coupled( 3 circuit-equation(s) , 1 poisson-equation(s) , 
+                   1 current-contact-equation(s) , 1 electron-equation(s) , 
+                   1 hole-equation(s) ) 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      3.74e+00                                                      0.07
+    1      1.05e+03   1.00e+00   1.43e+00   6.44e+05    0         3      0.18
+    2      1.11e+03   1.00e+00   7.42e-01   2.46e+05    0         3      0.28
+    3      8.34e+01   1.00e+00   6.85e-01   3.95e+03    0         3      0.38
+    4      7.93e-02   1.00e+00   6.10e-01   2.28e+02    0         3      0.49
+    5      4.74e-03   1.00e+00   1.66e-03   2.93e-01    0         3      0.59
+Finished, because...
+Error smaller than 1 ( 2.9257E-01 ).
+
+Accumulated times:
+Assembly time:        0.49 s
+Solve time:      0.10 s
+Total time:      0.59 s
+
+Device Instance 'pixel':
+Contact              Voltage              Electron      Hole         Conduction 
+                 outer       inner        current       current      current
+ BOT_electro -4.956E+01   -4.956E+01     -4.546E-19    -6.010E-16   -6.015E-16
+ IMP1_electr  0.000E+00    0.000E+00      6.015E-16     2.517E-20    6.015E-16
+
+
+AC small signal computation
+---------------------------
+(Using complex mode)
+
+
+Computing frequency 1.0000e+03 OK (time:  0.06 s)
+
+Computing step from t=0.165192 to t=0.186385 (Stepsize: 0.0211929) :
+Extrapolating values for t = 0.186385 ... done.
+Computing Coupled( 3 circuit-equation(s) , 1 poisson-equation(s) , 
+                   1 current-contact-equation(s) , 1 electron-equation(s) , 
+                   1 hole-equation(s) ) 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      3.89e+00                                                      0.07
+    1      1.81e+03   1.00e+00   1.58e+00   7.22e+05    0         3      0.17
+    2      5.33e+02   1.00e+00   7.55e-01   2.40e+05    0         3      0.27
+    3      6.35e+01   1.00e+00   5.89e-01   3.57e+03    0         3      0.38
+    4      7.90e-02   1.00e+00   5.48e-01   7.81e+01    0         3      0.48
+    5      3.61e-02   1.00e+00   1.81e-03   4.31e-02    0         3      0.58
+Finished, because...
+Error smaller than 1 ( 4.3145E-02 ).
+
+Accumulated times:
+Assembly time:        0.47 s
+Solve time:      0.10 s
+Total time:      0.58 s
+
+Device Instance 'pixel':
+Contact              Voltage              Electron      Hole         Conduction 
+                 outer       inner        current       current      current
+ BOT_electro -5.592E+01   -5.592E+01     -4.549E-19    -6.429E-16   -6.433E-16
+ IMP1_electr  0.000E+00    0.000E+00      6.433E-16     2.517E-20    6.433E-16
+
+
+AC small signal computation
+---------------------------
+(Using complex mode)
+
+
+Computing frequency 1.0000e+03 OK (time:  0.06 s)
+
+Computing step from t=0.186385 to t=0.21005 (Stepsize: 0.0236654) :
+Extrapolating values for t = 0.21005 ... done.
+Computing Coupled( 3 circuit-equation(s) , 1 poisson-equation(s) , 
+                   1 current-contact-equation(s) , 1 electron-equation(s) , 
+                   1 hole-equation(s) ) 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      3.88e+00                                                      0.07
+    1      3.12e+03   1.00e+00   1.76e+00   8.43e+05    0         3      0.18
+    2      8.03e+02   1.00e+00   7.93e-01   2.27e+05    0         3      0.28
+    3      6.85e+01   1.00e+00   4.67e-01   2.73e+03    0         3      0.38
+    4      2.47e-01   1.00e+00   2.55e-01   1.45e+02    0         3      0.48
+    5      2.66e-02   1.00e+00   1.33e-03   2.89e-01    0         3      0.59
+Finished, because...
+Error smaller than 1 ( 2.8897E-01 ).
+
+Accumulated times:
+Assembly time:        0.49 s
+Solve time:      0.10 s
+Total time:      0.59 s
+
+Device Instance 'pixel':
+Contact              Voltage              Electron      Hole         Conduction 
+                 outer       inner        current       current      current
+ BOT_electro -6.302E+01   -6.302E+01     -4.550E-19    -6.842E-16   -6.846E-16
+ IMP1_electr  0.000E+00    0.000E+00      6.846E-16     2.517E-20    6.846E-16
+
+
+AC small signal computation
+---------------------------
+(Using complex mode)
+
+
+Computing frequency 1.0000e+03 OK (time:  0.05 s)
+
+Computing step from t=0.21005 to t=0.236477 (Stepsize: 0.0264264) :
+Extrapolating values for t = 0.236477 ... done.
+Computing Coupled( 3 circuit-equation(s) , 1 poisson-equation(s) , 
+                   1 current-contact-equation(s) , 1 electron-equation(s) , 
+                   1 hole-equation(s) ) 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      4.03e+00                                                      0.07
+    1      5.23e+03   1.00e+00   1.98e+00   7.75e+05    0         3      0.17
+    2      7.42e+02   1.00e+00   7.86e-01   3.42e+05    0         3      0.27
+    3      1.02e+02   1.00e+00   4.31e-01   3.52e+03    0         3      0.37
+    4      1.92e-01   1.00e+00   3.30e-01   4.43e+02    0         3      0.48
+    5      2.66e-02   1.00e+00   2.19e-03   1.53e+00    0         3      0.58
+    6      2.66e-02   1.00e+00   3.29e-07   1.34e-05    0         3      0.68
+Finished, because...
+Error smaller than 1 ( 1.3387E-05 ).
+
+Accumulated times:
+Assembly time:        0.55 s
+Solve time:      0.11 s
+Total time:      0.68 s
+
+Device Instance 'pixel':
+Contact              Voltage              Electron      Hole         Conduction 
+                 outer       inner        current       current      current
+ BOT_electro -7.094E+01   -7.094E+01     -4.543E-19    -7.324E-16   -7.328E-16
+ IMP1_electr  0.000E+00    0.000E+00      7.328E-16     2.517E-20    7.328E-16
+
+
+AC small signal computation
+---------------------------
+(Using complex mode)
+
+
+Computing frequency 1.0000e+03 OK (time:  0.06 s)
+
+Computing step from t=0.236477 to t=0.265105 (Stepsize: 0.0286286) :
+Extrapolating values for t = 0.265105 ... done.
+Computing Coupled( 3 circuit-equation(s) , 1 poisson-equation(s) , 
+                   1 current-contact-equation(s) , 1 electron-equation(s) , 
+                   1 hole-equation(s) ) 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      4.17e+00                                                      0.07
+    1      7.76e+03   1.00e+00   2.09e+00   9.33e+05    0         3      0.18
+    2      1.17e+03   1.00e+00   9.54e-01   2.94e+05    0         3      0.28
+    3      9.83e+01   1.00e+00   4.41e-01   2.36e+03    0         3      0.38
+    4      6.87e-01   1.00e+00   2.03e-01   3.14e+02    0         3      0.49
+    5      2.66e-02   1.00e+00   1.52e-03   1.16e+00    0         3      0.59
+    6      2.66e-02   1.00e+00   6.85e-08   1.43e-05    0         3      0.69
+Finished, because...
+Error smaller than 1 ( 1.4260E-05 ).
+
+Accumulated times:
+Assembly time:        0.57 s
+Solve time:      0.12 s
+Total time:      0.69 s
+
+Device Instance 'pixel':
+Contact              Voltage              Electron      Hole         Conduction 
+                 outer       inner        current       current      current
+ BOT_electro -7.953E+01   -7.953E+01     -4.523E-19    -7.782E-16   -7.786E-16
+ IMP1_electr  0.000E+00    0.000E+00      7.786E-16     2.517E-20    7.786E-16
+
+
+AC small signal computation
+---------------------------
+(Using complex mode)
+
+
+Computing frequency 1.0000e+03 OK (time:  0.06 s)
+
+Computing step from t=0.265105 to t=0.29612 (Stepsize: 0.0310143) :
+Extrapolating values for t = 0.29612 ... done.
+Computing Coupled( 3 circuit-equation(s) , 1 poisson-equation(s) , 
+                   1 current-contact-equation(s) , 1 electron-equation(s) , 
+                   1 hole-equation(s) ) 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      4.31e+00                                                      0.07
+    1      1.36e+04   1.00e+00   2.25e+00   9.41e+05    0         3      0.18
+    2      1.05e+03   1.00e+00   9.11e-01   3.90e+05    0         3      0.28
+    3      1.50e+02   1.00e+00   4.22e-01   3.08e+03    0         3      0.38
+    4      1.09e+00   1.00e+00   2.42e-01   1.06e+03    0         3      0.48
+    5      2.66e-02   1.00e+00   5.09e-03   3.56e+00    0         3      0.59
+    6      2.66e-02   1.00e+00   3.45e-06   3.60e-05    0         3      0.69
+Finished, because...
+Error smaller than 1 ( 3.6016E-05 ).
+
+Accumulated times:
+Assembly time:        0.55 s
+Solve time:      0.12 s
+Total time:      0.69 s
+
+Device Instance 'pixel':
+Contact              Voltage              Electron      Hole         Conduction 
+                 outer       inner        current       current      current
+ BOT_electro -8.884E+01   -8.884E+01     -4.566E-19    -8.272E-16   -8.276E-16
+ IMP1_electr  0.000E+00    0.000E+00      8.276E-16     2.517E-20    8.276E-16
+
+
+AC small signal computation
+---------------------------
+(Using complex mode)
+
+
+Computing frequency 1.0000e+03 OK (time:  0.06 s)
+
+Computing step from t=0.29612 to t=0.329718 (Stepsize: 0.0335988) :
+Extrapolating values for t = 0.329718 ... done.
+Computing Coupled( 3 circuit-equation(s) , 1 poisson-equation(s) , 
+                   1 current-contact-equation(s) , 1 electron-equation(s) , 
+                   1 hole-equation(s) ) 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      5.57e+00                                                      0.07
+    1      8.87e+04   1.00e+00   2.40e+00   9.49e+05    0         3      0.18
+    2      1.93e+03   1.00e+00   1.04e+00   3.97e+05    0         3      0.28
+    3      1.63e+02   1.00e+00   4.25e-01   3.31e+03    0         3      0.38
+    4      2.19e+00   1.00e+00   2.11e-01   1.47e+03    0         3      0.49
+    5      2.66e-02   1.00e+00   9.25e-03   1.34e+01    0         3      0.59
+    6      2.66e-02   1.00e+00   1.24e-05   8.86e-04    0         3      0.69
+Finished, because...
+Error smaller than 1 ( 8.8610E-04 ).
+
+Accumulated times:
+Assembly time:        0.57 s
+Solve time:      0.12 s
+Total time:      0.69 s
+
+Device Instance 'pixel':
+Contact              Voltage              Electron      Hole         Conduction 
+                 outer       inner        current       current      current
+ BOT_electro -9.892E+01   -9.892E+01     -4.550E-19    -8.795E-16   -8.799E-16
+ IMP1_electr  0.000E+00    0.000E+00      8.799E-16     2.517E-20    8.799E-16
+
+
+AC small signal computation
+---------------------------
+(Using complex mode)
+
+
+Computing frequency 1.0000e+03 OK (time:  0.06 s)
+
+Computing step from t=0.329718 to t=0.366117 (Stepsize: 0.0363987) :
+Extrapolating values for t = 0.366117 ... done.
+Computing Coupled( 3 circuit-equation(s) , 1 poisson-equation(s) , 
+                   1 current-contact-equation(s) , 1 electron-equation(s) , 
+                   1 hole-equation(s) ) 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      7.56e+00                                                      0.07
+    1      5.30e+04   1.00e+00   2.54e+00   1.03e+06    0         3      0.18
+    2      1.37e+03   1.00e+00   1.14e+00   4.48e+05    0         3      0.28
+    3      1.73e+02   1.00e+00   6.17e-01   3.67e+03    0         3      0.38
+    4      2.72e+00   1.00e+00   3.45e-01   9.19e+02    0         3      0.49
+    5      9.89e-02   1.00e+00   3.36e-03   8.78e+00    0         3      0.59
+    6      2.66e-02   1.00e+00   4.83e-07   6.01e-04    0         3      0.70
+Finished, because...
+Error smaller than 1 ( 6.0091E-04 ).
+
+Accumulated times:
+Assembly time:        0.58 s
+Solve time:      0.12 s
+Total time:      0.70 s
+
+Device Instance 'pixel':
+Contact              Voltage              Electron      Hole         Conduction 
+                 outer       inner        current       current      current
+ BOT_electro -1.098E+02   -1.098E+02     -4.539E-19    -9.320E-16   -9.324E-16
+ IMP1_electr  0.000E+00    0.000E+00      9.324E-16     2.517E-20    9.324E-16
+
+
+AC small signal computation
+---------------------------
+(Using complex mode)
+
+
+Computing frequency 1.0000e+03 OK (time:  0.06 s)
+
+Computing step from t=0.366117 to t=0.405549 (Stepsize: 0.039432) :
+Extrapolating values for t = 0.405549 ... done.
+Computing Coupled( 3 circuit-equation(s) , 1 poisson-equation(s) , 
+                   1 current-contact-equation(s) , 1 electron-equation(s) , 
+                   1 hole-equation(s) ) 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      9.49e+00                                                      0.07
+    1      8.59e+04   1.00e+00   2.73e+00   1.06e+06    0         3      0.18
+    2      1.50e+03   1.00e+00   1.11e+00   4.47e+05    0         3      0.28
+    3      2.28e+02   1.00e+00   1.06e+00   2.52e+03    0         3      0.38
+    4      4.17e+00   1.00e+00   7.44e-01   8.81e+02    0         3      0.49
+    5      2.66e-02   1.00e+00   5.06e-03   1.00e+01    0         3      0.59
+    6      9.89e-02   1.00e+00   1.00e-06   9.25e-04    0         3      0.69
+Finished, because...
+Error smaller than 1 ( 9.2534E-04 ).
+
+Accumulated times:
+Assembly time:        0.56 s
+Solve time:      0.12 s
+Total time:      0.70 s
+
+Device Instance 'pixel':
+Contact              Voltage              Electron      Hole         Conduction 
+                 outer       inner        current       current      current
+ BOT_electro -1.217E+02   -1.217E+02     -4.546E-19    -9.856E-16   -9.861E-16
+ IMP1_electr  0.000E+00    0.000E+00      9.861E-16     2.517E-20    9.861E-16
+
+
+AC small signal computation
+---------------------------
+(Using complex mode)
+
+
+Computing frequency 1.0000e+03 OK (time:  0.06 s)
+
+Computing step from t=0.405549 to t=0.445549 (Stepsize: 0.04) :
+Extrapolating values for t = 0.445549 ... done.
+Computing Coupled( 3 circuit-equation(s) , 1 poisson-equation(s) , 
+                   1 current-contact-equation(s) , 1 electron-equation(s) , 
+                   1 hole-equation(s) ) 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      1.01e+01                                                      0.07
+    1      6.85e+04   1.00e+00   2.74e+00   1.00e+06    0         3      0.18
+    2      9.84e+02   1.00e+00   1.16e+00   4.71e+05    0         3      0.28
+    3      1.24e+02   1.00e+00   1.15e+00   3.42e+03    0         3      0.38
+    4      1.42e+00   1.00e+00   6.29e-01   8.11e+02    0         3      0.49
+    5      2.70e-02   1.00e+00   8.43e-03   5.23e+00    0         3      0.59
+    6      2.70e-02   1.00e+00   1.31e-05   1.02e-04    0         3      0.69
+Finished, because...
+Error smaller than 1 ( 1.0229E-04 ).
+
+Accumulated times:
+Assembly time:        0.56 s
+Solve time:      0.12 s
+Total time:      0.70 s
+
+Device Instance 'pixel':
+Contact              Voltage              Electron      Hole         Conduction 
+                 outer       inner        current       current      current
+ BOT_electro -1.337E+02   -1.337E+02     -4.523E-19    -1.037E-15   -1.037E-15
+ IMP1_electr  0.000E+00    0.000E+00      1.037E-15     2.518E-20    1.037E-15
+
+
+AC small signal computation
+---------------------------
+(Using complex mode)
+
+
+Computing frequency 1.0000e+03 OK (time:  0.06 s)
+
+Computing step from t=0.445549 to t=0.485549 (Stepsize: 0.04) :
+Extrapolating values for t = 0.485549 ... done.
+Computing Coupled( 3 circuit-equation(s) , 1 poisson-equation(s) , 
+                   1 current-contact-equation(s) , 1 electron-equation(s) , 
+                   1 hole-equation(s) ) 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      1.00e+01                                                      0.07
+    1      6.48e+04   1.00e+00   2.45e+00   1.72e+06    0         3      0.18
+    2      3.41e+02   1.00e+00   9.17e-01   1.33e+05    0         3      0.28
+    3      2.18e+01   1.00e+00   1.06e+00   1.14e+04    0         3      0.38
+    4      3.47e-02   1.00e+00   9.05e-01   2.70e+02    0         3      0.49
+    5      3.47e-02   1.00e+00   1.13e-02   7.35e-02    0         3      0.59
+Finished, because...
+Error smaller than 1 ( 7.3516E-02 ).
+
+Accumulated times:
+Assembly time:        0.49 s
+Solve time:      0.10 s
+Total time:      0.59 s
+
+Device Instance 'pixel':
+Contact              Voltage              Electron      Hole         Conduction 
+                 outer       inner        current       current      current
+ BOT_electro -1.457E+02   -1.457E+02     -4.539E-19    -1.076E-15   -1.077E-15
+ IMP1_electr  0.000E+00    0.000E+00      1.077E-15     2.518E-20    1.077E-15
+
+
+AC small signal computation
+---------------------------
+(Using complex mode)
+
+
+Computing frequency 1.0000e+03 OK (time:  0.06 s)
+
+Computing step from t=0.485549 to t=0.525549 (Stepsize: 0.04) :
+Extrapolating values for t = 0.525549 ... done.
+Computing Coupled( 3 circuit-equation(s) , 1 poisson-equation(s) , 
+                   1 current-contact-equation(s) , 1 electron-equation(s) , 
+                   1 hole-equation(s) ) 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      9.93e+00                                                      0.07
+    1      4.69e+04   1.00e+00   1.54e+00   1.45e+06    0         3      0.17
+    2      5.55e+02   1.00e+00   1.19e+00   1.28e+04    0         3      0.27
+    3      5.85e-02   1.00e+00   1.04e+00   5.97e+02    0         3      0.38
+    4      5.85e-02   1.00e+00   1.47e-02   9.82e-02    0         3      0.48
+Finished, because...
+Error smaller than 1 ( 9.8194E-02 ).
+
+Accumulated times:
+Assembly time:        0.40 s
+Solve time:      0.08 s
+Total time:      0.48 s
+
+Device Instance 'pixel':
+Contact              Voltage              Electron      Hole         Conduction 
+                 outer       inner        current       current      current
+ BOT_electro -1.577E+02   -1.577E+02     -4.548E-19    -1.096E-15   -1.096E-15
+ IMP1_electr  0.000E+00    0.000E+00      1.096E-15     2.518E-20    1.096E-15
+
+
+AC small signal computation
+---------------------------
+(Using complex mode)
+
+
+Computing frequency 1.0000e+03 OK (time:  0.06 s)
+
+Computing step from t=0.525549 to t=0.565549 (Stepsize: 0.04) :
+Extrapolating values for t = 0.565549 ... done.
+Computing Coupled( 3 circuit-equation(s) , 1 poisson-equation(s) , 
+                   1 current-contact-equation(s) , 1 electron-equation(s) , 
+                   1 hole-equation(s) ) 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      1.02e+01                                                      0.07
+    1      2.78e+04   1.00e+00   1.08e+00   9.29e+04    0         3      0.18
+    2      9.24e+01   1.00e+00   9.04e-01   8.32e+03    0         3      0.28
+    3      5.05e-03   1.00e+00   7.00e-01   1.83e+01    0         3      0.38
+    4      5.05e-03   1.00e+00   1.83e-02   3.78e-04    0         3      0.49
+Finished, because...
+Error smaller than 1 ( 3.7809E-04 ).
+
+Accumulated times:
+Assembly time:        0.40 s
+Solve time:      0.08 s
+Total time:      0.49 s
+
+Device Instance 'pixel':
+Contact              Voltage              Electron      Hole         Conduction 
+                 outer       inner        current       current      current
+ BOT_electro -1.697E+02   -1.697E+02     -4.506E-19    -1.108E-15   -1.109E-15
+ IMP1_electr  0.000E+00    0.000E+00      1.109E-15     2.518E-20    1.109E-15
+
+
+AC small signal computation
+---------------------------
+(Using complex mode)
+
+
+Computing frequency 1.0000e+03 OK (time:  0.06 s)
+
+Computing step from t=0.565549 to t=0.605549 (Stepsize: 0.04) :
+Extrapolating values for t = 0.605549 ... done.
+Computing Coupled( 3 circuit-equation(s) , 1 poisson-equation(s) , 
+                   1 current-contact-equation(s) , 1 electron-equation(s) , 
+                   1 hole-equation(s) ) 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      1.06e+01                                                      0.07
+    1      2.67e+04   1.00e+00   4.43e-01   8.68e+03    0         3      0.17
+    2      1.89e+02   1.00e+00   3.91e-02   1.41e+03    0         3      0.27
+    3      2.99e-02   1.00e+00   2.67e-04   2.35e+00    0         3      0.38
+    4      2.99e-02   1.00e+00   2.29e-07   1.04e-05    0         3      0.48
+Finished, because...
+Error smaller than 1 ( 1.0366E-05 ).
+
+Accumulated times:
+Assembly time:        0.38 s
+Solve time:      0.08 s
+Total time:      0.48 s
+
+Device Instance 'pixel':
+Contact              Voltage              Electron      Hole         Conduction 
+                 outer       inner        current       current      current
+ BOT_electro -1.817E+02   -1.817E+02     -4.524E-19    -1.119E-15   -1.119E-15
+ IMP1_electr  0.000E+00    0.000E+00      1.119E-15     2.518E-20    1.119E-15
+
+
+AC small signal computation
+---------------------------
+(Using complex mode)
+
+
+Computing frequency 1.0000e+03 OK (time:  0.06 s)
+
+Computing step from t=0.605549 to t=0.645549 (Stepsize: 0.04) :
+Extrapolating values for t = 0.645549 ... done.
+Computing Coupled( 3 circuit-equation(s) , 1 poisson-equation(s) , 
+                   1 current-contact-equation(s) , 1 electron-equation(s) , 
+                   1 hole-equation(s) ) 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      1.09e+01                                                      0.07
+    1      2.67e+04   1.00e+00   5.17e-01   2.23e+03    0         3      0.18
+    2      4.12e+02   1.00e+00   5.77e-02   2.31e+02    0         3      0.29
+    3      4.88e-02   1.00e+00   4.18e-04   2.87e+00    0         3      0.39
+    4      4.88e-02   1.00e+00   2.14e-07   6.49e-05    0         3      0.50
+Finished, because...
+Error smaller than 1 ( 6.4913E-05 ).
+
+Accumulated times:
+Assembly time:        0.42 s
+Solve time:      0.08 s
+Total time:      0.50 s
+
+Device Instance 'pixel':
+Contact              Voltage              Electron      Hole         Conduction 
+                 outer       inner        current       current      current
+ BOT_electro -1.937E+02   -1.937E+02     -4.567E-19    -1.127E-15   -1.128E-15
+ IMP1_electr  0.000E+00    0.000E+00      1.128E-15     2.518E-20    1.128E-15
+
+
+AC small signal computation
+---------------------------
+(Using complex mode)
+
+
+Computing frequency 1.0000e+03 OK (time:  0.06 s)
+
+Computing step from t=0.645549 to t=0.685549 (Stepsize: 0.04) :
+Extrapolating values for t = 0.685549 ... done.
+Computing Coupled( 3 circuit-equation(s) , 1 poisson-equation(s) , 
+                   1 current-contact-equation(s) , 1 electron-equation(s) , 
+                   1 hole-equation(s) ) 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      1.13e+01                                                      0.07
+    1      1.76e+04   1.00e+00   4.24e-01   1.38e+03    0         3      0.17
+    2      8.13e+01   1.00e+00   7.64e-02   2.02e+02    0         3      0.27
+    3      5.51e-02   1.00e+00   5.06e-04   1.29e+00    0         3      0.38
+    4      5.51e-02   1.00e+00   1.84e-07   7.95e-05    0         3      0.48
+Finished, because...
+Error smaller than 1 ( 7.9466E-05 ).
+
+Accumulated times:
+Assembly time:        0.40 s
+Solve time:      0.08 s
+Total time:      0.48 s
+
+Device Instance 'pixel':
+Contact              Voltage              Electron      Hole         Conduction 
+                 outer       inner        current       current      current
+ BOT_electro -2.057E+02   -2.057E+02     -4.546E-19    -1.136E-15   -1.136E-15
+ IMP1_electr  0.000E+00    0.000E+00      1.136E-15     2.518E-20    1.136E-15
+
+
+AC small signal computation
+---------------------------
+(Using complex mode)
+
+
+Computing frequency 1.0000e+03 OK (time:  0.06 s)
+
+Computing step from t=0.685549 to t=0.725549 (Stepsize: 0.04) :
+Extrapolating values for t = 0.725549 ... done.
+Computing Coupled( 3 circuit-equation(s) , 1 poisson-equation(s) , 
+                   1 current-contact-equation(s) , 1 electron-equation(s) , 
+                   1 hole-equation(s) ) 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      1.17e+01                                                      0.07
+    1      2.29e+04   1.00e+00   7.64e-02   1.03e+03    0         3      0.18
+    2      2.18e+02   1.00e+00   2.35e-03   1.15e+02    0         3      0.28
+    3      4.74e-02   1.00e+00   9.61e-05   9.42e-01    0         3      0.38
+Finished, because...
+Error smaller than 1 ( 9.4163E-01 ).
+
+Accumulated times:
+Assembly time:        0.31 s
+Solve time:      0.06 s
+Total time:      0.38 s
+
+Device Instance 'pixel':
+Contact              Voltage              Electron      Hole         Conduction 
+                 outer       inner        current       current      current
+ BOT_electro -2.177E+02   -2.177E+02      4.689E-19    -1.145E-15   -1.145E-15
+ IMP1_electr  0.000E+00    0.000E+00      1.145E-15     2.518E-20    1.145E-15
+
+
+AC small signal computation
+---------------------------
+(Using complex mode)
+
+
+Computing frequency 1.0000e+03 OK (time:  0.06 s)
+
+Computing step from t=0.725549 to t=0.765549 (Stepsize: 0.04) :
+Extrapolating values for t = 0.765549 ... done.
+Computing Coupled( 3 circuit-equation(s) , 1 poisson-equation(s) , 
+                   1 current-contact-equation(s) , 1 electron-equation(s) , 
+                   1 hole-equation(s) ) 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      1.21e+01                                                      0.07
+    1      1.13e+04   1.00e+00   2.60e-01   1.13e+03    0         3      0.18
+    2      5.39e+01   1.00e+00   1.24e-02   1.56e+02    0         3      0.28
+    3      1.48e-01   1.00e+00   2.34e-04   1.07e+00    0         3      0.38
+    4      1.03e-01   1.00e+00   6.22e-08   1.28e-05    0         3      0.49
+Finished, because...
+Error smaller than 1 ( 1.2796E-05 ).
+
+Accumulated times:
+Assembly time:        0.40 s
+Solve time:      0.07 s
+Total time:      0.49 s
+
+Device Instance 'pixel':
+Contact              Voltage              Electron      Hole         Conduction 
+                 outer       inner        current       current      current
+ BOT_electro -2.297E+02   -2.297E+02     -4.553E-19    -1.153E-15   -1.154E-15
+ IMP1_electr  0.000E+00    0.000E+00      1.154E-15     2.518E-20    1.154E-15
+
+
+AC small signal computation
+---------------------------
+(Using complex mode)
+
+
+Computing frequency 1.0000e+03 OK (time:  0.06 s)
+
+Computing step from t=0.765549 to t=0.805549 (Stepsize: 0.04) :
+Extrapolating values for t = 0.805549 ... done.
+Computing Coupled( 3 circuit-equation(s) , 1 poisson-equation(s) , 
+                   1 current-contact-equation(s) , 1 electron-equation(s) , 
+                   1 hole-equation(s) ) 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      1.25e+01                                                      0.07
+    1      1.71e+04   1.00e+00   9.64e-02   7.72e+02    0         3      0.17
+    2      7.43e+01   1.00e+00   2.62e-03   6.60e+01    0         3      0.28
+    3      2.27e-01   1.00e+00   3.29e-05   2.81e-01    0         3      0.38
+Finished, because...
+Error smaller than 1 ( 2.8109E-01 ).
+
+Accumulated times:
+Assembly time:        0.32 s
+Solve time:      0.06 s
+Total time:      0.38 s
+
+Device Instance 'pixel':
+Contact              Voltage              Electron      Hole         Conduction 
+                 outer       inner        current       current      current
+ BOT_electro -2.417E+02   -2.417E+02      5.554E-20    -1.161E-15   -1.161E-15
+ IMP1_electr  0.000E+00    0.000E+00      1.161E-15     2.518E-20    1.161E-15
+
+
+AC small signal computation
+---------------------------
+(Using complex mode)
+
+
+Computing frequency 1.0000e+03 OK (time:  0.06 s)
+
+Computing step from t=0.805549 to t=0.845549 (Stepsize: 0.04) :
+Extrapolating values for t = 0.845549 ... done.
+Computing Coupled( 3 circuit-equation(s) , 1 poisson-equation(s) , 
+                   1 current-contact-equation(s) , 1 electron-equation(s) , 
+                   1 hole-equation(s) ) 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      1.28e+01                                                      0.07
+    1      1.32e+04   1.00e+00   3.51e-02   8.33e+02    0         3      0.17
+    2      7.98e+01   1.00e+00   5.63e-03   8.62e+01    0         3      0.28
+    3      2.81e-02   1.00e+00   7.91e-05   5.13e-01    0         3      0.38
+Finished, because...
+Error smaller than 1 ( 5.1325E-01 ).
+
+Accumulated times:
+Assembly time:        0.32 s
+Solve time:      0.06 s
+Total time:      0.38 s
+
+Device Instance 'pixel':
+Contact              Voltage              Electron      Hole         Conduction 
+                 outer       inner        current       current      current
+ BOT_electro -2.537E+02   -2.537E+02      4.677E-19    -1.169E-15   -1.168E-15
+ IMP1_electr  0.000E+00    0.000E+00      1.168E-15     2.518E-20    1.168E-15
+
+
+AC small signal computation
+---------------------------
+(Using complex mode)
+
+
+Computing frequency 1.0000e+03 OK (time:  0.06 s)
+
+Computing step from t=0.845549 to t=0.885549 (Stepsize: 0.04) :
+Extrapolating values for t = 0.885549 ... done.
+Computing Coupled( 3 circuit-equation(s) , 1 poisson-equation(s) , 
+                   1 current-contact-equation(s) , 1 electron-equation(s) , 
+                   1 hole-equation(s) ) 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      1.31e+01                                                      0.07
+    1      7.47e+03   1.00e+00   3.49e-02   7.49e+02    0         3      0.18
+    2      5.43e+00   1.00e+00   4.08e-03   6.79e+01    0         3      0.28
+    3      4.35e-02   1.00e+00   5.13e-05   1.64e-01    0         3      0.39
+Finished, because...
+Error smaller than 1 ( 1.6353E-01 ).
+
+Accumulated times:
+Assembly time:        0.33 s
+Solve time:      0.06 s
+Total time:      0.39 s
+
+Device Instance 'pixel':
+Contact              Voltage              Electron      Hole         Conduction 
+                 outer       inner        current       current      current
+ BOT_electro -2.657E+02   -2.657E+02     -3.883E-19    -1.176E-15   -1.176E-15
+ IMP1_electr  0.000E+00    0.000E+00      1.176E-15     2.518E-20    1.176E-15
+
+
+AC small signal computation
+---------------------------
+(Using complex mode)
+
+
+Computing frequency 1.0000e+03 OK (time:  0.05 s)
+
+Computing step from t=0.885549 to t=0.925549 (Stepsize: 0.04) :
+Extrapolating values for t = 0.925549 ... done.
+Computing Coupled( 3 circuit-equation(s) , 1 poisson-equation(s) , 
+                   1 current-contact-equation(s) , 1 electron-equation(s) , 
+                   1 hole-equation(s) ) 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      1.34e+01                                                      0.08
+    1      1.08e+04   1.00e+00   3.10e-02   6.78e+02    0         3      0.18
+    2      1.83e+01   1.00e+00   1.36e-03   2.27e+01    0         3      0.28
+    3      1.02e-02   1.00e+00   4.46e-06   5.08e-02    0         3      0.39
+Finished, because...
+Error smaller than 1 ( 5.0802E-02 ).
+
+Accumulated times:
+Assembly time:        0.32 s
+Solve time:      0.06 s
+Total time:      0.39 s
+
+Device Instance 'pixel':
+Contact              Voltage              Electron      Hole         Conduction 
+                 outer       inner        current       current      current
+ BOT_electro -2.777E+02   -2.777E+02      2.367E-19    -1.184E-15   -1.183E-15
+ IMP1_electr  0.000E+00    0.000E+00      1.183E-15     2.518E-20    1.183E-15
+
+
+AC small signal computation
+---------------------------
+(Using complex mode)
+
+
+Computing frequency 1.0000e+03 OK (time:  0.06 s)
+
+Computing step from t=0.925549 to t=0.965549 (Stepsize: 0.04) :
+Extrapolating values for t = 0.965549 ... done.
+Computing Coupled( 3 circuit-equation(s) , 1 poisson-equation(s) , 
+                   1 current-contact-equation(s) , 1 electron-equation(s) , 
+                   1 hole-equation(s) ) 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      1.36e+01                                                      0.07
+    1      1.11e+04   1.00e+00   3.70e-02   8.68e+02    0         3      0.17
+    2      3.33e+01   1.00e+00   7.47e-04   3.49e+01    0         3      0.28
+    3      8.96e-02   1.00e+00   9.14e-06   1.19e-01    0         3      0.38
+Finished, because...
+Error smaller than 1 ( 1.1853E-01 ).
+
+Accumulated times:
+Assembly time:        0.31 s
+Solve time:      0.06 s
+Total time:      0.38 s
+
+Device Instance 'pixel':
+Contact              Voltage              Electron      Hole         Conduction 
+                 outer       inner        current       current      current
+ BOT_electro -2.897E+02   -2.897E+02      2.873E-18    -1.191E-15   -1.188E-15
+ IMP1_electr  0.000E+00    0.000E+00      1.188E-15     2.519E-20    1.188E-15
+
+
+AC small signal computation
+---------------------------
+(Using complex mode)
+
+
+Computing frequency 1.0000e+03 OK (time:  0.06 s)
+
+Computing step from t=0.965549 to t=1 (Stepsize: 0.0344508) :
+Extrapolating values for t = 1 ... done.
+Computing Coupled( 3 circuit-equation(s) , 1 poisson-equation(s) , 
+                   1 current-contact-equation(s) , 1 electron-equation(s) , 
+                   1 hole-equation(s) ) 
+using Bank/Rose nonlinear solver.
+
+Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
+------------------------------------------------------------------------------
+    0      1.11e+01                                                      0.07
+    1      3.71e+03   1.00e+00   8.22e-02   8.74e+02    0         3      0.17
+    2      5.80e+00   1.00e+00   1.06e-03   3.07e+01    0         3      0.28
+    3      3.90e-02   1.00e+00   6.04e-06   4.35e-02    0         3      0.38
+Finished, because...
+Error smaller than 1 ( 4.3535E-02 ).
+
+Accumulated times:
+Assembly time:        0.32 s
+Solve time:      0.06 s
+Total time:      0.38 s
+
+Device Instance 'pixel':
+Contact              Voltage              Electron      Hole         Conduction 
+                 outer       inner        current       current      current
+ BOT_electro -3.000E+02   -3.000E+02     -3.463E-19    -1.198E-15   -1.198E-15
+ IMP1_electr  0.000E+00    0.000E+00      1.198E-15     2.519E-20    1.198E-15
+
+
+AC small signal computation
+---------------------------
+(Using complex mode)
+
+
+Computing frequency 1.0000e+03 OK (time:  0.06 s)
+
+
+Finished, because...
+Curve trace finished.
+
+Writing plot 'pixel_n8_des.tdr' (TDR format) ... done.
+
+Tue Jul  9 12:19:49 2024: checked in 1 sdevice license(s)
+
+******************************************************************************
+Sentaurus Device peak memory usage: 323 megabytes
+Sentaurus Device simulation times:
+  wallclock: 46.02 s
+  total cpu: 45.91 s
+Sentaurus Device simulation finished (Date: Tue Jul  9 12:19:49 2024  (CDT)).
+********************************* Good Bye ! *********************************

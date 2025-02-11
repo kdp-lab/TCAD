@@ -1,0 +1,23 @@
+###########################################
+# Sentaurus Visual V-2024.03.
+# Tcl log file.
+#------------------------------------------
+# Date: Aug 06, 2024. 12:09:25.
+# Version: 35.3.8727837 (3.8727837)
+# Mode: Interactive (GUI).
+# Mesa: enabled.
+# Hostname: kdplab01.
+# Machine: Linux, x86_64, x86_64.
+# Kernel: 5.14.0-427.28.1.el9_4.x86_64.
+###########################################
+
+load_file /home/aknicholas/DB/smartPixTCAD-main/Cern_Examples/3D_eFields/n51_msh.tdr -fod
+create_plot -dataset n51_msh
+select_plots {Plot_n51_msh}
+#-> Plot_n51_msh
+#-> Plot_n51_msh
+#-> n51_msh
+rotate_plot -plot Plot_n51_msh -x 145.645 -y 69.1838 -z -46.946 -absolute
+#-> 0
+exit 0
+ 

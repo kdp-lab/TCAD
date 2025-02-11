@@ -1,0 +1,50 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Simple n-on-p diode example for Sentaurus TCAD
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:
+
+(define width 55)
+(define depth 200)
+(define bulkConcentration 4.7e12)
+
+;;Define silicon bulk and create to lines for implant placements 
+(sdegeo:create-rectangle (position 0 0 0)  (position width depth 0.0) "Silicon" "bulk")
+(sdedr:define-refeval-window "top_imp_line" "Line"  (position 0 0 0) (position width 0 0))
+(sdedr:define-refeval-window "bot_imp_line" "Line"  (position 0 depth 0) (position width depth 0))
+
+;;Define electrodes an place them 
+(sdegeo:define-contact-set "IMP1_electrode" 4  (color:rgb 1 0 0 ) "##;")
+(sdegeo:define-contact-set "BOT_electrode" 4  (color:rgb 0 1 0 ) "##")
+(sdegeo:set-current-contact-set "IMP1_electrode")
+(sdegeo:set-contact-edges (list (car (find-edge-id (position (/ width 2) 0 0)))) "IMP1_electrode")
+(sdegeo:set-current-contact-set "BOT_electrode")
+(sdegeo:set-contact-edges (list (car (find-edge-id (position (/ width 2) depth 0)))) "BOT_electrode")
+
+;;Define doping profiles
+(sdedr:define-constant-profile "BULK_profile" "BoronActiveConcentration" bulkConcentration)
+(sdedr:define-gaussian-profile "IMP_profile" "PhosphorusActiveConcentration" "PeakPos" 0  "PeakVal" 1e18 "ValueAtDepth" 1e12 "Depth" 2.4 "Gauss"  "Factor" 0.800000)
+(sdedr:define-gaussian-profile "BOT_IMP_profile" "BoronActiveConcentration" "PeakPos" 0  "PeakVal" 1e18 "ValueAtDepth" 1e12 "Depth" 2 "Gauss"  "Factor" 0.800000 )
+
+;;Place doping profiles in the geometry 
+(sdedr:define-constant-profile-material "bulk_placement" "BULK_profile" "Silicon")
+(sdedr:define-analytical-profile-placement "nPlus_placement" "IMP_profile" "top_imp_line" "Both" "NoReplace" "Eval")
+(sdedr:define-analytical-profile-placement "pPlus_placement" "BOT_IMP_profile" "bot_imp_line" "Both" "NoReplace" "Eval")
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; Meshing ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;Define refinement areas
+(sdedr:define-refeval-window "everything_refinement" "Rectangle"  (position -1 -1 0) (position (+ width 1) (+ depth 1) 0))
+(sdedr:define-refeval-window "implant_refinement" "Rectangle"  (position 0 0 0) (position width 3 0))
+(sdedr:define-refeval-window "bot_refinement" "Rectangle"  (position 0 depth 0) (position width (- depth 3) 0))
+
+;;Define doping dependent refinement
+(sdedr:define-refinement-size "general_refinement" 5 5 5 0.1 0.1 0.1 )
+(sdedr:define-refinement-size "implant_refinement_profile" 1 1 1 0.1 0.1 0.1 )
+(sdedr:define-refinement-function "implant_refinement_profile" "DopingConcentration" "MaxTransDiff" 2)
+
+;;Place refinement profiles
+(sdedr:define-refinement-placement "everything_ref_placement" "general_refinement" (list "window" "everything_refinement" ) )
+(sdedr:define-refinement-placement "top_ref_placement" "implant_refinement_profile" (list "window" "implant_refinement" ) )
+(sdedr:define-refinement-placement "bot_ref_placement" "implant_refinement_profile" (list "window" "bot_refinement" ) )
+
+

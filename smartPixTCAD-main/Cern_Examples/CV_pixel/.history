@@ -1,0 +1,10 @@
+12:19:00 Jul 09 2024 <CV_pixel> submitted to the batch system
+12:19:01 Jul 09 2024     job 8 <sdevice> started on host 'kdplab01': "sdevice pp8_des.cmd"
+12:19:49 Jul 09 2024 +++ job 8 <sdevice> done: exit(0)
+12:19:50 Jul 09 2024     job 11 <sdevice> started on host 'kdplab01': "sdevice --max_threads 1  pp11_des.cmd"
+12:20:39 Jul 09 2024 +++ job 11 <sdevice> done: exit(0)
+12:20:40 Jul 09 2024     job 9 <svisual> started on host 'kdplab01': "svisual --threads 1 --max_threads 1  n9_vis.tcl"
+12:21:21 Jul 09 2024 +++ job 9 <svisual> done: exit(0)
+12:21:22 Jul 09 2024     job 12 <svisual> started on host 'kdplab01': "svisual --threads 1 --max_threads 1  n12_vis.tcl"
+12:21:46 Jul 09 2024 +++ job 12 <svisual> done: exit(0)
+12:21:48 Jul 09 2024 <CV_pixel> done (168 sec)

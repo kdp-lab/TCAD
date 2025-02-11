@@ -1,0 +1,56 @@
+###########################################
+# Sentaurus Visual V-2024.03.
+# Tcl log file.
+#------------------------------------------
+# Date: Jul 09, 2024. 12:20:45.
+# Version: 35.3.8727837 (3.8727837)
+# Mode: Interactive (GUI).
+# Mesa: enabled.
+# Hostname: kdplab01.
+# Machine: Linux, x86_64, x86_64.
+# Kernel: 5.14.0-427.20.1.el9_4.x86_64.
+###########################################
+
+  list_custom_buttons
+  remove_custom_buttons {}
+  add_custom_button -name E -desc {Edit Custom Buttons Toolbar} -script ::customButtons::actionMainMenu
+#--> E
+  add_custom_button -separator
+#--> D1
+  add_custom_button -separator
+#--> D2
+load_script_file /home/aknicholas/DB/smartPixTCAD-main/Cern_Examples/CV_pixel/n9_vis.tcl
+cd /home/aknicholas/DB/smartPixTCAD-main/Cern_Examples/CV_pixel
+  create_plot -name Plot_CV -1d
+  select_plots {Plot_CV}
+#--> Plot_CV
+#--> Plot_CV
+  set_plot_prop -plot {Plot_CV} -title "C = pixel matrix to backside capacitance" -title_font_size 20
+#--> 0
+  set_axis_prop -plot Plot_CV -axis x -title "Bias voltage \[V\]" -title_font_size 16 -scale_font_size 14 -type linear
+# WARNING:The parameter 'scale_font_size' is deprecated. Please, use the parameter 'label_font_size'  instead.
+#--> 0
+  set_axis_prop -plot Plot_CV -axis y -title "1/C^2 \[1/pF^2\]" -title_font_size 16 -scale_font_size 14 -type linear
+# WARNING:The parameter 'scale_font_size' is deprecated. Please, use the parameter 'label_font_size'  instead.
+#--> 0
+  set_legend_prop -plot Plot_CV -font_size 12 -location top_left -font_att bold
+# WARNING:The parameter 'font_att' is deprecated. Please, use the parameter 'label_font_att' for 1D and 'title_font_att' for 2D or 3D  instead.
+# WARNING:The parameter 'font_size' is deprecated. Please, use the parameter 'label_font_size'  instead.
+#--> 0
+  select_plots {Plot_CV}
+#--> Plot_CV
+  load_file n8_ac_des.plt -name PLT(8)
+#--> PLT(8)
+  create_variable -dataset PLT(8) -function 1/(<c(cn,cp):PLT(8)>*256*256*55*1e12)^2 -name 1overC2
+#--> 1overC2
+  create_variable -dataset PLT(8) -function -<v(cp):PLT(8)> -name negV
+#--> negV
+  create_curve -axisX negV -axisY 1overC2 -dataset {PLT(8)} -name CV(8) -plot Plot_CV
+#--> CV(8)
+  set_curve_prop {CV(8)} -plot Plot_CV -label Simulation -color #0000ff -line_style solid -line_width 2
+#--> 0
+#-> 0
+create_curve -axisX 1overC2 -axisY c(cn,cn) -dataset {PLT(8)} -plot Plot_CV
+#-> Curve_1
+exit 0
+ 

@@ -1,0 +1,134 @@
+
+****************************************************************************
+***                       Sentaurus Workbench gsub                       ***
+***                          Version V-2024.03                           ***
+***                      (3.8727837, x86_64, Linux)                      ***
+***                                                                      ***
+***                Copyright (c) 1994-2024 Synopsys, Inc.                ***
+***                                                                      ***
+***  This software and the associated documentation are confidential     ***
+***  and proprietary to Synopsys, Inc.  Your use or disclosure of this   ***
+***  software is subject to the terms and conditions of a written        ***
+***  license agreement between you, or your company, and Synopsys, Inc.  ***
+****************************************************************************
+
+gsub is running on host 'kdplab01.uchicago.edu' by user 'aknicholas'
+Binary '/code/Synopsys/tcad_sentaurus_vV-2024.03/sentaurus/current/bin/../tcad/current/linux64/bin/../lib/gsub0'
+Command line options '-verbose -swb_pid 85219 -q local:default -e remaining /home/aknicholas/DB/smartPixTCAD-main/Cern_Examples/3D_eFields'
+Current directory '/home/aknicholas'
+Project organization 'Traditional'
+Some relevant environment variables:
+	STROOT=/code/Synopsys/tcad_sentaurus_vV-2024.03/sentaurus/current/bin/..
+	STRELEASE=current
+	STROOT_LIB=/code/Synopsys/tcad_sentaurus_vV-2024.03/sentaurus/current/bin/../tcad/current/lib
+	STDB=/home/aknicholas/DB
+	DATEX=/code/Synopsys/tcad_sentaurus_vV-2024.03/sentaurus/current/bin/../tcad/current/lib/datexcodes.txt
+	DISPLAY=localhost:11.0
+
+Starting swblm daemon...OK
+Project '/home/aknicholas/DB/smartPixTCAD-main/Cern_Examples/3D_eFields'
+Application mode : traditional
+10:33:16 Jul 05 2024 <3D_eFields> submitted to the batch system
+Loading global queue configuration file '/code/Synopsys/tcad_sentaurus_vV-2024.03/sentaurus/current/queues/gqueues.dat'...ok
+Loading project tree '/home/aknicholas/DB/smartPixTCAD-main/Cern_Examples/3D_eFields/gtree.dat'
+>>>>> Preprocessing the project to run in normal mode
+Loading jobs and dependence graph '"/home/aknicholas/DB/smartPixTCAD-main/Cern_Examples/3D_eFields/gexec.cmd"'
+INITIALIZING PREPROCESSOR:
+Loading project tree '/home/aknicholas/DB/smartPixTCAD-main/Cern_Examples/3D_eFields/gtree.dat'
+Loading project variables '/home/aknicholas/DB/smartPixTCAD-main/Cern_Examples/3D_eFields/gvars.dat'
+--Get files to preprocess...
+--Create file handlers...
+--Read the toolflow...
+--Analyze tool-file dependencies...
+--Read all nodes to preprocess...
+--Group nodes into experiments...
+--Get all variables...
+--Get all parameters...
+PREPROCESSOR SUCCESSFULLY INITIALIZED.
+PREPROCESSING STEP 1:
+Reading file /home/aknicholas/DB/smartPixTCAD-main/Cern_Examples/3D_eFields/sde_dvs.cmd
+Reading file /home/aknicholas/DB/smartPixTCAD-main/Cern_Examples/3D_eFields/sdevice_des.cmd
+Reading file /home/aknicholas/DB/smartPixTCAD-main/Cern_Examples/3D_eFields/sdevice.par
+PREPROCESSING STEP 2:
+---------------------------------------
+Preprocessing file /home/aknicholas/DB/smartPixTCAD-main/Cern_Examples/3D_eFields/sde_dvs.cmd for node 51
++++Node successfully preprocessed+++
+---------------------------------------
+Preprocessing file /home/aknicholas/DB/smartPixTCAD-main/Cern_Examples/3D_eFields/sdevice_des.cmd for node 56
+'@tdr@' creates dependences with the node(s) '51'
+---------------------------------------
+Preprocessing file /home/aknicholas/DB/smartPixTCAD-main/Cern_Examples/3D_eFields/sdevice.par for node 56
++++Node successfully preprocessed+++
+The node '56' has dependencies to the node(s) '51'
+Writing 'gexec.cmd'
+Loading jobs and dependence graph '"/home/aknicholas/DB/smartPixTCAD-main/Cern_Examples/3D_eFields/gexec.cmd"'
+Warning: node '38' not queued: node is virtual
+Warning: node '5' not queued: node is virtual
+Warning: node '18' not queued: node is virtual
+Warning: node '34' not queued: node is virtual
+Warning: node '50' not queued: node is virtual
+>>>>>>>>>> job '51' status changed from 'none' to 'queued'
+Warning: node '52' not queued: node is virtual
+Warning: node '53' not queued: node is virtual
+Warning: node '54' not queued: node is virtual
+Warning: node '55' not queued: node is virtual
+>>>>>>>>>> job '56' status changed from 'none' to 'queued'
+-----------------------------------------------------------------
+queue "local:default" - 51 56
+-----------------------------------------------------------------
+>>>>>>>>>> Initializing back-end schedulers...
+>>>>>>>> Loaded Schedulers are ... local
+local% initialize 'local' scheduler data
+>>>>> List of Active Schedulers : local
+<<<<<<<<<<
+>>>>>>>>>> job '51' status changed from 'queued' to 'ready'
+>>>>>>>>>> os_rm /home/aknicholas/DB/smartPixTCAD-main/Cern_Examples/3D_eFields/n51_dvs.job
+local% submit job 51 for local execution
+>>>>>>>>>> job '51' status changed from 'ready' to 'pending'
+local% exec /code/Synopsys/tcad_sentaurus_vV-2024.03/sentaurus/current/bin/gjob -verbose -nice 19   -job 51 -swb_pid 85219 -gsub_pid 85606 -gsub_host kdplab01.uchicago.edu -gsub_port 32933  "/home/aknicholas/DB/smartPixTCAD-main/Cern_Examples/3D_eFields"
+>>>>>>>>>> job '51' status changed from 'pending' to 'running'
+10:33:17 Jul 05 2024     job 51 <sde> started on host 'kdplab01': "sde -e -l n51_dvs.cmd"
+>>>>>>>>>> job '51' status changed from 'running' to 'done'
+10:34:52 Jul 05 2024 +++ job 51 <sde> done: exit(0)
+>>>>>>>>>> job '56' status changed from 'queued' to 'ready'
+INITIALIZING PREPROCESSOR:
+Loading project tree '/home/aknicholas/DB/smartPixTCAD-main/Cern_Examples/3D_eFields/gtree.dat'
+Loading jobs and dependence graph '"/home/aknicholas/DB/smartPixTCAD-main/Cern_Examples/3D_eFields/gexec.cmd"'
+Loading project variables '/home/aknicholas/DB/smartPixTCAD-main/Cern_Examples/3D_eFields/gvars.dat'
+--Get files to preprocess...
+--Create file handlers...
+--Read the toolflow...
+--Analyze tool-file dependencies...
+--Read all nodes to preprocess...
+--Group nodes into experiments...
+--Get all variables...
+--Get all parameters...
+PREPROCESSOR SUCCESSFULLY INITIALIZED.
+PREPROCESSING STEP 1:
+Reading file /home/aknicholas/DB/smartPixTCAD-main/Cern_Examples/3D_eFields/sdevice_des.cmd
+Reading file /home/aknicholas/DB/smartPixTCAD-main/Cern_Examples/3D_eFields/sdevice.par
+PREPROCESSING STEP 2:
+---------------------------------------
+Preprocessing file /home/aknicholas/DB/smartPixTCAD-main/Cern_Examples/3D_eFields/sdevice_des.cmd for node 56
+'@tdr@' creates dependences with the node(s) '51'
++++Preprocessing results written to /home/aknicholas/DB/smartPixTCAD-main/Cern_Examples/3D_eFields/pp56_des.cmd
+The node '56' has dependencies to the node(s) '51'
+---------------------------------------
+Preprocessing file /home/aknicholas/DB/smartPixTCAD-main/Cern_Examples/3D_eFields/sdevice.par for node 56
++++Preprocessing results written to /home/aknicholas/DB/smartPixTCAD-main/Cern_Examples/3D_eFields/pp56_des.par
+The node '56' has dependencies to the node(s) '51'
+>>>>>>>>>> os_rm /home/aknicholas/DB/smartPixTCAD-main/Cern_Examples/3D_eFields/n56_des.job
+local% submit job 56 for local execution
+>>>>>>>>>> job '56' status changed from 'ready' to 'pending'
+local% exec /code/Synopsys/tcad_sentaurus_vV-2024.03/sentaurus/current/bin/gjob -verbose -nice 19 --max_threads 1  -job 56 -swb_pid 85219 -gsub_pid 85606 -gsub_host kdplab01.uchicago.edu -gsub_port 32933  "/home/aknicholas/DB/smartPixTCAD-main/Cern_Examples/3D_eFields"
+>>>>>>>>>> job '56' status changed from 'pending' to 'running'
+10:34:53 Jul 05 2024     job 56 <sdevice> started on host 'kdplab01': "sdevice --max_threads 1  pp56_des.cmd"
+>>>>>>>>>> job '56' status changed from 'running' to 'done'
+14:40:35 Jul 05 2024 +++ job 56 <sdevice> done: exit(0)
+
+SCHEDULING REPORT
++++ done     : 51 56
+
+14:40:37 Jul 05 2024 <3D_eFields> done (14841 sec)
+>>>>>> Writing to status file 14841
+gsub exits with status 0

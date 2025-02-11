@@ -1,0 +1,5 @@
+DATE: 01/25/25-15:37:52.344 cmlog.txt
+
+01/25/25-15:37:52.385|This localhost (server) information:
+	Name:    kdplab01
+	Address: 128.135.102.246

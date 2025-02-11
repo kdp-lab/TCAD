@@ -1,0 +1,15 @@
+##### Purpose #####
+# This is a minimal example to illustrate how to perform a Sentaurus TCAD simulation with radiation damage included. 
+# It contains a mesh and a simulation command file to simulate the electric field at 500V and 1000V in addition to I-V curves. 
+####### 
+
+##### How to use ##### 
+	1. Start simulation by typing "sdevice radDamage.cmd" in the terminal. 
+	2. Open Sentaurus Visual by typing svisual
+	3. Load either the .plt or _des.tdr, which should be produced by your simulation, to 
+	   visualize the results. The .tdr files contains the field maps at 500V and 1000V 
+	   while the .plt file contains graphs of various quantities  as function of voltage 
+	   between 0 and 1000V. 
+
+
+

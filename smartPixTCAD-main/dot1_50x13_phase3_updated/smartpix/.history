@@ -1,0 +1,12 @@
+15:24:55 Jan 20 2025 <smartpix> submitted to the batch system
+15:24:56 Jan 20 2025     job 1 <sde> started on host 'kdplab01': "sde -e -l n1_dvs.cmd"
+15:25:00 Jan 20 2025 +++ job 1 <sde> done: exit(0)
+15:25:01 Jan 20 2025     job 3 <sdevice> started on host 'kdplab01': "sdevice --max_threads 1  pp3_des.cmd"
+15:25:06 Jan 20 2025 --- job 3 <sdevice> exited abnormally: exit()
+15:25:07 Jan 20 2025     job 2 <snmesh> started on host 'kdplab01': "snmesh --max_threads 1 "
+15:25:12 Jan 20 2025 +++ job 2 <snmesh> done: exit(0)
+15:25:14 Jan 20 2025 <smartpix> failed
+15:30:42 Jan 20 2025 <smartpix> submitted to the batch system
+15:30:43 Jan 20 2025     job 3 <sdevice> started on host 'kdplab01': "sdevice --max_threads 1  pp3_des.cmd"
+15:52:07 Jan 20 2025 +++ job 3 <sdevice> done: exit(0)
+15:52:09 Jan 20 2025 <smartpix> done (1287 sec)

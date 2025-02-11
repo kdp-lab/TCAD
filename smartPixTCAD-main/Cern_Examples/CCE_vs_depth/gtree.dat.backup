@@ -1,0 +1,33 @@
+# Copyright (C) 1994-2011 Synopsys Inc.
+# swbtree vK-2015.06-SP2, Wed Jun 22 14:55:03 2016
+
+# --- simulation flow
+sdevice sdevice "" {}
+sdevice chargeScale "1" {1}
+sdevice fluence "0" {8e15}
+sdevice voltage "-1000" {-1000}
+sdevice chargeDepth "190" {190 160 130 90 60 30}
+inspect inspect "" {}
+# --- variables
+# --- scenarios and parameter specs
+scenario default chargeScale ""
+scenario default fluence ""
+scenario default voltage ""
+scenario default chargeDepth ""
+# --- simulation tree
+0 38 0 {} {default} 0
+1 2 38 {1} {default} 0
+2 34 2 {8e15} {default} 0
+3 35 34 {-1000} {default} 0
+4 36 35 {190} {default} 0
+5 37 36 {} {default} 0
+4 39 35 {160} {default} 0
+5 40 39 {} {default} 0
+4 41 35 {130} {default} 0
+5 42 41 {} {default} 0
+4 43 35 {90} {default} 0
+5 44 43 {} {default} 0
+4 45 35 {60} {default} 0
+5 46 45 {} {default} 0
+4 47 35 {30} {default} 0
+5 48 47 {} {default} 0

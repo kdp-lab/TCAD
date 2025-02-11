@@ -1,0 +1,1281 @@
+****************************************************************************
+***                           Sentaurus Device                           ***
+***                          Version V-2024.03                           ***
+***                      (3.8727837, x86_64, Linux)                      ***
+***                                                                      ***
+***                       Copyright (C) 1994-2024                        ***
+***                            Synopsys, Inc.                            ***
+***                                                                      ***
+***  This software and the associated documentation are confidential     ***
+***  and proprietary to Synopsys, Inc.  Your use or disclosure of this   ***
+***  software is subject to the terms and conditions of a written        ***
+***  license agreement between you, or your company, and Synopsys, Inc.  ***
+****************************************************************************
+
+	Running on machine with the following configuration:
+	Host Name: kdplab01
+	Operating System: Linux rel. 5.14.0-427.28.1.el9_4.x86_64 ver. #1 SMP PREEMPT_DYNAMIC Fri Aug 2 03:44:10 EDT 2024
+	Machine Type: x86_64
+	Process ID: 192137
+	Number of processors: 64
+	Domain Name: (none)
+	Date: Tue Aug 13 16:01:59 2024  (CDT)
+
+Tue Aug 13 16:01:59 2024: checked out 1 sdevice license(s)
+Parsing circuit file /code/Synopsys/tcad_sentaurus_vV-2024.03/sentaurus/current/bin/../tcad/current/linux64/lib/sdevice/sd_SRL1.ccf
+Parsing circuit file /code/Synopsys/tcad_sentaurus_vV-2024.03/sentaurus/current/bin/../tcad/current/linux64/lib/sdevice/sd_hb_isource.ccf
+Parsing circuit file /code/Synopsys/tcad_sentaurus_vV-2024.03/sentaurus/current/bin/../tcad/current/linux64/lib/sdevice/sd_hb_sRL.ccf
+Parsing circuit file /code/Synopsys/tcad_sentaurus_vV-2024.03/sentaurus/current/bin/../tcad/current/linux64/lib/sdevice/sd_hb_vsource2.ccf
+Parsing circuit file /code/Synopsys/tcad_sentaurus_vV-2024.03/sentaurus/current/bin/../tcad/current/linux64/lib/sdevice/sd_hb_isource2.ccf
+Parsing circuit file /code/Synopsys/tcad_sentaurus_vV-2024.03/sentaurus/current/bin/../tcad/current/linux64/lib/sdevice/sd_hb_vsource.ccf
+Parsing circuit file /code/Synopsys/tcad_sentaurus_vV-2024.03/sentaurus/current/bin/../tcad/current/linux64/lib/sdevice/bs_psource.ccf
+Parsing circuit file /code/Synopsys/tcad_sentaurus_vV-2024.03/sentaurus/current/bin/../tcad/current/linux64/lib/sdevice/sd_hb_pGC.ccf
+Parsing circuit file /code/Synopsys/tcad_sentaurus_vV-2024.03/sentaurus/current/bin/../tcad/current/linux64/lib/scm/satinductor.ccf
+Parsing circuit file /code/Synopsys/tcad_sentaurus_vV-2024.03/sentaurus/current/bin/../tcad/current/linux64/lib/scm/ferroelectric.ccf
+Parsing circuit file /code/Synopsys/tcad_sentaurus_vV-2024.03/sentaurus/current/bin/../tcad/current/linux64/lib/scm/MOS_harness.ccf
+Loading shared object file /code/Synopsys/tcad_sentaurus_vV-2024.03/sentaurus/current/bin/../tcad/current/linux64/lib/scm/MOS_harness.so.linux64
+Loading shared object file /code/Synopsys/tcad_sentaurus_vV-2024.03/sentaurus/current/bin/../tcad/current/linux64/lib/scm/ferroelectric.so.linux64
+Loading shared object file /code/Synopsys/tcad_sentaurus_vV-2024.03/sentaurus/current/bin/../tcad/current/linux64/lib/scm/satinductor.so.linux64
+Loading shared object file /code/Synopsys/tcad_sentaurus_vV-2024.03/sentaurus/current/bin/../tcad/current/linux64/lib/sdevice/sd_hb_pGC.so.linux64
+Loading shared object file /code/Synopsys/tcad_sentaurus_vV-2024.03/sentaurus/current/bin/../tcad/current/linux64/lib/sdevice/bs_psource.so.linux64
+Loading shared object file /code/Synopsys/tcad_sentaurus_vV-2024.03/sentaurus/current/bin/../tcad/current/linux64/lib/sdevice/sd_hb_vsource.so.linux64
+Loading shared object file /code/Synopsys/tcad_sentaurus_vV-2024.03/sentaurus/current/bin/../tcad/current/linux64/lib/sdevice/sd_hb_isource2.so.linux64
+Loading shared object file /code/Synopsys/tcad_sentaurus_vV-2024.03/sentaurus/current/bin/../tcad/current/linux64/lib/sdevice/sd_hb_vsource2.so.linux64
+Loading shared object file /code/Synopsys/tcad_sentaurus_vV-2024.03/sentaurus/current/bin/../tcad/current/linux64/lib/sdevice/sd_hb_sRL.so.linux64
+Loading shared object file /code/Synopsys/tcad_sentaurus_vV-2024.03/sentaurus/current/bin/../tcad/current/linux64/lib/sdevice/sd_hb_isource.so.linux64
+Loading shared object file /code/Synopsys/tcad_sentaurus_vV-2024.03/sentaurus/current/bin/../tcad/current/linux64/lib/sdevice/sd_SRL1.so.linux64
+Tue Aug 13 16:01:59 2024: checked out 1 sdevice-traps license(s)
+
+Input source: pp2_des.cmd
+
+===============================
+
+Output file: 2_des.log
+
+
+GlobalParameter {
+}
+no ACExtract file
+
+PMIPath file: /code/Synopsys/tcad_sentaurus_vV-2024.03/sentaurus/current/bin/../tcad/current/linux64/lib/sdevice-35.3.8727837 /code/Synopsys/tcad_sentaurus_vV-2024.03/sentaurus/current/bin/../tcad/current/linux64/lib/sdevice
+
+CMIPath file: /code/Synopsys/tcad_sentaurus_vV-2024.03/sentaurus/current/bin/../tcad/current/linux64/lib/sdevice /code/Synopsys/tcad_sentaurus_vV-2024.03/sentaurus/current/bin/../tcad/current/linux64/lib/scm
+
+SPICEPath file: /code/Synopsys/tcad_sentaurus_vV-2024.03/sentaurus/current/bin/../tcad/current/lib/sdevice-35.3.8727837/spice
+
+no DevicePath file
+
+no CIRCUITSAVENAME file
+
+no CIRCUITLOADNAME file
+
+Numerical parameters:
+  Absolute error : 
+    Poisson : 1.0000e-03
+    eqPoisson : 1.0000e-03
+    Electron : 1.0000e-05
+    Hole : 1.0000e-05
+    Photon-Rate-Equation : 1.0000e-07
+    Photon-Phase-Equation : 1.0000e-05
+    Rate-Stabilize-Equation : 1.0000e-07
+    QW-Scattering-Equations : 1.0000e-05
+    QW-eScattering-Equation : 1.0000e-05
+    QW-hScattering-Equation : 1.0000e-05
+    Optical Problem : 1.0000e-03
+    Wavelength : 1.0000e-03
+    Bandstructure : 1.0000e-03
+    EmissionTable : 1.0000e-03
+    DephasingRates : 1.0000e-03
+    Photon Recycling : 1.0000e-03
+    Electron-Temperature : 1.0000e-04
+    Hole-Temperature : 1.0000e-04
+    Lattice-Hole-Electron-Temperature : 1.0000e-03
+    Circuit : 1.0000e-03
+    TCircuit : 1.0000e-03
+    Contact : 1.0000e-03
+    TContact : 1.0000e-03
+    Continuation : 1.0000e-03
+    eLaplace : 1.0000e-03
+    hLaplace : 1.0000e-03
+    tLaplace : 1.0000e-03
+    electron quasi-fermi-potential : 1.0000e-03
+    hole quasi-fermi-potential : 1.0000e-03
+    MonteCarlo : 1.0000e-03
+    MCPoissonPDE : 1.0000e-03
+    eQuantumPotential : 1.0000e-03
+    hQuantumPotential : 1.0000e-03
+    quasi-fermi-potential : 1.0000e-03
+    ConductiveInsulator : 1.0000e-03
+    ContactAndConductiveInsulator : 1.0000e-03
+    SingletExciton : 1.0000e-05
+    FEPolarization : 1.0000e-05
+    FEPolarizationX : 1.0000e-05
+    FEPolarizationY : 1.0000e-05
+    FEPolarizationZ : 1.0000e-05
+    FEPolDivFree : 1.0000e-03
+    eHopping : 1.0000e-03
+    hHopping : 1.0000e-03
+    HydrogenAtom : 1.0000e-03
+    HydrogenMolecule : 1.0000e-03
+    HydrogenIon : 1.0000e-03
+    HydrogenSpeciesA : 1.0000e-03
+    HydrogenSpeciesB : 1.0000e-03
+    HydrogenSpeciesC : 1.0000e-03
+    HydrogenSiliconBondOccupation : 1.0000e-03
+    TrapPDE : 1.0000e-03
+    eSHEDistribution : 1.0000e-03
+    hSHEDistribution : 1.0000e-03
+    Landau-Lifshitz-Gilbert[theta] : 1.0000e-03
+    Landau-Lifshitz-Gilbert[phi] : 1.0000e-03
+    Landau-Lifshitz-Gilbert[x] : 1.0000e-03
+    Landau-Lifshitz-Gilbert[y] : 1.0000e-03
+    Landau-Lifshitz-Gilbert[z] : 1.0000e-03
+    Mechanics : 1.0000e-03
+    ExternalTransportSolver : 1.0000e-03
+    ReactionDiffusionPDE : 1.0000e-03
+    eDensity_Valley1 : 1.0000e-05
+    eDensity_Valley2 : 1.0000e-05
+    eDensity_Valley3 : 1.0000e-05
+    eDensity_Valley4 : 1.0000e-05
+    hDensity_Valley1 : 1.0000e-05
+    hDensity_Valley2 : 1.0000e-05
+    hDensity_Valley3 : 1.0000e-05
+    hDensity_Valley4 : 1.0000e-05
+    eMVTransitionRate : 1.0000e-05
+    hMVTransitionRate : 1.0000e-05
+  RelErrControl (Reference error): 
+    Poisson : 0.025852
+    eqPoisson : 1
+    Electron : 1.0000e+10
+    Hole : 1.0000e+10
+    Photon-Rate-Equation : 1.0000e-07
+    Photon-Phase-Equation : 1
+    Rate-Stabilize-Equation : 1.0000e-07
+    QW-Scattering-Equations : 1.0000e+10
+    QW-eScattering-Equation : 1.0000e+10
+    QW-hScattering-Equation : 1.0000e+10
+    Optical Problem : 1
+    Wavelength : 1
+    Bandstructure : 1
+    EmissionTable : 1
+    DephasingRates : 1
+    Photon Recycling : 1
+    Electron-Temperature : 3.0000e+02
+    Hole-Temperature : 3.0000e+02
+    Lattice-Hole-Electron-Temperature : 3.0000e+02
+    Circuit : 1
+    TCircuit : 1
+    Contact : 0.025852
+    TContact : 1
+    Continuation : 1
+    eLaplace : 1
+    hLaplace : 1
+    tLaplace : 1
+    electron quasi-fermi-potential : 0.025852
+    hole quasi-fermi-potential : 0.025852
+    MonteCarlo : 1
+    MCPoissonPDE : 1
+    eQuantumPotential : 0.025852
+    hQuantumPotential : 0.025852
+    quasi-fermi-potential : 0.025852
+    ConductiveInsulator : 1
+    ContactAndConductiveInsulator : 1
+    SingletExciton : 1.0000e+10
+    FEPolarization : 0.025852
+    FEPolarizationX : 0.025852
+    FEPolarizationY : 0.025852
+    FEPolarizationZ : 0.025852
+    FEPolDivFree : 1
+    eHopping : 0.025852
+    hHopping : 0.025852
+    HydrogenAtom : 1.0000e+10
+    HydrogenMolecule : 1.0000e+10
+    HydrogenIon : 1.0000e+10
+    HydrogenSpeciesA : 1.0000e+10
+    HydrogenSpeciesB : 1.0000e+10
+    HydrogenSpeciesC : 1.0000e+10
+    HydrogenSiliconBondOccupation : 1
+    TrapPDE : 1.0000e-05
+    eSHEDistribution : 0.025852
+    hSHEDistribution : 0.025852
+    Landau-Lifshitz-Gilbert[theta] : 1
+    Landau-Lifshitz-Gilbert[phi] : 1
+    Landau-Lifshitz-Gilbert[x] : 1
+    Landau-Lifshitz-Gilbert[y] : 1
+    Landau-Lifshitz-Gilbert[z] : 1
+    Mechanics : 1
+    ExternalTransportSolver : 1
+    ReactionDiffusionPDE : 1
+    eDensity_Valley1 : 1.0000e+10
+    eDensity_Valley2 : 1.0000e+10
+    eDensity_Valley3 : 1.0000e+10
+    eDensity_Valley4 : 1.0000e+10
+    hDensity_Valley1 : 1.0000e+10
+    hDensity_Valley2 : 1.0000e+10
+    hDensity_Valley3 : 1.0000e+10
+    hDensity_Valley4 : 1.0000e+10
+    eMVTransitionRate : 1.0000e+10
+    hMVTransitionRate : 1.0000e+10
+  Relative error : 4.5 digits
+  Without checked transient error
+  Max. #iterations : 15
+  LineSearchDamping=1
+  #undamped iterations : 1000
+  No incomplete Newton
+  transient method : TR-BDF
+  Linear solver : Pardiso
+  Linear solver for AC analysis : blocked decomposition
+  Linear solver for SHEDistribution Model : Super
+  do not use extrapolation in transient/quasistationary computations
+  use complex supernodal in ac-analysis (if possible)
+  do not use smoothed PDE's in transient/quasistationary computations
+  use automatic coupling of contact/circuit stuff
+  Spice temperature: 3.0015e+02
+  Spice nominal temperature of parameter measurements: 3.0015e+02
+  Spice minimum conductance gmin: 1.0000e-12
+  Use 64 bit (double) normal precision floating point arithmetic.
+  Mininum |rhs| : 1.0000e-05
+  Maximum |rhs| (transient): 1.0000e+15
+  Maximum |rhs| (non-transient): 1.0000e+100
+  Maximum |rhs| factor : 1.0000e+10
+  Maximum |rhs| factor1 : 1.0000e+100
+  Lattice Temperature Range : (50,5.0000e+03)
+  Carrier Temperature Range : (10,8.0000e+04)
+  SHESORError : 0.0000e+00
+  Simplified first order SHE of BTE will be solved
+  SHERefinementCutoff : 20
+  No user dependencies.
+  Number of assembly threads: 1 (command line max_threads)
+  Number of solver threads: 1 (command line max_threads)
+  Thread stacksize: 1000000 bytes (default)
+  Go serial if not enough parallel licenses are available.
+  Model: Math  Switched on
+
+Default device parameters:
+  Electrodes:
+    "anode" : 0.0000e+00 V (Ohmic), area factor : 1
+    "cathode" : 0.0000e+00 V (Ohmic), area factor : 1
+  RayTrace Boundaries:
+  Files:
+    no Boundary file
+    Grid file: 2_msh.grd
+    Doping file: 2_msh.dat
+    no MobilityDoping file
+    MIMCurrent file: pp2_des_mimcur_des.plt
+    no MIMDefects file
+    no InitialDefects file
+    no CyclicNorm file
+    no MIMBand file
+    MIMSensitivity file: pp2_des_mimsa_des.tdr
+    no Load file
+    no Save file
+    Plot file: 2_des.dat
+    no DevFieldsName file
+    AutoNewtonPlot file: 2_des_%ld_des.tdr
+    no Path file
+    no Lifetime file
+    no Temperature file
+    Current file: 2_des.plt
+    no PMIUserFields file
+    no Extraction file
+    no ModelParameters file
+    ParameterPath directories: 
+    no Piezo file
+    no mcDOS file
+    no ModeGain file
+    no Optical emission table for stimulated emission file
+    no Optical emission table for spontaneous emission file
+    no Optical emission table for photon phase change coefficient file
+    no EmissionTable file
+    no DephasingRates file
+    no OpticalFarField file
+    no OpticalIntensityPattern file
+    no SaveOpticalIntensityPattern file
+    no IlluminationSpectrum file
+    no SpectralPlot file
+    no OpticalSolverInput file
+    no OpticalGenerationInput file
+    no OpticalGenerationOutuput file
+    no OptGenTransientScaling file
+    no MonteCarloInput file
+    no MonteCarloOutput file
+    no ACPlot file
+-----------------------------------------------
+  Numerical parameters:
+    With avalanche derivatives
+    Using New Plot Names
+    Using old wavelength search algorithm
+    Do not reinitialize quasi Fermi potentials in quasi-stationary simulations
+    Ignore ionization integral constraints
+    Without diagonal preconditioning
+    With Scharfetter-Gummel Discretization
+    Relative error : 4.5 digits
+    Delta for numerical tunnelling derivatives : 1.0000e-03
+    Do not compute breakdown paths, ionization integrals, and Off-state Breakdown Analysis (OBA)
+    QuasiFermiPotential is used for Contact Equation
+    With usage of best vertex in element (maximum element-vertex volume angle) for impact ionization models
+-----------------------------------------------
+-----------------------------------------------
+  Physical models:
+    Without incomplete ionization
+    Use Si parameters
+    TATNonlocalPathNC = 0.0000e+00
+    With SRH-Recombination
+      With Hurkx field dependent lifetimes (trap assisted tunneling model)
+      With doping dependent lifetimes
+      With temperature dependent lifetimes (power law)
+    Without CDL-Recombination
+    With optical generation computation 
+    With Band-to-Band Tunneling
+      Schenk model
+        Local density correction
+    Without Auger-Recombination
+    Without Radiative Recombination
+    Without Surface-Recombination
+    Without Trap-Assisted-Auger-Recombination
+    PMI recombination models: none
+    Without thermal resistance interfaces
+    Without distributed resistance interfaces for electrons
+    Without distributed resistance interfaces for holes
+    Without Piezo
+    Without Anisotropic Material Properties
+    Without Avalanche-Generation 
+    With Bulk Traps:
+      Acceptor Trap Level from Middle of BandGap
+      Concentration = 1.5000e+11 cm^-3,       Energy = 0.01 eV
+      Electron X-section = 1.0000e-16 cm^2, Hole X-section = 1.0000e-16 cm^2
+      Hurkx trap assisted tunneling model in electron X-sections 
+      Hurkx trap assisted tunneling model in hole X-sections 
+
+      Donor Trap Level from Middle of BandGap
+      Concentration = 1.5000e+11 cm^-3,       Energy = -1.0000e-02 eV
+      Electron X-section = 1.0000e-16 cm^2, Hole X-section = 1.0000e-16 cm^2
+      Hurkx trap assisted tunneling model in electron X-sections 
+      Hurkx trap assisted tunneling model in hole X-sections 
+    Without Alpha Particle
+    Without Heavy Ion
+    Without polarization
+    Volume charge density: 0.0000e+00 cm^-3
+    Device Temperature = 2.6300e+02 K
+    Electron Quasi Fermi Potential: 0.0000e+00 V
+    Hole Quasi Fermi Potential: 0.0000e+00 V
+    Without MagneticField
+    With SingletExciton Barrier Type
+    Intrinsic density models:
+      default bandgap model
+      Bandgap narrowing model: Bennett/Wilson with bandgap narrowing (no Fermi)
+    default affinity model
+    default effective mass model
+    Electron mobility:
+      Doping dependence:
+        Default
+      no Carrier-Carrier scattering
+      no bulk trap Coulomb scattering 
+      E_normal dependence:
+        Lombardi
+      Without ThinLayer mobility model
+      High-field mobility: Caughey-Thomas saturation model, using gradient quasi-Fermi potential
+      Einstein relation for diffusivity-mobility ratio
+      no band tail high-field mobility
+    Hole mobility:
+      Doping dependence:
+        Default
+      no Carrier-Carrier scattering
+      no bulk trap Coulomb scattering 
+      E_normal dependence:
+        Lombardi
+      Without ThinLayer mobility model
+      High-field mobility: Caughey-Thomas saturation model, using gradient quasi-Fermi potential
+      Einstein relation for diffusivity-mobility ratio
+      no band tail high-field mobility
+    Energy relaxation time model: according to formula in parameter file
+    Schottky resistance model: default bult-in model
+    Lattice thermal conductivity model: according to formula in parameter file
+    Metal Resistivity model: according to formula in parameter file
+    Thermo Electric Power model: extraploted Si data
+    Metal Thermo Electric Power model: MetalThermoElectricPower model not defined
+    Lattice heat capacity model: temperature dependent
+    no piezoelectric polarization model
+    Without default parameters from file (use built-in default parameters)
+-----------------------------------------------
+  Process information for extraction purposes:
+    none
+  Plot variables:
+    ElectricField/Vector
+
+------------------------------------------------
+  NoisePlot variables:
+    none
+  Plot groups:
+    none
+
+------------------------------------------------
+  CurrentPlot variables:
+    none
+Devices:
+Systems:
+Solve :
+ Poisson
+Coupled ( Digits : 4.5, Max. #iterations : 15, 
+    Solver : Pardiso,
+    #undamped iterations : 1000 
+    )
+    { Poisson Electron Hole } 
+Quasistationary ( Digits : 4.5, Max. #iterations : 15, 
+      Initial step in t : 0.05, 
+      Minimum step in t : 1.0000e-03, Maximum step in t : 1, 
+      Increment : 1.5, Decrement : 1.5, 
+      Goal values :
+        Contact cathode : -1.0000e-01V
+    )
+  {
+    Coupled ( Digits : 4.5, Max. #iterations : 15, 
+        Solver : Pardiso,
+        #undamped iterations : 1000 
+        )
+        { Poisson Electron Hole } 
+  }
+Quasistationary ( Digits : 4.5, Max. #iterations : 15, 
+      Initial step in t : 0.02, 
+      Minimum step in t : 1.0000e-03, Maximum step in t : 1, 
+      Increment : 1.2, Decrement : 1.2, 
+      Goal values :
+        Contact cathode : -1.0000e+00V
+    )
+  {
+    Coupled ( Digits : 4.5, Max. #iterations : 15, 
+        Solver : Pardiso,
+        #undamped iterations : 1000 
+        )
+        { Poisson Electron Hole } 
+  }
+Save( FilePrefix = "2_01" overwrite )
+  { }
+Quasistationary ( Digits : 4.5, Max. #iterations : 15, 
+      Initial step in t : 0.1, 
+      Minimum step in t : 1.0000e-03, Maximum step in t : 1, 
+      Increment : 1.5, Decrement : 1.5, 
+      Goal values :
+        Contact cathode : -5.0000e+00V
+    )
+  {
+    Coupled ( Digits : 4.5, Max. #iterations : 15, 
+        Solver : Pardiso,
+        #undamped iterations : 1000 
+        )
+        { Poisson Electron Hole } 
+  }
+Save( FilePrefix = "2_05" overwrite )
+  { }
+Plot( FilePrefix = "2_05" overwrite )
+  { }
+Quasistationary ( Digits : 4.5, Max. #iterations : 15, 
+      Initial step in t : 0.1, 
+      Minimum step in t : 1.0000e-03, Maximum step in t : 1, 
+      Increment : 1.5, Decrement : 1.5, 
+      Goal values :
+        Contact cathode : -7.7000e+00V
+    )
+  {
+    Coupled ( Digits : 4.5, Max. #iterations : 15, 
+        Solver : Pardiso,
+        #undamped iterations : 1000 
+        )
+        { Poisson Electron Hole } 
+  }
+Save( FilePrefix = "2_08" overwrite )
+  { }
+Plot( FilePrefix = "2_08" overwrite )
+  { }
+Quasistationary ( Digits : 4.5, Max. #iterations : 15, 
+      Initial step in t : 0.05, 
+      Minimum step in t : 1.0000e-03, Maximum step in t : 1, 
+      Increment : 1.3, Decrement : 1.3, 
+      Goal values :
+        Contact cathode : -1.9900e+01V
+    )
+  {
+    Coupled ( Digits : 4.5, Max. #iterations : 15, 
+        Solver : Pardiso,
+        #undamped iterations : 1000 
+        )
+        { Poisson Electron Hole } 
+  }
+Save( FilePrefix = "2_19" overwrite )
+  { }
+Quasistationary ( Digits : 4.5, Max. #iterations : 15, 
+      Initial step in t : 1, 
+      Minimum step in t : 1.0000e-03, Maximum step in t : 1, 
+      Increment : 2, Decrement : 2, 
+      Goal values :
+        Contact cathode : -2.0000e+01V
+    )
+  {
+    Coupled ( Digits : 5, Max. #iterations : 50, 
+        Solver : Pardiso,
+        #undamped iterations : 1000 
+        )
+        { Poisson Electron Hole } 
+  }
+Save( FilePrefix = "2_20" overwrite )
+  { }
+Plot( FilePrefix = "2_20" overwrite )
+  { }
+Quasistationary ( Digits : 4.5, Max. #iterations : 15, 
+      Initial step in t : 0.1, 
+      Minimum step in t : 1.0000e-03, Maximum step in t : 1, 
+      Increment : 1.5, Decrement : 1.5, 
+      Goal values :
+        Contact cathode : -3.9900e+01V
+    )
+  {
+    Coupled ( Digits : 4.5, Max. #iterations : 15, 
+        Solver : Pardiso,
+        #undamped iterations : 1000 
+        )
+        { Poisson Electron Hole } 
+  }
+Save( FilePrefix = "2_39" overwrite )
+  { }
+Quasistationary ( Digits : 4.5, Max. #iterations : 15, 
+      Initial step in t : 1, 
+      Minimum step in t : 1.0000e-03, Maximum step in t : 1, 
+      Increment : 2, Decrement : 2, 
+      Goal values :
+        Contact cathode : -4.0000e+01V
+    )
+  {
+    Coupled ( Digits : 5, Max. #iterations : 50, 
+        Solver : Pardiso,
+        #undamped iterations : 1000 
+        )
+        { Poisson Electron Hole } 
+  }
+Save( FilePrefix = "2_40" overwrite )
+  { }
+Plot( FilePrefix = "2_40" overwrite )
+  { }
+Quasistationary ( Digits : 4.5, Max. #iterations : 15, 
+      Initial step in t : 0.2, 
+      Minimum step in t : 1.0000e-03, Maximum step in t : 1, 
+      Increment : 1.5, Decrement : 1.5, 
+      Goal values :
+        Contact cathode : -4.9900e+01V
+    )
+  {
+    Coupled ( Digits : 4.5, Max. #iterations : 15, 
+        Solver : Pardiso,
+        #undamped iterations : 1000 
+        )
+        { Poisson Electron Hole } 
+  }
+Save( FilePrefix = "2_49" overwrite )
+  { }
+Quasistationary ( Digits : 4.5, Max. #iterations : 15, 
+      Initial step in t : 1, 
+      Minimum step in t : 1.0000e-03, Maximum step in t : 1, 
+      Increment : 2, Decrement : 2, 
+      Goal values :
+        Contact cathode : -5.0000e+01V
+    )
+  {
+    Coupled ( Digits : 5, Max. #iterations : 50, 
+        Solver : Pardiso,
+        #undamped iterations : 1000 
+        )
+        { Poisson Electron Hole } 
+  }
+Save( FilePrefix = "2_50" overwrite )
+  { }
+Plot( FilePrefix = "2_50" overwrite )
+  { }
+Quasistationary ( Digits : 4.5, Max. #iterations : 15, 
+      Initial step in t : 0.2, 
+      Minimum step in t : 1.0000e-03, Maximum step in t : 1, 
+      Increment : 1.5, Decrement : 1.5, 
+      Goal values :
+        Contact cathode : -5.9900e+01V
+    )
+  {
+    Coupled ( Digits : 4.5, Max. #iterations : 15, 
+        Solver : Pardiso,
+        #undamped iterations : 1000 
+        )
+        { Poisson Electron Hole } 
+  }
+Save( FilePrefix = "2_59" overwrite )
+  { }
+Quasistationary ( Digits : 4.5, Max. #iterations : 15, 
+      Initial step in t : 1, 
+      Minimum step in t : 1.0000e-03, Maximum step in t : 1, 
+      Increment : 2, Decrement : 2, 
+      Goal values :
+        Contact cathode : -6.0000e+01V
+    )
+  {
+    Coupled ( Digits : 5, Max. #iterations : 50, 
+        Solver : Pardiso,
+        #undamped iterations : 1000 
+        )
+        { Poisson Electron Hole } 
+  }
+Save( FilePrefix = "2_60" overwrite )
+  { }
+Plot( FilePrefix = "2_60" overwrite )
+  { }
+Quasistationary ( Digits : 4.5, Max. #iterations : 15, 
+      Initial step in t : 0.2, 
+      Minimum step in t : 1.0000e-03, Maximum step in t : 1, 
+      Increment : 1.5, Decrement : 1.5, 
+      Goal values :
+        Contact cathode : -6.9900e+01V
+    )
+  {
+    Coupled ( Digits : 4.5, Max. #iterations : 15, 
+        Solver : Pardiso,
+        #undamped iterations : 1000 
+        )
+        { Poisson Electron Hole } 
+  }
+Save( FilePrefix = "2_69" overwrite )
+  { }
+Quasistationary ( Digits : 4.5, Max. #iterations : 15, 
+      Initial step in t : 1, 
+      Minimum step in t : 1.0000e-03, Maximum step in t : 1, 
+      Increment : 2, Decrement : 2, 
+      Goal values :
+        Contact cathode : -7.0000e+01V
+    )
+  {
+    Coupled ( Digits : 5, Max. #iterations : 50, 
+        Solver : Pardiso,
+        #undamped iterations : 1000 
+        )
+        { Poisson Electron Hole } 
+  }
+Save( FilePrefix = "2_70" overwrite )
+  { }
+Plot( FilePrefix = "2_70" overwrite )
+  { }
+Quasistationary ( Digits : 4.5, Max. #iterations : 15, 
+      Initial step in t : 0.1, 
+      Minimum step in t : 1.0000e-03, Maximum step in t : 1, 
+      Increment : 1.5, Decrement : 1.5, 
+      Goal values :
+        Contact cathode : -9.9900e+01V
+    )
+  {
+    Coupled ( Digits : 4.5, Max. #iterations : 15, 
+        Solver : Pardiso,
+        #undamped iterations : 1000 
+        )
+        { Poisson Electron Hole } 
+  }
+Save( FilePrefix = "2_99" overwrite )
+  { }
+Quasistationary ( Digits : 4.5, Max. #iterations : 15, 
+      Initial step in t : 1, 
+      Minimum step in t : 1.0000e-03, Maximum step in t : 1, 
+      Increment : 2, Decrement : 2, 
+      Goal values :
+        Contact cathode : -1.0000e+02V
+    )
+  {
+    Coupled ( Digits : 5, Max. #iterations : 50, 
+        Solver : Pardiso,
+        #undamped iterations : 1000 
+        )
+        { Poisson Electron Hole } 
+  }
+Save( FilePrefix = "2_100" overwrite )
+  { }
+Plot( FilePrefix = "2_100" overwrite )
+  { }
+Quasistationary ( Digits : 4.5, Max. #iterations : 15, 
+      Initial step in t : 0.1, 
+      Minimum step in t : 1.0000e-03, Maximum step in t : 1, 
+      Increment : 1.5, Decrement : 1.5, 
+      Goal values :
+        Contact cathode : -1.1490e+02V
+    )
+  {
+    Coupled ( Digits : 4.5, Max. #iterations : 15, 
+        Solver : Pardiso,
+        #undamped iterations : 1000 
+        )
+        { Poisson Electron Hole } 
+  }
+Save( FilePrefix = "2_114" overwrite )
+  { }
+Quasistationary ( Digits : 4.5, Max. #iterations : 15, 
+      Initial step in t : 1, 
+      Minimum step in t : 1.0000e-03, Maximum step in t : 1, 
+      Increment : 2, Decrement : 2, 
+      Goal values :
+        Contact cathode : -1.1500e+02V
+    )
+  {
+    Coupled ( Digits : 5, Max. #iterations : 50, 
+        Solver : Pardiso,
+        #undamped iterations : 1000 
+        )
+        { Poisson Electron Hole } 
+  }
+Save( FilePrefix = "2_115" overwrite )
+  { }
+Plot( FilePrefix = "2_115" overwrite )
+  { }
+Quasistationary ( Digits : 4.5, Max. #iterations : 15, 
+      Initial step in t : 0.1, 
+      Minimum step in t : 1.0000e-03, Maximum step in t : 1, 
+      Increment : 1.5, Decrement : 1.5, 
+      Goal values :
+        Contact cathode : -1.2490e+02V
+    )
+  {
+    Coupled ( Digits : 4.5, Max. #iterations : 15, 
+        Solver : Pardiso,
+        #undamped iterations : 1000 
+        )
+        { Poisson Electron Hole } 
+  }
+Save( FilePrefix = "2_124" overwrite )
+  { }
+Quasistationary ( Digits : 4.5, Max. #iterations : 15, 
+      Initial step in t : 1, 
+      Minimum step in t : 1.0000e-03, Maximum step in t : 1, 
+      Increment : 2, Decrement : 2, 
+      Goal values :
+        Contact cathode : -1.2500e+02V
+    )
+  {
+    Coupled ( Digits : 5, Max. #iterations : 50, 
+        Solver : Pardiso,
+        #undamped iterations : 1000 
+        )
+        { Poisson Electron Hole } 
+  }
+Save( FilePrefix = "2_125" overwrite )
+  { }
+Plot( FilePrefix = "2_125" overwrite )
+  { }
+Quasistationary ( Digits : 4.5, Max. #iterations : 15, 
+      Initial step in t : 0.1, 
+      Minimum step in t : 1.0000e-03, Maximum step in t : 1, 
+      Increment : 1.5, Decrement : 1.5, 
+      Goal values :
+        Contact cathode : -1.4990e+02V
+    )
+  {
+    Coupled ( Digits : 4.5, Max. #iterations : 15, 
+        Solver : Pardiso,
+        #undamped iterations : 1000 
+        )
+        { Poisson Electron Hole } 
+  }
+Save( FilePrefix = "2_149" overwrite )
+  { }
+Quasistationary ( Digits : 4.5, Max. #iterations : 15, 
+      Initial step in t : 1, 
+      Minimum step in t : 1.0000e-03, Maximum step in t : 1, 
+      Increment : 2, Decrement : 2, 
+      Goal values :
+        Contact cathode : -1.5000e+02V
+    )
+  {
+    Coupled ( Digits : 5, Max. #iterations : 50, 
+        Solver : Pardiso,
+        #undamped iterations : 1000 
+        )
+        { Poisson Electron Hole } 
+  }
+Save( FilePrefix = "2_150" overwrite )
+  { }
+Plot( FilePrefix = "2_150" overwrite )
+  { }
+Quasistationary ( Digits : 4.5, Max. #iterations : 15, 
+      Initial step in t : 0.1, 
+      Minimum step in t : 1.0000e-03, Maximum step in t : 1, 
+      Increment : 1.5, Decrement : 1.5, 
+      Goal values :
+        Contact cathode : -1.7490e+02V
+    )
+  {
+    Coupled ( Digits : 4.5, Max. #iterations : 15, 
+        Solver : Pardiso,
+        #undamped iterations : 1000 
+        )
+        { Poisson Electron Hole } 
+  }
+Save( FilePrefix = "2_174" overwrite )
+  { }
+Quasistationary ( Digits : 4.5, Max. #iterations : 15, 
+      Initial step in t : 1, 
+      Minimum step in t : 1.0000e-03, Maximum step in t : 1, 
+      Increment : 2, Decrement : 2, 
+      Goal values :
+        Contact cathode : -1.7500e+02V
+    )
+  {
+    Coupled ( Digits : 5, Max. #iterations : 50, 
+        Solver : Pardiso,
+        #undamped iterations : 1000 
+        )
+        { Poisson Electron Hole } 
+  }
+Save( FilePrefix = "2_175" overwrite )
+  { }
+Plot( FilePrefix = "2_175" overwrite )
+  { }
+Quasistationary ( Digits : 4.5, Max. #iterations : 15, 
+      Initial step in t : 0.1, 
+      Minimum step in t : 1.0000e-03, Maximum step in t : 1, 
+      Increment : 1.5, Decrement : 1.5, 
+      Goal values :
+        Contact cathode : -1.9990e+02V
+    )
+  {
+    Coupled ( Digits : 4.5, Max. #iterations : 15, 
+        Solver : Pardiso,
+        #undamped iterations : 1000 
+        )
+        { Poisson Electron Hole } 
+  }
+Save( FilePrefix = "2_199" overwrite )
+  { }
+Quasistationary ( Digits : 4.5, Max. #iterations : 15, 
+      Initial step in t : 1, 
+      Minimum step in t : 1.0000e-03, Maximum step in t : 1, 
+      Increment : 2, Decrement : 2, 
+      Goal values :
+        Contact cathode : -2.0000e+02V
+    )
+  {
+    Coupled ( Digits : 5, Max. #iterations : 50, 
+        Solver : Pardiso,
+        #undamped iterations : 1000 
+        )
+        { Poisson Electron Hole } 
+  }
+Save( FilePrefix = "2_200" overwrite )
+  { }
+Plot( FilePrefix = "2_200" overwrite )
+  { }
+Quasistationary ( Digits : 4.5, Max. #iterations : 15, 
+      Initial step in t : 0.1, 
+      Minimum step in t : 1.0000e-03, Maximum step in t : 1, 
+      Increment : 1.5, Decrement : 1.5, 
+      Goal values :
+        Contact cathode : -2.2490e+02V
+    )
+  {
+    Coupled ( Digits : 4.5, Max. #iterations : 15, 
+        Solver : Pardiso,
+        #undamped iterations : 1000 
+        )
+        { Poisson Electron Hole } 
+  }
+Save( FilePrefix = "2_224" overwrite )
+  { }
+Quasistationary ( Digits : 4.5, Max. #iterations : 15, 
+      Initial step in t : 1, 
+      Minimum step in t : 1.0000e-03, Maximum step in t : 1, 
+      Increment : 2, Decrement : 2, 
+      Goal values :
+        Contact cathode : -2.2500e+02V
+    )
+  {
+    Coupled ( Digits : 5, Max. #iterations : 50, 
+        Solver : Pardiso,
+        #undamped iterations : 1000 
+        )
+        { Poisson Electron Hole } 
+  }
+Save( FilePrefix = "2_225" overwrite )
+  { }
+Plot( FilePrefix = "2_225" overwrite )
+  { }
+Quasistationary ( Digits : 4.5, Max. #iterations : 15, 
+      Initial step in t : 0.1, 
+      Minimum step in t : 1.0000e-03, Maximum step in t : 1, 
+      Increment : 1.5, Decrement : 1.5, 
+      Goal values :
+        Contact cathode : -2.4990e+02V
+    )
+  {
+    Coupled ( Digits : 4.5, Max. #iterations : 15, 
+        Solver : Pardiso,
+        #undamped iterations : 1000 
+        )
+        { Poisson Electron Hole } 
+  }
+Save( FilePrefix = "2_249" overwrite )
+  { }
+Quasistationary ( Digits : 4.5, Max. #iterations : 15, 
+      Initial step in t : 1, 
+      Minimum step in t : 1.0000e-03, Maximum step in t : 1, 
+      Increment : 2, Decrement : 2, 
+      Goal values :
+        Contact cathode : -2.5000e+02V
+    )
+  {
+    Coupled ( Digits : 5, Max. #iterations : 50, 
+        Solver : Pardiso,
+        #undamped iterations : 1000 
+        )
+        { Poisson Electron Hole } 
+  }
+Save( FilePrefix = "2_250" overwrite )
+  { }
+Plot( FilePrefix = "2_250" overwrite )
+  { }
+Quasistationary ( Digits : 4.5, Max. #iterations : 15, 
+      Initial step in t : 0.1, 
+      Minimum step in t : 1.0000e-03, Maximum step in t : 1, 
+      Increment : 1.5, Decrement : 1.5, 
+      Goal values :
+        Contact cathode : -2.7490e+02V
+    )
+  {
+    Coupled ( Digits : 4.5, Max. #iterations : 15, 
+        Solver : Pardiso,
+        #undamped iterations : 1000 
+        )
+        { Poisson Electron Hole } 
+  }
+Save( FilePrefix = "2_274" overwrite )
+  { }
+Quasistationary ( Digits : 4.5, Max. #iterations : 15, 
+      Initial step in t : 1, 
+      Minimum step in t : 1.0000e-03, Maximum step in t : 1, 
+      Increment : 2, Decrement : 2, 
+      Goal values :
+        Contact cathode : -2.7500e+02V
+    )
+  {
+    Coupled ( Digits : 5, Max. #iterations : 50, 
+        Solver : Pardiso,
+        #undamped iterations : 1000 
+        )
+        { Poisson Electron Hole } 
+  }
+Save( FilePrefix = "2_275" overwrite )
+  { }
+Plot( FilePrefix = "2_275" overwrite )
+  { }
+Quasistationary ( Digits : 4.5, Max. #iterations : 15, 
+      Initial step in t : 0.1, 
+      Minimum step in t : 1.0000e-03, Maximum step in t : 1, 
+      Increment : 1.5, Decrement : 1.5, 
+      Goal values :
+        Contact cathode : -2.9990e+02V
+    )
+  {
+    Coupled ( Digits : 4.5, Max. #iterations : 15, 
+        Solver : Pardiso,
+        #undamped iterations : 1000 
+        )
+        { Poisson Electron Hole } 
+  }
+Save( FilePrefix = "2_299" overwrite )
+  { }
+Quasistationary ( Digits : 4.5, Max. #iterations : 15, 
+      Initial step in t : 1, 
+      Minimum step in t : 1.0000e-03, Maximum step in t : 1, 
+      Increment : 2, Decrement : 2, 
+      Goal values :
+        Contact cathode : -3.0000e+02V
+    )
+  {
+    Coupled ( Digits : 5, Max. #iterations : 50, 
+        Solver : Pardiso,
+        #undamped iterations : 1000 
+        )
+        { Poisson Electron Hole } 
+  }
+Save( FilePrefix = "2_300" overwrite )
+  { }
+Plot( FilePrefix = "2_300" overwrite )
+  { }
+Quasistationary ( Digits : 4.5, Max. #iterations : 15, 
+      Initial step in t : 0.2, 
+      Minimum step in t : 1.0000e-03, Maximum step in t : 1, 
+      Increment : 1.3, Decrement : 1.3, 
+      Goal values :
+        Contact cathode : -3.2490e+02V
+    )
+  {
+    Coupled ( Digits : 4.5, Max. #iterations : 15, 
+        Solver : Pardiso,
+        #undamped iterations : 1000 
+        )
+        { Poisson Electron Hole } 
+  }
+Save( FilePrefix = "2_324" overwrite )
+  { }
+Quasistationary ( Digits : 4.5, Max. #iterations : 15, 
+      Initial step in t : 1, 
+      Minimum step in t : 1.0000e-03, Maximum step in t : 1, 
+      Increment : 2, Decrement : 2, 
+      Goal values :
+        Contact cathode : -3.2500e+02V
+    )
+  {
+    Coupled ( Digits : 5, Max. #iterations : 50, 
+        Solver : Pardiso,
+        #undamped iterations : 1000 
+        )
+        { Poisson Electron Hole } 
+  }
+Save( FilePrefix = "2_325" overwrite )
+  { }
+Plot( FilePrefix = "2_325" overwrite )
+  { }
+Quasistationary ( Digits : 4.5, Max. #iterations : 15, 
+      Initial step in t : 0.2, 
+      Minimum step in t : 1.0000e-03, Maximum step in t : 1, 
+      Increment : 1.3, Decrement : 1.3, 
+      Goal values :
+        Contact cathode : -3.4990e+02V
+    )
+  {
+    Coupled ( Digits : 4.5, Max. #iterations : 15, 
+        Solver : Pardiso,
+        #undamped iterations : 1000 
+        )
+        { Poisson Electron Hole } 
+  }
+Save( FilePrefix = "2_349" overwrite )
+  { }
+Quasistationary ( Digits : 4.5, Max. #iterations : 15, 
+      Initial step in t : 1, 
+      Minimum step in t : 1.0000e-03, Maximum step in t : 1, 
+      Increment : 2, Decrement : 2, 
+      Goal values :
+        Contact cathode : -3.5000e+02V
+    )
+  {
+    Coupled ( Digits : 5, Max. #iterations : 50, 
+        Solver : Pardiso,
+        #undamped iterations : 1000 
+        )
+        { Poisson Electron Hole } 
+  }
+Save( FilePrefix = "2_350" overwrite )
+  { }
+Plot( FilePrefix = "2_350" overwrite )
+  { }
+Quasistationary ( Digits : 4.5, Max. #iterations : 15, 
+      Initial step in t : 0.2, 
+      Minimum step in t : 1.0000e-03, Maximum step in t : 1, 
+      Increment : 1.3, Decrement : 1.3, 
+      Goal values :
+        Contact cathode : -3.7490e+02V
+    )
+  {
+    Coupled ( Digits : 4.5, Max. #iterations : 15, 
+        Solver : Pardiso,
+        #undamped iterations : 1000 
+        )
+        { Poisson Electron Hole } 
+  }
+Save( FilePrefix = "2_374" overwrite )
+  { }
+Quasistationary ( Digits : 4.5, Max. #iterations : 15, 
+      Initial step in t : 1, 
+      Minimum step in t : 1.0000e-03, Maximum step in t : 1, 
+      Increment : 2, Decrement : 2, 
+      Goal values :
+        Contact cathode : -3.7500e+02V
+    )
+  {
+    Coupled ( Digits : 5, Max. #iterations : 50, 
+        Solver : Pardiso,
+        #undamped iterations : 1000 
+        )
+        { Poisson Electron Hole } 
+  }
+Save( FilePrefix = "2_375" overwrite )
+  { }
+Plot( FilePrefix = "2_375" overwrite )
+  { }
+Quasistationary ( Digits : 4.5, Max. #iterations : 15, 
+      Initial step in t : 0.2, 
+      Minimum step in t : 1.0000e-03, Maximum step in t : 1, 
+      Increment : 1.3, Decrement : 1.3, 
+      Goal values :
+        Contact cathode : -3.9990e+02V
+    )
+  {
+    Coupled ( Digits : 4.5, Max. #iterations : 15, 
+        Solver : Pardiso,
+        #undamped iterations : 1000 
+        )
+        { Poisson Electron Hole } 
+  }
+Save( FilePrefix = "2_399" overwrite )
+  { }
+Quasistationary ( Digits : 4.5, Max. #iterations : 15, 
+      Initial step in t : 1, 
+      Minimum step in t : 1.0000e-03, Maximum step in t : 1, 
+      Increment : 2, Decrement : 2, 
+      Goal values :
+        Contact cathode : -4.0000e+02V
+    )
+  {
+    Coupled ( Digits : 5, Max. #iterations : 50, 
+        Solver : Pardiso,
+        #undamped iterations : 1000 
+        )
+        { Poisson Electron Hole } 
+  }
+Save( FilePrefix = "2_400" overwrite )
+  { }
+Plot( FilePrefix = "2_400" overwrite )
+  { }
+Quasistationary ( Digits : 4.5, Max. #iterations : 15, 
+      Initial step in t : 0.2, 
+      Minimum step in t : 1.0000e-03, Maximum step in t : 1, 
+      Increment : 1.3, Decrement : 1.3, 
+      Goal values :
+        Contact cathode : -4.2490e+02V
+    )
+  {
+    Coupled ( Digits : 4.5, Max. #iterations : 15, 
+        Solver : Pardiso,
+        #undamped iterations : 1000 
+        )
+        { Poisson Electron Hole } 
+  }
+Save( FilePrefix = "2_424" overwrite )
+  { }
+Quasistationary ( Digits : 4.5, Max. #iterations : 15, 
+      Initial step in t : 1, 
+      Minimum step in t : 1.0000e-03, Maximum step in t : 1, 
+      Increment : 2, Decrement : 2, 
+      Goal values :
+        Contact cathode : -4.2500e+02V
+    )
+  {
+    Coupled ( Digits : 5, Max. #iterations : 50, 
+        Solver : Pardiso,
+        #undamped iterations : 1000 
+        )
+        { Poisson Electron Hole } 
+  }
+Save( FilePrefix = "2_425" overwrite )
+  { }
+Plot( FilePrefix = "2_425" overwrite )
+  { }
+Quasistationary ( Digits : 4.5, Max. #iterations : 15, 
+      Initial step in t : 0.2, 
+      Minimum step in t : 1.0000e-03, Maximum step in t : 1, 
+      Increment : 1.3, Decrement : 1.3, 
+      Goal values :
+        Contact cathode : -4.4990e+02V
+    )
+  {
+    Coupled ( Digits : 4.5, Max. #iterations : 15, 
+        Solver : Pardiso,
+        #undamped iterations : 1000 
+        )
+        { Poisson Electron Hole } 
+  }
+Save( FilePrefix = "2_449" overwrite )
+  { }
+Quasistationary ( Digits : 4.5, Max. #iterations : 15, 
+      Initial step in t : 1, 
+      Minimum step in t : 1.0000e-03, Maximum step in t : 1, 
+      Increment : 2, Decrement : 2, 
+      Goal values :
+        Contact cathode : -4.5000e+02V
+    )
+  {
+    Coupled ( Digits : 5, Max. #iterations : 50, 
+        Solver : Pardiso,
+        #undamped iterations : 1000 
+        )
+        { Poisson Electron Hole } 
+  }
+Save( FilePrefix = "2_450" overwrite )
+  { }
+Plot( FilePrefix = "2_450" overwrite )
+  { }
+Quasistationary ( Digits : 4.5, Max. #iterations : 15, 
+      Initial step in t : 0.2, 
+      Minimum step in t : 1.0000e-03, Maximum step in t : 1, 
+      Increment : 1.3, Decrement : 1.3, 
+      Goal values :
+        Contact cathode : -4.7490e+02V
+    )
+  {
+    Coupled ( Digits : 4.5, Max. #iterations : 15, 
+        Solver : Pardiso,
+        #undamped iterations : 1000 
+        )
+        { Poisson Electron Hole } 
+  }
+Save( FilePrefix = "2_474" overwrite )
+  { }
+Quasistationary ( Digits : 4.5, Max. #iterations : 15, 
+      Initial step in t : 1, 
+      Minimum step in t : 1.0000e-03, Maximum step in t : 1, 
+      Increment : 2, Decrement : 2, 
+      Goal values :
+        Contact cathode : -4.7500e+02V
+    )
+  {
+    Coupled ( Digits : 5, Max. #iterations : 50, 
+        Solver : Pardiso,
+        #undamped iterations : 1000 
+        )
+        { Poisson Electron Hole } 
+  }
+Save( FilePrefix = "2_475" overwrite )
+  { }
+Plot( FilePrefix = "2_475" overwrite )
+  { }
+Quasistationary ( Digits : 4.5, Max. #iterations : 15, 
+      Initial step in t : 0.2, 
+      Minimum step in t : 1.0000e-03, Maximum step in t : 1, 
+      Increment : 1.3, Decrement : 1.3, 
+      Goal values :
+        Contact cathode : -4.9990e+02V
+    )
+  {
+    Coupled ( Digits : 4.5, Max. #iterations : 15, 
+        Solver : Pardiso,
+        #undamped iterations : 1000 
+        )
+        { Poisson Electron Hole } 
+  }
+Save( FilePrefix = "2_499" overwrite )
+  { }
+Quasistationary ( Digits : 4.5, Max. #iterations : 15, 
+      Initial step in t : 1, 
+      Minimum step in t : 1.0000e-03, Maximum step in t : 1, 
+      Increment : 2, Decrement : 2, 
+      Goal values :
+        Contact cathode : -5.0000e+02V
+    )
+  {
+    Coupled ( Digits : 5, Max. #iterations : 50, 
+        Solver : Pardiso,
+        #undamped iterations : 1000 
+        )
+        { Poisson Electron Hole } 
+  }
+Save( FilePrefix = "2_500" overwrite )
+  { }
+Plot( FilePrefix = "2_500" overwrite )
+  { }
+
+===============================
+
+Reading grid '2_msh.grd' ... 
+
+The data file "2_msh.grd" was not found,
+or its format was not recognized !
+
+Tue Aug 13 16:01:59 2024: checked in 1 sdevice-traps license(s)
+Tue Aug 13 16:01:59 2024: checked in 1 sdevice license(s)

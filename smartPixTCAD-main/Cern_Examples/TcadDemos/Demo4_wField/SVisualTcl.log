@@ -1,0 +1,49 @@
+###########################################
+# Sentaurus Visual K-2015.06-SP2.
+# Tcl log file.
+#------------------------------------------
+# Date: Jun 27, 2016. 08:17:48.
+# Version: 24.0.12 (1.12)
+# Mode: Interactive (GUI).
+# Hostname: pclhcb134.
+# Machine: Linux, x86_64, x86_64.
+# Kernel: 2.6.32-573.26.1.el6.x86_64.
+###########################################
+
+load_file /afs/cern.ch/work/a/afolkest/STDB/DEMOS/Demo4_wField/results/weightingField.tdr
+create_plot -dataset weightingField
+select_plots Plot_weightingField
+#-> Plot_weightingField
+#-> Plot_weightingField
+#-> weightingField
+set_field_prop -plot Plot_weightingField -geom weightingField Abs(ElectricField-V) -show_bands
+#-> 0
+set_field_prop -plot Plot_weightingField -geom weightingField Abs(ElectricField-V) -max 1000 -max_fixed
+#-> 0
+move_plot -plot Plot_weightingField -position {29.7502 -68.1967}
+#-> 0
+zoom_plot -plot Plot_weightingField -factor 0.909091
+zoom_plot -plot Plot_weightingField -factor 0.826446
+zoom_plot -plot Plot_weightingField -factor 0.826446
+zoom_plot -plot Plot_weightingField -factor 1.331
+zoom_plot -plot Plot_weightingField -factor 1.4641
+zoom_plot -plot Plot_weightingField -factor 1.1
+zoom_plot -plot Plot_weightingField -factor 1.331
+move_plot -plot Plot_weightingField -position {-1.93768 -22.7355}
+#-> 0
+zoom_plot -plot Plot_weightingField -factor 1.1
+zoom_plot -plot Plot_weightingField -factor 1.331
+move_plot -plot Plot_weightingField -position {-4.49977 1.94108}
+#-> 0
+set_field_prop -plot Plot_weightingField -geom weightingField ElectrostaticPotential -show_bands
+#-> 0
+zoom_plot -plot Plot_weightingField -factor 1.1
+zoom_plot -plot Plot_weightingField -factor 1.1
+zoom_plot -plot Plot_weightingField -factor 0.909091
+zoom_plot -plot Plot_weightingField -factor 0.826446
+zoom_plot -plot Plot_weightingField -factor 0.909091
+zoom_plot -plot Plot_weightingField -factor 0.909091
+zoom_plot -plot Plot_weightingField -factor 0.826446
+move_plot -plot Plot_weightingField -position {-2.84193 36.0925}
+#-> 0
+exit 0
