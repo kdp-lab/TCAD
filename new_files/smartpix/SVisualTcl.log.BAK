@@ -1,0 +1,75 @@
+###########################################
+# Sentaurus Visual V-2024.03.
+# Tcl log file.
+#------------------------------------------
+# Date: Nov 12, 2024. 14:05:37.
+# Version: 35.3.8727837 (3.8727837)
+# Mode: Interactive (GUI).
+# Mesa: enabled.
+# Hostname: kdplab01.
+# Machine: Linux, x86_64, x86_64.
+# Kernel: 5.14.0-427.40.1.el9_4.x86_64.
+###########################################
+
+load_file /home/aknicholas/DB/smartPixTCAD-main/dot1_50x13_phase3_updated/smartpix/n3_125_des.tdr -fod
+create_plot -dataset n3_125_des
+select_plots {Plot_n3_125_des}
+#-> Plot_n3_125_des
+#-> Plot_n3_125_des
+#-> n3_125_des
+set_material_prop {Silicon} -plot Plot_n3_125_des -geom n3_125_des -show_mesh
+#-> 0
+set_material_prop {Silicon} -plot Plot_n3_125_des -geom n3_125_des -hide_mesh
+#-> 0
+set_field_prop Abs(ElectricField-V) -plot Plot_n3_125_des -geom n3_125_des -show_bands
+#-> 0
+set_material_prop {Silicon} -plot Plot_n3_125_des -geom n3_125_des -show_mesh
+#-> 0
+set_material_prop {Silicon} -plot Plot_n3_125_des -geom n3_125_des -hide_mesh
+#-> 0
+set_material_prop {Silicon} -plot Plot_n3_125_des -geom n3_125_des -show_mesh
+#-> 0
+set_field_prop Abs(ElectricField-V) -plot Plot_n3_125_des -geom n3_125_des -hide_bands
+#-> 0
+rotate_plot -plot Plot_n3_125_des -plane xy
+#-> 0
+rotate_plot -plot Plot_n3_125_des -x 0 -y 5.07795 -z 0 -absolute
+#-> 0
+rotate_plot -plot Plot_n3_125_des -plane xy
+#-> 0
+zoom_plot -plot Plot_n3_125_des -factor 0.953463
+zoom_plot -plot Plot_n3_125_des -factor 0.953463
+zoom_plot -plot Plot_n3_125_des -factor 0.953463
+zoom_plot -plot Plot_n3_125_des -factor 1
+zoom_plot -plot Plot_n3_125_des -factor 0.953463
+zoom_plot -plot Plot_n3_125_des -factor 0.909091
+zoom_plot -plot Plot_n3_125_des -factor 0.953463
+zoom_plot -plot Plot_n3_125_des -factor 1
+set_material_prop {Silicon} -plot Plot_n3_125_des -geom n3_125_des -translucency_on
+#-> 0
+set_material_prop {Silicon} -plot Plot_n3_125_des -geom n3_125_des -hide_mesh
+#-> 0
+set_material_prop {Silicon} -plot Plot_n3_125_des -geom n3_125_des -translucency_off
+#-> 0
+set_material_prop {Silicon} -plot Plot_n3_125_des -geom n3_125_des -hide_bulk
+#-> 0
+set_material_prop {Silicon} -plot Plot_n3_125_des -geom n3_125_des -show_bulk
+#-> 0
+set_material_prop {Silicon} -plot Plot_n3_125_des -geom n3_125_des -hide_field
+#-> 0
+set_material_prop {Silicon} -plot Plot_n3_125_des -geom n3_125_des -show_field
+#-> 0
+set_vector_prop ElectricField-V -plot Plot_n3_125_des -geom n3_125_des -show
+#-> 0
+set_vector_prop ElectricField-V -plot Plot_n3_125_des -geom n3_125_des -scale_factor_uniform 2
+#-> 0
+rotate_plot -plot Plot_n3_125_des -x -24.4074 -y 25.2466 -z -12.3558 -absolute
+#-> 0
+zoom_plot -plot Plot_n3_125_des -factor 0.63257
+zoom_plot -plot Plot_n3_125_des -factor 1.04881
+zoom_plot -plot Plot_n3_125_des -factor 1.1
+zoom_plot -plot Plot_n3_125_des -factor 1.21
+zoom_plot -plot Plot_n3_125_des -factor 1.39596
+zoom_plot -plot Plot_n3_125_des -factor 0.953463
+exit 0
+ 
