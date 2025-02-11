@@ -1,0 +1,30 @@
+****************************************************************************
+***                            Sentaurus Mesh                            ***
+***                          Version V-2024.03                           ***
+***                      (3.8727837, x86_64, Linux)                      ***
+***                                                                      ***
+***                       Copyright (C) 2005-2024                        ***
+***                            Synopsys, Inc.                            ***
+***                                                                      ***
+***  This software and the associated documentation are confidential     ***
+***  and proprietary to Synopsys, Inc.  Your use or disclosure of this   ***
+***  software is subject to the terms and conditions of a written        ***
+***  license agreement between you, or your company, and Synopsys, Inc.  ***
+****************************************************************************
+
+Compiled Tue Feb 13 13:25:22 PST 2024 on: sce-tcad-build01
+Running on: kdplab01
+Hardware type: x86_64
+OS name: Linux
+OS release: 5.14.0-427.20.1.el9_4.x86_64
+OS version: #1 SMP PREEMPT_DYNAMIC Mon Jun 10 08:04:28 EDT 2024
+Process ID: 346311
+
+Flags used:
+
+
+----------------------  ERROR ----------------------------
+Couldn't locate boundary file dot1_50x13_phase3_bnd.tdr
+
+------------------------------------------------------------
+

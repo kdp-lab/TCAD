@@ -1,0 +1,35 @@
+###########################################
+# Sentaurus Visual V-2024.03.
+# Tcl log file.
+#------------------------------------------
+# Date: Jul 29, 2024. 12:55:45.
+# Version: 35.3.8727837 (3.8727837)
+# Mode: Interactive (GUI).
+# Mesa: enabled.
+# Hostname: kdplab01.
+# Machine: Linux, x86_64, x86_64.
+# Kernel: 5.14.0-427.24.1.el9_4.x86_64.
+###########################################
+
+load_file /home/aknicholas/DB/SmartPix_new_msh.tdr -fod
+create_plot -dataset SmartPix_new_msh
+select_plots {Plot_SmartPix_new_msh}
+#-> Plot_SmartPix_new_msh
+#-> Plot_SmartPix_new_msh
+#-> SmartPix_new_msh
+set_material_prop {Silicon} -plot Plot_SmartPix_new_msh -geom SmartPix_new_msh -show_mesh
+#-> 0
+set_material_prop {Contact} -plot Plot_SmartPix_new_msh -geom SmartPix_new_msh -show_mesh
+#-> 0
+set_material_prop {Contact} -plot Plot_SmartPix_new_msh -geom SmartPix_new_msh -hide_mesh
+#-> 0
+set_material_prop {Contact} -plot Plot_SmartPix_new_msh -geom SmartPix_new_msh -show_mesh
+#-> 0
+set_material_prop {JunctionLine} -plot Plot_SmartPix_new_msh -geom SmartPix_new_msh -show_mesh
+#-> 0
+rotate_plot -plot Plot_SmartPix_new_msh -x 138.936 -y 47.2165 -z -57.8143 -absolute
+#-> 0
+rotate_plot -plot Plot_SmartPix_new_msh -x 77.0897 -y -41.296 -z -53.7188 -absolute
+#-> 0
+exit 0
+ 
